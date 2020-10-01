@@ -1,2 +1,2 @@
-# launch-box
-Launch box for our projects.
+# Launch Box
+Source code for our rocket's launch box.

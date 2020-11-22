@@ -1,0 +1,2200 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5F6FDEB6
+P 4900 4500
+F 0 "J1" H 4900 5981 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 4900 5890 50  0000 C CNN
+F 2 "Module:Raspberry_Pi_Zero_Socketed_THT_FaceDown_MountingHoles" H 4900 4500 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 4900 4500 50  0001 C CNN
+	1    4900 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox:Teensy3.6 U27
+U 1 1 5F706ADE
+P 6400 2350
+F 0 "U27" V 4878 2350 50  0000 C CNN
+F 1 "Teensy3.6" V 4969 2350 50  0000 C CNN
+F 2 "Launchbox:Teensy 3.6" H 6400 2750 50  0001 C CNN
+F 3 "" H 6400 2750 50  0001 C CNN
+	1    6400 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U31
+U 1 1 5F72AE79
+P 8600 1050
+F 0 "U31" V 8600 700 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 8700 700 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 1050 50  0001 C CNN
+F 3 "" H 8550 1050 50  0001 C CNN
+	1    8600 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U32
+U 1 1 5F72C160
+P 8600 1500
+F 0 "U32" V 8600 1150 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 8700 1150 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 1500 50  0001 C CNN
+F 3 "" H 8550 1500 50  0001 C CNN
+	1    8600 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U33
+U 1 1 5F72CC69
+P 8600 2000
+F 0 "U33" V 8600 1650 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 8700 1650 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 2000 50  0001 C CNN
+F 3 "" H 8550 2000 50  0001 C CNN
+	1    8600 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U34
+U 1 1 5F72F00F
+P 8600 2450
+F 0 "U34" V 8600 2100 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 8700 2100 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 2450 50  0001 C CNN
+F 3 "" H 8550 2450 50  0001 C CNN
+	1    8600 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U35
+U 1 1 5F72F371
+P 8600 2950
+F 0 "U35" V 8600 2600 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 8700 2600 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 2950 50  0001 C CNN
+F 3 "" H 8550 2950 50  0001 C CNN
+	1    8600 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U42
+U 1 1 5F72F5CF
+P 9250 1050
+F 0 "U42" V 9250 700 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 9150 700 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 1050 50  0001 C CNN
+F 3 "" H 9200 1050 50  0001 C CNN
+	1    9250 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U43
+U 1 1 5F73099C
+P 9250 1500
+F 0 "U43" V 9250 1150 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 9150 1150 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 1500 50  0001 C CNN
+F 3 "" H 9200 1500 50  0001 C CNN
+	1    9250 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U44
+U 1 1 5F730CC9
+P 9250 2000
+F 0 "U44" V 9250 1650 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 9150 1650 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 2000 50  0001 C CNN
+F 3 "" H 9200 2000 50  0001 C CNN
+	1    9250 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U46
+U 1 1 5F731526
+P 9250 2950
+F 0 "U46" V 9250 2600 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 9150 2600 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 2950 50  0001 C CNN
+F 3 "" H 9200 2950 50  0001 C CNN
+	1    9250 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U36
+U 1 1 5F73199C
+P 8600 3400
+F 0 "U36" V 8600 3050 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 8700 3050 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 3400 50  0001 C CNN
+F 3 "" H 8550 3400 50  0001 C CNN
+	1    8600 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U37
+U 1 1 5F731CD2
+P 8600 3850
+F 0 "U37" V 8600 3500 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 8700 3500 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 3850 50  0001 C CNN
+F 3 "" H 8550 3850 50  0001 C CNN
+	1    8600 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U38
+U 1 1 5F7320DD
+P 8600 4300
+F 0 "U38" V 8600 3950 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 8700 3950 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 4300 50  0001 C CNN
+F 3 "" H 8550 4300 50  0001 C CNN
+	1    8600 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U47
+U 1 1 5F732403
+P 9250 3400
+F 0 "U47" V 9250 3050 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 9150 3050 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 3400 50  0001 C CNN
+F 3 "" H 9200 3400 50  0001 C CNN
+	1    9250 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U48
+U 1 1 5F73279F
+P 9250 3850
+F 0 "U48" V 9250 3500 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 9150 3500 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 3850 50  0001 C CNN
+F 3 "" H 9200 3850 50  0001 C CNN
+	1    9250 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND1 #PWR049
+U 1 1 5F737E19
+P 10850 900
+F 0 "#PWR049" H 10850 650 50  0001 C CNN
+F 1 "GND1" H 10855 727 50  0000 C CNN
+F 2 "" H 10850 900 50  0001 C CNN
+F 3 "" H 10850 900 50  0001 C CNN
+	1    10850 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1050 6100 1050
+Wire Wire Line
+	6100 1050 6100 700 
+Wire Wire Line
+	6100 700  8950 700 
+Wire Wire Line
+	10850 700  10850 900 
+Wire Wire Line
+	8600 1150 8500 1150
+Wire Wire Line
+	8500 1150 8500 1250
+Wire Wire Line
+	8500 1250 8950 1250
+Wire Wire Line
+	8950 1250 8950 850 
+Connection ~ 8950 700 
+Wire Wire Line
+	8950 700  10850 700 
+Wire Wire Line
+	9250 950  9350 950 
+Wire Wire Line
+	9350 950  9350 850 
+Wire Wire Line
+	9350 850  8950 850 
+Connection ~ 8950 850 
+Wire Wire Line
+	8950 850  8950 700 
+Connection ~ 8950 1250
+Wire Wire Line
+	9250 1400 9350 1400
+Wire Wire Line
+	8600 2100 8500 2100
+Wire Wire Line
+	8500 2100 8500 2200
+Wire Wire Line
+	8500 2200 8950 2200
+Connection ~ 8950 1750
+Wire Wire Line
+	9250 1900 9350 1900
+Wire Wire Line
+	8600 2550 8500 2550
+Wire Wire Line
+	8500 2550 8500 2650
+Wire Wire Line
+	8500 2650 8950 2650
+Connection ~ 8950 2200
+Wire Wire Line
+	9250 2350 9350 2350
+Wire Wire Line
+	8600 3050 8500 3050
+Wire Wire Line
+	8500 3050 8500 3150
+Wire Wire Line
+	8500 3150 8950 3150
+Connection ~ 8950 2650
+Wire Wire Line
+	9250 2850 9350 2850
+Wire Wire Line
+	8600 3500 8550 3500
+Wire Wire Line
+	8550 3500 8550 3600
+Wire Wire Line
+	8550 3600 8950 3600
+Connection ~ 8950 3150
+Wire Wire Line
+	9250 3300 9350 3300
+Wire Wire Line
+	8600 3950 8500 3950
+Wire Wire Line
+	8500 3950 8500 4050
+Wire Wire Line
+	8500 4050 8950 4050
+Connection ~ 8950 3600
+Wire Wire Line
+	9250 3750 9350 3750
+Wire Wire Line
+	8600 4400 8500 4400
+Wire Wire Line
+	8500 4400 8500 4500
+Wire Wire Line
+	8500 4500 8950 4500
+Wire Wire Line
+	8950 4500 8950 4050
+Connection ~ 8950 4050
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F7495D2
+P 1050 7250
+F 0 "BT1" H 800 7400 50  0000 L CNN
+F 1 "Battery_Cell" H 500 7300 50  0000 L CNN
+F 2 "Launchbox:Lipo_Battery_Connector" V 1050 7310 50  0001 C CNN
+F 3 "~" V 1050 7310 50  0001 C CNN
+	1    1050 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR01
+U 1 1 5F74B95E
+P 1050 7350
+F 0 "#PWR01" H 1050 7100 50  0001 C CNN
+F 1 "GND1" H 1055 7177 50  0000 C CNN
+F 2 "" H 1050 7350 50  0001 C CNN
+F 3 "" H 1050 7350 50  0001 C CNN
+	1    1050 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 7050 1500 7050
+$Comp
+L power:GND1 #PWR011
+U 1 1 5F74E9C8
+P 1800 7350
+F 0 "#PWR011" H 1800 7100 50  0001 C CNN
+F 1 "GND1" H 1805 7177 50  0000 C CNN
+F 2 "" H 1800 7350 50  0001 C CNN
+F 3 "" H 1800 7350 50  0001 C CNN
+	1    1800 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5F750D83
+P 2150 7000
+F 0 "#PWR012" H 2150 6850 50  0001 C CNN
+F 1 "+5V" H 2165 7173 50  0000 C CNN
+F 2 "" H 2150 7000 50  0001 C CNN
+F 3 "" H 2150 7000 50  0001 C CNN
+	1    2150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U3
+U 1 1 5F74367E
+P 1800 7050
+F 0 "U3" H 1800 7292 50  0000 C CNN
+F 1 "L7805" H 1800 7201 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1825 6900 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1800 7000 50  0001 C CNN
+	1    1800 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 7050 2150 7050
+Wire Wire Line
+	2150 7050 2150 7000
+$Comp
+L power:+5V #PWR027
+U 1 1 5F755105
+P 6900 950
+F 0 "#PWR027" H 6900 800 50  0001 C CNN
+F 1 "+5V" H 6915 1123 50  0000 C CNN
+F 2 "" H 6900 950 50  0001 C CNN
+F 3 "" H 6900 950 50  0001 C CNN
+	1    6900 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR030
+U 1 1 5F7562B6
+P 8100 1050
+F 0 "#PWR030" H 8100 900 50  0001 C CNN
+F 1 "+5V" H 8100 1200 50  0000 C CNN
+F 2 "" H 8100 1050 50  0001 C CNN
+F 3 "" H 8100 1050 50  0001 C CNN
+	1    8100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR042
+U 1 1 5F757A15
+P 9750 1050
+F 0 "#PWR042" H 9750 900 50  0001 C CNN
+F 1 "+5V" H 9765 1223 50  0000 C CNN
+F 2 "" H 9750 1050 50  0001 C CNN
+F 3 "" H 9750 1050 50  0001 C CNN
+	1    9750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U45
+U 1 1 5F731089
+P 9250 2450
+F 0 "U45" V 9250 2100 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 9150 2100 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 2450 50  0001 C CNN
+F 3 "" H 9200 2450 50  0001 C CNN
+	1    9250 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8500 1600 8500 1750
+Wire Wire Line
+	8500 1750 8950 1750
+$Comp
+L power:+5V #PWR043
+U 1 1 5F75CFF7
+P 9750 1500
+F 0 "#PWR043" H 9750 1350 50  0001 C CNN
+F 1 "+5V" H 9765 1673 50  0000 C CNN
+F 2 "" H 9750 1500 50  0001 C CNN
+F 3 "" H 9750 1500 50  0001 C CNN
+	1    9750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1500 9750 1500
+Wire Wire Line
+	9250 1050 9750 1050
+Wire Wire Line
+	8100 1050 8600 1050
+$Comp
+L power:+5V #PWR031
+U 1 1 5F762B1F
+P 8100 1500
+F 0 "#PWR031" H 8100 1350 50  0001 C CNN
+F 1 "+5V" H 8100 1650 50  0000 C CNN
+F 2 "" H 8100 1500 50  0001 C CNN
+F 3 "" H 8100 1500 50  0001 C CNN
+	1    8100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR032
+U 1 1 5F763137
+P 8100 2000
+F 0 "#PWR032" H 8100 1850 50  0001 C CNN
+F 1 "+5V" H 8100 2150 50  0000 C CNN
+F 2 "" H 8100 2000 50  0001 C CNN
+F 3 "" H 8100 2000 50  0001 C CNN
+	1    8100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR033
+U 1 1 5F7637B9
+P 8100 2450
+F 0 "#PWR033" H 8100 2300 50  0001 C CNN
+F 1 "+5V" H 8100 2600 50  0000 C CNN
+F 2 "" H 8100 2450 50  0001 C CNN
+F 3 "" H 8100 2450 50  0001 C CNN
+	1    8100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR034
+U 1 1 5F763CF5
+P 8100 2950
+F 0 "#PWR034" H 8100 2800 50  0001 C CNN
+F 1 "+5V" H 8100 3100 50  0000 C CNN
+F 2 "" H 8100 2950 50  0001 C CNN
+F 3 "" H 8100 2950 50  0001 C CNN
+	1    8100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR035
+U 1 1 5F764179
+P 8100 3400
+F 0 "#PWR035" H 8100 3250 50  0001 C CNN
+F 1 "+5V" H 8100 3550 50  0000 C CNN
+F 2 "" H 8100 3400 50  0001 C CNN
+F 3 "" H 8100 3400 50  0001 C CNN
+	1    8100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR036
+U 1 1 5F76456D
+P 8100 3850
+F 0 "#PWR036" H 8100 3700 50  0001 C CNN
+F 1 "+5V" H 8100 4000 50  0000 C CNN
+F 2 "" H 8100 3850 50  0001 C CNN
+F 3 "" H 8100 3850 50  0001 C CNN
+	1    8100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR037
+U 1 1 5F764ADE
+P 8100 4300
+F 0 "#PWR037" H 8100 4150 50  0001 C CNN
+F 1 "+5V" H 8100 4450 50  0000 C CNN
+F 2 "" H 8100 4300 50  0001 C CNN
+F 3 "" H 8100 4300 50  0001 C CNN
+	1    8100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR044
+U 1 1 5F765054
+P 9750 2000
+F 0 "#PWR044" H 9750 1850 50  0001 C CNN
+F 1 "+5V" H 9765 2173 50  0000 C CNN
+F 2 "" H 9750 2000 50  0001 C CNN
+F 3 "" H 9750 2000 50  0001 C CNN
+	1    9750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR045
+U 1 1 5F7657E2
+P 9750 2450
+F 0 "#PWR045" H 9750 2300 50  0001 C CNN
+F 1 "+5V" H 9765 2623 50  0000 C CNN
+F 2 "" H 9750 2450 50  0001 C CNN
+F 3 "" H 9750 2450 50  0001 C CNN
+	1    9750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR046
+U 1 1 5F765D3D
+P 9750 2950
+F 0 "#PWR046" H 9750 2800 50  0001 C CNN
+F 1 "+5V" H 9765 3123 50  0000 C CNN
+F 2 "" H 9750 2950 50  0001 C CNN
+F 3 "" H 9750 2950 50  0001 C CNN
+	1    9750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR047
+U 1 1 5F7664A6
+P 9750 3400
+F 0 "#PWR047" H 9750 3250 50  0001 C CNN
+F 1 "+5V" H 9765 3573 50  0000 C CNN
+F 2 "" H 9750 3400 50  0001 C CNN
+F 3 "" H 9750 3400 50  0001 C CNN
+	1    9750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR048
+U 1 1 5F766960
+P 9750 3850
+F 0 "#PWR048" H 9750 3700 50  0001 C CNN
+F 1 "+5V" H 9765 4023 50  0000 C CNN
+F 2 "" H 9750 3850 50  0001 C CNN
+F 3 "" H 9750 3850 50  0001 C CNN
+	1    9750 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2000 9750 2000
+Wire Wire Line
+	9250 2450 9750 2450
+Wire Wire Line
+	9250 2950 9750 2950
+Wire Wire Line
+	9250 3400 9750 3400
+Wire Wire Line
+	9250 3850 9750 3850
+Wire Wire Line
+	8100 4300 8600 4300
+Wire Wire Line
+	8100 3850 8600 3850
+Wire Wire Line
+	8100 3400 8600 3400
+Wire Wire Line
+	8100 2950 8600 2950
+Wire Wire Line
+	8100 2450 8600 2450
+Wire Wire Line
+	8100 2000 8600 2000
+Wire Wire Line
+	8100 1500 8600 1500
+Wire Wire Line
+	6600 1050 6900 1050
+Wire Wire Line
+	6900 1050 6900 950 
+Wire Wire Line
+	8600 950  8500 950 
+Wire Wire Line
+	8500 950  8500 750 
+Wire Wire Line
+	8500 750  7050 750 
+Wire Wire Line
+	7050 750  7050 1350
+Wire Wire Line
+	7050 1350 6600 1350
+Wire Wire Line
+	8950 1250 8950 1750
+Wire Wire Line
+	9350 1400 9350 1250
+Wire Wire Line
+	9350 1250 8950 1250
+Wire Wire Line
+	8950 1750 8950 2200
+Wire Wire Line
+	9350 1750 8950 1750
+Wire Wire Line
+	9350 1750 9350 1900
+Wire Wire Line
+	8950 2200 8950 2650
+Wire Wire Line
+	8950 2200 9350 2200
+Wire Wire Line
+	9350 2200 9350 2350
+Wire Wire Line
+	8950 2650 8950 3150
+Wire Wire Line
+	8950 2650 9350 2650
+Wire Wire Line
+	9350 2650 9350 2850
+Wire Wire Line
+	8950 3150 8950 3600
+Wire Wire Line
+	8950 3600 8950 4050
+Wire Wire Line
+	8950 3150 9350 3150
+Wire Wire Line
+	9350 3150 9350 3300
+Wire Wire Line
+	8950 3600 9350 3600
+Wire Wire Line
+	9350 3600 9350 3750
+Wire Wire Line
+	9400 1150 9400 1300
+Wire Wire Line
+	9400 1300 7100 1300
+Wire Wire Line
+	7100 1300 7100 1450
+Wire Wire Line
+	7100 1450 6600 1450
+Wire Wire Line
+	9250 1150 9400 1150
+Wire Wire Line
+	8600 1400 7150 1400
+Wire Wire Line
+	7150 1400 7150 1550
+Wire Wire Line
+	7150 1550 6600 1550
+Wire Wire Line
+	9250 1600 9400 1600
+Wire Wire Line
+	9400 1600 9400 1700
+Wire Wire Line
+	9400 1700 7200 1700
+Wire Wire Line
+	7200 1700 7200 1650
+Wire Wire Line
+	7200 1650 6600 1650
+Wire Wire Line
+	8600 1900 8500 1900
+Wire Wire Line
+	8500 1900 8500 1800
+Wire Wire Line
+	8500 1800 7150 1800
+Wire Wire Line
+	7150 1800 7150 1750
+Wire Wire Line
+	7150 1750 6600 1750
+Wire Wire Line
+	9250 2100 9400 2100
+Wire Wire Line
+	9400 2100 9400 2250
+Wire Wire Line
+	9400 2250 7100 2250
+Wire Wire Line
+	7100 2250 7100 1850
+Wire Wire Line
+	7100 1850 6600 1850
+Wire Wire Line
+	8600 2350 7050 2350
+Wire Wire Line
+	7050 2350 7050 1950
+Wire Wire Line
+	7050 1950 6600 1950
+Wire Wire Line
+	9250 2550 9400 2550
+Wire Wire Line
+	9400 2550 9400 2700
+Wire Wire Line
+	9400 2700 7000 2700
+Wire Wire Line
+	7000 2700 7000 2050
+Wire Wire Line
+	7000 2050 6600 2050
+Wire Wire Line
+	8600 2850 8300 2850
+Wire Wire Line
+	8300 2850 8300 2750
+Wire Wire Line
+	8300 2750 6950 2750
+Wire Wire Line
+	6950 2750 6950 2150
+Wire Wire Line
+	6950 2150 6600 2150
+Wire Wire Line
+	9250 3050 9400 3050
+Wire Wire Line
+	9400 3050 9400 3200
+Wire Wire Line
+	9400 3200 6900 3200
+Wire Wire Line
+	6900 3200 6900 2250
+Wire Wire Line
+	6900 2250 6600 2250
+Wire Wire Line
+	8600 3300 7150 3300
+Wire Wire Line
+	7150 3300 7150 2850
+Wire Wire Line
+	7150 2850 6600 2850
+Wire Wire Line
+	9250 3500 9400 3500
+Wire Wire Line
+	9400 3500 9400 3650
+Wire Wire Line
+	9400 3650 7100 3650
+Wire Wire Line
+	7100 3650 7100 2950
+Wire Wire Line
+	7100 2950 6600 2950
+Wire Wire Line
+	8600 3750 7050 3750
+Wire Wire Line
+	7050 3750 7050 3050
+Wire Wire Line
+	7050 3050 6600 3050
+Wire Wire Line
+	9250 3950 9400 3950
+Wire Wire Line
+	9400 3950 9400 4100
+Wire Wire Line
+	9400 4100 7000 4100
+Wire Wire Line
+	7000 4100 7000 3150
+Wire Wire Line
+	7000 3150 6600 3150
+Wire Wire Line
+	8600 4200 6950 4200
+Wire Wire Line
+	6950 4200 6950 3250
+Wire Wire Line
+	6950 3250 6600 3250
+Text Notes 8600 600  0    50   ~ 0
+Pressure Transducers
+Text Notes 1250 6650 0    50   ~ 0
+Battery + 5V Regulator
+$Comp
+L Launchbox:MAX31850 U25
+U 1 1 5F7714BF
+P 4950 1350
+F 0 "U25" H 5300 1450 50  0000 R CNN
+F 1 "MAX31850" H 5150 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 4750 1350 50  0001 C CNN
+F 3 "" H 4750 1350 50  0001 C CNN
+	1    4950 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox:MAX31850 U23
+U 1 1 5F774E0B
+P 4000 1350
+F 0 "U23" H 4350 1450 50  0000 R CNN
+F 1 "MAX31850" H 4200 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 3800 1350 50  0001 C CNN
+F 3 "" H 3800 1350 50  0001 C CNN
+	1    4000 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox:MAX31850 U21
+U 1 1 5F77E2F4
+P 3050 1350
+F 0 "U21" H 3400 1450 50  0000 R CNN
+F 1 "MAX31850" H 3250 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 2850 1350 50  0001 C CNN
+F 3 "" H 2850 1350 50  0001 C CNN
+	1    3050 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 700  3400 1350
+Connection ~ 6100 700 
+Wire Wire Line
+	4350 1350 4350 700 
+Connection ~ 4350 700 
+Wire Wire Line
+	5300 1350 5300 700 
+Connection ~ 5300 700 
+Wire Wire Line
+	5300 700  6100 700 
+$Comp
+L power:+5V #PWR023
+U 1 1 5F7A5564
+P 4250 1000
+F 0 "#PWR023" H 4250 850 50  0001 C CNN
+F 1 "+5V" H 4265 1173 50  0000 C CNN
+F 2 "" H 4250 1000 50  0001 C CNN
+F 3 "" H 4250 1000 50  0001 C CNN
+	1    4250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR024
+U 1 1 5F7AE84A
+P 5200 1000
+F 0 "#PWR024" H 5200 850 50  0001 C CNN
+F 1 "+5V" H 5215 1173 50  0000 C CNN
+F 2 "" H 5200 1000 50  0001 C CNN
+F 3 "" H 5200 1000 50  0001 C CNN
+	1    5200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1000 5200 1350
+Wire Wire Line
+	3300 1000 3300 1350
+Wire Wire Line
+	5950 750  5950 1150
+Wire Wire Line
+	5950 1150 6200 1150
+Wire Wire Line
+	2700 750  2700 1350
+Wire Wire Line
+	3650 1350 3650 750 
+Connection ~ 3650 750 
+Wire Wire Line
+	4600 1350 4600 750 
+Wire Wire Line
+	4600 750  5950 750 
+Connection ~ 4600 750 
+Wire Wire Line
+	5000 1350 5000 1000
+Wire Wire Line
+	4900 1350 4900 700 
+Connection ~ 4900 700 
+Wire Wire Line
+	4900 700  5300 700 
+Wire Wire Line
+	4800 1350 4800 700 
+Connection ~ 4800 700 
+Wire Wire Line
+	4800 700  4900 700 
+Wire Wire Line
+	4700 1350 4700 700 
+Connection ~ 4700 700 
+Wire Wire Line
+	4700 700  4800 700 
+Wire Wire Line
+	3950 1000 3950 1350
+Wire Wire Line
+	4050 1350 4050 700 
+Connection ~ 4050 700 
+Wire Wire Line
+	4050 700  4350 700 
+Wire Wire Line
+	3850 1350 3850 700 
+Connection ~ 3850 700 
+Wire Wire Line
+	3850 700  4050 700 
+Wire Wire Line
+	3750 1350 3750 700 
+Connection ~ 3750 700 
+Wire Wire Line
+	3750 700  3850 700 
+Wire Wire Line
+	3100 1000 3100 1350
+Wire Wire Line
+	3000 1000 3000 1350
+Wire Wire Line
+	2900 1350 2900 700 
+Wire Wire Line
+	2900 700  3400 700 
+Connection ~ 3400 700 
+Wire Wire Line
+	2800 1350 2800 700 
+Wire Wire Line
+	2800 700  2900 700 
+Connection ~ 2900 700 
+$Comp
+L power:GND1 #PWR026
+U 1 1 5F8965B9
+P 5950 1150
+F 0 "#PWR026" H 5950 900 50  0001 C CNN
+F 1 "GND1" H 5955 977 50  0000 C CNN
+F 2 "" H 5950 1150 50  0001 C CNN
+F 3 "" H 5950 1150 50  0001 C CNN
+	1    5950 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 1150
+$Comp
+L power:+5V #PWR021
+U 1 1 5F89C61E
+P 3300 1000
+F 0 "#PWR021" H 3300 850 50  0001 C CNN
+F 1 "+5V" H 3315 1173 50  0000 C CNN
+F 2 "" H 3300 1000 50  0001 C CNN
+F 3 "" H 3300 1000 50  0001 C CNN
+	1    3300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1000 3100 1000
+Connection ~ 3100 1000
+Wire Wire Line
+	3100 1000 3300 1000
+Connection ~ 3300 1000
+Wire Wire Line
+	3950 1000 4250 1000
+Wire Wire Line
+	4250 1000 4250 1350
+Connection ~ 4250 1000
+Wire Wire Line
+	5000 1000 5200 1000
+Connection ~ 5200 1000
+Text Notes 3250 1500 0    50   ~ 0
+0x03
+Text Notes 4200 1500 0    50   ~ 0
+0x02
+Text Notes 5150 1500 0    50   ~ 0
+0x01
+$Comp
+L Launchbox:SerialScrewTerminals U2
+U 1 1 5F95FE72
+P 1200 2350
+F 0 "U2" H 1250 2650 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 1600 2750 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1150 2350 50  0001 C CNN
+F 3 "" H 1150 2350 50  0001 C CNN
+	1    1200 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 750  4600 750 
+Wire Wire Line
+	4350 700  4700 700 
+Wire Wire Line
+	3400 700  3750 700 
+$Comp
+L Launchbox:MAX31850 U12
+U 1 1 5F9D3FA0
+P 2100 1350
+F 0 "U12" H 2450 1450 50  0000 R CNN
+F 1 "MAX31850" H 2300 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 1900 1350 50  0001 C CNN
+F 3 "" H 1900 1350 50  0001 C CNN
+	1    2100 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox:MAX31850 U1
+U 1 1 5F9D4EB1
+P 1200 1350
+F 0 "U1" H 1550 1450 50  0000 R CNN
+F 1 "MAX31850" H 1450 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 1000 1350 50  0001 C CNN
+F 3 "" H 1000 1350 50  0001 C CNN
+	1    1200 1350
+	-1   0    0    1   
+$EndComp
+Text Notes 1400 1500 0    50   ~ 0
+0x05\n
+Text Notes 2300 1500 0    50   ~ 0
+0x04
+Wire Wire Line
+	2450 1350 2450 700 
+Connection ~ 2800 700 
+Wire Wire Line
+	1550 1350 1550 700 
+Connection ~ 2450 700 
+Wire Wire Line
+	2450 700  2800 700 
+Wire Wire Line
+	850  1350 850  750 
+Wire Wire Line
+	850  750  1750 750 
+Connection ~ 2700 750 
+Wire Wire Line
+	2700 750  3650 750 
+Wire Wire Line
+	1750 1350 1750 750 
+Connection ~ 1750 750 
+Wire Wire Line
+	1750 750  2700 750 
+$Comp
+L power:+5V #PWR013
+U 1 1 5FA122D3
+P 2350 1000
+F 0 "#PWR013" H 2350 850 50  0001 C CNN
+F 1 "+5V" H 2365 1173 50  0000 C CNN
+F 2 "" H 2350 1000 50  0001 C CNN
+F 3 "" H 2350 1000 50  0001 C CNN
+	1    2350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5FA12813
+P 1450 1000
+F 0 "#PWR010" H 1450 850 50  0001 C CNN
+F 1 "+5V" H 1465 1173 50  0000 C CNN
+F 2 "" H 1450 1000 50  0001 C CNN
+F 3 "" H 1450 1000 50  0001 C CNN
+	1    1450 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1000 1450 1350
+Wire Wire Line
+	2350 1000 2350 1350
+Wire Wire Line
+	1950 1350 1950 1000
+Wire Wire Line
+	1950 1000 2350 1000
+Connection ~ 2350 1000
+Wire Wire Line
+	2150 1350 2150 700 
+Connection ~ 2150 700 
+Wire Wire Line
+	2150 700  2450 700 
+Wire Wire Line
+	2050 1350 2050 700 
+Connection ~ 2050 700 
+Wire Wire Line
+	2050 700  2150 700 
+Wire Wire Line
+	1850 1350 1850 700 
+Connection ~ 1850 700 
+Wire Wire Line
+	1850 700  2050 700 
+Wire Wire Line
+	1050 1350 1050 1000
+Wire Wire Line
+	1050 1000 1250 1000
+Connection ~ 1450 1000
+Wire Wire Line
+	1250 1350 1250 1000
+Connection ~ 1250 1000
+Wire Wire Line
+	1250 1000 1450 1000
+Wire Wire Line
+	1150 1350 1150 700 
+Wire Wire Line
+	1150 700  1550 700 
+Connection ~ 1550 700 
+Wire Wire Line
+	1550 700  1850 700 
+Wire Wire Line
+	950  1350 950  700 
+Wire Wire Line
+	950  700  1150 700 
+Connection ~ 1150 700 
+Wire Wire Line
+	1300 2350 1300 2100
+Wire Wire Line
+	1300 2100 1450 2100
+Wire Wire Line
+	1450 2100 1450 1550
+Wire Wire Line
+	1200 2350 1200 2100
+Wire Wire Line
+	1200 2100 950  2100
+Wire Wire Line
+	950  2100 950  1550
+$Comp
+L Launchbox:SerialScrewTerminals U13
+U 1 1 5FACEF68
+P 2100 2350
+F 0 "U13" H 2150 2650 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 2500 2750 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 2050 2350 50  0001 C CNN
+F 3 "" H 2050 2350 50  0001 C CNN
+	1    2100 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 2350 2200 2050
+Wire Wire Line
+	2200 2050 2350 2050
+Wire Wire Line
+	2350 2050 2350 1550
+Wire Wire Line
+	2100 2350 2100 2050
+Wire Wire Line
+	2100 2050 1850 2050
+Wire Wire Line
+	1850 2050 1850 1550
+$Comp
+L Launchbox:SerialScrewTerminals U22
+U 1 1 5FAF117C
+P 3050 2350
+F 0 "U22" H 3100 2650 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 3450 2750 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 3000 2350 50  0001 C CNN
+F 3 "" H 3000 2350 50  0001 C CNN
+	1    3050 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 2350 3150 2050
+Wire Wire Line
+	3150 2050 3300 2050
+Wire Wire Line
+	3300 2050 3300 1550
+Wire Wire Line
+	3050 2350 3050 2050
+Wire Wire Line
+	3050 2050 2800 2050
+Wire Wire Line
+	2800 2050 2800 1550
+$Comp
+L Launchbox:SerialScrewTerminals U24
+U 1 1 5FB151EA
+P 4000 2350
+F 0 "U24" H 4050 2650 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 4400 2750 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 3950 2350 50  0001 C CNN
+F 3 "" H 3950 2350 50  0001 C CNN
+	1    4000 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 2350 4100 2050
+Wire Wire Line
+	4100 2050 4250 2050
+Wire Wire Line
+	4250 2050 4250 1550
+Wire Wire Line
+	4000 2350 4000 2050
+Wire Wire Line
+	4000 2050 3750 2050
+Wire Wire Line
+	3750 2050 3750 1550
+$Comp
+L Launchbox:SerialScrewTerminals U26
+U 1 1 5FB3A606
+P 4950 2350
+F 0 "U26" H 5000 2650 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 5350 2750 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 4900 2350 50  0001 C CNN
+F 3 "" H 4900 2350 50  0001 C CNN
+	1    4950 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 2350 5050 2050
+Wire Wire Line
+	5050 2050 5200 2050
+Wire Wire Line
+	5200 2050 5200 1550
+Wire Wire Line
+	4950 2350 4950 2050
+Wire Wire Line
+	4950 2050 4700 2050
+Wire Wire Line
+	4700 2050 4700 1550
+Text Notes 2800 600  0    50   ~ 0
+Thermocouples\n
+$Comp
+L Launchbox:SerialScrewTerminals U4
+U 1 1 5FB98236
+P 1850 3450
+F 0 "U4" V 1850 3100 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 1950 3100 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 3450 50  0001 C CNN
+F 3 "" H 1800 3450 50  0001 C CNN
+	1    1850 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U5
+U 1 1 5FB98D32
+P 1850 3850
+F 0 "U5" V 1850 3500 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 1950 3500 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 3850 50  0001 C CNN
+F 3 "" H 1800 3850 50  0001 C CNN
+	1    1850 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U6
+U 1 1 5FB9903B
+P 1850 4250
+F 0 "U6" V 1850 3900 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 1950 3900 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 4250 50  0001 C CNN
+F 3 "" H 1800 4250 50  0001 C CNN
+	1    1850 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U7
+U 1 1 5FB99510
+P 1850 4650
+F 0 "U7" V 1850 4300 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 1950 4300 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 4650 50  0001 C CNN
+F 3 "" H 1800 4650 50  0001 C CNN
+	1    1850 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U8
+U 1 1 5FB99945
+P 1850 5050
+F 0 "U8" V 1850 4700 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 1950 4700 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 5050 50  0001 C CNN
+F 3 "" H 1800 5050 50  0001 C CNN
+	1    1850 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U9
+U 1 1 5FB99BAE
+P 1850 5450
+F 0 "U9" V 1850 5100 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 1950 5100 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 5450 50  0001 C CNN
+F 3 "" H 1800 5450 50  0001 C CNN
+	1    1850 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U14
+U 1 1 5FB99F4D
+P 2500 3450
+F 0 "U14" V 2500 3050 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 2400 3050 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 3450 50  0001 C CNN
+F 3 "" H 2450 3450 50  0001 C CNN
+	1    2500 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U16
+U 1 1 5FB9B00C
+P 2500 4250
+F 0 "U16" V 2500 3850 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 2400 3850 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 4250 50  0001 C CNN
+F 3 "" H 2450 4250 50  0001 C CNN
+	1    2500 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U17
+U 1 1 5FB9B36C
+P 2500 4650
+F 0 "U17" V 2500 4250 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 2400 4250 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 4650 50  0001 C CNN
+F 3 "" H 2450 4650 50  0001 C CNN
+	1    2500 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U18
+U 1 1 5FB9B73D
+P 2500 5050
+F 0 "U18" V 2500 4650 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 2400 4650 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 5050 50  0001 C CNN
+F 3 "" H 2450 5050 50  0001 C CNN
+	1    2500 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U19
+U 1 1 5FB9BBFE
+P 2500 5450
+F 0 "U19" V 2500 5050 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 2400 5050 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 5450 50  0001 C CNN
+F 3 "" H 2450 5450 50  0001 C CNN
+	1    2500 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5FB9C659
+P 1300 3450
+F 0 "#PWR02" H 1300 3300 50  0001 C CNN
+F 1 "+5V" H 1315 3623 50  0000 C CNN
+F 2 "" H 1300 3450 50  0001 C CNN
+F 3 "" H 1300 3450 50  0001 C CNN
+	1    1300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5FB9D9F7
+P 1300 3850
+F 0 "#PWR03" H 1300 3700 50  0001 C CNN
+F 1 "+5V" H 1315 4023 50  0000 C CNN
+F 2 "" H 1300 3850 50  0001 C CNN
+F 3 "" H 1300 3850 50  0001 C CNN
+	1    1300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5FB9DEE7
+P 1300 4250
+F 0 "#PWR04" H 1300 4100 50  0001 C CNN
+F 1 "+5V" H 1315 4423 50  0000 C CNN
+F 2 "" H 1300 4250 50  0001 C CNN
+F 3 "" H 1300 4250 50  0001 C CNN
+	1    1300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5FB9E2F7
+P 1300 4650
+F 0 "#PWR05" H 1300 4500 50  0001 C CNN
+F 1 "+5V" H 1315 4823 50  0000 C CNN
+F 2 "" H 1300 4650 50  0001 C CNN
+F 3 "" H 1300 4650 50  0001 C CNN
+	1    1300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5FB9E6D9
+P 1300 5050
+F 0 "#PWR06" H 1300 4900 50  0001 C CNN
+F 1 "+5V" H 1315 5223 50  0000 C CNN
+F 2 "" H 1300 5050 50  0001 C CNN
+F 3 "" H 1300 5050 50  0001 C CNN
+	1    1300 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5FB9EADD
+P 1300 5450
+F 0 "#PWR07" H 1300 5300 50  0001 C CNN
+F 1 "+5V" H 1315 5623 50  0000 C CNN
+F 2 "" H 1300 5450 50  0001 C CNN
+F 3 "" H 1300 5450 50  0001 C CNN
+	1    1300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR019
+U 1 1 5FB9EFCF
+P 3050 5450
+F 0 "#PWR019" H 3050 5300 50  0001 C CNN
+F 1 "+5V" H 3065 5623 50  0000 C CNN
+F 2 "" H 3050 5450 50  0001 C CNN
+F 3 "" H 3050 5450 50  0001 C CNN
+	1    3050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 5FB9FA30
+P 3050 5050
+F 0 "#PWR018" H 3050 4900 50  0001 C CNN
+F 1 "+5V" H 3065 5223 50  0000 C CNN
+F 2 "" H 3050 5050 50  0001 C CNN
+F 3 "" H 3050 5050 50  0001 C CNN
+	1    3050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 5FB9FF51
+P 3050 4650
+F 0 "#PWR017" H 3050 4500 50  0001 C CNN
+F 1 "+5V" H 3065 4823 50  0000 C CNN
+F 2 "" H 3050 4650 50  0001 C CNN
+F 3 "" H 3050 4650 50  0001 C CNN
+	1    3050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR016
+U 1 1 5FBA03B2
+P 3050 4250
+F 0 "#PWR016" H 3050 4100 50  0001 C CNN
+F 1 "+5V" H 3065 4423 50  0000 C CNN
+F 2 "" H 3050 4250 50  0001 C CNN
+F 3 "" H 3050 4250 50  0001 C CNN
+	1    3050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5FBA0803
+P 3050 3850
+F 0 "#PWR015" H 3050 3700 50  0001 C CNN
+F 1 "+5V" H 3065 4023 50  0000 C CNN
+F 2 "" H 3050 3850 50  0001 C CNN
+F 3 "" H 3050 3850 50  0001 C CNN
+	1    3050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 5FBA0BD7
+P 3050 3450
+F 0 "#PWR014" H 3050 3300 50  0001 C CNN
+F 1 "+5V" H 3065 3623 50  0000 C CNN
+F 2 "" H 3050 3450 50  0001 C CNN
+F 3 "" H 3050 3450 50  0001 C CNN
+	1    3050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3450 3050 3450
+Wire Wire Line
+	2500 3850 3050 3850
+Wire Wire Line
+	2500 4250 3050 4250
+Wire Wire Line
+	2500 4650 3050 4650
+Wire Wire Line
+	2500 5050 3050 5050
+Wire Wire Line
+	2500 5450 3050 5450
+Wire Wire Line
+	1300 5450 1850 5450
+Wire Wire Line
+	1850 5050 1300 5050
+Wire Wire Line
+	1300 4650 1850 4650
+Wire Wire Line
+	1300 4250 1850 4250
+Wire Wire Line
+	1300 3850 1850 3850
+Wire Wire Line
+	1300 3450 1850 3450
+$Comp
+L power:GND1 #PWR022
+U 1 1 5FC98993
+P 3850 3200
+F 0 "#PWR022" H 3850 2950 50  0001 C CNN
+F 1 "GND1" H 3855 3027 50  0000 C CNN
+F 2 "" H 3850 3200 50  0001 C CNN
+F 3 "" H 3850 3200 50  0001 C CNN
+	1    3850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3200 2600 3200
+Wire Wire Line
+	2200 3200 2200 3650
+Wire Wire Line
+	2200 3650 1750 3650
+Wire Wire Line
+	1750 3650 1750 3550
+Wire Wire Line
+	1750 3550 1850 3550
+Wire Wire Line
+	2500 3350 2600 3350
+Wire Wire Line
+	2600 3350 2600 3200
+Connection ~ 2600 3200
+Wire Wire Line
+	2600 3200 2200 3200
+Wire Wire Line
+	1850 3950 1750 3950
+Wire Wire Line
+	1750 3950 1750 4050
+Wire Wire Line
+	1750 4050 2200 4050
+Wire Wire Line
+	2200 4050 2200 3650
+Connection ~ 2200 3650
+Wire Wire Line
+	2500 3750 2600 3750
+Wire Wire Line
+	2600 3750 2600 3650
+Wire Wire Line
+	2600 3650 2200 3650
+Wire Wire Line
+	1850 4350 1800 4350
+Wire Wire Line
+	1800 4350 1800 4450
+Wire Wire Line
+	1800 4450 2200 4450
+Wire Wire Line
+	2200 4450 2200 4050
+Connection ~ 2200 4050
+Wire Wire Line
+	2200 4050 2600 4050
+Wire Wire Line
+	2600 4050 2600 4150
+Wire Wire Line
+	2600 4150 2500 4150
+Wire Wire Line
+	1850 4750 1750 4750
+Wire Wire Line
+	1750 4750 1750 4850
+Wire Wire Line
+	1750 4850 2200 4850
+Wire Wire Line
+	2200 4850 2200 4450
+Connection ~ 2200 4450
+Wire Wire Line
+	2500 4550 2600 4550
+Wire Wire Line
+	2600 4550 2600 4450
+Wire Wire Line
+	2600 4450 2200 4450
+Wire Wire Line
+	1850 5150 1750 5150
+Wire Wire Line
+	1750 5150 1750 5250
+Wire Wire Line
+	1750 5250 2200 5250
+Wire Wire Line
+	2200 5250 2200 4850
+Connection ~ 2200 4850
+Wire Wire Line
+	2200 4850 2600 4850
+Wire Wire Line
+	2600 4850 2600 4950
+Wire Wire Line
+	2600 4950 2500 4950
+Wire Wire Line
+	1850 5550 1750 5550
+Wire Wire Line
+	1750 5550 1750 5650
+Wire Wire Line
+	1750 5650 2200 5650
+Wire Wire Line
+	2200 5650 2200 5250
+Connection ~ 2200 5250
+Wire Wire Line
+	2200 5250 2600 5250
+Wire Wire Line
+	2600 5250 2600 5350
+Wire Wire Line
+	2600 5350 2500 5350
+Wire Wire Line
+	5750 1250 6200 1250
+Text GLabel 5750 1350 0    50   Input ~ 0
+2
+Text GLabel 5750 1250 0    50   Input ~ 0
+1
+Text GLabel 5750 1450 0    50   Input ~ 0
+3
+Text GLabel 5750 1550 0    50   Input ~ 0
+4
+Text GLabel 5750 1650 0    50   Input ~ 0
+5
+Text GLabel 5750 1750 0    50   Input ~ 0
+6
+Text GLabel 5750 1850 0    50   Input ~ 0
+7
+Text GLabel 5750 1950 0    50   Input ~ 0
+8
+Text GLabel 5750 2050 0    50   Input ~ 0
+9
+Text GLabel 5750 2150 0    50   Input ~ 0
+10
+Text GLabel 5750 2250 0    50   Input ~ 0
+11
+Text GLabel 5750 2350 0    50   Input ~ 0
+12
+Wire Wire Line
+	6200 2350 5750 2350
+Wire Wire Line
+	5750 2250 6200 2250
+Wire Wire Line
+	6200 2150 5750 2150
+Wire Wire Line
+	5750 2050 6200 2050
+Wire Wire Line
+	6200 1950 5750 1950
+Wire Wire Line
+	5750 1850 6200 1850
+Wire Wire Line
+	6200 1750 5750 1750
+Wire Wire Line
+	5750 1650 6200 1650
+Wire Wire Line
+	6200 1550 5750 1550
+Wire Wire Line
+	5750 1450 6200 1450
+Wire Wire Line
+	6200 1350 5750 1350
+Text GLabel 1500 3350 1    50   Input ~ 0
+1
+Text GLabel 1500 3750 1    50   Input ~ 0
+2
+Wire Wire Line
+	1500 3350 1850 3350
+Wire Wire Line
+	1500 3750 1850 3750
+Text GLabel 1500 4150 1    50   Input ~ 0
+3
+Text GLabel 1500 4550 1    50   Input ~ 0
+4
+Text GLabel 1500 4950 1    50   Input ~ 0
+5
+Text GLabel 1500 5350 1    50   Input ~ 0
+6
+$Comp
+L Launchbox:SerialScrewTerminals U15
+U 1 1 5FB9AC44
+P 2500 3850
+F 0 "U15" V 2500 3450 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 2400 3450 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 3850 50  0001 C CNN
+F 3 "" H 2450 3850 50  0001 C CNN
+	1    2500 3850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2850 3550 3    50   Input ~ 0
+7
+Wire Wire Line
+	2500 3550 2850 3550
+Text GLabel 2850 3950 3    50   Input ~ 0
+8
+Text GLabel 2850 4350 3    50   Input ~ 0
+9
+Text GLabel 2850 4750 3    50   Input ~ 0
+10
+Text GLabel 2850 5150 3    50   Input ~ 0
+11
+Text GLabel 2850 5550 3    50   Input ~ 0
+12
+Wire Wire Line
+	2500 3950 2850 3950
+Wire Wire Line
+	2500 4350 2850 4350
+Wire Wire Line
+	2500 4750 2850 4750
+Wire Wire Line
+	2500 5150 2850 5150
+Wire Wire Line
+	2500 5550 2850 5550
+Text Notes 2050 3150 0    50   ~ 0
+Relays
+Wire Wire Line
+	1850 5350 1500 5350
+Wire Wire Line
+	1850 4950 1500 4950
+Wire Wire Line
+	1500 4550 1850 4550
+Wire Wire Line
+	1500 4150 1850 4150
+$Comp
+L Launchbox:SerialScrewTerminals U10
+U 1 1 6012E591
+P 1850 5900
+F 0 "U10" V 1850 5550 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 1950 5550 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 5900 50  0001 C CNN
+F 3 "" H 1800 5900 50  0001 C CNN
+	1    1850 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U20
+U 1 1 6012EA79
+P 2500 5900
+F 0 "U20" V 2500 5500 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 2400 5500 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 5900 50  0001 C CNN
+F 3 "" H 2450 5900 50  0001 C CNN
+	1    2500 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U11
+U 1 1 6012F5CB
+P 1850 6300
+F 0 "U11" V 1850 5950 50  0000 R CNN
+F 1 "SerialScrewTerminals" V 1950 5950 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 6300 50  0001 C CNN
+F 3 "" H 1800 6300 50  0001 C CNN
+	1    1850 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 6000 1750 6000
+Wire Wire Line
+	1750 6000 1750 6100
+Wire Wire Line
+	1750 6100 2200 6100
+Wire Wire Line
+	2200 6100 2200 5650
+Connection ~ 2200 5650
+Wire Wire Line
+	2500 5800 2600 5800
+Wire Wire Line
+	2600 5800 2600 5650
+Wire Wire Line
+	2600 5650 2200 5650
+Wire Wire Line
+	1850 6400 1750 6400
+Wire Wire Line
+	1750 6400 1750 6500
+Wire Wire Line
+	1750 6500 2200 6500
+Wire Wire Line
+	2200 6500 2200 6100
+Connection ~ 2200 6100
+$Comp
+L power:+5V #PWR08
+U 1 1 6019F2ED
+P 1300 5900
+F 0 "#PWR08" H 1300 5750 50  0001 C CNN
+F 1 "+5V" H 1315 6073 50  0000 C CNN
+F 2 "" H 1300 5900 50  0001 C CNN
+F 3 "" H 1300 5900 50  0001 C CNN
+	1    1300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 6019F6D1
+P 1300 6300
+F 0 "#PWR09" H 1300 6150 50  0001 C CNN
+F 1 "+5V" H 1315 6473 50  0000 C CNN
+F 2 "" H 1300 6300 50  0001 C CNN
+F 3 "" H 1300 6300 50  0001 C CNN
+	1    1300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 601A05D4
+P 3050 5900
+F 0 "#PWR020" H 3050 5750 50  0001 C CNN
+F 1 "+5V" H 3065 6073 50  0000 C CNN
+F 2 "" H 3050 5900 50  0001 C CNN
+F 3 "" H 3050 5900 50  0001 C CNN
+	1    3050 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5900 1850 5900
+Wire Wire Line
+	1300 6300 1850 6300
+Wire Wire Line
+	2500 5900 3050 5900
+Text GLabel 1500 5800 1    50   Input ~ 0
+13
+Text GLabel 2850 6000 3    50   Input ~ 0
+14
+Text GLabel 1500 6200 1    50   Input ~ 0
+15
+Wire Wire Line
+	1500 5800 1850 5800
+Wire Wire Line
+	1500 6200 1850 6200
+Wire Wire Line
+	2500 6000 2850 6000
+Text GLabel 5750 2550 0    50   Input ~ 0
+13
+Text GLabel 5750 2650 0    50   Input ~ 0
+14
+Text GLabel 5750 2750 0    50   Input ~ 0
+15
+Wire Wire Line
+	6200 2550 5750 2550
+Wire Wire Line
+	6200 2650 5750 2650
+Wire Wire Line
+	6200 2750 5750 2750
+Wire Wire Line
+	6200 3250 5900 3250
+Wire Wire Line
+	5900 3250 5900 5400
+Wire Wire Line
+	5900 5400 5700 5400
+Wire Wire Line
+	5700 5300 5850 5300
+Wire Wire Line
+	5850 5300 5850 3350
+Wire Wire Line
+	5850 3350 6200 3350
+$Comp
+L Launchbox:LoadCellAmp U29
+U 1 1 603F9866
+P 7650 5300
+F 0 "U29" V 7175 5275 50  0000 C CNN
+F 1 "LoadCellAmp" V 7266 5275 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 7650 5300 50  0001 C CNN
+F 3 "" H 7650 5300 50  0001 C CNN
+	1    7650 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:LoadCellAmp U40
+U 1 1 603FE7C3
+P 8900 5300
+F 0 "U40" V 8425 5275 50  0000 C CNN
+F 1 "LoadCellAmp" V 8516 5275 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 8900 5300 50  0001 C CNN
+F 3 "" H 8900 5300 50  0001 C CNN
+	1    8900 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox:LoadCellAmp U50
+U 1 1 603FECDF
+P 10150 5300
+F 0 "U50" V 9675 5275 50  0000 C CNN
+F 1 "LoadCellAmp" V 9766 5275 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 10150 5300 50  0001 C CNN
+F 3 "" H 10150 5300 50  0001 C CNN
+	1    10150 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR028
+U 1 1 603FFD67
+P 7050 5000
+F 0 "#PWR028" H 7050 4850 50  0001 C CNN
+F 1 "+5V" H 7065 5173 50  0000 C CNN
+F 2 "" H 7050 5000 50  0001 C CNN
+F 3 "" H 7050 5000 50  0001 C CNN
+	1    7050 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5000 7050 5050
+Wire Wire Line
+	7050 5150 7450 5150
+Wire Wire Line
+	7450 5050 7050 5050
+Connection ~ 7050 5050
+Wire Wire Line
+	7050 5050 7050 5150
+$Comp
+L power:+5V #PWR038
+U 1 1 60452BC3
+P 8350 5000
+F 0 "#PWR038" H 8350 4850 50  0001 C CNN
+F 1 "+5V" H 8365 5173 50  0000 C CNN
+F 2 "" H 8350 5000 50  0001 C CNN
+F 3 "" H 8350 5000 50  0001 C CNN
+	1    8350 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5000 8350 5050
+Wire Wire Line
+	8350 5150 8700 5150
+Wire Wire Line
+	8700 5050 8350 5050
+Connection ~ 8350 5050
+Wire Wire Line
+	8350 5050 8350 5150
+$Comp
+L power:+5V #PWR040
+U 1 1 604A6B06
+P 9600 5000
+F 0 "#PWR040" H 9600 4850 50  0001 C CNN
+F 1 "+5V" H 9615 5173 50  0000 C CNN
+F 2 "" H 9600 5000 50  0001 C CNN
+F 3 "" H 9600 5000 50  0001 C CNN
+	1    9600 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5000 9600 5050
+Wire Wire Line
+	9600 5150 9950 5150
+Wire Wire Line
+	9950 5050 9600 5050
+Connection ~ 9600 5050
+Wire Wire Line
+	9600 5050 9600 5150
+$Comp
+L power:GND1 #PWR029
+U 1 1 604FC4F9
+P 7050 5450
+F 0 "#PWR029" H 7050 5200 50  0001 C CNN
+F 1 "GND1" H 7055 5277 50  0000 C CNN
+F 2 "" H 7050 5450 50  0001 C CNN
+F 3 "" H 7050 5450 50  0001 C CNN
+	1    7050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR039
+U 1 1 604FCF1D
+P 8350 5450
+F 0 "#PWR039" H 8350 5200 50  0001 C CNN
+F 1 "GND1" H 8355 5277 50  0000 C CNN
+F 2 "" H 8350 5450 50  0001 C CNN
+F 3 "" H 8350 5450 50  0001 C CNN
+	1    8350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR041
+U 1 1 604FD6D2
+P 9600 5450
+F 0 "#PWR041" H 9600 5200 50  0001 C CNN
+F 1 "GND1" H 9605 5277 50  0000 C CNN
+F 2 "" H 9600 5450 50  0001 C CNN
+F 3 "" H 9600 5450 50  0001 C CNN
+	1    9600 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5450 7050 5450
+Wire Wire Line
+	8700 5450 8350 5450
+Wire Wire Line
+	9950 5450 9600 5450
+Text GLabel 5750 2850 0    50   Input ~ 0
+16
+Text GLabel 5750 2950 0    50   Input ~ 0
+17
+Text GLabel 5750 3050 0    50   Input ~ 0
+18
+Text GLabel 5750 3150 0    50   Input ~ 0
+19
+Text GLabel 7050 2550 2    50   Input ~ 0
+20
+Text GLabel 7050 2650 2    50   Input ~ 0
+21
+Wire Wire Line
+	5750 2850 6200 2850
+Wire Wire Line
+	5750 2950 6200 2950
+Wire Wire Line
+	5750 3050 6200 3050
+Wire Wire Line
+	5750 3150 6200 3150
+Wire Wire Line
+	6600 2650 7050 2650
+Wire Wire Line
+	6600 2550 7050 2550
+Text GLabel 7050 5250 0    50   Input ~ 0
+16
+Text GLabel 7050 5350 0    50   Input ~ 0
+17
+Text GLabel 8350 5250 0    50   Input ~ 0
+18
+Text GLabel 8350 5350 0    50   Input ~ 0
+19
+Text GLabel 9600 5250 0    50   Input ~ 0
+20
+Text GLabel 9600 5350 0    50   Input ~ 0
+21
+Wire Wire Line
+	9600 5250 9950 5250
+Wire Wire Line
+	9600 5350 9950 5350
+Wire Wire Line
+	8350 5250 8700 5250
+Wire Wire Line
+	8350 5350 8700 5350
+Wire Wire Line
+	7050 5250 7450 5250
+Wire Wire Line
+	7050 5350 7450 5350
+$Comp
+L Launchbox:SerialScrewTerminals U28
+U 1 1 607C97C0
+P 7400 6000
+F 0 "U28" H 7450 6250 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 8050 6350 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 7350 6000 50  0001 C CNN
+F 3 "" H 7350 6000 50  0001 C CNN
+	1    7400 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U30
+U 1 1 607CA4FC
+P 7800 6000
+F 0 "U30" H 7850 6250 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 7950 6350 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 7750 6000 50  0001 C CNN
+F 3 "" H 7750 6000 50  0001 C CNN
+	1    7800 6000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 6000 7900 5900
+Wire Wire Line
+	7900 5900 8150 5900
+Wire Wire Line
+	8150 5900 8150 5050
+Wire Wire Line
+	8150 5050 7800 5050
+Wire Wire Line
+	7800 5150 8100 5150
+Wire Wire Line
+	8100 5150 8100 5850
+Wire Wire Line
+	8100 5850 7800 5850
+Wire Wire Line
+	7800 5850 7800 6000
+Wire Wire Line
+	7700 5800 8050 5800
+Wire Wire Line
+	8050 5800 8050 5250
+Wire Wire Line
+	8050 5250 7800 5250
+Wire Wire Line
+	7800 5350 8000 5350
+Wire Wire Line
+	8000 5350 8000 5750
+Wire Wire Line
+	8000 5750 7500 5750
+Wire Wire Line
+	7500 5750 7500 6000
+Wire Wire Line
+	7400 6000 7400 5700
+Wire Wire Line
+	7400 5700 7950 5700
+Wire Wire Line
+	7950 5700 7950 5450
+Wire Wire Line
+	7950 5450 7800 5450
+Wire Wire Line
+	7700 5800 7700 6000
+$Comp
+L Launchbox:SerialScrewTerminals U39
+U 1 1 5F79C81F
+P 8650 5850
+F 0 "U39" H 8700 6100 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 9300 6200 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 8600 5850 50  0001 C CNN
+F 3 "" H 8600 5850 50  0001 C CNN
+	1    8650 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U41
+U 1 1 5F79F223
+P 9050 5850
+F 0 "U41" H 9100 6100 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 9200 6200 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9000 5850 50  0001 C CNN
+F 3 "" H 9000 5850 50  0001 C CNN
+	1    9050 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 5050 9400 5050
+Wire Wire Line
+	9400 5050 9400 5750
+Wire Wire Line
+	9400 5750 9150 5750
+Wire Wire Line
+	9150 5750 9150 5850
+Wire Wire Line
+	9050 5850 9050 5700
+Wire Wire Line
+	8950 5650 8950 5850
+Wire Wire Line
+	9350 5700 9350 5150
+Wire Wire Line
+	9050 5700 9350 5700
+Wire Wire Line
+	9050 5150 9350 5150
+Wire Wire Line
+	9300 5250 9300 5650
+Wire Wire Line
+	9050 5250 9300 5250
+Wire Wire Line
+	8950 5650 9300 5650
+Wire Wire Line
+	8750 5600 9250 5600
+Wire Wire Line
+	9250 5600 9250 5350
+Wire Wire Line
+	9250 5350 9050 5350
+Wire Wire Line
+	9050 5450 9200 5450
+Wire Wire Line
+	9200 5450 9200 5550
+Wire Wire Line
+	9200 5550 8650 5550
+Wire Wire Line
+	8650 5550 8650 5850
+$Comp
+L Launchbox:SerialScrewTerminals U49
+U 1 1 5F90B27B
+P 9950 6000
+F 0 "U49" H 10000 6250 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 10600 6350 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 9900 6000 50  0001 C CNN
+F 3 "" H 9900 6000 50  0001 C CNN
+	1    9950 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox:SerialScrewTerminals U51
+U 1 1 5F90BDB0
+P 10350 6000
+F 0 "U51" H 10400 6250 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 10500 6350 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 10300 6000 50  0001 C CNN
+F 3 "" H 10300 6000 50  0001 C CNN
+	1    10350 6000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10450 6000 10450 5900
+Wire Wire Line
+	10450 5900 10750 5900
+Wire Wire Line
+	10750 5900 10750 5050
+Wire Wire Line
+	10750 5050 10300 5050
+Wire Wire Line
+	10300 5150 10700 5150
+Wire Wire Line
+	10700 5150 10700 5850
+Wire Wire Line
+	10700 5850 10350 5850
+Wire Wire Line
+	10350 5850 10350 6000
+Wire Wire Line
+	10250 6000 10250 5800
+Wire Wire Line
+	10250 5800 10650 5800
+Wire Wire Line
+	10650 5800 10650 5250
+Wire Wire Line
+	10650 5250 10300 5250
+Wire Wire Line
+	10050 6000 10050 5750
+Wire Wire Line
+	10050 5750 10600 5750
+Wire Wire Line
+	10600 5750 10600 5350
+Wire Wire Line
+	10600 5350 10300 5350
+Wire Wire Line
+	10300 5450 10550 5450
+Wire Wire Line
+	10550 5450 10550 5700
+Wire Wire Line
+	10550 5700 9950 5700
+Wire Wire Line
+	9950 5700 9950 6000
+$Comp
+L power:+5V #PWR025
+U 1 1 5FA204C4
+P 5800 5750
+F 0 "#PWR025" H 5800 5600 50  0001 C CNN
+F 1 "+5V" H 5815 5923 50  0000 C CNN
+F 2 "" H 5800 5750 50  0001 C CNN
+F 3 "" H 5800 5750 50  0001 C CNN
+	1    5800 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5800 5800 5800
+Wire Wire Line
+	5800 5800 5800 5750
+Wire Wire Line
+	4600 3200 4600 3150
+Wire Wire Line
+	4600 3150 4700 3150
+Wire Wire Line
+	5300 3150 5300 3200
+Wire Wire Line
+	5200 3200 5200 3150
+Connection ~ 5200 3150
+Wire Wire Line
+	5200 3150 5300 3150
+Wire Wire Line
+	5100 3200 5100 3150
+Connection ~ 5100 3150
+Wire Wire Line
+	5100 3150 5200 3150
+Wire Wire Line
+	5000 3200 5000 3150
+Connection ~ 5000 3150
+Wire Wire Line
+	5000 3150 5100 3150
+Wire Wire Line
+	4900 3200 4900 3150
+Connection ~ 4900 3150
+Wire Wire Line
+	4900 3150 5000 3150
+Wire Wire Line
+	4800 3200 4800 3150
+Connection ~ 4800 3150
+Wire Wire Line
+	4800 3150 4900 3150
+Wire Wire Line
+	4700 3200 4700 3150
+Connection ~ 4700 3150
+Wire Wire Line
+	4700 3150 4800 3150
+Wire Wire Line
+	4600 3150 3850 3150
+Wire Wire Line
+	3850 3150 3850 3200
+Connection ~ 4600 3150
+Connection ~ 3850 3200
+Wire Wire Line
+	8750 5600 8750 5850
+$EndSCHEMATC

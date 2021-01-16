@@ -80,7 +80,7 @@ void loop(){
             send_message(current_state, PIN_MAP[vent_pins[i]]);
         }
     }
-    if(buttonRead(ABORT_PIN)){
+    if(analogRead(ABORT_PIN) > 900){
         aborted = true;
         for(int i = 0; i < NUM_VALVES; i++){
             send_message(OPEN_VENT, PIN_MAP[vent_pins[i]]);
@@ -104,13 +104,13 @@ void loop(){
 }
 
 int buttonRead(int pin){
-    int first = digitalRead(pin);
+    int first = (analogRead(pin) > 900);
     delay(20);
-    int second = digitalRead(pin);
+    int second = (analogRead(pin) > 900);
     if(first == second) {
-      return 1 - digitalRead(pin);  
+      return first;  
     }
-    return 0;
+    return false;
 }
 
 void send_message(int cmd, int data){

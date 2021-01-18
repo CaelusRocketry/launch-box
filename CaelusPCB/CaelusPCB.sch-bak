@@ -14,182 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Raspberry_Pi_2_3 J1
-U 1 1 5F6FDEB6
-P 4900 4500
-F 0 "J1" H 4900 5981 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 4900 5890 50  0000 C CNN
-F 2 "Module:Raspberry_Pi_Zero_Socketed_THT_FaceDown_MountingHoles" H 4900 4500 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 4900 4500 50  0001 C CNN
-	1    4900 4500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Launchbox:Teensy3.6 U27
-U 1 1 5F706ADE
-P 6400 2350
-F 0 "U27" V 4878 2350 50  0000 C CNN
-F 1 "Teensy3.6" V 4969 2350 50  0000 C CNN
-F 2 "Launchbox:Teensy 3.6" H 6400 2750 50  0001 C CNN
-F 3 "" H 6400 2750 50  0001 C CNN
-	1    6400 2350
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U32
-U 1 1 5F72AE79
-P 8600 1050
-F 0 "U32" V 8600 700 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 8700 700 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8550 1050 50  0001 C CNN
-F 3 "" H 8550 1050 50  0001 C CNN
-	1    8600 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U33
-U 1 1 5F72C160
-P 8600 1500
-F 0 "U33" V 8600 1150 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 8700 1150 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8550 1500 50  0001 C CNN
-F 3 "" H 8550 1500 50  0001 C CNN
-	1    8600 1500
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U34
-U 1 1 5F72CC69
-P 8600 2000
-F 0 "U34" V 8600 1650 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 8700 1650 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8550 2000 50  0001 C CNN
-F 3 "" H 8550 2000 50  0001 C CNN
-	1    8600 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U35
-U 1 1 5F72F00F
-P 8600 2450
-F 0 "U35" V 8600 2100 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 8700 2100 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8550 2450 50  0001 C CNN
-F 3 "" H 8550 2450 50  0001 C CNN
-	1    8600 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U36
-U 1 1 5F72F371
-P 8600 2950
-F 0 "U36" V 8600 2600 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 8700 2600 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8550 2950 50  0001 C CNN
-F 3 "" H 8550 2950 50  0001 C CNN
-	1    8600 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U43
-U 1 1 5F72F5CF
-P 9250 1050
-F 0 "U43" V 9250 700 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 9150 700 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9200 1050 50  0001 C CNN
-F 3 "" H 9200 1050 50  0001 C CNN
-	1    9250 1050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U44
-U 1 1 5F73099C
-P 9250 1500
-F 0 "U44" V 9250 1150 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 9150 1150 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9200 1500 50  0001 C CNN
-F 3 "" H 9200 1500 50  0001 C CNN
-	1    9250 1500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U45
-U 1 1 5F730CC9
-P 9250 2000
-F 0 "U45" V 9250 1650 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 9150 1650 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9200 2000 50  0001 C CNN
-F 3 "" H 9200 2000 50  0001 C CNN
-	1    9250 2000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U47
-U 1 1 5F731526
-P 9250 2950
-F 0 "U47" V 9250 2600 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 9150 2600 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9200 2950 50  0001 C CNN
-F 3 "" H 9200 2950 50  0001 C CNN
-	1    9250 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U37
-U 1 1 5F73199C
-P 8600 3400
-F 0 "U37" V 8600 3050 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 8700 3050 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8550 3400 50  0001 C CNN
-F 3 "" H 8550 3400 50  0001 C CNN
-	1    8600 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U38
-U 1 1 5F731CD2
-P 8600 3850
-F 0 "U38" V 8600 3500 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 8700 3500 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8550 3850 50  0001 C CNN
-F 3 "" H 8550 3850 50  0001 C CNN
-	1    8600 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U39
-U 1 1 5F7320DD
-P 8600 4300
-F 0 "U39" V 8600 3950 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 8700 3950 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8550 4300 50  0001 C CNN
-F 3 "" H 8550 4300 50  0001 C CNN
-	1    8600 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U48
-U 1 1 5F732403
-P 9250 3400
-F 0 "U48" V 9250 3050 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 9150 3050 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9200 3400 50  0001 C CNN
-F 3 "" H 9200 3400 50  0001 C CNN
-	1    9250 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U49
-U 1 1 5F73279F
-P 9250 3850
-F 0 "U49" V 9250 3500 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 9150 3500 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9200 3850 50  0001 C CNN
-F 3 "" H 9200 3850 50  0001 C CNN
-	1    9250 3850
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND1 #PWR049
 U 1 1 5F737E19
 P 10850 900
@@ -258,12 +82,6 @@ Wire Wire Line
 Connection ~ 8950 2650
 Wire Wire Line
 	9250 2850 9350 2850
-Wire Wire Line
-	8600 3500 8550 3500
-Wire Wire Line
-	8550 3500 8550 3600
-Wire Wire Line
-	8550 3600 8950 3600
 Connection ~ 8950 3150
 Wire Wire Line
 	9250 3300 9350 3300
@@ -379,19 +197,6 @@ F 3 "" H 9750 1050 50  0001 C CNN
 	1    9750 1050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U46
-U 1 1 5F731089
-P 9250 2450
-F 0 "U46" V 9250 2100 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 9150 2100 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9200 2450 50  0001 C CNN
-F 3 "" H 9200 2450 50  0001 C CNN
-	1    9250 2450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8500 1600 8500 1750
 Wire Wire Line
 	8500 1750 8950 1750
 $Comp
@@ -741,39 +546,6 @@ Text Notes 8600 600  0    50   ~ 0
 Pressure Transducers
 Text Notes 1250 6650 0    50   ~ 0
 Battery + 5V Regulator
-$Comp
-L Launchbox:MAX31850 U25
-U 1 1 5F7714BF
-P 4950 1350
-F 0 "U25" H 5300 1450 50  0000 R CNN
-F 1 "MAX31850" H 5150 1450 50  0000 R CNN
-F 2 "Launchbox:MAX31850" H 4750 1350 50  0001 C CNN
-F 3 "" H 4750 1350 50  0001 C CNN
-	1    4950 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Launchbox:MAX31850 U23
-U 1 1 5F774E0B
-P 4000 1350
-F 0 "U23" H 4350 1450 50  0000 R CNN
-F 1 "MAX31850" H 4200 1450 50  0000 R CNN
-F 2 "Launchbox:MAX31850" H 3800 1350 50  0001 C CNN
-F 3 "" H 3800 1350 50  0001 C CNN
-	1    4000 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Launchbox:MAX31850 U21
-U 1 1 5F77E2F4
-P 3050 1350
-F 0 "U21" H 3400 1450 50  0000 R CNN
-F 1 "MAX31850" H 3250 1450 50  0000 R CNN
-F 2 "Launchbox:MAX31850" H 2850 1350 50  0001 C CNN
-F 3 "" H 2850 1350 50  0001 C CNN
-	1    3050 1350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3400 700  3400 1350
 Connection ~ 6100 700 
@@ -882,63 +654,18 @@ F 3 "" H 3300 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 1000 3100 1000
-Connection ~ 3100 1000
-Wire Wire Line
-	3100 1000 3300 1000
-Connection ~ 3300 1000
-Wire Wire Line
-	3950 1000 4250 1000
 Wire Wire Line
 	4250 1000 4250 1350
-Connection ~ 4250 1000
-Wire Wire Line
-	5000 1000 5200 1000
-Connection ~ 5200 1000
 Text Notes 3250 1500 0    50   ~ 0
 0x03
-Text Notes 4200 1500 0    50   ~ 0
-0x02
 Text Notes 5150 1500 0    50   ~ 0
 0x01
-$Comp
-L Launchbox:SerialScrewTerminals U2
-U 1 1 5F95FE72
-P 1200 2350
-F 0 "U2" H 1250 2650 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 1600 2750 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1150 2350 50  0001 C CNN
-F 3 "" H 1150 2350 50  0001 C CNN
-	1    1200 2350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3650 750  4600 750 
 Wire Wire Line
 	4350 700  4700 700 
 Wire Wire Line
 	3400 700  3750 700 
-$Comp
-L Launchbox:MAX31850 U12
-U 1 1 5F9D3FA0
-P 2100 1350
-F 0 "U12" H 2450 1450 50  0000 R CNN
-F 1 "MAX31850" H 2300 1450 50  0000 R CNN
-F 2 "Launchbox:MAX31850" H 1900 1350 50  0001 C CNN
-F 3 "" H 1900 1350 50  0001 C CNN
-	1    2100 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Launchbox:MAX31850 U1
-U 1 1 5F9D4EB1
-P 1200 1350
-F 0 "U1" H 1550 1450 50  0000 R CNN
-F 1 "MAX31850" H 1450 1450 50  0000 R CNN
-F 2 "Launchbox:MAX31850" H 1000 1350 50  0001 C CNN
-F 3 "" H 1000 1350 50  0001 C CNN
-	1    1200 1350
-	-1   0    0    1   
-$EndComp
 Text Notes 1400 1500 0    50   ~ 0
 0x05\n
 Text Notes 2300 1500 0    50   ~ 0
@@ -992,9 +719,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 1350 1950 1000
 Wire Wire Line
-	1950 1000 2350 1000
-Connection ~ 2350 1000
-Wire Wire Line
 	2150 1350 2150 700 
 Connection ~ 2150 700 
 Wire Wire Line
@@ -1013,12 +737,8 @@ Wire Wire Line
 	1050 1350 1050 1000
 Wire Wire Line
 	1050 1000 1250 1000
-Connection ~ 1450 1000
 Wire Wire Line
 	1250 1350 1250 1000
-Connection ~ 1250 1000
-Wire Wire Line
-	1250 1000 1450 1000
 Wire Wire Line
 	1150 1350 1150 700 
 Wire Wire Line
@@ -1031,233 +751,8 @@ Wire Wire Line
 Wire Wire Line
 	950  700  1150 700 
 Connection ~ 1150 700 
-Wire Wire Line
-	1300 2350 1300 2100
-Wire Wire Line
-	1300 2100 1450 2100
-Wire Wire Line
-	1450 2100 1450 1550
-Wire Wire Line
-	1200 2350 1200 2100
-Wire Wire Line
-	1200 2100 950  2100
-Wire Wire Line
-	950  2100 950  1550
-$Comp
-L Launchbox:SerialScrewTerminals U13
-U 1 1 5FACEF68
-P 2100 2350
-F 0 "U13" H 2150 2650 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 2500 2750 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 2050 2350 50  0001 C CNN
-F 3 "" H 2050 2350 50  0001 C CNN
-	1    2100 2350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2200 2350 2200 2050
-Wire Wire Line
-	2200 2050 2350 2050
-Wire Wire Line
-	2350 2050 2350 1550
-Wire Wire Line
-	2100 2350 2100 2050
-Wire Wire Line
-	2100 2050 1850 2050
-Wire Wire Line
-	1850 2050 1850 1550
-$Comp
-L Launchbox:SerialScrewTerminals U22
-U 1 1 5FAF117C
-P 3050 2350
-F 0 "U22" H 3100 2650 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 3450 2750 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 3000 2350 50  0001 C CNN
-F 3 "" H 3000 2350 50  0001 C CNN
-	1    3050 2350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3150 2350 3150 2050
-Wire Wire Line
-	3150 2050 3300 2050
-Wire Wire Line
-	3300 2050 3300 1550
-Wire Wire Line
-	3050 2350 3050 2050
-Wire Wire Line
-	3050 2050 2800 2050
-Wire Wire Line
-	2800 2050 2800 1550
-$Comp
-L Launchbox:SerialScrewTerminals U24
-U 1 1 5FB151EA
-P 4000 2350
-F 0 "U24" H 4050 2650 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 4400 2750 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 3950 2350 50  0001 C CNN
-F 3 "" H 3950 2350 50  0001 C CNN
-	1    4000 2350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4100 2350 4100 2050
-Wire Wire Line
-	4100 2050 4250 2050
-Wire Wire Line
-	4250 2050 4250 1550
-Wire Wire Line
-	4000 2350 4000 2050
-Wire Wire Line
-	4000 2050 3750 2050
-Wire Wire Line
-	3750 2050 3750 1550
-$Comp
-L Launchbox:SerialScrewTerminals U26
-U 1 1 5FB3A606
-P 4950 2350
-F 0 "U26" H 5000 2650 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 5350 2750 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 4900 2350 50  0001 C CNN
-F 3 "" H 4900 2350 50  0001 C CNN
-	1    4950 2350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5050 2350 5050 2050
-Wire Wire Line
-	5050 2050 5200 2050
-Wire Wire Line
-	5200 2050 5200 1550
-Wire Wire Line
-	4950 2350 4950 2050
-Wire Wire Line
-	4950 2050 4700 2050
-Wire Wire Line
-	4700 2050 4700 1550
 Text Notes 2800 600  0    50   ~ 0
 Thermocouples\n
-$Comp
-L Launchbox:SerialScrewTerminals U4
-U 1 1 5FB98236
-P 1850 3450
-F 0 "U4" V 1850 3100 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 1950 3100 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1800 3450 50  0001 C CNN
-F 3 "" H 1800 3450 50  0001 C CNN
-	1    1850 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U5
-U 1 1 5FB98D32
-P 1850 3850
-F 0 "U5" V 1850 3500 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 1950 3500 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1800 3850 50  0001 C CNN
-F 3 "" H 1800 3850 50  0001 C CNN
-	1    1850 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U6
-U 1 1 5FB9903B
-P 1850 4250
-F 0 "U6" V 1850 3900 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 1950 3900 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1800 4250 50  0001 C CNN
-F 3 "" H 1800 4250 50  0001 C CNN
-	1    1850 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U7
-U 1 1 5FB99510
-P 1850 4650
-F 0 "U7" V 1850 4300 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 1950 4300 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1800 4650 50  0001 C CNN
-F 3 "" H 1800 4650 50  0001 C CNN
-	1    1850 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U8
-U 1 1 5FB99945
-P 1850 5050
-F 0 "U8" V 1850 4700 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 1950 4700 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1800 5050 50  0001 C CNN
-F 3 "" H 1800 5050 50  0001 C CNN
-	1    1850 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U9
-U 1 1 5FB99BAE
-P 1850 5450
-F 0 "U9" V 1850 5100 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 1950 5100 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1800 5450 50  0001 C CNN
-F 3 "" H 1800 5450 50  0001 C CNN
-	1    1850 5450
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U14
-U 1 1 5FB99F4D
-P 2500 3450
-F 0 "U14" V 2500 3050 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 2400 3050 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 2450 3450 50  0001 C CNN
-F 3 "" H 2450 3450 50  0001 C CNN
-	1    2500 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U16
-U 1 1 5FB9B00C
-P 2500 4250
-F 0 "U16" V 2500 3850 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 2400 3850 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 2450 4250 50  0001 C CNN
-F 3 "" H 2450 4250 50  0001 C CNN
-	1    2500 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U17
-U 1 1 5FB9B36C
-P 2500 4650
-F 0 "U17" V 2500 4250 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 2400 4250 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 2450 4650 50  0001 C CNN
-F 3 "" H 2450 4650 50  0001 C CNN
-	1    2500 4650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U18
-U 1 1 5FB9B73D
-P 2500 5050
-F 0 "U18" V 2500 4650 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 2400 4650 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 2450 5050 50  0001 C CNN
-F 3 "" H 2450 5050 50  0001 C CNN
-	1    2500 5050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U19
-U 1 1 5FB9BBFE
-P 2500 5450
-F 0 "U19" V 2500 5050 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 2400 5050 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 2450 5450 50  0001 C CNN
-F 3 "" H 2450 5450 50  0001 C CNN
-	1    2500 5450
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:+5V #PWR02
 U 1 1 5FB9C659
@@ -1563,8 +1058,6 @@ Wire Wire Line
 	6200 1350 5750 1350
 Text GLabel 1500 3350 1    50   Input ~ 0
 1
-Text GLabel 1500 3750 1    50   Input ~ 0
-2
 Wire Wire Line
 	1500 3350 1850 3350
 Wire Wire Line
@@ -1577,17 +1070,6 @@ Text GLabel 1500 4950 1    50   Input ~ 0
 5
 Text GLabel 1500 5350 1    50   Input ~ 0
 6
-$Comp
-L Launchbox:SerialScrewTerminals U15
-U 1 1 5FB9AC44
-P 2500 3850
-F 0 "U15" V 2500 3450 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 2400 3450 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 2450 3850 50  0001 C CNN
-F 3 "" H 2450 3850 50  0001 C CNN
-	1    2500 3850
-	0    -1   -1   0   
-$EndComp
 Text GLabel 2850 3550 3    50   Input ~ 0
 7
 Wire Wire Line
@@ -1622,39 +1104,6 @@ Wire Wire Line
 	1500 4550 1850 4550
 Wire Wire Line
 	1500 4150 1850 4150
-$Comp
-L Launchbox:SerialScrewTerminals U10
-U 1 1 6012E591
-P 1850 5900
-F 0 "U10" V 1850 5550 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 1950 5550 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1800 5900 50  0001 C CNN
-F 3 "" H 1800 5900 50  0001 C CNN
-	1    1850 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U20
-U 1 1 6012EA79
-P 2500 5900
-F 0 "U20" V 2500 5500 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 2400 5500 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 2450 5900 50  0001 C CNN
-F 3 "" H 2450 5900 50  0001 C CNN
-	1    2500 5900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U11
-U 1 1 6012F5CB
-P 1850 6300
-F 0 "U11" V 1850 5950 50  0000 R CNN
-F 1 "SerialScrewTerminals" V 1950 5950 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 1800 6300 50  0001 C CNN
-F 3 "" H 1800 6300 50  0001 C CNN
-	1    1850 6300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1850 6000 1750 6000
 Wire Wire Line
@@ -1742,51 +1191,6 @@ Wire Wire Line
 	6200 2650 5750 2650
 Wire Wire Line
 	6200 2750 5750 2750
-Wire Wire Line
-	6200 3250 5900 3250
-Wire Wire Line
-	5900 3250 5900 5400
-Wire Wire Line
-	5900 5400 5700 5400
-Wire Wire Line
-	5700 5300 5850 5300
-Wire Wire Line
-	5850 5300 5850 3350
-Wire Wire Line
-	5850 3350 6200 3350
-$Comp
-L Launchbox:LoadCellAmp U30
-U 1 1 603F9866
-P 7650 5300
-F 0 "U30" V 7175 5275 50  0000 C CNN
-F 1 "LoadCellAmp" V 7266 5275 50  0000 C CNN
-F 2 "Launchbox:LoadCellAmp" H 7650 5300 50  0001 C CNN
-F 3 "" H 7650 5300 50  0001 C CNN
-	1    7650 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:LoadCellAmp U41
-U 1 1 603FE7C3
-P 8900 5300
-F 0 "U41" V 8425 5275 50  0000 C CNN
-F 1 "LoadCellAmp" V 8516 5275 50  0000 C CNN
-F 2 "Launchbox:LoadCellAmp" H 8900 5300 50  0001 C CNN
-F 3 "" H 8900 5300 50  0001 C CNN
-	1    8900 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox:LoadCellAmp U51
-U 1 1 603FECDF
-P 10150 5300
-F 0 "U51" V 9675 5275 50  0000 C CNN
-F 1 "LoadCellAmp" V 9766 5275 50  0000 C CNN
-F 2 "Launchbox:LoadCellAmp" H 10150 5300 50  0001 C CNN
-F 3 "" H 10150 5300 50  0001 C CNN
-	1    10150 5300
-	0    1    1    0   
-$EndComp
 $Comp
 L power:+5V #PWR028
 U 1 1 603FFD67
@@ -1894,9 +1298,9 @@ Text GLabel 5750 3050 0    50   Input ~ 0
 18
 Text GLabel 5750 3150 0    50   Input ~ 0
 19
-Text GLabel 7050 2550 2    50   Input ~ 0
+Text GLabel 5750 3250 0    50   Input ~ 0
 20
-Text GLabel 7050 2650 2    50   Input ~ 0
+Text GLabel 5750 3350 0    50   Input ~ 0
 21
 Wire Wire Line
 	5750 2850 6200 2850
@@ -1906,10 +1310,6 @@ Wire Wire Line
 	5750 3050 6200 3050
 Wire Wire Line
 	5750 3150 6200 3150
-Wire Wire Line
-	6600 2650 7050 2650
-Wire Wire Line
-	6600 2550 7050 2550
 Text GLabel 7050 5250 0    50   Input ~ 0
 16
 Text GLabel 7050 5350 0    50   Input ~ 0
@@ -1934,28 +1334,6 @@ Wire Wire Line
 	7050 5250 7450 5250
 Wire Wire Line
 	7050 5350 7450 5350
-$Comp
-L Launchbox:SerialScrewTerminals U29
-U 1 1 607C97C0
-P 7400 6000
-F 0 "U29" H 7450 6250 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 8050 6350 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 7350 6000 50  0001 C CNN
-F 3 "" H 7350 6000 50  0001 C CNN
-	1    7400 6000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U31
-U 1 1 607CA4FC
-P 7800 6000
-F 0 "U31" H 7850 6250 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 7950 6350 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 7750 6000 50  0001 C CNN
-F 3 "" H 7750 6000 50  0001 C CNN
-	1    7800 6000
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7900 6000 7900 5900
 Wire Wire Line
@@ -1996,28 +1374,6 @@ Wire Wire Line
 	7950 5450 7800 5450
 Wire Wire Line
 	7700 5800 7700 6000
-$Comp
-L Launchbox:SerialScrewTerminals U40
-U 1 1 5F79C81F
-P 8650 5850
-F 0 "U40" H 8700 6100 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 9300 6200 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 8600 5850 50  0001 C CNN
-F 3 "" H 8600 5850 50  0001 C CNN
-	1    8650 5850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U42
-U 1 1 5F79F223
-P 9050 5850
-F 0 "U42" H 9100 6100 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 9200 6200 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9000 5850 50  0001 C CNN
-F 3 "" H 9000 5850 50  0001 C CNN
-	1    9050 5850
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9050 5050 9400 5050
 Wire Wire Line
@@ -2056,28 +1412,6 @@ Wire Wire Line
 	9200 5550 8650 5550
 Wire Wire Line
 	8650 5550 8650 5850
-$Comp
-L Launchbox:SerialScrewTerminals U50
-U 1 1 5F90B27B
-P 9950 6000
-F 0 "U50" H 10000 6250 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 10600 6350 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 9900 6000 50  0001 C CNN
-F 3 "" H 9900 6000 50  0001 C CNN
-	1    9950 6000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Launchbox:SerialScrewTerminals U52
-U 1 1 5F90BDB0
-P 10350 6000
-F 0 "U52" H 10400 6250 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 10500 6350 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 10300 6000 50  0001 C CNN
-F 3 "" H 10300 6000 50  0001 C CNN
-	1    10350 6000
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10450 6000 10450 5900
 Wire Wire Line
@@ -2118,63 +1452,6 @@ Wire Wire Line
 	10550 5700 9950 5700
 Wire Wire Line
 	9950 5700 9950 6000
-$Comp
-L power:+5V #PWR025
-U 1 1 5FA204C4
-P 5800 5750
-F 0 "#PWR025" H 5800 5600 50  0001 C CNN
-F 1 "+5V" H 5815 5923 50  0000 C CNN
-F 2 "" H 5800 5750 50  0001 C CNN
-F 3 "" H 5800 5750 50  0001 C CNN
-	1    5800 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 5800 5800 5800
-Wire Wire Line
-	5800 5800 5800 5750
-Wire Wire Line
-	4600 3200 4600 3150
-Wire Wire Line
-	4600 3150 4700 3150
-Wire Wire Line
-	5300 3150 5300 3200
-Wire Wire Line
-	5200 3200 5200 3150
-Connection ~ 5200 3150
-Wire Wire Line
-	5200 3150 5300 3150
-Wire Wire Line
-	5100 3200 5100 3150
-Connection ~ 5100 3150
-Wire Wire Line
-	5100 3150 5200 3150
-Wire Wire Line
-	5000 3200 5000 3150
-Connection ~ 5000 3150
-Wire Wire Line
-	5000 3150 5100 3150
-Wire Wire Line
-	4900 3200 4900 3150
-Connection ~ 4900 3150
-Wire Wire Line
-	4900 3150 5000 3150
-Wire Wire Line
-	4800 3200 4800 3150
-Connection ~ 4800 3150
-Wire Wire Line
-	4800 3150 4900 3150
-Wire Wire Line
-	4700 3200 4700 3150
-Connection ~ 4700 3150
-Wire Wire Line
-	4700 3150 4800 3150
-Wire Wire Line
-	4600 3150 3850 3150
-Wire Wire Line
-	3850 3150 3850 3200
-Connection ~ 4600 3150
-Connection ~ 3850 3200
 Wire Wire Line
 	8750 5600 8750 5850
 Text GLabel 5950 750  3    50   Input ~ 0
@@ -2195,48 +1472,583 @@ Wire Wire Line
 	6800 2800 7050 2800
 Text GLabel 7050 2800 2    50   Input ~ 0
 22
-$Comp
-L Launchbox:SerialScrewTerminals U28
-U 1 1 5FCFF3E5
-P 6400 4250
-F 0 "U28" H 6212 4253 50  0000 R CNN
-F 1 "SerialScrewTerminals" H 6212 4344 50  0000 R CNN
-F 2 "Launchbox:ScrewTerminals" H 6350 4250 50  0001 C CNN
-F 3 "" H 6350 4250 50  0001 C CNN
-	1    6400 4250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 1150 5750 1150
 Wire Wire Line
 	6200 1250 5750 1250
 Text GLabel 5750 1150 0    50   Input ~ 0
 23
 Text GLabel 5750 1250 0    50   Input ~ 0
 24
-Text GLabel 6500 4100 1    50   Input ~ 0
+Text GLabel 5350 4100 1    50   Input ~ 0
 23
-Text GLabel 6400 4100 1    50   Input ~ 0
+Text GLabel 5250 4100 1    50   Input ~ 0
 24
 Wire Wire Line
-	6500 4100 6500 4250
+	5350 4100 5350 4250
 Wire Wire Line
-	6400 4100 6400 4250
+	5250 4100 5250 4250
 $Comp
 L power:GND1 #PWR026
 U 1 1 5FEF3369
-P 6100 4300
-F 0 "#PWR026" H 6100 4050 50  0001 C CNN
-F 1 "GND1" H 6105 4127 50  0000 C CNN
-F 2 "" H 6100 4300 50  0001 C CNN
-F 3 "" H 6100 4300 50  0001 C CNN
-	1    6100 4300
+P 4950 4300
+F 0 "#PWR026" H 4950 4050 50  0001 C CNN
+F 1 "GND1" H 4955 4127 50  0000 C CNN
+F 2 "" H 4950 4300 50  0001 C CNN
+F 3 "" H 4950 4300 50  0001 C CNN
+	1    4950 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 4250 6300 4100
+	5150 4250 5150 4100
 Wire Wire Line
-	6300 4100 6100 4100
+	5150 4100 4950 4100
 Wire Wire Line
-	6100 4100 6100 4300
+	4950 4100 4950 4300
+Wire Wire Line
+	8600 3500 8500 3500
+Wire Wire Line
+	8500 3500 8500 3600
+Wire Wire Line
+	8500 3600 8950 3600
+$Comp
+L Launchbox_Symbols:Teensy3.6 U23
+U 1 1 605CAA36
+P 6400 2350
+F 0 "U23" V 4878 2350 50  0000 C CNN
+F 1 "Teensy3.6" V 4969 2350 50  0000 C CNN
+F 2 "Launchbox:Teensy 3.6" H 6400 2750 50  0001 C CNN
+F 3 "" H 6400 2750 50  0001 C CNN
+	1    6400 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U27
+U 1 1 605CEAD9
+P 8600 1050
+F 0 "U27" V 8600 1150 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 8650 500 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 1050 50  0001 C CNN
+F 3 "" H 8550 1050 50  0001 C CNN
+	1    8600 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U38
+U 1 1 605CFEC9
+P 9250 1050
+F 0 "U38" V 9250 1150 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 9200 500 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 1050 50  0001 C CNN
+F 3 "" H 9200 1050 50  0001 C CNN
+	1    9250 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U28
+U 1 1 605D0C2D
+P 8600 1500
+F 0 "U28" V 8600 1600 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 8650 950 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 1500 50  0001 C CNN
+F 3 "" H 8550 1500 50  0001 C CNN
+	1    8600 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 1750 8500 1600
+Wire Wire Line
+	8500 1600 8600 1600
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U29
+U 1 1 606103DE
+P 8600 2000
+F 0 "U29" V 8600 2100 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 8650 1450 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 2000 50  0001 C CNN
+F 3 "" H 8550 2000 50  0001 C CNN
+	1    8600 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U30
+U 1 1 606109DF
+P 8600 2450
+F 0 "U30" V 8600 2550 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 8650 1900 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 2450 50  0001 C CNN
+F 3 "" H 8550 2450 50  0001 C CNN
+	1    8600 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U31
+U 1 1 60610FF6
+P 8600 2950
+F 0 "U31" V 8600 3050 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 8650 2400 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 2950 50  0001 C CNN
+F 3 "" H 8550 2950 50  0001 C CNN
+	1    8600 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U32
+U 1 1 606116BD
+P 8600 3400
+F 0 "U32" V 8600 3500 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 8650 2850 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 3400 50  0001 C CNN
+F 3 "" H 8550 3400 50  0001 C CNN
+	1    8600 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U33
+U 1 1 60611D39
+P 8600 3850
+F 0 "U33" V 8600 3950 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 8650 3300 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 3850 50  0001 C CNN
+F 3 "" H 8550 3850 50  0001 C CNN
+	1    8600 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U34
+U 1 1 60612430
+P 8600 4300
+F 0 "U34" V 8600 4400 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 8650 3750 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8550 4300 50  0001 C CNN
+F 3 "" H 8550 4300 50  0001 C CNN
+	1    8600 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U39
+U 1 1 60612A48
+P 9250 1500
+F 0 "U39" V 9250 1600 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 9200 950 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 1500 50  0001 C CNN
+F 3 "" H 9200 1500 50  0001 C CNN
+	1    9250 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U40
+U 1 1 6061308A
+P 9250 2000
+F 0 "U40" V 9250 2100 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 9200 1450 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 2000 50  0001 C CNN
+F 3 "" H 9200 2000 50  0001 C CNN
+	1    9250 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U41
+U 1 1 606136C8
+P 9250 2450
+F 0 "U41" V 9250 2550 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 9200 1900 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 2450 50  0001 C CNN
+F 3 "" H 9200 2450 50  0001 C CNN
+	1    9250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U42
+U 1 1 60614079
+P 9250 2950
+F 0 "U42" V 9250 3050 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 9200 2400 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 2950 50  0001 C CNN
+F 3 "" H 9200 2950 50  0001 C CNN
+	1    9250 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U43
+U 1 1 606146FB
+P 9250 3400
+F 0 "U43" V 9250 3500 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 9200 2850 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 3400 50  0001 C CNN
+F 3 "" H 9200 3400 50  0001 C CNN
+	1    9250 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U44
+U 1 1 60614CF5
+P 9250 3850
+F 0 "U44" V 9250 3950 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 9200 3300 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9200 3850 50  0001 C CNN
+F 3 "" H 9200 3850 50  0001 C CNN
+	1    9250 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U22
+U 1 1 606154B0
+P 5250 4250
+F 0 "U22" H 5062 4253 50  0000 R CNN
+F 1 "SerialScrewTerminals" H 5062 4344 50  0000 R CNN
+F 2 "Launchbox:ScrewTerminals" H 5200 4250 50  0001 C CNN
+F 3 "" H 5200 4250 50  0001 C CNN
+	1    5250 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:LoadCellAmp U25
+U 1 1 606163D6
+P 7650 5300
+F 0 "U25" V 7175 5275 50  0000 C CNN
+F 1 "LoadCellAmp" V 7266 5275 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 7650 5300 50  0001 C CNN
+F 3 "" H 7650 5300 50  0001 C CNN
+	1    7650 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:LoadCellAmp U36
+U 1 1 6061718D
+P 8900 5300
+F 0 "U36" V 8425 5275 50  0000 C CNN
+F 1 "LoadCellAmp" V 8516 5275 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 8900 5300 50  0001 C CNN
+F 3 "" H 8900 5300 50  0001 C CNN
+	1    8900 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:LoadCellAmp U46
+U 1 1 60617D86
+P 10150 5300
+F 0 "U46" V 9675 5275 50  0000 C CNN
+F 1 "LoadCellAmp" V 9766 5275 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 10150 5300 50  0001 C CNN
+F 3 "" H 10150 5300 50  0001 C CNN
+	1    10150 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U24
+U 1 1 60618A73
+P 7400 6000
+F 0 "U24" H 7400 6100 50  0000 C CNN
+F 1 "SerialScrewTerminals" H 7650 6300 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 7350 6000 50  0001 C CNN
+F 3 "" H 7350 6000 50  0001 C CNN
+	1    7400 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U26
+U 1 1 60619648
+P 7800 6000
+F 0 "U26" H 7800 6100 50  0000 C CNN
+F 1 "SerialScrewTerminals" H 7550 6300 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 7750 6000 50  0001 C CNN
+F 3 "" H 7750 6000 50  0001 C CNN
+	1    7800 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U35
+U 1 1 60619E2F
+P 8650 5850
+F 0 "U35" H 8650 5950 50  0000 C CNN
+F 1 "SerialScrewTerminals" H 8900 6150 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 8600 5850 50  0001 C CNN
+F 3 "" H 8600 5850 50  0001 C CNN
+	1    8650 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U37
+U 1 1 6061AB44
+P 9050 5850
+F 0 "U37" H 9050 5950 50  0000 C CNN
+F 1 "SerialScrewTerminals" H 8800 6150 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9000 5850 50  0001 C CNN
+F 3 "" H 9000 5850 50  0001 C CNN
+	1    9050 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U45
+U 1 1 6061B362
+P 9950 6000
+F 0 "U45" H 9950 6100 50  0000 C CNN
+F 1 "SerialScrewTerminals" H 10200 6300 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 9900 6000 50  0001 C CNN
+F 3 "" H 9900 6000 50  0001 C CNN
+	1    9950 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U47
+U 1 1 6061C081
+P 10350 6000
+F 0 "U47" H 10350 6100 50  0000 C CNN
+F 1 "SerialScrewTerminals" H 10100 6300 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 10300 6000 50  0001 C CNN
+F 3 "" H 10300 6000 50  0001 C CNN
+	1    10350 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U2
+U 1 1 6065B074
+P 1850 3450
+F 0 "U2" V 1850 3550 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 1900 2900 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 3450 50  0001 C CNN
+F 3 "" H 1800 3450 50  0001 C CNN
+	1    1850 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U12
+U 1 1 6065C6C5
+P 2500 3450
+F 0 "U12" V 2500 3550 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 2450 2900 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 3450 50  0001 C CNN
+F 3 "" H 2450 3450 50  0001 C CNN
+	1    2500 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U13
+U 1 1 6065D2E6
+P 2500 3850
+F 0 "U13" V 2500 3950 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 2450 3300 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 3850 50  0001 C CNN
+F 3 "" H 2450 3850 50  0001 C CNN
+	1    2500 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U14
+U 1 1 6065D790
+P 2500 4250
+F 0 "U14" V 2500 4350 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 2450 3700 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 4250 50  0001 C CNN
+F 3 "" H 2450 4250 50  0001 C CNN
+	1    2500 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U15
+U 1 1 6065DCF8
+P 2500 4650
+F 0 "U15" V 2500 4750 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 2450 4100 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 4650 50  0001 C CNN
+F 3 "" H 2450 4650 50  0001 C CNN
+	1    2500 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U16
+U 1 1 6065E162
+P 2500 5050
+F 0 "U16" V 2500 5150 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 2450 4500 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 5050 50  0001 C CNN
+F 3 "" H 2450 5050 50  0001 C CNN
+	1    2500 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U17
+U 1 1 6065E51B
+P 2500 5450
+F 0 "U17" V 2500 5550 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 2450 4900 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 5450 50  0001 C CNN
+F 3 "" H 2450 5450 50  0001 C CNN
+	1    2500 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U18
+U 1 1 6065EAFA
+P 2500 5900
+F 0 "U18" V 2500 6000 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 2450 5350 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 2450 5900 50  0001 C CNN
+F 3 "" H 2450 5900 50  0001 C CNN
+	1    2500 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U4
+U 1 1 6065EF70
+P 1850 3850
+F 0 "U4" V 1850 3950 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 1900 3300 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 3850 50  0001 C CNN
+F 3 "" H 1800 3850 50  0001 C CNN
+	1    1850 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U5
+U 1 1 6065F610
+P 1850 4250
+F 0 "U5" V 1850 4350 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 1900 3700 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 4250 50  0001 C CNN
+F 3 "" H 1800 4250 50  0001 C CNN
+	1    1850 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U6
+U 1 1 6065FB91
+P 1850 4650
+F 0 "U6" V 1850 4750 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 1900 4100 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 4650 50  0001 C CNN
+F 3 "" H 1800 4650 50  0001 C CNN
+	1    1850 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U7
+U 1 1 606601F8
+P 1850 5050
+F 0 "U7" V 1850 5150 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 1900 4500 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 5050 50  0001 C CNN
+F 3 "" H 1800 5050 50  0001 C CNN
+	1    1850 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U8
+U 1 1 606604F0
+P 1850 5450
+F 0 "U8" V 1850 5550 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 1900 4900 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 5450 50  0001 C CNN
+F 3 "" H 1800 5450 50  0001 C CNN
+	1    1850 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U9
+U 1 1 60660ADE
+P 1850 5900
+F 0 "U9" V 1850 6000 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 1900 5350 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 5900 50  0001 C CNN
+F 3 "" H 1800 5900 50  0001 C CNN
+	1    1850 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:SerialScrewTerminals U10
+U 1 1 60661107
+P 1850 6300
+F 0 "U10" V 1850 6400 50  0000 C CNN
+F 1 "SerialScrewTerminals" V 1900 5750 50  0000 C CNN
+F 2 "Launchbox:ScrewTerminals" H 1800 6300 50  0001 C CNN
+F 3 "" H 1800 6300 50  0001 C CNN
+	1    1850 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox_Symbols:MAX31850 U21
+U 1 1 606617D7
+P 4950 1350
+F 0 "U21" H 5250 1400 50  0000 R CNN
+F 1 "MAX31850" H 5250 1500 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 4750 1350 50  0001 C CNN
+F 3 "" H 4750 1350 50  0001 C CNN
+	1    4950 1350
+	-1   0    0    1   
+$EndComp
+Text Notes 4200 1500 0    50   ~ 0
+0x02
+$Comp
+L Launchbox_Symbols:MAX31850 U20
+U 1 1 60710F08
+P 4000 1350
+F 0 "U20" H 4300 1400 50  0000 R CNN
+F 1 "MAX31850" H 4300 1500 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 3800 1350 50  0001 C CNN
+F 3 "" H 3800 1350 50  0001 C CNN
+	1    4000 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:MAX31850 U19
+U 1 1 60711C62
+P 3050 1350
+F 0 "U19" H 3350 1400 50  0000 R CNN
+F 1 "MAX31850" H 3350 1500 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 2850 1350 50  0001 C CNN
+F 3 "" H 2850 1350 50  0001 C CNN
+	1    3050 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:MAX31850 U11
+U 1 1 607125A1
+P 2100 1350
+F 0 "U11" H 2400 1400 50  0000 R CNN
+F 1 "MAX31850" H 2400 1500 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 1900 1350 50  0001 C CNN
+F 3 "" H 1900 1350 50  0001 C CNN
+	1    2100 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Launchbox_Symbols:MAX31850 U1
+U 1 1 607130E8
+P 1200 1350
+F 0 "U1" H 1500 1400 50  0000 R CNN
+F 1 "MAX31850" H 1500 1500 50  0000 R CNN
+F 2 "Launchbox:MAX31850" H 1000 1350 50  0001 C CNN
+F 3 "" H 1000 1350 50  0001 C CNN
+	1    1200 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 1000 1350 1000
+Wire Wire Line
+	1350 1000 1350 1350
+Connection ~ 1250 1000
+Wire Wire Line
+	1950 1000 2250 1000
+Wire Wire Line
+	2250 1000 2250 1350
+Wire Wire Line
+	3100 1000 3200 1000
+Wire Wire Line
+	3200 1000 3200 1350
+Connection ~ 3100 1000
+Wire Wire Line
+	3950 1000 4150 1000
+Wire Wire Line
+	4150 1000 4150 1350
+Wire Wire Line
+	5000 1000 5100 1000
+Wire Wire Line
+	5100 1000 5100 1350
+Wire Wire Line
+	5750 1150 6200 1150
+Wire Wire Line
+	5750 3250 6200 3250
+Wire Wire Line
+	5750 3350 6200 3350
+Text GLabel 1500 3750 1    50   Input ~ 0
+2
 $EndSCHEMATC

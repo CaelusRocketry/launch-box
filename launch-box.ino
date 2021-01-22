@@ -15,7 +15,7 @@ Nitrous Oxide Main Propellant Valve
 
 #include "constants.h"
 
-enum pin_state {
+enum PinState {
     DO_NOTHING = 1,
     OPEN_VENT = 2,
     CLOSE_VENT = 3
@@ -34,7 +34,7 @@ boolean aborted;
 
 // Arrays that keep track of stuff
 // States: 0 means do nothing, 1 is CLOSE_VENT, and 2 is OPEN_VENT (matches the constants)
-pin_state states[NUM_VALVES];
+PinState states[NUM_VALVES];
 boolean pulsing[NUM_BUTTONS];
 int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
 int pulse_pins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
@@ -58,14 +58,13 @@ void setup(){
     for(int i = 0; i < NUM_BUTTONS; i++){
         pinMode(pulse_pins[i], INPUT_PULLUP);
     }
-    pinMode(ABORT_PIN, INPUT_PULLUP);
+     pinMode(ABORT_PIN, INPUT_PULLUP); 
     Serial.begin(1200);
-//    Serial.println("STUFFF");
-    //Serial.println("Running launchbox");
+    // Serial.println("Running launchbox");
     aborted = false;
     
     for(int i = 0; i < NUM_VALVES; i++){
-        states[i] = DO_NOTHING; 
+        states[i] = DO_NOTHING; // TODO: rename this into "current_valve_states" or smth
     }
     for(int i = 0; i < NUM_BUTTONS; i++){
         pulsing[i] = false;
@@ -74,32 +73,41 @@ void setup(){
 
 void loop(){
     for(int i = 0; i < NUM_VALVES; i++){
-        pin_state current_state = checkToggleSwitch(vent_pins[i]); // (i + 1) * 2 maps from array index to pin number
-        if(current_state != states[i]){
+        PinState current_state = checkToggleSwitch(vent_pins[i]); // (i + 1) * 2 maps from array index to pin number
+        if(current_state != states[i]){ // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
             states[i] = current_state;
-            send_message(current_state, PIN_MAP[vent_pins[i]]);
-        }
-    }
-    if(analogRead(ABORT_PIN) > 900){
-        aborted = true;
-        for(int i = 0; i < NUM_VALVES; i++){
-            send_message(OPEN_VENT, PIN_MAP[vent_pins[i]]);
-        }
-    }
-    for(int i = 0; i < NUM_BUTTONS; i++){
-        if(buttonRead(pulse_pins[i])){
-            if(pulsing[i]){
-                continue;
+            send_message(current_state, PIN_MAP[vent_pins[i]]); // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the Valve Arduino
+            //Serial.println("States:");
+            for(int i; i<sizeof(states); i++) {
+              Serial.print(states[i]);
             }
-            pulsing[i] = true;
-            send_message(PULSE, PIN_MAP[pulse_pins[i]]);
-//            Serial.println(pulse_pins[i]);
-//            Serial.println(PIN_MAP[pulse_pins[i]]);
-        }
-        else{
-            pulsing[i] = false;
+            String out = String("State of toggle switch at LB pin ") + vent_pins[i] + ": " + current_state; 
+            Serial.println(out);
         }
     }
+    //Serial.println("------------------------------");
+    
+    delay(50);
+//    if(analogRead(ABORT_PIN) > 900){
+//        aborted = true;
+//        for(int i = 0; i < NUM_VALVES; i++){
+//            send_message(OPEN_VENT, PIN_MAP[vent_pins[i]]);
+//        }
+//    }
+//    for(int i = 0; i < NUM_BUTTONS; i++){
+//        if(buttonRead(pulse_pins[i])){
+//            if(pulsing[i]){
+//                continue;
+//            }
+//            pulsing[i] = true;
+//            send_message(PULSE, PIN_MAP[pulse_pins[i]]);
+////            Serial.println(pulse_pins[i]);
+////            Serial.println(PIN_MAP[pulse_pins[i]]);
+//        }
+//        else{
+//            pulsing[i] = false;
+//        }
+//    }
 //    delay(500);
 }
 
@@ -113,7 +121,7 @@ int buttonRead(int pin){
     return false;
 }
 
-void send_message(int cmd, int data){
+void send_message(int cmd, int data){ // Sends command to valve
 //    if(!override){
 //        return;
 //    }
@@ -147,7 +155,7 @@ void send_message(int cmd, int data){
  * because of how SPDT works, the opposite pin is LOW
 */
 
-pin_state checkToggleSwitch(int switchStart) {
+PinState checkToggleSwitch(int switchStart) {
   if(digitalRead(switchStart) == LOW) {
     return OPEN_VENT;
   }  

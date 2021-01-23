@@ -27,7 +27,7 @@ int PIN_MAP[MAX_PIN];
 
 // Pin counts
 const int NUM_VALVES = 8;
-const int NUM_BUTTONS = 2;
+const int NUM_BUTTONS = 0;
 
 // Local variables
 boolean aborted;
@@ -58,13 +58,12 @@ void setup(){
     for(int i = 0; i < NUM_BUTTONS; i++){
         pinMode(pulse_pins[i], INPUT_PULLUP);
     }
-     pinMode(ABORT_PIN, INPUT_PULLUP); 
+    pinMode(ABORT_PIN, INPUT_PULLUP);
     Serial.begin(1200);
-    // Serial.println("Running launchbox");
     aborted = false;
     
     for(int i = 0; i < NUM_VALVES; i++){
-        states[i] = DO_NOTHING; // TODO: rename this into "current_valve_states" or smth
+        states[i] = DO_NOTHING; 
     }
     for(int i = 0; i < NUM_BUTTONS; i++){
         pulsing[i] = false;
@@ -76,38 +75,31 @@ void loop(){
         PinState current_state = checkToggleSwitch(vent_pins[i]); // (i + 1) * 2 maps from array index to pin number
         if(current_state != states[i]){ // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
             states[i] = current_state;
-            send_message(current_state, PIN_MAP[vent_pins[i]]); // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the Valve Arduino
-            //Serial.println("States:");
-            for(int i; i<sizeof(states); i++) {
-              Serial.print(states[i]);
-            }
+            send_message(states[i], PIN_MAP[vent_pins[i]]); // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the Valve Arduino
             String out = String("State of toggle switch at LB pin ") + vent_pins[i] + ": " + current_state; 
             Serial.println(out);
         }
     }
-    //Serial.println("------------------------------");
-    
-    delay(50);
-//    if(analogRead(ABORT_PIN) > 900){
-//        aborted = true;
-//        for(int i = 0; i < NUM_VALVES; i++){
-//            send_message(OPEN_VENT, PIN_MAP[vent_pins[i]]);
-//        }
-//    }
-//    for(int i = 0; i < NUM_BUTTONS; i++){
-//        if(buttonRead(pulse_pins[i])){
-//            if(pulsing[i]){
-//                continue;
-//            }
-//            pulsing[i] = true;
-//            send_message(PULSE, PIN_MAP[pulse_pins[i]]);
-////            Serial.println(pulse_pins[i]);
-////            Serial.println(PIN_MAP[pulse_pins[i]]);
-//        }
-//        else{
-//            pulsing[i] = false;
-//        }
-//    }
+    /*if(analogRead(ABORT_PIN) > 900){
+        aborted = true;
+        for(int i = 0; i < NUM_VALVES; i++){
+            send_message(OPEN_VENT, PIN_MAP[vent_pins[i]]);
+        }
+    }
+    for(int i = 0; i < NUM_BUTTONS; i++){
+        if(buttonRead(pulse_pins[i])){
+            if(pulsing[i]){
+                continue;
+            }
+            pulsing[i] = true;
+            send_message(PULSE, PIN_MAP[pulse_pins[i]]);
+//            Serial.println(pulse_pins[i]);
+//            Serial.println(PIN_MAP[pulse_pins[i]]);
+        }
+        else{
+            pulsing[i] = false;
+        }
+    }*/
 //    delay(500);
 }
 
@@ -121,13 +113,16 @@ int buttonRead(int pin){
     return false;
 }
 
-void send_message(int cmd, int data){ // Sends command to valve
+void send_message(int cmd, int data_){
 //    if(!override){
 //        return;
 //    }
 //    Serial.println("Sending");
-    Serial.write(cmd); // make write instead of println
-    Serial.write(data); //make write instead of println
+    // cmd is the enum (1, 2, or 3)
+    String out = String("Sending command ") + cmd + String(" to Valve Arduino pin ") + data_;
+    Serial.println(out);
+    Serial5.write(cmd); // make write instead of println
+    Serial5.write(data_); //make write instead of println
     delay(50);
 }
 
@@ -157,12 +152,15 @@ void send_message(int cmd, int data){ // Sends command to valve
 
 PinState checkToggleSwitch(int switchStart) {
   if(digitalRead(switchStart) == LOW) {
+    //Serial.println("OPEN VENT");
     return OPEN_VENT;
   }  
   else if(digitalRead(switchStart + 1) == LOW) {
-    return CLOSE_VENT;
+   // Serial.println("CLOSE VENT");
+    return CLOSE_VENT;   
   }
   else {
+ //   Serial.println("DO NOTHING");
     return DO_NOTHING;
   }
 }

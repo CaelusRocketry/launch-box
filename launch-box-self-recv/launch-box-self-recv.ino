@@ -87,9 +87,9 @@ void loop(){
         }
     }
     delay(50);
-//    recvData();
+    recvData();
 //    displayData();
-//    delay(50);
+    delay(50);
     /*if(analogRead(ABORT_PIN) > 900){
         aborted = true;
         for(int i = 0; i < NUM_VALVES; i++){
@@ -133,103 +133,103 @@ void send_message(int cmd, int data_){
 //    char cdata = char(data_);
     String out = String("Sending command ") + cmd + String(" to Valve Arduino pin ") + data_;
     Serial.println(out);
-//    int bytesSent = HWSERIAL.write('<');
+    int bytesSent = HWSERIAL.write('<');
     HWSERIAL.write(cmd); // make write instead of println
     HWSERIAL.write(data_); //make write instead of println
-//    HWSERIAL.write('>');
+    HWSERIAL.write('>');
     Serial.println(cmd);
     Serial.println(data_);
-//    Serial.println(bytesSent);
+    Serial.println(bytesSent);
     Serial.println("Successfully sent");
-    delay(100);
+    delay(1000);
 }
-//
-//void recvData() {
-//  char jason[2];
-//  int i = 0;
-//  boolean reading = false;
-//  while(HWSERIAL.available()){
-//    char c = HWSERIAL.read();
-//    int r = (int)c;
-////      Serial.print("Got: ");
-////      Serial.println(r);
-//    if(r == (int)'<'){
-//      for(int j = 0; j < 2; j++){
-//        jason[j] = 0;
-//      }
-//      reading = true;
-//      i = 0;
-//    }
-//    else if(r == (int)'>'){
-//      if (i!=2) {
-//        i=0;
-//        jason[0]=0;
-//        jason[1]=0;
-//        continue;
-//      }
-//      Serial.println("Output:");
-//      for(int j = 0; j < i; j++){
-//        Serial.print(jason[j]);
-//        Serial.print(" ");
-//      }
-//      Serial.println();
-//      reading = false;
-//    }
-//    else if(reading){
-//      if(i > 2){
-//        Serial.println("ERRROR");
-//        continue;
-//      }
-//      jason[i] = r;
-//      i++;
-//    }
-//    
-//  }
-//}
-//
-//
-//void recvData1() {
-//    static boolean recvInProgress = false;
-//    static byte i = 0;
-//    char startMarker = '<';
-//    char endMarker = '>';
-//    char rc; // received char
-////    Serial.println("Starting reception");
-////    while (HWSERIAL.available() && newData == false) {
-//    while (HWSERIAL.available()) {
-//        char rc = HWSERIAL.read();
-//        int int_data = (int)rc
-//        if (recvInProgress == true) {
-//            if (rc != endMarker) {
-//                receivedChars[i] = rc;
-//                i++;
-//                if (i >= numChars) { // overflowing
-//                    i = numChars - 1; 
-//                }
-//            }
-//            else {
-//                receivedChars[i] = '\0'; // terminate the string
-//                recvInProgress = false;
-//                i = 0;
-//                newData = true; // allows us to exit this method
-//            }
-//        }
-//
-//        else if (rc == startMarker) {
-//            Serial.println("Got start marker");
-//            recvInProgress = true;
-//        }
-//    }
-//    Serial.print("Available? ");
-//    Serial.println(HWSERIAL.available());
-//    if(newData){Serial.println("true");} else{Serial.println("false");}
-////    Serial.println(newData);
-//    if(newData) {
-//      Serial.println("Data received: ");
-//      Serial.print(receivedChars);
-//      newData = false;  
-//    }
-//}
+
+void recvData() {
+  char jason[2];
+  int i = 0;
+  boolean reading = false;
+  while(HWSERIAL.available()){
+    char c = HWSERIAL.read();
+    int r = (int)c;
+//      Serial.print("Got: ");
+//      Serial.println(r);
+    if(r == (int)'<'){
+      for(int j = 0; j < 2; j++){
+        jason[j] = 0;
+      }
+      reading = true;
+      i = 0;
+    }
+    else if(r == (int)'>'){
+      if (i!=2) {
+        i=0;
+        jason[0]=0;
+        jason[1]=0;
+        continue;
+      }
+      Serial.println("Output:");
+      for(int j = 0; j < i; j++){
+        Serial.print(jason[j]);
+        Serial.print(" ");
+      }
+      Serial.println();
+      reading = false;
+    }
+    else if(reading){
+      if(i > 2){
+        Serial.println("ERRROR");
+        continue;
+      }
+      jason[i] = r;
+      i++;
+    }
+    
+  }
+}
+
+
+void recvData1() {
+    static boolean recvInProgress = false;
+    static byte i = 0;
+    char startMarker = '<';
+    char endMarker = '>';
+    char rc; // received char
+//    Serial.println("Starting reception");
+//    while (HWSERIAL.available() && newData == false) {
+    while (HWSERIAL.available()) {
+        char rc = HWSERIAL.read();
+        int int_data = (int)rc
+        if (recvInProgress == true) {
+            if (rc != endMarker) {
+                receivedChars[i] = rc;
+                i++;
+                if (i >= numChars) { // overflowing
+                    i = numChars - 1; 
+                }
+            }
+            else {
+                receivedChars[i] = '\0'; // terminate the string
+                recvInProgress = false;
+                i = 0;
+                newData = true; // allows us to exit this method
+            }
+        }
+
+        else if (rc == startMarker) {
+            Serial.println("Got start marker");
+            recvInProgress = true;
+        }
+    }
+    Serial.print("Available? ");
+    Serial.println(HWSERIAL.available());
+    if(newData){Serial.println("true");} else{Serial.println("false");}
+//    Serial.println(newData);
+    if(newData) {
+      Serial.println("Data received: ");
+      Serial.print(receivedChars);
+      newData = false;  
+    }
+}
 
 //void displayData() {
 //  if(newData) {

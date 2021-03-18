@@ -12,6 +12,7 @@ Nitrous Oxide Drain
 Nitrous Oxide Vent
 Nitrous Oxide Main Propellant Valve
 */
+
 #include "constants.h"
 #define HWSERIAL Serial5
 enum PinState {
@@ -43,7 +44,7 @@ boolean pulsing[NUM_BUTTONS];
 int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
 int pulse_pins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
 
-void setup(){
+void setup() {
     // These ten pins control everything
     PIN_MAP[NITROGEN_FILL] = TEENSY_NITROGEN_FILL;
     PIN_MAP[ETHANOL_DRAIN] = TEENSY_ETHANOL_DRAIN;
@@ -81,12 +82,15 @@ void setup(){
     }
 }
 
-void loop(){
-    for(int i = 0; i < NUM_VALVES; i++){
-        PinState current_state = checkToggleSwitch(vent_pins[i]); // (i + 1) * 2 maps from array index to pin number
-        if(current_state != states[i]){ // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
+void loop() {
+    for (int i = 0; i < NUM_VALVES; i++){
+        PinState current_state = checkToggleSwitch(vent_pins[i]);
+        // (i + 1) * 2 maps from array index to pin number
+        if(current_state != states[i]){
+            // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
             states[i] = current_state;
-            send_message(states[i], PIN_MAP[vent_pins[i]]); // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the TEENSY
+            send_message(states[i], PIN_MAP[vent_pins[i]]);
+            // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the TEENSY
             String out = String("State of toggle switch at LB pin ") + vent_pins[i] + ": " + current_state; 
             Serial.println(out);
         }
@@ -118,136 +122,27 @@ void loop(){
 //    delay(500);
 }
 
-int buttonRead(int pin){
-    int first = (analogRead(pin) > 900);
+/**
+ * This method measures a button value, waits 20ms, and measures the button value again.
+ */
+int buttonRead(int pin) {
+    int first = analogRead(pin) > 900;
     delay(20);
-    int second = (analogRead(pin) > 900);
-    if(first == second) {
-      return first;  
-    }
-    return false;
+    int second = analogRead(pin) > 900;
+
+    return first && second;
 }
 
-void send_message(int cmd, int pin){
-//    if(!override){
-//        return;
-//    }
-//    Serial.println("Sending");
-    // cmd is the enum (1, 2, or 3)
-//    char ccmd = char(cmd);
-//    char cdata = char(data_);
-    String out = String("Sending command ") + cmd + String(" to TEENSY Arduino pin ") + data_;
-    Serial.println(out);
-//    int bytesSent = HWSERIAL.write('<');
-    // HWSERIAL.write(cmd); // make write instead of println
-    // HWSERIAL.write(data_); //make write instead of println
-//    HWSERIAL.write('>');
-    digitalWrite(pin, cmd)
-    Serial.println(cmd);
-    Serial.println(data_);
-//    Serial.println(bytesSent);
-    Serial.println("Successfully sent");
+/**
+ * Writes a message to a given pin.
+ */
+void send_message(int cmd, int pin) {
+    Serial.println(String("Sending command ") + cmd + String(" to TEENSY Arduino pin ") + pin);
+    digitalWrite(pin, cmd);
+
+    // Why is this here?
     delay(100);
 }
-//
-//void recvData() {
-//  char jason[2];
-//  int i = 0;
-//  boolean reading = false;
-//  while(HWSERIAL.available()){
-//    char c = HWSERIAL.read();
-//    int r = (int)c;
-////      Serial.print("Got: ");
-////      Serial.println(r);
-//    if(r == (int)'<'){
-//      for(int j = 0; j < 2; j++){
-//        jason[j] = 0;
-//      }
-//      reading = true;
-//      i = 0;
-//    }
-//    else if(r == (int)'>'){
-//      if (i!=2) {
-//        i=0;
-//        jason[0]=0;
-//        jason[1]=0;
-//        continue;
-//      }
-//      Serial.println("Output:");
-//      for(int j = 0; j < i; j++){
-//        Serial.print(jason[j]);
-//        Serial.print(" ");
-//      }
-//      Serial.println();
-//      reading = false;
-//    }
-//    else if(reading){
-//      if(i > 2){
-//        Serial.println("ERRROR");
-//        continue;
-//      }
-//      jason[i] = r;
-//      i++;
-//    }
-//    
-//  }
-//}
-//
-//
-//void recvData1() {
-//    static boolean recvInProgress = false;
-//    static byte i = 0;
-//    char startMarker = '<';
-//    char endMarker = '>';
-//    char rc; // received char
-////    Serial.println("Starting reception");
-////    while (HWSERIAL.available() && newData == false) {
-//    while (HWSERIAL.available()) {
-//        char rc = HWSERIAL.read();
-//        int int_data = (int)rc
-//        if (recvInProgress == true) {
-//            if (rc != endMarker) {
-//                receivedChars[i] = rc;
-//                i++;
-//                if (i >= numChars) { // overflowing
-//                    i = numChars - 1; 
-//                }
-//            }
-//            else {
-//                receivedChars[i] = '\0'; // terminate the string
-//                recvInProgress = false;
-//                i = 0;
-//                newData = true; // allows us to exit this method
-//            }
-//        }
-//
-//        else if (rc == startMarker) {
-//            Serial.println("Got start marker");
-//            recvInProgress = true;
-//        }
-//    }
-//    Serial.print("Available? ");
-//    Serial.println(HWSERIAL.available());
-//    if(newData){Serial.println("true");} else{Serial.println("false");}
-////    Serial.println(newData);
-//    if(newData) {
-//      Serial.println("Data received: ");
-//      Serial.print(receivedChars);
-//      newData = false;  
-//    }
-//}
-
-//void displayData() {
-//  if(newData) {
-////    data_num = 0;
-////    data_num = atoi(receivedChars); // literal_eval, interprets string as a number
-//    Serial.println("Data received: ");
-//    Serial.print(receivedChars);
-////    Serial.println("Data as a number:");
-////    Serial.print(data_num);    
-//    newData = false;  
-//  }
-//}
 
 /*
  * note: these SPDT switches all have their common pins connected to GND because arduino only has an INPUT_PULLUP option instead of an INPUT_PULLDOWN option
@@ -274,17 +169,12 @@ void send_message(int cmd, int pin){
 */
 
 PinState checkToggleSwitch(int switchStart) {
-  if(digitalRead(switchStart) == LOW) {
-    //Serial.println("OPEN VENT");
-    return OPEN_VENT;
-  }  
   // Pinstate is controlled by two consecutive pins
-  else if(digitalRead(switchStart + 1) == LOW) {
-   // Serial.println("CLOSE VENT");
+  if (digitalRead(switchStart) == LOW) {
+    return OPEN_VENT;
+  } else if (digitalRead(switchStart + 1) == LOW) {
     return CLOSE_VENT;   
-  }
-  else {
- //   Serial.println("DO NOTHING");
+  } else {
     return DO_NOTHING;
   }
 }

@@ -41,7 +41,7 @@ int pulsePins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
 
 // Arrays that keep track of stuff
 // States: 0 means do nothing, 1 is CLOSE_VENT, and 2 is OPEN_VENT (matches the constants)
-PinState valveActuations[NUM_VALVES];
+PinState valveStates[NUM_VALVES];
 boolean pulsing[NUM_BUTTONS];
 
 void setup() {
@@ -70,7 +70,7 @@ void setup() {
     Serial.begin(BAUD_RATE);
     
     for (int i = 0; i < NUM_VALVES; i++){
-        valveActuations[i] = DO_NOTHING; 
+        valveStates[i] = DO_NOTHING; 
     }
     
     for (int i = 0; i < NUM_BUTTONS; i++){
@@ -84,13 +84,12 @@ void loop() {
         int ventPin = ventPins[i];
         int teensyPin = PIN_MAP[ventPin];
 
-        PinState switchState = checkToggleSwitch(teensyPin);
-        if (switchState != valveActuations[i]) {
-            // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
-            valveActuations[i] = switchState;
-            send_message(valveActuations[i], ventPin);
-            // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the TEENSY
-            Serial.println(String("State of toggle switch at LB pin ") + ventPins[i] + ": " + switchState);
+        PinState physicalSwitchState = checkToggleSwitch(teensyPin);
+        if (physicalSwitchState != valveStates[i]) {
+            sendMessage(physicalSwitchState, ventPin);
+            valveStates[i] = physicalSwitchState;
+            
+            Serial.println(String("State of toggle switch at LB pin ") + ventPin + ": " + physicalSwitchState);
         }
     }
 
@@ -111,7 +110,7 @@ int measureAnalogDebounced(int pin) {
 /**
  * Writes a message to a given pin.
  */
-void send_message(int cmd, int pin) {
+void sendMessage(int cmd, int pin) {
     Serial.println(String("Sending command ") + cmd + String(" to TEENSY Arduino pin ") + pin);
     digitalWrite(pin, cmd);
 

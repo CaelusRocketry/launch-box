@@ -24,6 +24,8 @@ enum PinState {
 
 const int BAUD_RATE = 9600;
 const int MAX_PIN = 25;
+
+// PIN_MAP[valve pin] = [teensy pin]
 int PIN_MAP[MAX_PIN];
 
 // Pin counts
@@ -31,7 +33,7 @@ const int NUM_VALVES = 8;
 const int NUM_BUTTONS = 0;
 
 // Local variables
-boolean aborted;
+boolean aborted = false;
 
 // Serial variables
 const byte numChars = 256;
@@ -40,10 +42,10 @@ boolean newData = false;
 
 // Arrays that keep track of stuff
 // States: 0 means do nothing, 1 is CLOSE_VENT, and 2 is OPEN_VENT (matches the constants)
-PinState states[NUM_VALVES];
+PinState valveActuations[NUM_VALVES];
 boolean pulsing[NUM_BUTTONS];
-int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
-int pulse_pins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
+int ventPins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
+int pulsePins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
 
 void setup() {
     // These ten pins control everything
@@ -58,27 +60,23 @@ void setup() {
     PIN_MAP[NO_VENT_PULSE] = TEENSY_NO_VENT;
     PIN_MAP[NO_MPV] = TEENSY_NO_MPV;
 
-    for(int i = 0; i < NUM_VALVES; i++){
-        pinMode(vent_pins[i], INPUT_PULLUP);
-        pinMode(vent_pins[i] + 1, INPUT_PULLUP);
+    for (int i = 0; i < NUM_VALVES; i++){
+        pinMode(ventPins[i], INPUT_PULLUP);
+        pinMode(ventPins[i] + 1, INPUT_PULLUP);
     }
     
-    for(int i = 0; i < NUM_BUTTONS; i++){
-        pinMode(pulse_pins[i], INPUT_PULLUP);
+    for (int i = 0; i < NUM_BUTTONS; i++){
+        pinMode(pulsePins[i], INPUT_PULLUP);
     }
     
     pinMode(ABORT_PIN, INPUT_PULLUP);
     Serial.begin(BAUD_RATE);
     
-    // HWSERIAL.begin(BAUD_RATE);
-    
-    aborted = false;
-    
-    for(int i = 0; i < NUM_VALVES; i++){
-        states[i] = DO_NOTHING; 
+    for (int i = 0; i < NUM_VALVES; i++){
+        valveActuations[i] = DO_NOTHING; 
     }
     
-    for(int i = 0; i < NUM_BUTTONS; i++){
+    for (int i = 0; i < NUM_BUTTONS; i++){
         pulsing[i] = false;
     }
 }
@@ -86,13 +84,16 @@ void setup() {
 void loop() {
     // For each valve in a different state from the switch state, actuate it.
     for (int i = 0; i < NUM_VALVES; i++) {
-        PinState switchState = checkToggleSwitch(vent_pins[i]);
-        if (switchState != states[i]) {
+        int ventPin = ventPins[i];
+        int teensyPin = PIN_MAP[ventPin];
+
+        PinState switchState = checkToggleSwitch(teensyPin);
+        if (switchState != valveActuations[i]) {
             // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
-            states[i] = switchState;
-            send_message(states[i], PIN_MAP[vent_pins[i]]);
+            valveActuations[i] = switchState;
+            send_message(valveActuations[i], ventPin);
             // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the TEENSY
-            Serial.println(String("State of toggle switch at LB pin ") + vent_pins[i] + ": " + switchState);
+            Serial.println(String("State of toggle switch at LB pin ") + ventPins[i] + ": " + switchState);
         }
     }
     delay(50);
@@ -125,7 +126,7 @@ void loop() {
 /**
  * This method measures a button value, waits 20ms, and measures the button value again.
  */
-int buttonRead(int pin) {
+int measureAnalogDebounced(int pin) {
     int first = analogRead(pin) > 900;
     delay(20);
     int second = analogRead(pin) > 900;

@@ -28,24 +28,21 @@ const int MAX_PIN = 25;
 // PIN_MAP[valve pin] = [teensy pin]
 int PIN_MAP[MAX_PIN];
 
-// Pin counts
-const int NUM_VALVES = 8;
-const int NUM_BUTTONS = 0;
-
 // Local variables
 boolean aborted = false;
 
-// Serial variables
-const byte numChars = 256;
-int receivedChars[numChars];
-boolean newData = false;
+// Number of valves, equal to the length of ventPins[].
+const int NUM_VALVES = 8;
+int ventPins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
+
+// Number of buttons, less than or equal to the length of pulsePins[].
+const int NUM_BUTTONS = 0;
+int pulsePins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
 
 // Arrays that keep track of stuff
 // States: 0 means do nothing, 1 is CLOSE_VENT, and 2 is OPEN_VENT (matches the constants)
 PinState valveActuations[NUM_VALVES];
 boolean pulsing[NUM_BUTTONS];
-int ventPins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
-int pulsePins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
 
 void setup() {
     // These ten pins control everything
@@ -96,31 +93,8 @@ void loop() {
             Serial.println(String("State of toggle switch at LB pin ") + ventPins[i] + ": " + switchState);
         }
     }
+
     delay(50);
-//    recvData();
-//    displayData();
-//    delay(50);
-    /*if(analogRead(ABORT_PIN) > 900){
-        aborted = true;
-        for(int i = 0; i < NUM_VALVES; i++){
-            send_message(OPEN_VENT, PIN_MAP[vent_pins[i]]);
-        }
-    }
-    for(int i = 0; i < NUM_BUTTONS; i++){
-        if(buttonRead(pulse_pins[i])){
-            if(pulsing[i]){
-                continue;
-            }
-            pulsing[i] = true;
-            send_message(PULSE, PIN_MAP[pulse_pins[i]]);
-//            Serial.println(pulse_pins[i]);
-//            Serial.println(PIN_MAP[pulse_pins[i]]);
-        }
-        else{
-            pulsing[i] = false;
-        }
-    }*/
-//    delay(500);
 }
 
 /**

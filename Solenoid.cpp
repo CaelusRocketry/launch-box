@@ -1,4 +1,6 @@
 #include "Solenoid.hpp"
+#include "constants.h"
+#include "Valve_Constants.hpp"
 
 Solenoid::Solenoid(int i_pin, bool b_special, bool b_no) {
     pin = i_pin;
@@ -99,27 +101,21 @@ void Solenoid::controlSpecial() {
 }
 
 void Solenoid::actuate(int actuationType){
-    if(actuationType == NO_ACTUATION){
-        // Do nothing
+    switch (actuationType) {
+        case NO_ACTUATION:
+            break;
+        case CLOSE_VENT:
+            close();
+            break;
+        case OPEN_VENT:
+            open();
+            break;
+        case PULSE:
+            pulse();
+            break;
+        default:
+            error("Unknown actuation type");
     }
-    else if(actuationType == CLOSE_VENT){
-        close();
-    }
-    else if(actuationType == OPEN_VENT){
-        open();
-    }
-    else if(actuationType == PULSE){
-        pulse();
-    }
-    else{
-        error("Unknown actuation type");
-        return;
-    }
-    actuation = actuationType;
-//    Serial.println("ACTUATING");
-//    Serial.println(actuation);
-    printSomething();
-//    Serial.println("ACTUATING");
 }
 
 void Solenoid::printSomething(){
@@ -140,5 +136,4 @@ int Solenoid::getActuation(){
 
 void Solenoid::error(String msg){
     digitalWrite(13, HIGH);
-    // Serial.println(msg);
 }

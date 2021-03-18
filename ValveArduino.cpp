@@ -1,4 +1,6 @@
 #include "ValveArduino.hpp"
+#include "constants.h"
+#include "Valve_Constants.hpp"
 
 ValveArduino::ValveArduino() {
     pinMode(13, OUTPUT);

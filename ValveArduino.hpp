@@ -1,6 +1,6 @@
 #include "Arduino.h"
 #include <SoftwareSerial.h>
-#include "Constants.hpp"
+#include "constants.h"
 #include "Solenoid.hpp"
 
 #ifndef VALVE_ARDUINO_HPP

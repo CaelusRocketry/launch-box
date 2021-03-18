@@ -1,8 +1,7 @@
-#include "Arduino.h"
-#include "Constants.hpp"
-
 #ifndef SOLENOID_HPP
 #define SOLENOID_HPP
+
+#include "Arduino.h"
 
 class Solenoid {
     private:  

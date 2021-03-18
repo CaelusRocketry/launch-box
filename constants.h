@@ -13,6 +13,8 @@ Nitrous Oxide Vent
 Nitrous Oxide Main Propellant TEENSY
 */
 
+#include "Arduino.h"
+
 // Pin definitions - each toggle switch takes up 2 pins, the pulse pins take up one pin each
 // On the launchbox
 #define NO_FILL 0
@@ -34,7 +36,7 @@ Nitrous Oxide Main Propellant TEENSY
 #define ABORT_PIN A20
 
 // TEENSY arduino pin definitions - MAKE SURE THESE MATCH TEENSY ARDUINO
-/
+
 #define TEENSY_NITROGEN_FILL 2
 #define TEENSY_ETHANOL_DRAIN 3
 #define TEENSY_ETHANOL_VENT 4

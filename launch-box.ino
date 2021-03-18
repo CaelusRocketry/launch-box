@@ -15,6 +15,7 @@ Nitrous Oxide Main Propellant Valve
 
 #include "constants.h"
 #define HWSERIAL Serial5
+
 enum PinState {
     DO_NOTHING = 1,
     OPEN_VENT = 2,
@@ -83,16 +84,15 @@ void setup() {
 }
 
 void loop() {
-    for (int i = 0; i < NUM_VALVES; i++){
-        PinState current_state = checkToggleSwitch(vent_pins[i]);
-        // (i + 1) * 2 maps from array index to pin number
-        if(current_state != states[i]){
+    // For each valve in a different state from the switch state, actuate it.
+    for (int i = 0; i < NUM_VALVES; i++) {
+        PinState switchState = checkToggleSwitch(vent_pins[i]);
+        if (switchState != states[i]) {
             // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
-            states[i] = current_state;
+            states[i] = switchState;
             send_message(states[i], PIN_MAP[vent_pins[i]]);
             // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the TEENSY
-            String out = String("State of toggle switch at LB pin ") + vent_pins[i] + ": " + current_state; 
-            Serial.println(out);
+            Serial.println(String("State of toggle switch at LB pin ") + vent_pins[i] + ": " + switchState);
         }
     }
     delay(50);

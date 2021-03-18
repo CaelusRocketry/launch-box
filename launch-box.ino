@@ -82,14 +82,14 @@ void loop() {
     // For each valve in a different state from the switch state, actuate it.
     for (int i = 0; i < NUM_VALVES; i++) {
         int ventPin = ventPins[i];
-        int teensyPin = PIN_MAP[ventPin];
+        int launchboxPin = PIN_MAP[ventPin];
 
-        PinState physicalSwitchState = checkToggleSwitch(teensyPin);
-        if (physicalSwitchState != valveStates[i]) {
-            sendMessage(physicalSwitchState, ventPin);
-            valveStates[i] = physicalSwitchState;
-            
-            Serial.println(String("State of toggle switch at LB pin ") + ventPin + ": " + physicalSwitchState);
+        PinState launchboxSwitchState = readLaunchboxSwitch(launchboxPin);
+        if (launchboxSwitchState != valveStates[i]) {
+            sendMessage(launchboxSwitchState, ventPin);
+            valveStates[i] = launchboxSwitchState;
+
+            Serial.println(String("State of toggle switch at LB pin ") + ventPin + ": " + launchboxSwitchState);
         }
     }
 
@@ -113,9 +113,6 @@ int measureAnalogDebounced(int pin) {
 void sendMessage(int cmd, int pin) {
     Serial.println(String("Sending command ") + cmd + String(" to TEENSY Arduino pin ") + pin);
     digitalWrite(pin, cmd);
-
-    // Why is this here?
-    delay(100);
 }
 
 /*
@@ -142,13 +139,18 @@ void sendMessage(int cmd, int pin) {
  * because of how SPDT works, the opposite pin is LOW
 */
 
-PinState checkToggleSwitch(int switchStart) {
-  // Pinstate is controlled by two consecutive pins
+PinState readLaunchboxSwitch(int switchStart) {
+  // Pinstate is controlled by two consecutive pins.
+  // If the first pin is HIGH, then we want to open the vent.
+  // This looks wrong but I want to double check with someone.
+
   if (digitalRead(switchStart) == LOW) {
     return OPEN_VENT;
-  } else if (digitalRead(switchStart + 1) == LOW) {
-    return CLOSE_VENT;   
-  } else {
-    return DO_NOTHING;
   }
+  
+  if (digitalRead(switchStart + 1) == LOW) {
+    return CLOSE_VENT;   
+  }
+  
+  return DO_NOTHING;
 }

@@ -44,32 +44,38 @@ int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_F
 int pulse_pins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
 
 void setup(){
-    PIN_MAP[NITROGEN_FILL] = VALVE_NITROGEN_FILL;
-    PIN_MAP[ETHANOL_DRAIN] = VALVE_ETHANOL_DRAIN;
-    PIN_MAP[ETHANOL_VENT] = VALVE_ETHANOL_VENT;
-    PIN_MAP[ETHANOL_VENT_PULSE] = VALVE_ETHANOL_VENT;
-    PIN_MAP[ETHANOL_MPV] = VALVE_ETHANOL_MPV;
-    PIN_MAP[NO_FILL] = VALVE_NO_FILL;
-    PIN_MAP[NO_DRAIN] = VALVE_NO_DRAIN;
-    PIN_MAP[NO_VENT] = VALVE_NO_VENT;
-    PIN_MAP[NO_VENT_PULSE] = VALVE_NO_VENT;
-    PIN_MAP[NO_MPV] = VALVE_NO_MPV;
+    // These ten pins control everything
+    PIN_MAP[NITROGEN_FILL] = TEENSY_NITROGEN_FILL;
+    PIN_MAP[ETHANOL_DRAIN] = TEENSY_ETHANOL_DRAIN;
+    PIN_MAP[ETHANOL_VENT] = TEENSY_ETHANOL_VENT;
+    PIN_MAP[ETHANOL_VENT_PULSE] = TEENSY_ETHANOL_VENT;
+    PIN_MAP[ETHANOL_MPV] = TEENSY_ETHANOL_MPV;
+    PIN_MAP[NO_FILL] = TEENSY_NO_FILL;
+    PIN_MAP[NO_DRAIN] = TEENSY_NO_DRAIN;
+    PIN_MAP[NO_VENT] = TEENSY_NO_VENT;
+    PIN_MAP[NO_VENT_PULSE] = TEENSY_NO_VENT;
+    PIN_MAP[NO_MPV] = TEENSY_NO_MPV;
 
     for(int i = 0; i < NUM_VALVES; i++){
         pinMode(vent_pins[i], INPUT_PULLUP);
         pinMode(vent_pins[i] + 1, INPUT_PULLUP);
     }
+    
     for(int i = 0; i < NUM_BUTTONS; i++){
         pinMode(pulse_pins[i], INPUT_PULLUP);
     }
+    
     pinMode(ABORT_PIN, INPUT_PULLUP);
     Serial.begin(BAUD_RATE);
-    HWSERIAL.begin(BAUD_RATE);
+    
+    // HWSERIAL.begin(BAUD_RATE);
+    
     aborted = false;
     
     for(int i = 0; i < NUM_VALVES; i++){
         states[i] = DO_NOTHING; 
     }
+    
     for(int i = 0; i < NUM_BUTTONS; i++){
         pulsing[i] = false;
     }
@@ -80,7 +86,7 @@ void loop(){
         PinState current_state = checkToggleSwitch(vent_pins[i]); // (i + 1) * 2 maps from array index to pin number
         if(current_state != states[i]){ // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
             states[i] = current_state;
-            send_message(states[i], PIN_MAP[vent_pins[i]]); // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the Valve Arduino
+            send_message(states[i], PIN_MAP[vent_pins[i]]); // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the TEENSY
             String out = String("State of toggle switch at LB pin ") + vent_pins[i] + ": " + current_state; 
             Serial.println(out);
         }
@@ -122,7 +128,7 @@ int buttonRead(int pin){
     return false;
 }
 
-void send_message(int cmd, int data_){
+void send_message(int cmd, int pin){
 //    if(!override){
 //        return;
 //    }
@@ -130,12 +136,13 @@ void send_message(int cmd, int data_){
     // cmd is the enum (1, 2, or 3)
 //    char ccmd = char(cmd);
 //    char cdata = char(data_);
-    String out = String("Sending command ") + cmd + String(" to Valve Arduino pin ") + data_;
+    String out = String("Sending command ") + cmd + String(" to TEENSY Arduino pin ") + data_;
     Serial.println(out);
 //    int bytesSent = HWSERIAL.write('<');
-    HWSERIAL.write(cmd); // make write instead of println
-    HWSERIAL.write(data_); //make write instead of println
+    // HWSERIAL.write(cmd); // make write instead of println
+    // HWSERIAL.write(data_); //make write instead of println
 //    HWSERIAL.write('>');
+    digitalWrite(pin, cmd)
     Serial.println(cmd);
     Serial.println(data_);
 //    Serial.println(bytesSent);
@@ -271,6 +278,7 @@ PinState checkToggleSwitch(int switchStart) {
     //Serial.println("OPEN VENT");
     return OPEN_VENT;
   }  
+  // Pinstate is controlled by two consecutive pins
   else if(digitalRead(switchStart + 1) == LOW) {
    // Serial.println("CLOSE VENT");
     return CLOSE_VENT;   

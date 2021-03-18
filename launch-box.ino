@@ -12,7 +12,6 @@ Nitrous Oxide Drain
 Nitrous Oxide Vent
 Nitrous Oxide Main Propellant Valve
 */
-
 #include "constants.h"
 #define HWSERIAL Serial5
 enum PinState {

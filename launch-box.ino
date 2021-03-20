@@ -121,9 +121,7 @@ void loop() {
 
         else {
           handleVent(i);
-          handleSpecial(i); // CHECKME: from what I can tell, this works if handleSpecial is before handleVent as well
-          // should we swap these two so that checking for special actuation timings and the transitioning to the next
-          // actuation all happen in the same iteration, instead of splitting them up across multiple iterations?
+          handleSpecial(i);
         }
     }
 }
@@ -173,7 +171,7 @@ void handleSpecial(int index){
   if(!special_valves[index]){
     return;
   }
-  
+
   if(states[index] != OPEN_VENT){
     return;
   }

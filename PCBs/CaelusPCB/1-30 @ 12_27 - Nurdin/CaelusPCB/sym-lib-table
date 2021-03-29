@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Launchbox)(type Legacy)(uri "C:/Users/rhoss/Projects/drive-download-20210129T053555Z-001/Launchbox/Launchbox (2021_01_03 20_38_15 UTC).lib")(options "")(descr ""))
+  (lib (name Launchbox_Symbols)(type Legacy)(uri "C:/Users/rhoss/Projects/drive-download-20210129T053555Z-001/Launchbox/Launchbox (2021_01_03 20_38_15 UTC).lib")(options "")(descr ""))
+  (lib (name Launchbox-cache)(type Legacy)(uri C:/Users/rhoss/Downloads/Launchbox/Launchbox/Launchbox-cache.lib)(options "")(descr ""))
+)

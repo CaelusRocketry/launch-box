@@ -14,49 +14,61 @@ Nitrous Oxide Main Propellant Valve
 */
 
 #include "constants.h"
-#define HWSERIAL Serial5
-enum PinState {
+
+// TODO: MAKE SURE ALL OF THE SOLENOID VALUES IN CONSTANTS.H ARE CORRECT!!!!!!!!!!!!!!!!
+
+#define PULSE_TIME 500
+#define SPECIAL_OPEN_TIME 4000
+#define SPECIAL_CLOSE_TIME 1000
+
+// default is 2
+enum pin_state {
     DO_NOTHING = 1,
     OPEN_VENT = 2,
     CLOSE_VENT = 3
 };
 
-const int BAUD_RATE = 9600;
-const int MAX_PIN = 25;
-int PIN_MAP[MAX_PIN];
-
 // Pin counts
 const int NUM_VALVES = 8;
-const int NUM_BUTTONS = 0;
+const int NUM_BUTTONS = 2;
 
 // Local variables
 boolean aborted;
 
-// Serial variables
-const byte numChars = 256;
-int receivedChars[numChars];
-boolean newData = false;
-
 // Arrays that keep track of stuff
 // States: 0 means do nothing, 1 is CLOSE_VENT, and 2 is OPEN_VENT (matches the constants)
-PinState states[NUM_VALVES];
-boolean pulsing[NUM_BUTTONS];
+pin_state states[NUM_VALVES];
+
+
+// both of these arrays contain information on when to stop the actuation for the respective action
+// i.e special_open_timings contains the time when we should stop the OPEN_VENT actuation for NC special valves
+// and close the valve and let it rest for a second
+unsigned long pulse_timings[NUM_VALVES];
+unsigned long special_open_timings[NUM_VALVES];
+
+// this array is used to control how long a special valve should be closed for before reopening
+unsigned long special_close_timings[NUM_VALVES]; 
+
+// for all pin arrays, the order is 
+// NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV
+// and each variable for each valve is stored in that order
+
+// variable values (booleans, etc) for each of these are in constants.h
+// for example, IS_NC is the modifier for each pin, and all of the IS_NC values are stored in constants.h
+
+// all valves take up two pins, and each vent_pin value stores the first (even number) of these pins
+// so, it goes 2, 4, 6, 8, 10, 12, etc
 int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
-int pulse_pins[] = {ETHANOL_VENT_PULSE, NO_VENT_PULSE};
+
+boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANOL_VENT_SPECIAL, ETHANOL_MPV_SPECIAL, NO_FILL_SPECIAL, NO_DRAIN_SPECIAL, NO_VENT_SPECIAL, NO_MPV_SPECIAL};
+boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC};
+
+// -1 indicates that there is no pulse pin for the specified valve
+int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
 
 void setup(){
-    PIN_MAP[NITROGEN_FILL] = VALVE_NITROGEN_FILL;
-    PIN_MAP[ETHANOL_DRAIN] = VALVE_ETHANOL_DRAIN;
-    PIN_MAP[ETHANOL_VENT] = VALVE_ETHANOL_VENT;
-    PIN_MAP[ETHANOL_VENT_PULSE] = VALVE_ETHANOL_VENT;
-    PIN_MAP[ETHANOL_MPV] = VALVE_ETHANOL_MPV;
-    PIN_MAP[NO_FILL] = VALVE_NO_FILL;
-    PIN_MAP[NO_DRAIN] = VALVE_NO_DRAIN;
-    PIN_MAP[NO_VENT] = VALVE_NO_VENT;
-    PIN_MAP[NO_VENT_PULSE] = VALVE_NO_VENT;
-    PIN_MAP[NO_MPV] = VALVE_NO_MPV;
-
     for(int i = 0; i < NUM_VALVES; i++){
+        // since vent_pins are 2, 4, 6, 8, etc, we have to account for the current pin and the next one for pinMode
         pinMode(vent_pins[i], INPUT_PULLUP);
         pinMode(vent_pins[i] + 1, INPUT_PULLUP);
     }
@@ -64,55 +76,155 @@ void setup(){
         pinMode(pulse_pins[i], INPUT_PULLUP);
     }
     pinMode(ABORT_PIN, INPUT_PULLUP);
-    Serial.begin(BAUD_RATE);
-    HWSERIAL.begin(BAUD_RATE);
+    Serial.begin(9600);
     aborted = false;
     
     for(int i = 0; i < NUM_VALVES; i++){
-        states[i] = DO_NOTHING; 
-    }
-    for(int i = 0; i < NUM_BUTTONS; i++){
-        pulsing[i] = false;
+        states[i] = DO_NOTHING;
+        pulse_timings[i] = 0;
+        special_open_timings[i] = 0;
+        special_close_timings[i] = 0;
     }
 }
 
-void loop(){
-    for(int i = 0; i < NUM_VALVES; i++){
-        PinState current_state = checkToggleSwitch(vent_pins[i]); // (i + 1) * 2 maps from array index to pin number
-        if(current_state != states[i]){ // If the current state (dictated by the physical switch) doesn't match what the state of the valve is, actuate valve
-            states[i] = current_state;
-            send_message(states[i], PIN_MAP[vent_pins[i]]); // PIN_MAP[vent_pins[i]] gives the PIN NUMBER on the Valve Arduino
-            String out = String("State of toggle switch at LB pin ") + vent_pins[i] + ": " + current_state; 
-            Serial.println(out);
-        }
-    }
-    delay(50);
-//    recvData();
-//    displayData();
-//    delay(50);
-    /*if(analogRead(ABORT_PIN) > 900){
-        aborted = true;
-        for(int i = 0; i < NUM_VALVES; i++){
-            send_message(OPEN_VENT, PIN_MAP[vent_pins[i]]);
-        }
-    }
-    for(int i = 0; i < NUM_BUTTONS; i++){
-        if(buttonRead(pulse_pins[i])){
-            if(pulsing[i]){
-                continue;
+void loop() {
+    for(int i = 0; i < NUM_VALVES; i++) {
+
+        // CHECKME: currently we're running this segment of code to check states on pulse pins as well as normal pins
+        // is this something we should be doing, or only check normal pins?
+
+        int pin = vent_pins[i];
+        pin_state current_state = checkToggleSwitch(pin); // check if its open, close, or DO_NOTHING
+
+        if(current_state != states[i]) { // if the switch is flicked and the command has changed since last iteration
+            states[i] = current_state; // update the state list with the current state
+            if(states[i] == OPEN_VENT && isSpecial(i)) { // only NC valves are special, so we only have to check for OPEN_VENT
+              special_open_timings[i] = millis() + SPECIAL_OPEN_TIME;
             }
-            pulsing[i] = true;
-            send_message(PULSE, PIN_MAP[pulse_pins[i]]);
-//            Serial.println(pulse_pins[i]);
-//            Serial.println(PIN_MAP[pulse_pins[i]]);
+
+            // CHECKME: if states[i] == CLOSE_VENT && isSpecial(i) should we reset the special_close_timings and special_open_timings?
+            // this is when we want to close the special valve once and for all, no more handling special until we decide to open it again later 
         }
-        else{
-            pulsing[i] = false;
+
+        if(pulse_pins[i] != -1) { // check pulse pins
+          boolean pressed = buttonRead(pulse_pins[i]);
+
+          if(pressed){
+            pulse_timings[i] = millis() + PULSE_TIME;
+            digitalWrite(pulse_pins[i], HIGH);
+          }
         }
-    }*/
-//    delay(500);
+
+        if(isPulsing(i)) {
+          handlePulse(i);
+        }
+
+        else {
+          handleVent(i);
+          handleSpecial(i);
+        }
+    }
 }
 
+void handleVent(int index){
+  int pin = vent_pins[index];
+  int open_signal = HIGH;
+  int close_signal = LOW;
+
+  if(!isNC(index)){
+    open_signal = LOW;
+    close_signal = HIGH;
+  }
+
+  if(states[index] == OPEN_VENT){ // only NC valves are special, so only need to check for OPEN_VENT
+    // If it's a special, check if its currently holding open for 4s or reliving for 1s
+    if(isSpecial(index)) {
+
+      // special timings are handled in handleSpecial(), we only have to see if the timing value has been reset or not here
+      if(special_open_timings[index] != 0) { // if the value hasn't been reset and we're still supposed to be open
+        digitalWrite(pin, open_signal);
+      }
+
+      else { 
+        // if the value == 0 -> it's been reset and it's time to relieve the solenoid
+        // the special_close_timing has already been set by handleSpecial() in the previous iteration
+        digitalWrite(pin, close_signal);
+      }
+    }
+    // If it's not a special valve, then digitalWrite HIGH on open
+    else {
+      digitalWrite(pin, open_signal); // CHECKME: unnecessary, but redundancy is good, delete or no?
+    }
+  }
+  // If the valve is closing, then digitalWrite LOW
+  else if(states[index] == CLOSE_VENT){
+    digitalWrite(pin, close_signal);
+  }
+}
+
+
+// handleSpecial is called after handleVent because it's used to prepare for transitioning from actuate -> relieve
+// or vice versa by setting all the timing values and state values so that we're free to transition next iteration
+
+
+void handleSpecial(int index){
+  if(!special_valves[index]){
+    return;
+  }
+
+  if(states[index] != OPEN_VENT){
+    return;
+  }
+
+  unsigned long curr = millis();
+
+  if(special_open_timings[index] != 0 && curr > special_open_timings[index]) { // if it's time to relieve the special solenoid
+    special_open_timings[index] = 0;
+    special_close_timings[index] = curr + SPECIAL_CLOSE_TIME;
+  }
+
+  // if relief time is over and we gotta start making the solenoid open again
+  else if(special_close_timings[index] != 0 && curr > special_close_timings[index]){ 
+    special_close_timings[index] = 0;
+    special_open_timings[index] = curr + SPECIAL_OPEN_TIME;    
+  }
+}
+
+void handlePulse(int index){
+  // Ignore this method if the valve isn't pulsing
+  if(!isPulsing(index)){
+    return;
+  }
+
+  // If it's finished pulsing (it's been open for 500ms), then make it stop pulsing. Otherwise, keep pulsing.
+  unsigned long curr = millis();
+  if(curr > pulse_timings[index]){
+    pulse_timings[index] = 0;
+    digitalWrite(pulse_pins[index], LOW); // stop the pulse
+  }
+  else{
+    digitalWrite(pulse_pins[index], HIGH); // CHECKME: is this necessary? it should already be pulsing, but maybe good just to make sure
+  }
+}
+
+boolean isNC(int index){
+  return nc_valves[index];
+}
+
+boolean isSpecial(int index){
+  return special_valves[index];
+}
+
+boolean canPulse(int index){
+  return pulse_pins[index] != 0;
+}
+
+// Check if a given valve is currently pulsing
+boolean isPulsing(int index){
+  return pulse_timings[index] != 0;
+}
+
+// Returns true if a given button is being pressed, false if not.
 int buttonRead(int pin){
     int first = (analogRead(pin) > 900);
     delay(20);
@@ -123,125 +235,6 @@ int buttonRead(int pin){
     return false;
 }
 
-void send_message(int cmd, int data_){
-//    if(!override){
-//        return;
-//    }
-//    Serial.println("Sending");
-    // cmd is the enum (1, 2, or 3)
-//    char ccmd = char(cmd);
-//    char cdata = char(data_);
-    String out = String("Sending command ") + cmd + String(" to Valve Arduino pin ") + data_;
-    Serial.println(out);
-//    int bytesSent = HWSERIAL.write('<');
-    HWSERIAL.write(cmd); // make write instead of println
-    HWSERIAL.write(data_); //make write instead of println
-//    HWSERIAL.write('>');
-    Serial.println(cmd);
-    Serial.println(data_);
-//    Serial.println(bytesSent);
-    Serial.println("Successfully sent");
-    delay(100);
-}
-//
-//void recvData() {
-//  char jason[2];
-//  int i = 0;
-//  boolean reading = false;
-//  while(HWSERIAL.available()){
-//    char c = HWSERIAL.read();
-//    int r = (int)c;
-////      Serial.print("Got: ");
-////      Serial.println(r);
-//    if(r == (int)'<'){
-//      for(int j = 0; j < 2; j++){
-//        jason[j] = 0;
-//      }
-//      reading = true;
-//      i = 0;
-//    }
-//    else if(r == (int)'>'){
-//      if (i!=2) {
-//        i=0;
-//        jason[0]=0;
-//        jason[1]=0;
-//        continue;
-//      }
-//      Serial.println("Output:");
-//      for(int j = 0; j < i; j++){
-//        Serial.print(jason[j]);
-//        Serial.print(" ");
-//      }
-//      Serial.println();
-//      reading = false;
-//    }
-//    else if(reading){
-//      if(i > 2){
-//        Serial.println("ERRROR");
-//        continue;
-//      }
-//      jason[i] = r;
-//      i++;
-//    }
-//    
-//  }
-//}
-//
-//
-//void recvData1() {
-//    static boolean recvInProgress = false;
-//    static byte i = 0;
-//    char startMarker = '<';
-//    char endMarker = '>';
-//    char rc; // received char
-////    Serial.println("Starting reception");
-////    while (HWSERIAL.available() && newData == false) {
-//    while (HWSERIAL.available()) {
-//        char rc = HWSERIAL.read();
-//        int int_data = (int)rc
-//        if (recvInProgress == true) {
-//            if (rc != endMarker) {
-//                receivedChars[i] = rc;
-//                i++;
-//                if (i >= numChars) { // overflowing
-//                    i = numChars - 1; 
-//                }
-//            }
-//            else {
-//                receivedChars[i] = '\0'; // terminate the string
-//                recvInProgress = false;
-//                i = 0;
-//                newData = true; // allows us to exit this method
-//            }
-//        }
-//
-//        else if (rc == startMarker) {
-//            Serial.println("Got start marker");
-//            recvInProgress = true;
-//        }
-//    }
-//    Serial.print("Available? ");
-//    Serial.println(HWSERIAL.available());
-//    if(newData){Serial.println("true");} else{Serial.println("false");}
-////    Serial.println(newData);
-//    if(newData) {
-//      Serial.println("Data received: ");
-//      Serial.print(receivedChars);
-//      newData = false;  
-//    }
-//}
-
-//void displayData() {
-//  if(newData) {
-////    data_num = 0;
-////    data_num = atoi(receivedChars); // literal_eval, interprets string as a number
-//    Serial.println("Data received: ");
-//    Serial.print(receivedChars);
-////    Serial.println("Data as a number:");
-////    Serial.print(data_num);    
-//    newData = false;  
-//  }
-//}
 
 /*
  * note: these SPDT switches all have their common pins connected to GND because arduino only has an INPUT_PULLUP option instead of an INPUT_PULLDOWN option
@@ -267,17 +260,14 @@ void send_message(int cmd, int data_){
  * because of how SPDT works, the opposite pin is LOW
 */
 
-PinState checkToggleSwitch(int switchStart) {
+pin_state checkToggleSwitch(int switchStart) {
   if(digitalRead(switchStart) == LOW) {
-    //Serial.println("OPEN VENT");
     return OPEN_VENT;
   }  
   else if(digitalRead(switchStart + 1) == LOW) {
-   // Serial.println("CLOSE VENT");
-    return CLOSE_VENT;   
+    return CLOSE_VENT;
   }
   else {
- //   Serial.println("DO NOTHING");
     return DO_NOTHING;
   }
 }

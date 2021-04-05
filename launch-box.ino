@@ -59,18 +59,21 @@ unsigned long special_close_timings[NUM_VALVES];
 // all valves take up two pins, and each vent_pin value stores the first (even number) of these pins
 // so, it goes 2, 4, 6, 8, 10, 12, etc
 int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
+int output_pins[] = {NITROGEN_FILL_OUT, ETHANOL_DRAIN_OUT, ETHANOL_VENT_OUT, ETHANOL_MPV_OUT, NO_FILL_OUT, NO_DRAIN_OUT, NO_VENT_OUT, NO_MPV_OUT};
 
 boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANOL_VENT_SPECIAL, ETHANOL_MPV_SPECIAL, NO_FILL_SPECIAL, NO_DRAIN_SPECIAL, NO_VENT_SPECIAL, NO_MPV_SPECIAL};
 boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC};
 
 // -1 indicates that there is no pulse pin for the specified valve
-int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
+//int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
+int pulse_pins[] = {-1, -1, -1, -1, -1, -1, -1, -1};
 
 void setup(){
     for(int i = 0; i < NUM_VALVES; i++){
         // since vent_pins are 2, 4, 6, 8, etc, we have to account for the current pin and the next one for pinMode
         pinMode(vent_pins[i], INPUT_PULLUP);
         pinMode(vent_pins[i] + 1, INPUT_PULLUP);
+        pinMode(output_pins[i], OUTPUT);
     }
     for(int i = 0; i < NUM_BUTTONS; i++){
         pinMode(pulse_pins[i], INPUT_PULLUP);
@@ -97,6 +100,9 @@ void loop() {
         pin_state current_state = checkToggleSwitch(pin); // check if its open, close, or DO_NOTHING
 
         if(current_state != states[i]) { // if the switch is flicked and the command has changed since last iteration
+          Serial.println(vent_pins[i]);
+          Serial.println(output_pins[i]);
+          Serial.println(i);
             states[i] = current_state; // update the state list with the current state
             if(states[i] == OPEN_VENT && isSpecial(i)) { // only NC valves are special, so we only have to check for OPEN_VENT
               special_open_timings[i] = millis() + SPECIAL_OPEN_TIME;
@@ -108,18 +114,18 @@ void loop() {
 
         if(pulse_pins[i] != -1) { // check pulse pins
           boolean pressed = buttonRead(pulse_pins[i]);
-
           if(pressed){
             pulse_timings[i] = millis() + PULSE_TIME;
             digitalWrite(pulse_pins[i], HIGH);
           }
         }
-
+        
         if(isPulsing(i)) {
           handlePulse(i);
         }
 
         else {
+          
           handleVent(i);
           handleSpecial(i);
         }
@@ -127,10 +133,13 @@ void loop() {
 }
 
 void handleVent(int index){
-  int pin = vent_pins[index];
+  int pin = output_pins[index];
   int open_signal = HIGH;
   int close_signal = LOW;
-
+  if(index==6) {
+    Serial.println("hi");
+  }
+  
   if(!isNC(index)){
     open_signal = LOW;
     close_signal = HIGH;
@@ -142,7 +151,7 @@ void handleVent(int index){
 
       // special timings are handled in handleSpecial(), we only have to see if the timing value has been reset or not here
       if(special_open_timings[index] != 0) { // if the value hasn't been reset and we're still supposed to be open
-        digitalWrite(pin, open_signal);
+        digitalWrite(pin, open_signal);        
       }
 
       else { 

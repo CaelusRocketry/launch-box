@@ -15,8 +15,6 @@ Nitrous Oxide Main Propellant Valve
 
 #include "constants.h"
 
-// TODO: MAKE SURE ALL OF THE SOLENOID VALUES IN CONSTANTS.H ARE CORRECT!!!!!!!!!!!!!!!!
-
 #define PULSE_TIME 500
 #define SPECIAL_OPEN_TIME 4000
 #define SPECIAL_CLOSE_TIME 1000
@@ -65,8 +63,8 @@ boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANO
 boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC};
 
 // -1 indicates that there is no pulse pin for the specified valve
-//int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
-int pulse_pins[] = {-1, -1, -1, -1, -1, -1, -1, -1}; // change
+int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
+// int pulse_pins[] = {-1, -1, -1, -1, -1, -1, -1, -1}; 
 
 void setup(){
     for(int i = 0; i < NUM_VALVES; i++){
@@ -236,8 +234,11 @@ int buttonRead(int pin){
     delay(20);
     int second = (analogRead(pin) > 900);
     if(first == second) {
+      Serial.println("inside of loop");
       return first;  
     }
+    Serial.println("outside of loop");
+    Serial.println(first);
     return false;
 }
 
@@ -258,7 +259,7 @@ int buttonRead(int pin){
  *             /
  *  ----------/-----------
  *  8 (ON)  (OFF)        9 (ON)
- *  CL_VNT  DO_NTHING    OPEN_VENT
+ *  OPEN_VENT  DO_NOTHING    CLOSE_VENT
 
  * then startSwitch is 8 and the method returns OPEN_VENT
  * note that in this scenario, OPEN_VENT is returned even though switchStart has a value of LOW

@@ -17,40 +17,39 @@ Nitrous Oxide Main Propellant Valve
 
 // Nitrous valves
 #define NO_FILL 0
-#define NO_FILL_SPECIAL false
-#define NO_FILL_IS_NC false
+#define NO_FILL_SPECIAL true
+#define NO_FILL_IS_NC true
 #define NO_VENT 2
-#define NO_VENT_SPECIAL false
-#define NO_VENT_IS_NC false
+#define NO_VENT_SPECIAL false // only false
+#define NO_VENT_IS_NC false // only false
 #define NO_MPV 4
-#define NO_MPV_SPECIAL false
-#define NO_MPV_IS_NC false
+#define NO_MPV_SPECIAL true
+#define NO_MPV_IS_NC true
 #define NO_DRAIN 6
-#define NO_DRAIN_SPECIAL false
-#define NO_DRAIN_IS_NC false
+#define NO_DRAIN_SPECIAL true
+#define NO_DRAIN_IS_NC true
 
 // Ethanol valves
 #define NITROGEN_FILL 31
-#define NITROGEN_FILL_SPECIAL false
-#define NITROGEN_FILL_IS_NC false
+#define NITROGEN_FILL_SPECIAL true
+#define NITROGEN_FILL_IS_NC true
 #define ETHANOL_VENT 29
-#define ETHANOL_VENT_SPECIAL false
-#define ETHANOL_VENT_IS_NC false
+#define ETHANOL_VENT_SPECIAL  // test special
+#define ETHANOL_VENT_IS_NC true 
 #define ETHANOL_MPV 27
-#define ETHANOL_MPV_SPECIAL false
-#define ETHANOL_MPV_IS_NC false
+#define ETHANOL_MPV_SPECIAL true
+#define ETHANOL_MPV_IS_NC true
 #define ETHANOL_DRAIN 25
-#define ETHANOL_DRAIN_SPECIAL false
-#define ETHANOL_DRAIN_IS_NC false
+#define ETHANOL_DRAIN_SPECIAL true
+#define ETHANOL_DRAIN_IS_NC true
 
 // Pulsing buttons
-// ARBITRARY RN, PLS FIX PIN NUMBERS
-#define NO_VENT_PULSE 8
-#define NO_VENT_PULSE_SPECIAL false
-#define ETHANOL_VENT_PULSE 10 
-#define ETHANOL_VENT_PULSE_SPECIAL false
-#define ABORT_PIN 12
-
+// ARBITRARY RN, PLS FIX PIN NUMBERS 
+#define NO_VENT_PULSE 38
+#define NO_VENT_PULSE_SPECIAL true
+#define ETHANOL_VENT_PULSE A22
+#define ETHANOL_VENT_PULSE_SPECIAL true
+#define ABORT_PIN 37
 
 // Output pins
 

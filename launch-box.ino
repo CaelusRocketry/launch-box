@@ -66,7 +66,7 @@ boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS
 
 // -1 indicates that there is no pulse pin for the specified valve
 //int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
-int pulse_pins[] = {-1, -1, -1, -1, -1, -1, -1, -1};
+int pulse_pins[] = {-1, -1, -1, -1, -1, -1, -1, -1}; // change
 
 void setup(){
     for(int i = 0; i < NUM_VALVES; i++){
@@ -136,9 +136,6 @@ void handleVent(int index){
   int pin = output_pins[index];
   int open_signal = HIGH;
   int close_signal = LOW;
-  if(index==6) {
-    Serial.println("hi");
-  }
   
   if(!isNC(index)){
     open_signal = LOW;

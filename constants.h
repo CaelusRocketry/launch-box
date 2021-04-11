@@ -34,7 +34,7 @@ Nitrous Oxide Main Propellant Valve
 #define NITROGEN_FILL_SPECIAL true
 #define NITROGEN_FILL_IS_NC true
 #define ETHANOL_VENT 29
-#define ETHANOL_VENT_SPECIAL  // test special
+#define ETHANOL_VENT_SPECIAL true// test special
 #define ETHANOL_VENT_IS_NC true 
 #define ETHANOL_MPV 27
 #define ETHANOL_MPV_SPECIAL true

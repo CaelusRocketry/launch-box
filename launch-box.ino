@@ -269,10 +269,12 @@ int buttonRead(int pin){
 
 pin_state checkToggleSwitch(int switchStart) {
   if(digitalRead(switchStart) == LOW) {
-    return OPEN_VENT;
+    // return OPEN_VENT;
+    return CLOSE_VENT;
   }  
   else if(digitalRead(switchStart + 1) == LOW) {
-    return CLOSE_VENT;
+    return OPEN_VENT;
+    // return CLOSE_VENT;
   }
   else {
     return DO_NOTHING;

@@ -61,6 +61,6 @@ Nitrous Oxide Main Propellant Valve
 
 // Ethanol valves
 #define NITROGEN_FILL_OUT 15
-#define ETHANOL_DRAIN_OUT 17
+#define ETHANOL_DRAIN_OUT 22
 #define ETHANOL_VENT_OUT 14
-#define ETHANOL_MPV_OUT 19
+#define ETHANOL_MPV_OUT 23

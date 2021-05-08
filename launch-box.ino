@@ -280,3 +280,18 @@ pin_state checkToggleSwitch(int switchStart) {
     return DO_NOTHING;
   }
 }
+
+void autosequence() { // order: ethanol, nitrous 1, nitrous 2, nitrous 3, nitrous 4
+  delay(10000); // wait 10 seconds
+  // start igniter
+  delay(500);
+  for(int i: mpv_pins) {
+    digitalWrite(i, HIGH);
+  }
+  delay(3000);
+  digitalWrite(mpv_pins[0], LOW); // ethanol
+  for(int i: mpv_pins) {
+    delay(150);
+    digitalWrite(i, LOW);
+  }
+}

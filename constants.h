@@ -50,6 +50,7 @@ Nitrous Oxide Main Propellant Valve
 #define ETHANOL_VENT_PULSE A22
 #define ETHANOL_VENT_PULSE_SPECIAL true
 #define ABORT_PIN 37
+#define AUTOSEQ_PIN -1
 
 // Output pins
 

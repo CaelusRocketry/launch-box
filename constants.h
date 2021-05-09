@@ -47,11 +47,10 @@ Nitrous Oxide Main Propellant Valve
 // ARBITRARY RN, PLS FIX PIN NUMBERS 
 #define NO_VENT_PULSE 38
 #define NO_VENT_PULSE_SPECIAL true
-#define ETHANOL_VENT_PULSE A22
+//#define ETHANOL_VENT_PULSE A22
 #define ETHANOL_VENT_PULSE_SPECIAL true
 #define ABORT_PIN 37
 #define AUTOSEQ_PIN -1
-
 // Output pins
 
 // Nitrous valves
@@ -64,4 +63,7 @@ Nitrous Oxide Main Propellant Valve
 #define NITROGEN_FILL_OUT 15
 #define ETHANOL_DRAIN_OUT 22
 #define ETHANOL_VENT_OUT 14
-#define ETHANOL_MPV_OUT 19
+#define ETHANOL_MPV_OUT 19 // 23
+
+// extra
+#define IGNITER_PIN -1

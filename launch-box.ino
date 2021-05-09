@@ -118,6 +118,11 @@ void loop() {
           }
         }
         
+        boolean autoseq_activated = buttonRead(AUTOSEQ_PIN);
+        if(autosequence){
+          autosequence();
+        }
+
         if(isPulsing(i)) {
           handlePulse(i);
         }
@@ -279,4 +284,17 @@ pin_state checkToggleSwitch(int switchStart) {
   else {
     return DO_NOTHING;
   }
-}[p   `  cxdfer
+}
+
+void autosequence() { // order: ethanol, nitrous 1, nitrous 2, nitrous 3, nitrous 4
+  delay(10000); // wait 10 seconds
+  digitalWrite(IGNITER_PIN, HIGH);
+  delay(500);
+  digitalWrite(ETHANOL_MPV_OUT, HIGH);
+  digitalWrite(NO_MPV_OUT, HIGH);
+  delay(3000);
+  digitalWrite(ETHANOL_MPV_OUT, LOW); // ethanol
+  delay(125);
+  digitalWrite(NO_MPV_OUT, LOW);
+}
+ 

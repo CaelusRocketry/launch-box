@@ -1,12 +1,10 @@
 /*
 toggle - on/off/on switch
 pulse - you push it and it opens, waits .05s, and closes
-
 Nitrogen Fill (1 switch (toggle)))
 Ethanol Drain (1 switch (toggle))
 Ethanol Vent (1 button (pulse), 1 switch (toggle))
 Ethanol Main Propellant Valve (1 switch (toggle))
-
 Nitrous Oxide Fill
 Nitrous Oxide Drain
 Nitrous Oxide Vent
@@ -63,8 +61,8 @@ boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANO
 boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC};
 
 // -1 indicates that there is no pulse pin for the specified valve
-int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
-// int pulse_pins[] = {-1, -1, -1, -1, -1, -1, -1, -1}; 
+//int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
+ int pulse_pins[] = {-1, -1, -1, -1, -1, -1, -1, -1}; 
 
 void setup(){
     for(int i = 0; i < NUM_VALVES; i++){
@@ -118,11 +116,6 @@ void loop() {
           }
         }
         
-        boolean autoseq_activated = buttonRead(AUTOSEQ_PIN);
-        if(autosequence){
-          autosequence();
-        }
-
         if(isPulsing(i)) {
           handlePulse(i);
         }
@@ -252,7 +245,6 @@ int buttonRead(int pin){
  * note: these SPDT switches all have their common pins connected to GND because arduino only has an INPUT_PULLUP option instead of an INPUT_PULLDOWN option
  * this means that a value of LOW indicates that the switch has been flicked in a certain direction, not HIGH
  * switchStart always maps to CLOSE_VENT, OFF maps to DO_NOTHING, switchStart + 1 maps to OPEN_VENT
-
  * @param switchStart: the first pin of a toggle switch 
  * @return CLOSE_VENT if the switch is closest to switchStart, DO_NOTHING if it's off, and OPEN_VENT if it's closest to switchStart + 1
  
@@ -265,7 +257,6 @@ int buttonRead(int pin){
  *  ----------/-----------
  *  8 (ON)  (OFF)        9 (ON)
  *  OPEN_VENT  DO_NOTHING    CLOSE_VENT
-
  * then startSwitch is 8 and the method returns OPEN_VENT
  * note that in this scenario, OPEN_VENT is returned even though switchStart has a value of LOW
  * this reversal has to be done (i.e. we can't just check for HIGH) because the OFF state always has a state of HIGH, which means that 2 pins are always HIGH, and 
@@ -285,16 +276,3 @@ pin_state checkToggleSwitch(int switchStart) {
     return DO_NOTHING;
   }
 }
-
-void autosequence() { // order: ethanol, nitrous 1, nitrous 2, nitrous 3, nitrous 4
-  delay(10000); // wait 10 seconds
-  digitalWrite(IGNITER_PIN, HIGH);
-  delay(500);
-  digitalWrite(ETHANOL_MPV_OUT, HIGH);
-  digitalWrite(NO_MPV_OUT, HIGH);
-  delay(3000);
-  digitalWrite(ETHANOL_MPV_OUT, LOW); // ethanol
-  delay(125);
-  digitalWrite(NO_MPV_OUT, LOW);
-}
- 

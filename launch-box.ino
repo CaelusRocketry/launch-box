@@ -74,6 +74,7 @@ void setup(){
     for(int i = 0; i < NUM_BUTTONS; i++){
         pinMode(pulse_pins[i], INPUT_PULLUP);
     }
+    pinMode(IGNITER_POUT, OUTPUT);
     pinMode(ABORT_PIN, INPUT_PULLUP);
     Serial.begin(9600);
     aborted = false;
@@ -96,9 +97,9 @@ void loop() {
         pin_state current_state = checkToggleSwitch(pin); // check if its open, close, or DO_NOTHING
 
         if(current_state != states[i]) { // if the switch is flicked and the command has changed since last iteration
-          Serial.println(vent_pins[i]);
-          Serial.println(output_pins[i]);
-          Serial.println(i);
+//          Serial.println(vent_pins[i]);
+//          Serial.println(output_pins[i]);
+//          Serial.println(i);
             states[i] = current_state; // update the state list with the current state
             if(states[i] == OPEN_VENT && isSpecial(i)) { // only NC valves are special, so we only have to check for OPEN_VENT
               special_open_timings[i] = millis() + SPECIAL_OPEN_TIME;
@@ -115,7 +116,14 @@ void loop() {
             digitalWrite(pulse_pins[i], HIGH);
           }
         }
-        
+        if(buttonRead(IGNITER_PIN)){
+          Serial.println("IGNITER PIN STATUS: true");
+          digitalWrite(IGNITER_POUT, HIGH);
+        }
+        else{
+          Serial.println("IGNITER PIN STATUS: false");
+          digitalWrite(IGNITER_POUT, LOW);
+        }
         if(isPulsing(i)) {
           handlePulse(i);
         }

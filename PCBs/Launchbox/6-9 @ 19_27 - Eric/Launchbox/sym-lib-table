@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Launchbox)(type Legacy)(uri "${KIPRJMOD}/Launchbox (2021_01_03 20_38_15 UTC).lib")(options "")(descr ""))
+  (lib (name Launchbox-rescue)(type Legacy)(uri ${KIPRJMOD}/Launchbox-rescue.lib)(options "")(descr ""))
+)

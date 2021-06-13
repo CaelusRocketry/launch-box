@@ -14,6 +14,7 @@ Nitrous Oxide Main Propellant Valve
 */
 
 // Pin definitions - each toggle switch takes up 2 pins, the pulse pins take up one pin each
+// if pin numbers are -1, means that they are not wired yet
 
 // Nitrous valves
 #define NO_FILL 0
@@ -47,7 +48,7 @@ Nitrous Oxide Main Propellant Valve
 // ARBITRARY RN, PLS FIX PIN NUMBERS 
 #define NO_VENT_PULSE 38
 #define NO_VENT_PULSE_SPECIAL true
-//#define ETHANOL_VENT_PULSE A22
+#define ETHANOL_VENT_PULSE -1
 #define ETHANOL_VENT_PULSE_SPECIAL true
 #define ABORT_PIN 37
 #define AUTOSEQ_PIN -1

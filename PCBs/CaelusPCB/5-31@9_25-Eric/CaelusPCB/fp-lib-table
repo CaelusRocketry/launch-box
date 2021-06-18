@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name Launchbox)(type KiCad)(uri ${KIPRJMOD}/Launchbox.pretty)(options "")(descr ""))
-)

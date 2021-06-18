@@ -1,4 +1,4 @@
-19229032692974341
+19230657946207544
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56244,6 +56244,13 @@ MAX31850
 0
 10
 10
+Launchbox
+MAX31856
+
+
+0
+9
+9
 Launchbox
 Pushbutton
 

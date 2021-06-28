@@ -1,4 +1,4 @@
-update=6/16/2021 2:21:55 PM
+update=6/28/2021 2:19:06 PM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=CaelusPCB(5_31).net
+LastNetListRead=CaelusPCB(6_27).net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

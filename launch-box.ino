@@ -1,3 +1,4 @@
+
 /*
   toggle - on/off/on switch
   pulse - you push it and it opens, waits .05s, and closes
@@ -54,8 +55,9 @@ unsigned long special_close_timings[NUM_VALVES];
 
 // all valves take up two pins, and each vent_pin value stores the first (even number) of these pins
 // so, it goes 2, 4, 6, 8, 10, 12, etc
-int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
-int output_pins[] = {NITROGEN_FILL_OUT, ETHANOL_DRAIN_OUT, ETHANOL_VENT_OUT, ETHANOL_MPV_OUT, NO_FILL_OUT, NO_DRAIN_OUT, NO_VENT_OUT, NO_MPV_OUT};
+//int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
+int vent_pins[] = {NITROGEN_FILL, IGNITER, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
+int output_pins[] = {NITROGEN_FILL_OUT, IGNITER_OUT, ETHANOL_VENT_OUT, ETHANOL_MPV_OUT, NO_FILL_OUT, NO_DRAIN_OUT, NO_VENT_OUT, NO_MPV_OUT};
 
 boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANOL_VENT_SPECIAL, ETHANOL_MPV_SPECIAL, NO_FILL_SPECIAL, NO_DRAIN_SPECIAL, NO_VENT_SPECIAL, NO_MPV_SPECIAL};
 boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC};
@@ -74,7 +76,6 @@ void setup() {
   for (int i = 0; i < NUM_BUTTONS; i++) {
     pinMode(pulse_pins[i], INPUT_PULLUP);
   }
-  pinMode(IGNITER_POUT, OUTPUT);
   pinMode(ABORT_PIN, INPUT_PULLUP);
   Serial.begin(9600);
   aborted = false;
@@ -116,13 +117,6 @@ void loop() {
         digitalWrite(pulse_pins[i], HIGH);
       }
     }
-    if (buttonRead(IGNITER_PIN)) {
-      Serial.println("IGNITER PIN STATUS: true");
-      digitalWrite(IGNITER_POUT, HIGH);
-    }
-    else {
-      Serial.println("IGNITER PIN STATUS: false");
-      digitalWrite(IGNITER_POUT, LOW);
 
       boolean autoseq_activated = buttonRead(AUTOSEQ_PIN);
       if (autoseq_activated) {
@@ -140,7 +134,6 @@ void loop() {
       }
     }
   }
-}
 void handleVent(int index) {
   int pin = output_pins[index];
   int open_signal = HIGH;
@@ -292,7 +285,7 @@ pin_state checkToggleSwitch(int switchStart) {
 
 void autosequence() { // order: ethanol, nitrous 1, nitrous 2, nitrous 3, nitrous 4
   delay(10000); // wait 10 seconds
-  digitalWrite(IGNITER_PIN, HIGH);
+  digitalWrite(IGNITER_OUT, HIGH);
   delay(500);
   digitalWrite(ETHANOL_MPV_OUT, HIGH);
   digitalWrite(NO_MPV_OUT, HIGH);

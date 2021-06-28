@@ -27,64 +27,64 @@ Connection ~ 14075 1750
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5F7495D2
-P 1050 7250
-F 0 "BT1" H 800 7400 50  0000 L CNN
-F 1 "Battery_Cell" H 500 7300 50  0000 L CNN
-F 2 "Launchbox:Lipo_Battery_Connector" V 1050 7310 50  0001 C CNN
-F 3 "~" V 1050 7310 50  0001 C CNN
-	1    1050 7250
+P 955 8510
+F 0 "BT1" H 705 8660 50  0000 L CNN
+F 1 "Battery_Cell" H 405 8560 50  0000 L CNN
+F 2 "Launchbox:Lipo_Battery_Connector" V 955 8570 50  0001 C CNN
+F 3 "~" V 955 8570 50  0001 C CNN
+	1    955  8510
 	1    0    0    -1  
 $EndComp
 $Comp
 L CaelusPCB-rescue:GND1-power #PWR01
 U 1 1 5F74B95E
-P 1050 7350
-F 0 "#PWR01" H 1050 7100 50  0001 C CNN
-F 1 "GND1" H 1055 7177 50  0000 C CNN
-F 2 "" H 1050 7350 50  0001 C CNN
-F 3 "" H 1050 7350 50  0001 C CNN
-	1    1050 7350
+P 955 8610
+F 0 "#PWR01" H 955 8360 50  0001 C CNN
+F 1 "GND1" H 960 8437 50  0000 C CNN
+F 2 "" H 955 8610 50  0001 C CNN
+F 3 "" H 955 8610 50  0001 C CNN
+	1    955  8610
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1050 7050 1500 7050
+	955  8310 1405 8310
 $Comp
 L CaelusPCB-rescue:GND1-power #PWR011
 U 1 1 5F74E9C8
-P 1800 7350
-F 0 "#PWR011" H 1800 7100 50  0001 C CNN
-F 1 "GND1" H 1805 7177 50  0000 C CNN
-F 2 "" H 1800 7350 50  0001 C CNN
-F 3 "" H 1800 7350 50  0001 C CNN
-	1    1800 7350
+P 1705 8610
+F 0 "#PWR011" H 1705 8360 50  0001 C CNN
+F 1 "GND1" H 1710 8437 50  0000 C CNN
+F 2 "" H 1705 8610 50  0001 C CNN
+F 3 "" H 1705 8610 50  0001 C CNN
+	1    1705 8610
 	1    0    0    -1  
 $EndComp
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR012
 U 1 1 5F750D83
-P 2150 7000
-F 0 "#PWR012" H 2150 6850 50  0001 C CNN
-F 1 "+5V" H 2165 7173 50  0000 C CNN
-F 2 "" H 2150 7000 50  0001 C CNN
-F 3 "" H 2150 7000 50  0001 C CNN
-	1    2150 7000
+P 2055 8260
+F 0 "#PWR012" H 2055 8110 50  0001 C CNN
+F 1 "+5V" H 2070 8433 50  0000 C CNN
+F 2 "" H 2055 8260 50  0001 C CNN
+F 3 "" H 2055 8260 50  0001 C CNN
+	1    2055 8260
 	1    0    0    -1  
 $EndComp
 $Comp
 L CaelusPCB-rescue:L7805-Regulator_Linear U3
 U 1 1 5F74367E
-P 1800 7050
-F 0 "U3" H 1800 7292 50  0000 C CNN
-F 1 "L7805" H 1800 7201 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1825 6900 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1800 7000 50  0001 C CNN
-	1    1800 7050
+P 1705 8310
+F 0 "U3" H 1705 8552 50  0000 C CNN
+F 1 "L7805" H 1705 8461 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1730 8160 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1705 8260 50  0001 C CNN
+	1    1705 8310
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 7050 2150 7050
+	2005 8310 2055 8310
 Wire Wire Line
-	2150 7050 2150 7000
+	2055 8310 2055 8260
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR027
 U 1 1 5F755105
@@ -218,7 +218,7 @@ Wire Wire Line
 	12075 2750 12075 2150
 Text Notes 13725 600  0    50   ~ 0
 Pressure Transducers
-Text Notes 1250 6650 0    50   ~ 0
+Text Notes 1155 7910 0    50   ~ 0
 Battery + 5V Regulator
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR02
@@ -232,69 +232,58 @@ F 3 "" H 1000 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB-rescue:+5V-power #PWR03
-U 1 1 5FB9D9F7
-P 1000 4650
-F 0 "#PWR03" H 1000 4500 50  0001 C CNN
-F 1 "+5V" H 1015 4823 50  0000 C CNN
-F 2 "" H 1000 4650 50  0001 C CNN
-F 3 "" H 1000 4650 50  0001 C CNN
-	1    1000 4650
-	1    0    0    -1  
-$EndComp
-$Comp
 L CaelusPCB-rescue:+5V-power #PWR04
 U 1 1 5FB9DEE7
-P 1000 5050
-F 0 "#PWR04" H 1000 4900 50  0001 C CNN
-F 1 "+5V" H 1015 5223 50  0000 C CNN
-F 2 "" H 1000 5050 50  0001 C CNN
-F 3 "" H 1000 5050 50  0001 C CNN
-	1    1000 5050
+P 1000 5190
+F 0 "#PWR04" H 1000 5040 50  0001 C CNN
+F 1 "+5V" H 1015 5363 50  0000 C CNN
+F 2 "" H 1000 5190 50  0001 C CNN
+F 3 "" H 1000 5190 50  0001 C CNN
+	1    1000 5190
 	1    0    0    -1  
 $EndComp
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR05
 U 1 1 5FB9E2F7
-P 1000 5450
-F 0 "#PWR05" H 1000 5300 50  0001 C CNN
-F 1 "+5V" H 1015 5623 50  0000 C CNN
-F 2 "" H 1000 5450 50  0001 C CNN
-F 3 "" H 1000 5450 50  0001 C CNN
-	1    1000 5450
+P 1000 5660
+F 0 "#PWR05" H 1000 5510 50  0001 C CNN
+F 1 "+5V" H 1015 5833 50  0000 C CNN
+F 2 "" H 1000 5660 50  0001 C CNN
+F 3 "" H 1000 5660 50  0001 C CNN
+	1    1000 5660
 	1    0    0    -1  
 $EndComp
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR06
 U 1 1 5FB9E6D9
-P 1000 5850
-F 0 "#PWR06" H 1000 5700 50  0001 C CNN
-F 1 "+5V" H 1015 6023 50  0000 C CNN
-F 2 "" H 1000 5850 50  0001 C CNN
-F 3 "" H 1000 5850 50  0001 C CNN
-	1    1000 5850
+P 1000 6125
+F 0 "#PWR06" H 1000 5975 50  0001 C CNN
+F 1 "+5V" H 1015 6298 50  0000 C CNN
+F 2 "" H 1000 6125 50  0001 C CNN
+F 3 "" H 1000 6125 50  0001 C CNN
+	1    1000 6125
 	1    0    0    -1  
 $EndComp
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR07
 U 1 1 5FB9EADD
-P 1000 6250
-F 0 "#PWR07" H 1000 6100 50  0001 C CNN
-F 1 "+5V" H 1015 6423 50  0000 C CNN
-F 2 "" H 1000 6250 50  0001 C CNN
-F 3 "" H 1000 6250 50  0001 C CNN
-	1    1000 6250
+P 1000 6595
+F 0 "#PWR07" H 1000 6445 50  0001 C CNN
+F 1 "+5V" H 1015 6768 50  0000 C CNN
+F 2 "" H 1000 6595 50  0001 C CNN
+F 3 "" H 1000 6595 50  0001 C CNN
+	1    1000 6595
 	1    0    0    -1  
 $EndComp
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR015
 U 1 1 5FBA0803
-P 2750 4650
-F 0 "#PWR015" H 2750 4500 50  0001 C CNN
-F 1 "+5V" H 2765 4823 50  0000 C CNN
-F 2 "" H 2750 4650 50  0001 C CNN
-F 3 "" H 2750 4650 50  0001 C CNN
-	1    2750 4650
+P 2750 4720
+F 0 "#PWR015" H 2750 4570 50  0001 C CNN
+F 1 "+5V" H 2765 4893 50  0000 C CNN
+F 2 "" H 2750 4720 50  0001 C CNN
+F 3 "" H 2750 4720 50  0001 C CNN
+	1    2750 4720
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -308,22 +297,6 @@ F 3 "" H 2750 4250 50  0001 C CNN
 	1    2750 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 4250 2750 4250
-Wire Wire Line
-	2200 4650 2750 4650
-Wire Wire Line
-	1000 6250 1550 6250
-Wire Wire Line
-	1550 5850 1000 5850
-Wire Wire Line
-	1000 5450 1550 5450
-Wire Wire Line
-	1000 5050 1550 5050
-Wire Wire Line
-	1000 4650 1550 4650
-Wire Wire Line
-	1000 4250 1550 4250
 $Comp
 L CaelusPCB-rescue:GND1-power #PWR022
 U 1 1 5FC98993
@@ -335,70 +308,6 @@ F 3 "" H 3000 4000 50  0001 C CNN
 	1    3000 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 4000 1900 4450
-Wire Wire Line
-	1900 4450 1450 4450
-Wire Wire Line
-	1450 4450 1450 4350
-Wire Wire Line
-	1450 4350 1550 4350
-Wire Wire Line
-	2200 4150 2300 4150
-Wire Wire Line
-	2300 4150 2300 4000
-Connection ~ 2300 4000
-Wire Wire Line
-	2300 4000 1900 4000
-Wire Wire Line
-	1550 4750 1450 4750
-Wire Wire Line
-	1450 4750 1450 4850
-Wire Wire Line
-	1450 4850 1900 4850
-Wire Wire Line
-	1900 4850 1900 4450
-Connection ~ 1900 4450
-Wire Wire Line
-	2200 4550 2300 4550
-Wire Wire Line
-	2300 4550 2300 4450
-Wire Wire Line
-	2300 4450 1900 4450
-Wire Wire Line
-	1550 5150 1500 5150
-Wire Wire Line
-	1500 5150 1500 5250
-Wire Wire Line
-	1500 5250 1900 5250
-Wire Wire Line
-	1900 5250 1900 4850
-Connection ~ 1900 4850
-Wire Wire Line
-	1550 5550 1450 5550
-Wire Wire Line
-	1450 5550 1450 5650
-Wire Wire Line
-	1450 5650 1900 5650
-Wire Wire Line
-	1900 5650 1900 5250
-Connection ~ 1900 5250
-Wire Wire Line
-	1550 5950 1450 5950
-Wire Wire Line
-	1450 5950 1450 6050
-Wire Wire Line
-	1900 6050 1900 5650
-Connection ~ 1900 5650
-Wire Wire Line
-	1550 6350 1450 6350
-Wire Wire Line
-	1450 6350 1450 6450
-Wire Wire Line
-	1450 6450 1900 6450
-Wire Wire Line
-	1900 6450 1900 6050
-Connection ~ 1900 6050
 Text GLabel 10875 1450 0    50   Input ~ 0
 3
 Text GLabel 10875 1550 0    50   Input ~ 0
@@ -437,36 +346,20 @@ Wire Wire Line
 	10875 1450 11325 1450
 Text GLabel 1200 4150 1    50   Input ~ 0
 40
-Wire Wire Line
-	1200 4150 1550 4150
-Wire Wire Line
-	1200 4550 1550 4550
-Text GLabel 1200 4950 1    50   Input ~ 0
+Text GLabel 1200 5090 1    50   Input ~ 0
 42
-Text GLabel 1200 5350 1    50   Input ~ 0
+Text GLabel 1200 5560 1    50   Input ~ 0
 43
-Text GLabel 1200 5750 1    50   Input ~ 0
+Text GLabel 1200 6025 1    50   Input ~ 0
 44
-Text GLabel 1200 6150 1    50   Input ~ 0
+Text GLabel 1200 6495 1    50   Input ~ 0
 45
-Text GLabel 2550 4350 3    50   Input ~ 0
+Text GLabel 2585 4350 3    50   Input ~ 0
 46
-Wire Wire Line
-	2200 4350 2550 4350
-Text GLabel 2550 4750 3    50   Input ~ 0
+Text GLabel 2585 4820 3    50   Input ~ 0
 47
-Wire Wire Line
-	2200 4750 2550 4750
 Text Notes 1750 3950 0    50   ~ 0
 Relays
-Wire Wire Line
-	1550 6150 1200 6150
-Wire Wire Line
-	1550 5750 1200 5750
-Wire Wire Line
-	1200 5350 1550 5350
-Wire Wire Line
-	1200 4950 1550 4950
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR040
 U 1 1 604A6B06
@@ -535,96 +428,6 @@ F 3 "" H 3170 2390 50  0001 C CNN
 	1    3170 2390
 	-1   0    0    1   
 $EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U2
-U 1 1 6065B074
-P 1550 4250
-F 0 "U2" V 1550 4350 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 1600 3700 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 1500 4250 50  0001 C CNN
-F 3 "" H 1500 4250 50  0001 C CNN
-	1    1550 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U12
-U 1 1 6065C6C5
-P 2200 4250
-F 0 "U12" V 2200 4350 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 2150 3700 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 2150 4250 50  0001 C CNN
-F 3 "" H 2150 4250 50  0001 C CNN
-	1    2200 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U13
-U 1 1 6065D2E6
-P 2200 4650
-F 0 "U13" V 2200 4750 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 2150 4100 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 2150 4650 50  0001 C CNN
-F 3 "" H 2150 4650 50  0001 C CNN
-	1    2200 4650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U4
-U 1 1 6065EF70
-P 1550 4650
-F 0 "U4" V 1550 4750 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 1600 4100 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 1500 4650 50  0001 C CNN
-F 3 "" H 1500 4650 50  0001 C CNN
-	1    1550 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U5
-U 1 1 6065F610
-P 1550 5050
-F 0 "U5" V 1550 5150 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 1600 4500 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 1500 5050 50  0001 C CNN
-F 3 "" H 1500 5050 50  0001 C CNN
-	1    1550 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U6
-U 1 1 6065FB91
-P 1550 5450
-F 0 "U6" V 1550 5550 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 1600 4900 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 1500 5450 50  0001 C CNN
-F 3 "" H 1500 5450 50  0001 C CNN
-	1    1550 5450
-	0    1    1    0   
-$EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U7
-U 1 1 606601F8
-P 1550 5850
-F 0 "U7" V 1550 5950 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 1600 5300 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 1500 5850 50  0001 C CNN
-F 3 "" H 1500 5850 50  0001 C CNN
-	1    1550 5850
-	0    1    1    0   
-$EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U8
-U 1 1 606604F0
-P 1550 6250
-F 0 "U8" V 1550 6350 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 1600 5700 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 1500 6250 50  0001 C CNN
-F 3 "" H 1500 6250 50  0001 C CNN
-	1    1550 6250
-	0    1    1    0   
-$EndComp
-Text GLabel 1200 4550 1    50   Input ~ 0
-41
 Wire Wire Line
 	12225 2950 11725 2950
 Wire Wire Line
@@ -660,30 +463,6 @@ F 3 "" H 3550 7550 50  0001 C CNN
 	1    3550 7550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 6700 3550 6800
-Wire Wire Line
-	3550 6800 3550 6900
-Connection ~ 3550 6800
-Wire Wire Line
-	3550 6900 3550 7000
-Wire Wire Line
-	3550 7000 3550 7100
-Connection ~ 3550 6900
-Connection ~ 3550 7000
-Wire Wire Line
-	3550 7100 3550 7200
-Wire Wire Line
-	3550 7200 3550 7300
-Connection ~ 3550 7100
-Connection ~ 3550 7200
-Wire Wire Line
-	3550 7300 3550 7400
-Wire Wire Line
-	3550 7400 3550 7550
-Connection ~ 3550 7300
-Connection ~ 3550 7400
-Connection ~ 3550 7550
 Text GLabel 4300 7400 2    50   Input ~ 0
 39
 Text GLabel 4300 7300 2    50   Input ~ 0
@@ -736,28 +515,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 7550 3550 7550
 $Comp
-L CaelusPCB-rescue:Launchbox_HT12D-Launchbox-cache U19
-U 1 1 60426FD3
-P 3750 7050
-F 0 "U19" H 3950 7500 50  0000 C CNN
-F 1 "Launchbox_HT12D" H 4000 6500 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 3750 7050 50  0001 C CNN
-F 3 "" H 3750 7050 50  0001 C CNN
-	1    3750 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L CaelusPCB-rescue:+5V-power #PWR048
-U 1 1 6091E609
-P 4300 6700
-F 0 "#PWR048" H 4300 6550 50  0001 C CNN
-F 1 "+5V" H 4315 6873 50  0000 C CNN
-F 2 "" H 4300 6700 50  0001 C CNN
-F 3 "" H 4300 6700 50  0001 C CNN
-	1    4300 6700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R1
 U 1 1 6095AF9E
 P 4450 6800
@@ -770,46 +527,10 @@ F 3 "~" H 4450 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 6900 4300 6900
-$Comp
-L CaelusPCB-rescue:+5V-power #PWR063
-U 1 1 60959FA5
-P 5450 6700
-F 0 "#PWR063" H 5450 6550 50  0001 C CNN
-F 1 "+5V" H 5465 6873 50  0000 C CNN
-F 2 "" H 5450 6700 50  0001 C CNN
-F 3 "" H 5450 6700 50  0001 C CNN
-	1    5450 6700
-	1    0    0    -1  
-$EndComp
-Connection ~ 5850 7550
 Wire Wire Line
 	6150 7550 5850 7550
-Connection ~ 4700 7550
 Wire Wire Line
 	5000 7550 4700 7550
-Connection ~ 5850 7400
-Wire Wire Line
-	5850 7400 5850 7550
-Connection ~ 5850 7300
-Wire Wire Line
-	5850 7300 5850 7400
-Connection ~ 5850 7200
-Wire Wire Line
-	5850 7200 5850 7300
-Connection ~ 5850 7100
-Wire Wire Line
-	5850 7100 5850 7200
-Connection ~ 5850 7000
-Wire Wire Line
-	5850 7000 5850 7100
-Connection ~ 5850 6900
-Wire Wire Line
-	5850 6900 5850 7000
-Connection ~ 5850 6800
-Wire Wire Line
-	5850 6800 5850 6900
-Wire Wire Line
-	5850 6700 5850 6800
 $Comp
 L CaelusPCB-rescue:GND1-power #PWR064
 U 1 1 60716932
@@ -821,40 +542,6 @@ F 3 "" H 5850 7550 50  0001 C CNN
 	1    5850 7550
 	1    0    0    -1  
 $EndComp
-$Comp
-L CaelusPCB-rescue:Launchbox_HT12D-Launchbox-cache U50
-U 1 1 6071692C
-P 6050 7050
-F 0 "U50" H 6250 7500 50  0000 C CNN
-F 1 "Launchbox_HT12D" H 6300 6500 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 6050 7050 50  0001 C CNN
-F 3 "" H 6050 7050 50  0001 C CNN
-	1    6050 7050
-	1    0    0    -1  
-$EndComp
-Connection ~ 4700 7400
-Wire Wire Line
-	4700 7400 4700 7550
-Connection ~ 4700 7300
-Wire Wire Line
-	4700 7300 4700 7400
-Connection ~ 4700 7200
-Wire Wire Line
-	4700 7200 4700 7300
-Connection ~ 4700 7100
-Wire Wire Line
-	4700 7100 4700 7200
-Connection ~ 4700 7000
-Wire Wire Line
-	4700 7000 4700 7100
-Connection ~ 4700 6900
-Wire Wire Line
-	4700 6900 4700 7000
-Connection ~ 4700 6800
-Wire Wire Line
-	4700 6800 4700 6900
-Wire Wire Line
-	4700 6700 4700 6800
 $Comp
 L CaelusPCB-rescue:GND1-power #PWR053
 U 1 1 606DFF52
@@ -921,17 +608,6 @@ F 1 "+5V" H 6250 6600 50  0000 C CNN
 F 2 "" H 6150 6550 50  0001 C CNN
 F 3 "" H 6150 6550 50  0001 C CNN
 	1    6150 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L CaelusPCB-rescue:+5V-power #PWR075
-U 1 1 6095A661
-P 6600 6700
-F 0 "#PWR075" H 6600 6550 50  0001 C CNN
-F 1 "+5V" H 6615 6873 50  0000 C CNN
-F 2 "" H 6600 6700 50  0001 C CNN
-F 3 "" H 6600 6700 50  0001 C CNN
-	1    6600 6700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1229,73 +905,31 @@ Text GLabel 950  800  1    50   Input ~ 0
 Wire Wire Line
 	950  800  950  1200
 $Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U11
-U 1 1 60F82FEC
-P 2200 5050
-F 0 "U11" V 2200 5150 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 2150 4500 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 2150 5050 50  0001 C CNN
-F 3 "" H 2150 5050 50  0001 C CNN
-	1    2200 5050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2200 4950 2300 4950
-Wire Wire Line
-	2300 4950 2300 4850
-Wire Wire Line
-	2300 4850 1900 4850
-Wire Wire Line
-	2200 5050 2750 5050
-$Comp
 L CaelusPCB-rescue:+5V-power #PWR017
 U 1 1 60FCF1EB
-P 2750 5050
-F 0 "#PWR017" H 2750 4900 50  0001 C CNN
-F 1 "+5V" H 2765 5223 50  0000 C CNN
-F 2 "" H 2750 5050 50  0001 C CNN
-F 3 "" H 2750 5050 50  0001 C CNN
-	1    2750 5050
+P 2750 5190
+F 0 "#PWR017" H 2750 5040 50  0001 C CNN
+F 1 "+5V" H 2765 5363 50  0000 C CNN
+F 2 "" H 2750 5190 50  0001 C CNN
+F 3 "" H 2750 5190 50  0001 C CNN
+	1    2750 5190
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 5150 2550 5150
-Text GLabel 2550 5150 3    50   Input ~ 0
+Text GLabel 2585 5290 3    50   Input ~ 0
 48
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U14
-U 1 1 60FF6B5A
-P 2200 5450
-F 0 "U14" V 2200 5550 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 2150 4900 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 2150 5450 50  0001 C CNN
-F 3 "" H 2150 5450 50  0001 C CNN
-	1    2200 5450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2200 5350 2300 5350
-Wire Wire Line
-	2300 5350 2300 5250
-Wire Wire Line
-	2300 5250 1900 5250
-Wire Wire Line
-	2200 5450 2750 5450
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR018
 U 1 1 61044D8C
-P 2750 5450
-F 0 "#PWR018" H 2750 5300 50  0001 C CNN
-F 1 "+5V" H 2765 5623 50  0000 C CNN
-F 2 "" H 2750 5450 50  0001 C CNN
-F 3 "" H 2750 5450 50  0001 C CNN
-	1    2750 5450
+P 2750 5660
+F 0 "#PWR018" H 2750 5510 50  0001 C CNN
+F 1 "+5V" H 2765 5833 50  0000 C CNN
+F 2 "" H 2750 5660 50  0001 C CNN
+F 3 "" H 2750 5660 50  0001 C CNN
+	1    2750 5660
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 5550 3    50   Input ~ 0
+Text GLabel 2585 5760 3    50   Input ~ 0
 49
-Wire Wire Line
-	2200 5550 2550 5550
 Wire Wire Line
 	12025 2800 12375 2800
 Wire Wire Line
@@ -1531,80 +1165,34 @@ Wire Wire Line
 	6300 4000 6550 4000
 Wire Wire Line
 	7250 3900 6950 3900
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U9
-U 1 1 60660ADE
-P 2200 5850
-F 0 "U9" V 2200 5950 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 2150 5300 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 2150 5850 50  0001 C CNN
-F 3 "" H 2150 5850 50  0001 C CNN
-	1    2200 5850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2550 5950 2200 5950
-Text GLabel 2550 5950 3    50   Input ~ 0
+Text GLabel 2585 6225 3    50   Input ~ 0
 53
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR08
 U 1 1 6019F2ED
-P 2750 5850
-F 0 "#PWR08" H 2750 5700 50  0001 C CNN
-F 1 "+5V" H 2765 6023 50  0000 C CNN
-F 2 "" H 2750 5850 50  0001 C CNN
-F 3 "" H 2750 5850 50  0001 C CNN
-	1    2750 5850
+P 2750 6125
+F 0 "#PWR08" H 2750 5975 50  0001 C CNN
+F 1 "+5V" H 2765 6298 50  0000 C CNN
+F 2 "" H 2750 6125 50  0001 C CNN
+F 3 "" H 2750 6125 50  0001 C CNN
+	1    2750 6125
 	1    0    0    -1  
 $EndComp
 Text GLabel 7250 3900 2    50   Input ~ 0
 30
-Wire Wire Line
-	2200 5750 2300 5750
-Wire Wire Line
-	2300 5750 2300 5650
-Wire Wire Line
-	1450 6050 1900 6050
-Wire Wire Line
-	2200 6150 2300 6150
-Wire Wire Line
-	2300 6150 2300 6050
 $Comp
 L CaelusPCB-rescue:+5V-power #PWR09
 U 1 1 6019F6D1
-P 2750 6250
-F 0 "#PWR09" H 2750 6100 50  0001 C CNN
-F 1 "+5V" H 2765 6423 50  0000 C CNN
-F 2 "" H 2750 6250 50  0001 C CNN
-F 3 "" H 2750 6250 50  0001 C CNN
-	1    2750 6250
+P 2750 6595
+F 0 "#PWR09" H 2750 6445 50  0001 C CNN
+F 1 "+5V" H 2765 6768 50  0000 C CNN
+F 2 "" H 2750 6595 50  0001 C CNN
+F 3 "" H 2750 6595 50  0001 C CNN
+	1    2750 6595
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2750 6250 2200 6250
-Wire Wire Line
-	2550 6350 2200 6350
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox_Symbols U10
-U 1 1 60661107
-P 2200 6250
-F 0 "U10" V 2200 6350 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 2150 5700 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 2150 6250 50  0001 C CNN
-F 3 "" H 2150 6250 50  0001 C CNN
-	1    2200 6250
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2550 6350 3    50   Input ~ 0
+Text GLabel 2585 6695 3    50   Input ~ 0
 54
-Wire Wire Line
-	2200 5850 2750 5850
-Wire Wire Line
-	2300 6050 1900 6050
-Wire Wire Line
-	1900 5650 2300 5650
-Wire Wire Line
-	3000 4000 2300 4000
 $Comp
 L CaelusPCB-rescue:SPDT_IC-Launchbox U21
 U 1 1 60D4DB8B
@@ -3073,122 +2661,122 @@ Wire Wire Line
 Wire Wire Line
 	12225 2950 12225 3760
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J16
 U 1 1 6184CC72
 P 13845 1000
-F 0 "J?" H 13805 1100 50  0000 L CNN
+F 0 "J16" H 13805 1100 50  0000 L CNN
 F 1 "440055-3" V 14005 800 50  0000 L CNN
-F 2 "3_Header" H 13695 1210 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 13695 1210 50  0001 L BNN
 F 3 "" H 13845 1000 50  0001 L BNN
 	1    13845 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J17
 U 1 1 624E1695
 P 13845 1500
-F 0 "J?" H 13805 1600 50  0000 L CNN
+F 0 "J17" H 13805 1600 50  0000 L CNN
 F 1 "440055-3" V 14005 1300 50  0000 L CNN
-F 2 "3_Header" H 13695 1710 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 13695 1710 50  0001 L BNN
 F 3 "" H 13845 1500 50  0001 L BNN
 	1    13845 1500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J18
 U 1 1 624E1C97
 P 13845 2000
-F 0 "J?" H 13805 2100 50  0000 L CNN
+F 0 "J18" H 13805 2100 50  0000 L CNN
 F 1 "440055-3" V 14005 1800 50  0000 L CNN
-F 2 "3_Header" H 13695 2210 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 13695 2210 50  0001 L BNN
 F 3 "" H 13845 2000 50  0001 L BNN
 	1    13845 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J19
 U 1 1 624E24A2
 P 13845 2500
-F 0 "J?" H 13805 2600 50  0000 L CNN
+F 0 "J19" H 13805 2600 50  0000 L CNN
 F 1 "440055-3" V 14005 2300 50  0000 L CNN
-F 2 "3_Header" H 13695 2710 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 13695 2710 50  0001 L BNN
 F 3 "" H 13845 2500 50  0001 L BNN
 	1    13845 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J20
 U 1 1 624E2B85
 P 13845 3000
-F 0 "J?" H 13805 3100 50  0000 L CNN
+F 0 "J20" H 13805 3100 50  0000 L CNN
 F 1 "440055-3" V 14005 2800 50  0000 L CNN
-F 2 "3_Header" H 13695 3210 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 13695 3210 50  0001 L BNN
 F 3 "" H 13845 3000 50  0001 L BNN
 	1    13845 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J21
 U 1 1 624E79AF
 P 13845 3500
-F 0 "J?" H 13805 3600 50  0000 L CNN
+F 0 "J21" H 13805 3600 50  0000 L CNN
 F 1 "440055-3" V 14005 3300 50  0000 L CNN
-F 2 "3_Header" H 13695 3710 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 13695 3710 50  0001 L BNN
 F 3 "" H 13845 3500 50  0001 L BNN
 	1    13845 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J27
 U 1 1 624E800A
 P 14305 3500
-F 0 "J?" H 14265 3600 50  0000 L CNN
+F 0 "J27" H 14265 3600 50  0000 L CNN
 F 1 "440055-3" V 14465 3300 50  0000 L CNN
-F 2 "3_Header" H 14155 3710 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 14155 3710 50  0001 L BNN
 F 3 "" H 14305 3500 50  0001 L BNN
 	1    14305 3500
 	-1   0    0    1   
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J25
 U 1 1 624EADFD
 P 14305 2500
-F 0 "J?" H 14265 2600 50  0000 L CNN
+F 0 "J25" H 14265 2600 50  0000 L CNN
 F 1 "440055-3" V 14465 2300 50  0000 L CNN
-F 2 "3_Header" H 14155 2710 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 14155 2710 50  0001 L BNN
 F 3 "" H 14305 2500 50  0001 L BNN
 	1    14305 2500
 	-1   0    0    1   
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J24
 U 1 1 624EBE0F
 P 14305 2000
-F 0 "J?" H 14265 2100 50  0000 L CNN
+F 0 "J24" H 14265 2100 50  0000 L CNN
 F 1 "440055-3" V 14465 1800 50  0000 L CNN
-F 2 "3_Header" H 14155 2210 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 14155 2210 50  0001 L BNN
 F 3 "" H 14305 2000 50  0001 L BNN
 	1    14305 2000
 	-1   0    0    1   
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J23
 U 1 1 624EC7E1
 P 14305 1500
-F 0 "J?" H 14265 1600 50  0000 L CNN
+F 0 "J23" H 14265 1600 50  0000 L CNN
 F 1 "440055-3" V 14465 1300 50  0000 L CNN
-F 2 "3_Header" H 14155 1710 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 14155 1710 50  0001 L BNN
 F 3 "" H 14305 1500 50  0001 L BNN
 	1    14305 1500
 	-1   0    0    1   
 $EndComp
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J22
 U 1 1 624ED7DA
 P 14305 1000
-F 0 "J?" H 14265 1100 50  0000 L CNN
+F 0 "J22" H 14265 1100 50  0000 L CNN
 F 1 "440055-3" V 14465 800 50  0000 L CNN
-F 2 "3_Header" H 14155 1210 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 14155 1210 50  0001 L BNN
 F 3 "" H 14305 1000 50  0001 L BNN
 	1    14305 1000
 	-1   0    0    1   
@@ -3252,12 +2840,12 @@ Wire Wire Line
 Wire Wire Line
 	14705 3100 14725 3100
 $Comp
-L Launchbox:440055-3 J?
+L Launchbox:440055-3 J26
 U 1 1 624E98D8
 P 14305 3000
-F 0 "J?" H 14265 3100 50  0000 L CNN
+F 0 "J26" H 14265 3100 50  0000 L CNN
 F 1 "440055-3" V 14465 2800 50  0000 L CNN
-F 2 "3_Header" H 14155 3210 50  0001 L BNN
+F 2 "Launchbox:3_Header" H 14155 3210 50  0001 L BNN
 F 3 "" H 14305 3000 50  0001 L BNN
 	1    14305 3000
 	-1   0    0    1   
@@ -3274,4 +2862,287 @@ Wire Wire Line
 	14725 3550 14725 3600
 Wire Wire Line
 	14725 3600 14705 3600
+$Comp
+L CaelusPCB-rescue:Launchbox_HT12D-Launchbox-cache U19
+U 1 1 60426FD3
+P 3750 7050
+F 0 "U19" H 3950 7500 50  0000 C CNN
+F 1 "Launchbox_HT12D" H 4000 6500 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 3750 7050 50  0001 C CNN
+F 3 "" H 3750 7050 50  0001 C CNN
+	1    3750 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:Launchbox_HT12D-Launchbox-cache U50
+U 1 1 6071692C
+P 6050 7050
+F 0 "U50" H 6250 7500 50  0000 C CNN
+F 1 "Launchbox_HT12D" H 6300 6500 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 6050 7050 50  0001 C CNN
+F 3 "" H 6050 7050 50  0001 C CNN
+	1    6050 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Launchbox:440055-3 J4
+U 1 1 60E164D0
+P 1675 4250
+F 0 "J4" H 1730 4250 50  0000 L CNN
+F 1 "440055-3" V 1620 4050 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1525 4460 50  0001 L BNN
+F 3 "" H 1675 4250 50  0001 L BNN
+	1    1675 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4000 1900 4485
+Wire Wire Line
+	1275 4150 1200 4150
+Wire Wire Line
+	1000 4250 1275 4250
+Wire Wire Line
+	1275 4350 1275 4485
+Wire Wire Line
+	1275 4485 1900 4485
+Connection ~ 1900 4485
+Wire Wire Line
+	1275 4620 1200 4620
+Wire Wire Line
+	1000 4720 1275 4720
+Wire Wire Line
+	1275 4820 1275 4955
+Wire Wire Line
+	1275 4955 1900 4955
+$Comp
+L CaelusPCB-rescue:+5V-power #PWR03
+U 1 1 5FB9D9F7
+P 1000 4720
+F 0 "#PWR03" H 1000 4570 50  0001 C CNN
+F 1 "+5V" H 1015 4893 50  0000 C CNN
+F 2 "" H 1000 4720 50  0001 C CNN
+F 3 "" H 1000 4720 50  0001 C CNN
+	1    1000 4720
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 4620 1    50   Input ~ 0
+41
+Connection ~ 1900 4955
+Wire Wire Line
+	1000 5190 1275 5190
+Wire Wire Line
+	1275 5290 1275 5425
+Wire Wire Line
+	1275 5090 1200 5090
+Wire Wire Line
+	1275 5425 1900 5425
+Connection ~ 1900 5425
+Wire Wire Line
+	1275 5560 1200 5560
+Wire Wire Line
+	1000 5660 1275 5660
+Wire Wire Line
+	1275 5760 1275 5895
+Wire Wire Line
+	1275 5895 1900 5895
+Connection ~ 1900 5895
+Wire Wire Line
+	1275 6025 1200 6025
+Wire Wire Line
+	1000 6125 1275 6125
+Wire Wire Line
+	1275 6225 1275 6360
+Wire Wire Line
+	1275 6360 1900 6360
+Wire Wire Line
+	1275 6495 1200 6495
+Wire Wire Line
+	1000 6595 1275 6595
+Wire Wire Line
+	1275 6695 1275 6830
+Wire Wire Line
+	1275 6830 1900 6830
+Wire Wire Line
+	1900 6360 1900 6830
+Connection ~ 1900 6360
+$Comp
+L Launchbox:440055-3 J5
+U 1 1 612E4596
+P 1675 4720
+F 0 "J5" H 1730 4720 50  0000 L CNN
+F 1 "440055-3" V 1620 4520 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1525 4930 50  0001 L BNN
+F 3 "" H 1675 4720 50  0001 L BNN
+	1    1675 4720
+	1    0    0    -1  
+$EndComp
+$Comp
+L Launchbox:440055-3 J6
+U 1 1 61323E46
+P 1675 5190
+F 0 "J6" H 1730 5190 50  0000 L CNN
+F 1 "440055-3" V 1620 4990 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1525 5400 50  0001 L BNN
+F 3 "" H 1675 5190 50  0001 L BNN
+	1    1675 5190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Launchbox:440055-3 J7
+U 1 1 61364FF7
+P 1675 5660
+F 0 "J7" H 1730 5660 50  0000 L CNN
+F 1 "440055-3" V 1620 5460 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1525 5870 50  0001 L BNN
+F 3 "" H 1675 5660 50  0001 L BNN
+	1    1675 5660
+	1    0    0    -1  
+$EndComp
+$Comp
+L Launchbox:440055-3 J8
+U 1 1 613A52C4
+P 1675 6125
+F 0 "J8" H 1730 6125 50  0000 L CNN
+F 1 "440055-3" V 1620 5925 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1525 6335 50  0001 L BNN
+F 3 "" H 1675 6125 50  0001 L BNN
+	1    1675 6125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Launchbox:440055-3 J9
+U 1 1 613E4DD3
+P 1675 6595
+F 0 "J9" H 1730 6595 50  0000 L CNN
+F 1 "440055-3" V 1620 6395 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1525 6805 50  0001 L BNN
+F 3 "" H 1675 6595 50  0001 L BNN
+	1    1675 6595
+	1    0    0    -1  
+$EndComp
+$Comp
+L Launchbox:440055-3 J10
+U 1 1 614245CB
+P 2125 4250
+F 0 "J10" H 2180 4250 50  0000 L CNN
+F 1 "440055-3" V 2070 4050 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1975 4460 50  0001 L BNN
+F 3 "" H 2125 4250 50  0001 L BNN
+	1    2125 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 4250 2750 4250
+Wire Wire Line
+	1900 4000 2525 4000
+Wire Wire Line
+	2525 4150 2525 4000
+Connection ~ 2525 4000
+Wire Wire Line
+	2525 4000 3000 4000
+$Comp
+L Launchbox:440055-3 J11
+U 1 1 614A43F3
+P 2125 4720
+F 0 "J11" H 2180 4720 50  0000 L CNN
+F 1 "440055-3" V 2070 4520 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1975 4930 50  0001 L BNN
+F 3 "" H 2125 4720 50  0001 L BNN
+	1    2125 4720
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 4720 2750 4720
+Wire Wire Line
+	2525 4620 2525 4485
+Wire Wire Line
+	2525 4485 1900 4485
+Wire Wire Line
+	2525 4350 2585 4350
+Wire Wire Line
+	1900 4485 1900 4955
+$Comp
+L Launchbox:440055-3 J12
+U 1 1 615A6515
+P 2125 5190
+F 0 "J12" H 2180 5190 50  0000 L CNN
+F 1 "440055-3" V 2070 4990 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1975 5400 50  0001 L BNN
+F 3 "" H 2125 5190 50  0001 L BNN
+	1    2125 5190
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 4820 2585 4820
+Wire Wire Line
+	2585 5290 2525 5290
+Wire Wire Line
+	2750 5190 2525 5190
+Wire Wire Line
+	2525 5090 2525 4955
+Wire Wire Line
+	2525 4955 1900 4955
+Wire Wire Line
+	1900 4955 1900 5425
+Wire Wire Line
+	1900 5425 1900 5895
+Wire Wire Line
+	1900 5895 1900 6360
+$Comp
+L Launchbox:440055-3 J13
+U 1 1 617205B5
+P 2125 5660
+F 0 "J13" H 2180 5660 50  0000 L CNN
+F 1 "440055-3" V 2070 5460 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1975 5870 50  0001 L BNN
+F 3 "" H 2125 5660 50  0001 L BNN
+	1    2125 5660
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 5560 2525 5425
+Wire Wire Line
+	2525 5425 1900 5425
+Wire Wire Line
+	2585 5760 2525 5760
+Wire Wire Line
+	2750 5660 2525 5660
+$Comp
+L Launchbox:440055-3 J14
+U 1 1 617D9813
+P 2125 6125
+F 0 "J14" H 2180 6125 50  0000 L CNN
+F 1 "440055-3" V 2070 5925 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1975 6335 50  0001 L BNN
+F 3 "" H 2125 6125 50  0001 L BNN
+	1    2125 6125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 6025 2525 5895
+Wire Wire Line
+	2525 5895 1900 5895
+Wire Wire Line
+	2525 6225 2585 6225
+Wire Wire Line
+	2750 6125 2525 6125
+$Comp
+L Launchbox:440055-3 J15
+U 1 1 61895D41
+P 2125 6595
+F 0 "J15" H 2180 6595 50  0000 L CNN
+F 1 "440055-3" V 2070 6395 50  0000 L CNN
+F 2 "Launchbox:3_Header" H 1975 6805 50  0001 L BNN
+F 3 "" H 2125 6595 50  0001 L BNN
+	1    2125 6595
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 6495 2525 6360
+Wire Wire Line
+	2525 6360 1900 6360
+Wire Wire Line
+	2525 6595 2750 6595
+Wire Wire Line
+	2525 6695 2585 6695
 $EndSCHEMATC

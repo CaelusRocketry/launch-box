@@ -40,7 +40,8 @@ Nitrous Oxide Main Propellant Valve
 #define ETHANOL_MPV 27
 #define ETHANOL_MPV_SPECIAL true
 #define ETHANOL_MPV_IS_NC true
-#define ETHANOL_DRAIN 25
+//#define ETHANOL_DRAIN 25
+#define IGNITER 25
 #define ETHANOL_DRAIN_SPECIAL true
 #define ETHANOL_DRAIN_IS_NC true
 
@@ -52,7 +53,7 @@ Nitrous Oxide Main Propellant Valve
 #define ETHANOL_VENT_PULSE_SPECIAL true
 #define ABORT_PIN 37
 #define AUTOSEQ_PIN -1
-#define IGNITER_PIN A21
+//#define IGNITER_PIN A21
 // Output pins
 
 // Nitrous valves
@@ -68,4 +69,4 @@ Nitrous Oxide Main Propellant Valve
 #define ETHANOL_MPV_OUT 19 // 23
 
 // extra
-#define IGNITER_POUT 17
+#define IGNITER_OUT 17

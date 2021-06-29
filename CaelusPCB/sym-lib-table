@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name "Launchbox (2021_01_03 20_38_15 UTC)")(type Legacy)(uri "C:/Users/Ankit Khandelwal/Documents/Caelus/launch-box/Launchbox/Launchbox (2021_01_03 20_38_15 UTC).lib")(options "")(descr ""))
-  (lib (name Launchbox_Symbols)(type Legacy)(uri "C:/Users/Ankit Khandelwal/Documents/Caelus/launch-box/Launchbox_Symbols.lib")(options "")(descr ""))
-)

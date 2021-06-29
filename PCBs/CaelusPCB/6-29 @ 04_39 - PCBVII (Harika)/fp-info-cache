@@ -1,4 +1,4 @@
-19092199514037140
+19233906034714189
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56210,6 +56210,34 @@ Yellow 5381 Series LED
 2
 2
 Launchbox
+3_Header
+
+
+0
+3
+3
+Launchbox
+5_Header
+
+
+0
+5
+5
+Launchbox
+24V_12V_Regulator
+
+
+0
+4
+4
+Launchbox
+HT12E
+
+
+0
+18
+18
+Launchbox
 Lipo_Battery_Connector
 
 
@@ -56230,6 +56258,13 @@ MAX31850
 0
 10
 10
+Launchbox
+MAX31856
+
+
+0
+9
+9
 Launchbox
 Pushbutton
 
@@ -56258,6 +56293,13 @@ Teensy 3.6
 0
 48
 48
+Launchbox
+Xbee_Breakout
+
+
+0
+20
+20
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet

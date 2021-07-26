@@ -440,17 +440,6 @@ F 3 "~" H 7350 6650 50  0001 C CNN
 	1    7350 6450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Launchbox-rescue:SW_Push-Switch SW17
-U 1 1 5F6D96EF
-P 7900 6250
-F 0 "SW17" H 7900 6535 50  0000 C CNN
-F 1 "SW_Push" H 7900 6444 50  0000 C CNN
-F 2 "Launchbox:Pushbutton" H 7900 6450 50  0001 C CNN
-F 3 "~" H 7900 6450 50  0001 C CNN
-	1    7900 6250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 6450 6550 6450
 Wire Wire Line
@@ -663,43 +652,6 @@ Wire Wire Line
 	7800 3550 7800 3500
 Wire Wire Line
 	8800 3500 8800 3450
-Wire Wire Line
-	8650 3200 8550 3200
-Wire Wire Line
-	7800 3200 7800 3500
-Connection ~ 7950 3200
-Wire Wire Line
-	7950 3200 7800 3200
-Connection ~ 8050 3200
-Wire Wire Line
-	8050 3200 7950 3200
-Connection ~ 8150 3200
-Wire Wire Line
-	8150 3200 8050 3200
-Connection ~ 8250 3200
-Wire Wire Line
-	8250 3200 8150 3200
-Connection ~ 8350 3200
-Wire Wire Line
-	8350 3200 8250 3200
-Connection ~ 8450 3200
-Wire Wire Line
-	8450 3200 8350 3200
-Connection ~ 8550 3200
-Wire Wire Line
-	8550 3200 8450 3200
-Connection ~ 7800 3500
-$Comp
-L Launchbox:HT12E U5
-U 1 1 6039C81C
-P 9400 3400
-F 0 "U5" V 9100 3250 50  0000 L CNN
-F 1 "HT12E" V 9100 3400 50  0000 L CNN
-F 2 "Launchbox:HT12E" H 9400 3400 50  0001 C CNN
-F 3 "" H 9400 3400 50  0001 C CNN
-	1    9400 3400
-	0    1    1    0   
-$EndComp
 $Comp
 L Launchbox:HT12E U6
 U 1 1 6039DE46
@@ -738,59 +690,7 @@ Wire Wire Line
 Wire Wire Line
 	11050 3500 11050 3450
 Wire Wire Line
-	10900 3200 10800 3200
-Wire Wire Line
-	10050 3200 10050 3500
-Connection ~ 10200 3200
-Wire Wire Line
-	10200 3200 10050 3200
-Connection ~ 10300 3200
-Wire Wire Line
-	10300 3200 10200 3200
-Connection ~ 10400 3200
-Wire Wire Line
-	10400 3200 10300 3200
-Connection ~ 10500 3200
-Wire Wire Line
-	10500 3200 10400 3200
-Connection ~ 10600 3200
-Wire Wire Line
-	10600 3200 10500 3200
-Connection ~ 10700 3200
-Wire Wire Line
-	10700 3200 10600 3200
-Connection ~ 10800 3200
-Wire Wire Line
-	10800 3200 10700 3200
-Connection ~ 10050 3500
-Wire Wire Line
 	10050 3500 10050 3550
-Wire Wire Line
-	9750 3200 9650 3200
-Wire Wire Line
-	8900 3200 8900 3500
-Connection ~ 9050 3200
-Wire Wire Line
-	9050 3200 8900 3200
-Connection ~ 9150 3200
-Wire Wire Line
-	9150 3200 9050 3200
-Connection ~ 9250 3200
-Wire Wire Line
-	9250 3200 9150 3200
-Connection ~ 9350 3200
-Wire Wire Line
-	9350 3200 9250 3200
-Connection ~ 9450 3200
-Wire Wire Line
-	9450 3200 9350 3200
-Connection ~ 9550 3200
-Wire Wire Line
-	9550 3200 9450 3200
-Connection ~ 9650 3200
-Wire Wire Line
-	9650 3200 9550 3200
-Connection ~ 8900 3500
 Wire Wire Line
 	8900 3500 8900 3550
 Wire Wire Line
@@ -1142,4 +1042,26 @@ Text GLabel 11050 3450 1    50   Input ~ 0
 3.3V
 Text GLabel 7400 5100 0    50   Input ~ 0
 3.3V
+$Comp
+L Launchbox:HT12E U5
+U 1 1 6039C81C
+P 9400 3400
+F 0 "U5" V 9100 3250 50  0000 L CNN
+F 1 "HT12E" V 9100 3400 50  0000 L CNN
+F 2 "Launchbox:HT12E" H 9400 3400 50  0001 C CNN
+F 3 "" H 9400 3400 50  0001 C CNN
+	1    9400 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox-rescue:SW_Push-Switch SW17
+U 1 1 5F6D96EF
+P 7900 6250
+F 0 "SW17" H 7900 6535 50  0000 C CNN
+F 1 "SW_Push" H 7900 6444 50  0000 C CNN
+F 2 "Launchbox:Pushbutton" H 7900 6450 50  0001 C CNN
+F 3 "~" H 7900 6450 50  0001 C CNN
+	1    7900 6250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

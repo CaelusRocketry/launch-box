@@ -1,4 +1,4 @@
-19233906034714189
+19237186989290446
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56286,6 +56286,20 @@ ScrewTerminals
 0
 3
 3
+Launchbox
+TE_1735446-3
+
+
+0
+3
+3
+Launchbox
+TE_1735446-5
+
+
+0
+5
+5
 Launchbox
 Teensy 3.6
 

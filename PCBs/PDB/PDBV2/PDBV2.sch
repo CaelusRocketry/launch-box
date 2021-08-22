@@ -341,9 +341,9 @@ Wire Wire Line
 Wire Wire Line
 	4600 3880 4500 3880
 Text GLabel 6350 5635 3    50   Input ~ 0
-GND
+GND24
 Text GLabel 6350 5285 3    50   Input ~ 0
-GND
+GND24
 Text GLabel 6350 4930 3    50   Input ~ 0
 GND
 Text GLabel 6350 4580 3    50   Input ~ 0
@@ -353,9 +353,9 @@ GND
 Text GLabel 6350 3880 3    50   Input ~ 0
 GND
 Text GLabel 5475 5635 3    50   Input ~ 0
-GND
+GND24
 Text GLabel 5475 5275 3    50   Input ~ 0
-GND
+GND24
 Text GLabel 5475 4930 3    50   Input ~ 0
 GND
 Text GLabel 5475 4580 3    50   Input ~ 0
@@ -363,7 +363,7 @@ GND
 Text GLabel 5475 4230 3    50   Input ~ 0
 GND
 Text GLabel 4600 5635 3    50   Input ~ 0
-GND
+GND24
 Text GLabel 4600 5280 3    50   Input ~ 0
 GND
 Text GLabel 4600 4930 3    50   Input ~ 0

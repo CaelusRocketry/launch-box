@@ -1,4 +1,4 @@
-(module XT60H-MTH (layer F.Cu) (tedit 6124774A)
+(module XT60H-MTH (layer F.Cu) (tedit 6124E4E4)
   (fp_text reference REF** (at 0 6.096) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -7,7 +7,6 @@
   )
   (fp_line (start -8.25 4.6) (end -8.25 -4.6) (layer F.SilkS) (width 0.12))
   (fp_line (start -8.25 4.6) (end 8.25 4.6) (layer F.SilkS) (width 0.12))
-  (fp_line (start 8.25 4.6) (end 8.25 -4.6) (layer F.SilkS) (width 0.12))
   (fp_line (start -8.25 -4.6) (end 8.25 -4.6) (layer F.SilkS) (width 0.12))
   (pad 1 thru_hole oval (at -3.6 0) (size 5.5 8) (drill 4.5) (layers *.Cu *.Mask))
   (pad 2 thru_hole oval (at 3.6 0) (size 5.5 8) (drill 4.5) (layers *.Cu *.Mask))

@@ -26,7 +26,7 @@ enum pin_state {
 };
 
 // Pin counts
-const int NUM_VALVES = 8;
+const int NUM_VALVES = 12;
 const int NUM_BUTTONS = 2;
 
 // Local variables
@@ -64,7 +64,7 @@ boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS
 
 // -1 indicates that there is no pulse pin for the specified valve
 //int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
-int pulse_pins[] = { -1, -1, -1, -1, -1, -1, -1, -1};
+int pulse_pins[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 , -1};
 
 void setup() {
   for (int i = 0; i < NUM_VALVES; i++) {

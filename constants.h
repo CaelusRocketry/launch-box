@@ -14,45 +14,45 @@ Nitrous Oxide Main Propellant Valve
 */
 
 // Pin definitions - each toggle switch takes up 2 pins, the pulse pins take up one pin each
+
 // if pin numbers are -1, means that they are not wired yet
 
 // Nitrous valves
-#define NO_FILL 0
+#define NO_FILL_HIGH 0 //switch 1
 #define NO_FILL_SPECIAL true
 #define NO_FILL_IS_NC true
-#define NO_VENT 2 //switch 1
+#define NO_VENT_HIGH 2 //switch 2
 #define NO_VENT_SPECIAL false // only false
 #define NO_VENT_IS_NC false // only false
-#define NO_MPV 4 //switch 2
+#define NO_MPV_HIGH 4 //switch 3
 #define NO_MPV_SPECIAL true
 #define NO_MPV_IS_NC true
-#define NO_DRAIN 6 //switch 3
+#define NO_DRAIN_HIGH 6 //switch 4
 #define NO_DRAIN_SPECIAL true
 #define NO_DRAIN_IS_NC true
-#define es1 6//switch 4
+#define es1_HIGH 35 //switch 12
 #define es1_SPECIAL true
 #define es1_IS_NC true
-#define es2 8//switch 5
+#define es2_HIGH 8 //switch 5
 #define es2_SPECIAL true
 #define es2_IS_NC true
-#define es3 10//switch 6
+#define es3_HIGH 10//switch 6
 #define es3_SPECIAL true
 #define es3_IS_NC true
-#define es4 10//switch 7
+#define es4_HIGH 12//switch 7 NOTE: LOW STATE IS PIN 24
 #define es4_SPECIAL true
 #define es4_IS_NC true
 // Ethanol valves
-#define NITROGEN_FILL 31 //switch 11
+#define NITROGEN_FILL_HIGH 31 //switch 11
 #define NITROGEN_FILL_SPECIAL true
 #define NITROGEN_FILL_IS_NC true
-#define ETHANOL_VENT 29 //switch 10
+#define ETHANOL_VENT_HIGH 29 //switch 10
 #define ETHANOL_VENT_SPECIAL true// test special
 #define ETHANOL_VENT_IS_NC true 
-#define ETHANOL_MPV 27 //switch 9
+#define ETHANOL_MPV_HIGH 27 //switch 9
 #define ETHANOL_MPV_SPECIAL true
 #define ETHANOL_MPV_IS_NC true
-//#define ETHANOL_DRAIN 25
-#define IGNITER 25
+#define ETHANOL_DRAIN_HIGH 25 //switch 8
 #define ETHANOL_DRAIN_SPECIAL true
 #define ETHANOL_DRAIN_IS_NC true
 

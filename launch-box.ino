@@ -27,7 +27,7 @@ enum pin_state {
 
 // Pin counts
 const int NUM_VALVES = 12;
-const int NUM_BUTTONS = 2;
+const int NUM_BUTTONS = 5;
 
 // Local variables
 boolean aborted;
@@ -53,18 +53,17 @@ unsigned long special_close_timings[NUM_VALVES];
 // variable values (booleans, etc) for each of these are in constants.h
 // for example, IS_NC is the modifier for each pin, and all of the IS_NC values are stored in constants.h
 
-// all valves take up two pins, and each vent_pin value stores the first (even number) of these pins
+// all valves take up two pins, and each vent_pin value stores the first of these pins
 // so, it goes 2, 4, 6, 8, 10, 12, etc
-//int vent_pins[] = {NITROGEN_FILL, ETHANOL_DRAIN, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV};
-int vent_pins[] = {NITROGEN_FILL, IGNITER, ETHANOL_VENT, ETHANOL_MPV, NO_FILL, NO_DRAIN, NO_VENT, NO_MPV, es1, es2, es3, es4};
-int output_pins[] = {NITROGEN_FILL_OUT, IGNITER_OUT, ETHANOL_VENT_OUT, ETHANOL_MPV_OUT, NO_FILL_OUT, NO_DRAIN_OUT, NO_VENT_OUT, NO_MPV_OUT, es1_OUT, es2_OUT, es3_OUT, es4_OUT};
+int vent_pins[] = {NITROGEN_FILL_HIGH, ETHANOL_VENT_HIGH, ETHANOL_MPV_HIGH, ETHANOL_DRAIN_HIGH, NO_FILL_HIGH, NO_DRAIN_HIGH, NO_VENT_HIGH, NO_MPV_HIGH, es1_HIGH, es2_HIGH, es3_HIGH, es4_HIGH};
+int output_pins[] = {NITROGEN_FILL_OUT, ETHANOL_VENT_OUT, ETHANOL_MPV_OUT, ETHANOL_DRAIN_OUT, NO_FILL_OUT, NO_DRAIN_OUT, NO_VENT_OUT, NO_MPV_OUT, es1_OUT, es2_OUT, es3_OUT, es4_OUT};
 
-boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANOL_VENT_SPECIAL, ETHANOL_MPV_SPECIAL, NO_FILL_SPECIAL, NO_DRAIN_SPECIAL, NO_VENT_SPECIAL, NO_MPV_SPECIAL, es1_SPECIAL, es2_SPECIAL, es3_SPECIAL, es4_SPECIAL};
+boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANOL_VENT_SPECIAL, ETHANOL_MPV_SPECIAL, NO_FILL_SPECIAL, NO_DRAIN_SPECIAL, NO_VENT_SPECIAL, NO_MPV_SPECIAL, es2_SPECIAL, es3_SPECIAL, es4_SPECIAL};
 boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC, es1_IS_NC, es2_IS_NC, es3_IS_NC, es4_IS_NC};
 
 // -1 indicates that there is no pulse pin for the specified valve
 //int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1};
-int pulse_pins[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 , -1};
+int pulse_pins[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 
 void setup() {
   for (int i = 0; i < NUM_VALVES; i++) {
@@ -269,14 +268,18 @@ int buttonRead(int pin) {
    because of how SPDT works, the opposite pin is LOW
 */
 
-pin_state checkToggleSwitch(int switchStart) {
-  if (digitalRead(switchStart) == LOW) {
+pin_state checkToggleSwitch(int switch_HIGH) {
+  int switch_LOW = switch_HIGH+1;
+  if(switch_HIGH==12){
+    switch_LOW = 24;
+  }
+  if (digitalRead(switch_HIGH) == LOW) {
     // return OPEN_VENT;
     return CLOSE_VENT;
   }
-  else if (digitalRead(switchStart + 1) == LOW) {
+  else if (digitalRead(switch_LOW) == LOW) {
     return OPEN_VENT;
-    Serial.println(switchStart);
+    Serial.println(switch_HIGH);
     // return CLOSE_VENT;
   }
   else {

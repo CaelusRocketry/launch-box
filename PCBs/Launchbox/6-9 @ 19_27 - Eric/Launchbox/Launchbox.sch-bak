@@ -440,17 +440,6 @@ F 3 "~" H 7350 6650 50  0001 C CNN
 	1    7350 6450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Launchbox-rescue:SW_Push-Switch SW17
-U 1 1 5F6D96EF
-P 7900 6250
-F 0 "SW17" H 7900 6535 50  0000 C CNN
-F 1 "SW_Push" H 7900 6444 50  0000 C CNN
-F 2 "Launchbox:Pushbutton" H 7900 6450 50  0001 C CNN
-F 3 "~" H 7900 6450 50  0001 C CNN
-	1    7900 6250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 6450 6550 6450
 Wire Wire Line
@@ -1063,5 +1052,16 @@ F 2 "Launchbox:HT12E" H 9400 3400 50  0001 C CNN
 F 3 "" H 9400 3400 50  0001 C CNN
 	1    9400 3400
 	0    1    1    0   
+$EndComp
+$Comp
+L Launchbox-rescue:SW_Push-Switch SW17
+U 1 1 5F6D96EF
+P 7900 6250
+F 0 "SW17" H 7900 6535 50  0000 C CNN
+F 1 "SW_Push" H 7900 6444 50  0000 C CNN
+F 2 "Launchbox:Pushbutton" H 7900 6450 50  0001 C CNN
+F 3 "~" H 7900 6450 50  0001 C CNN
+	1    7900 6250
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name Launchbox)(type KiCad)(uri ${KIPRJMOD}/Launchbox.pretty)(options "")(descr ""))
-  (lib (name Sensor_Temperature)(type KiCad)(uri C:/Users/ericw/Downloads/Sensor_Temperature)(options "")(descr ""))
-)

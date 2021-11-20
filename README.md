@@ -1,7 +1,7 @@
 # Launch Box
 Source code for our rocket's launch box.
 
-Major Changes
+# Making Changes
 Post-production version of PCBs: those currently in use are in launch-box\_stable folders. You shouldn't be editing these files, only copying them or using them as reference
 Libraries now stores all our libraries
 2 schematic libraries: CaelusPCB.lib and Launchbox.lib

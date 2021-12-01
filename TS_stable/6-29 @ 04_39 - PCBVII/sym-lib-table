@@ -1,4 +1,5 @@
 (sym_lib_table
+  (lib (name CaelusPCB-rescue)(type Legacy)(uri ${KIPRJMOD}/CaelusPCB-rescue.lib)(options "")(descr ""))
   (lib (name CaelusPCB)(type Legacy)(uri C:/Users/hakun/Documents/GitHub/launch-box/Libraries/CaelusPCB.lib)(options "")(descr ""))
   (lib (name Launchbox)(type Legacy)(uri C:/Users/hakun/Documents/GitHub/launch-box/Libraries/Launchbox.lib)(options "")(descr ""))
 )

@@ -30,7 +30,7 @@ U 1 1 5F7495D2
 P 5480 3270
 F 0 "BT1" H 5230 3420 50  0000 L CNN
 F 1 "Battery_Cell" H 4930 3320 50  0000 L CNN
-F 2 "Launchbox:Lipo_Battery_Connector" V 5480 3330 50  0001 C CNN
+F 2 "Launchbox:XT60H-M12" V 5480 3330 50  0001 C CNN
 F 3 "~" V 5480 3330 50  0001 C CNN
 	1    5480 3270
 	-1   0    0    1   
@@ -3224,10 +3224,10 @@ F 3 "" H 4730 3170 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB-rescue:RJ45EthernetBreakout-CaelusPCB Ayo?
+L CaelusPCB-rescue:RJ45EthernetBreakout-CaelusPCB Ayo1
 U 1 1 61A5B7F9
 P 3950 2050
-F 0 "Ayo?" H 3950 2100 50  0001 C CNN
+F 0 "Ayo1" H 3950 2100 50  0001 C CNN
 F 1 "RJ45EthernetBreakout" H 4878 1830 50  0000 L CNN
 F 2 "" H 3950 2100 50  0001 C CNN
 F 3 "" H 3950 2100 50  0001 C CNN

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CaelusPCB-rescue)(type Legacy)(uri ${KIPRJMOD}/CaelusPCB-rescue.lib)(options "")(descr ""))
+  (lib (name CaelusPCB-cache)(type Legacy)(uri ${KIPRJMOD}/CaelusPCB-cache.lib)(options "")(descr ""))
+)

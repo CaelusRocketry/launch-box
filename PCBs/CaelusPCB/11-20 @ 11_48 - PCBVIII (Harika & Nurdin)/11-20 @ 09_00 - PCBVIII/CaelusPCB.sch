@@ -473,18 +473,6 @@ Text GLabel 4300 7000 2    50   Input ~ 0
 Text GLabel 5450 7000 2    50   Input ~ 0
 26
 Wire Wire Line
-	2650 7350 2650 7450
-Text GLabel 2650 7350 1    50   Input ~ 0
-27
-Wire Wire Line
-	2750 7350 2750 7450
-Wire Wire Line
-	2850 7350 2850 7450
-Text GLabel 2750 7350 1    50   Input ~ 0
-26
-Text GLabel 2850 7350 1    50   Input ~ 0
-25
-Wire Wire Line
 	5750 6900 5450 6900
 Wire Wire Line
 	5750 6800 5750 6900
@@ -553,28 +541,6 @@ F 3 "" H 4900 7050 50  0001 C CNN
 	1    4900 7050
 	1    0    0    -1  
 $EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U17
-U 1 1 601EC5E2
-P 2750 7450
-F 0 "U17" H 2700 7550 50  0000 L CNN
-F 1 "SerialScrewTerminals" H 2100 7700 50  0000 L CNN
-F 2 "Launchbox:ScrewTerminals" H 2700 7450 50  0001 C CNN
-F 3 "" H 2700 7450 50  0001 C CNN
-	1    2750 7450
-	-1   0    0    1   
-$EndComp
-$Comp
-L CaelusPCB-rescue:SerialScrewTerminals-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U16
-U 1 1 601EB3B9
-P 2400 7450
-F 0 "U16" H 2350 7550 50  0000 L CNN
-F 1 "SerialScrewTerminals" H 2250 7700 50  0000 L CNN
-F 2 "Launchbox:ScrewTerminals" H 2350 7450 50  0001 C CNN
-F 3 "" H 2350 7450 50  0001 C CNN
-	1    2400 7450
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6900 6900 6600 6900
 $Comp
@@ -633,23 +599,6 @@ F 3 "~" H 6750 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 6800 6900 6900
-Text GLabel 2500 7195 1    50   Input ~ 0
-52
-$Comp
-L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR013
-U 1 1 606C7BD9
-P 2100 7350
-F 0 "#PWR013" H 2100 7100 50  0001 C CNN
-F 1 "GND1" H 2105 7177 50  0000 C CNN
-F 2 "" H 2100 7350 50  0001 C CNN
-F 3 "" H 2100 7350 50  0001 C CNN
-	1    2100 7350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 7300 2400 7300
-Wire Wire Line
-	2400 7300 2400 7450
 $Comp
 L CaelusPCB-rescue:Teensy3.6-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U23
 U 1 1 605CAA36
@@ -757,17 +706,6 @@ Text GLabel 6025 2625 0    50   Input ~ 0
 17
 Text GLabel 6025 2525 0    50   Input ~ 0
 16
-$Comp
-L CaelusPCB-rescue:MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U33
-U 1 1 60A4FCB2
-P 4600 1200
-F 0 "U33" H 4650 1350 50  0000 R CNN
-F 1 "MAX31856" H 4800 1450 50  0000 R CNN
-F 2 "Launchbox:MAX31856" H 4600 1200 50  0001 C CNN
-F 3 "" H 4600 1200 50  0001 C CNN
-	1    4600 1200
-	-1   0    0    1   
-$EndComp
 Text GLabel 6025 3225 0    50   Input ~ 0
 1
 Text GLabel 6025 3125 0    50   Input ~ 0
@@ -3130,52 +3068,6 @@ Wire Wire Line
 	2525 6595 2750 6595
 Wire Wire Line
 	2525 6695 2585 6695
-Wire Wire Line
-	2500 7195 2500 7265
-$Comp
-L Device:LED D2
-U 1 1 61346BCE
-P 2225 7130
-F 0 "D2" H 2218 7347 50  0000 C CNN
-F 1 "LED" H 2218 7256 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 2225 7130 50  0001 C CNN
-F 3 "~" H 2225 7130 50  0001 C CNN
-	1    2225 7130
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 613851EC
-P 1925 7130
-F 0 "R10" V 1718 7130 50  0000 C CNN
-F 1 "R" V 1809 7130 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 1855 7130 50  0001 C CNN
-F 3 "~" H 1925 7130 50  0001 C CNN
-	1    1925 7130
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2375 7130 2425 7130
-Wire Wire Line
-	2425 7130 2425 7265
-Wire Wire Line
-	2425 7265 2500 7265
-Connection ~ 2500 7265
-Wire Wire Line
-	2500 7265 2500 7450
-Wire Wire Line
-	2100 7300 2100 7350
-$Comp
-L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR0101
-U 1 1 614B9EBF
-P 1775 7130
-F 0 "#PWR0101" H 1775 6880 50  0001 C CNN
-F 1 "GND1" H 1780 6957 50  0000 C CNN
-F 2 "" H 1775 7130 50  0001 C CNN
-F 3 "" H 1775 7130 50  0001 C CNN
-	1    1775 7130
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED D1
 U 1 1 614C1F44
@@ -3224,14 +3116,88 @@ F 3 "" H 4730 3170 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB-rescue:RJ45EthernetBreakout-CaelusPCB Ayo?
-U 1 1 61A5B7F9
-P 3950 2050
-F 0 "Ayo?" H 3950 2100 50  0001 C CNN
-F 1 "RJ45EthernetBreakout" H 4878 1830 50  0000 L CNN
-F 2 "" H 3950 2100 50  0001 C CNN
-F 3 "" H 3950 2100 50  0001 C CNN
-	1    3950 2050
+L CaelusPCB-rescue:MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U33
+U 1 1 60A4FCB2
+P 4600 1200
+F 0 "U33" H 4650 1350 50  0000 R CNN
+F 1 "MAX31856" H 4800 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31856" H 4600 1200 50  0001 C CNN
+F 3 "" H 4600 1200 50  0001 C CNN
+	1    4600 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:RJ45EthernetBreakout-CaelusPCB Ayo1
+U 1 1 61C211CD
+P 4450 1750
+F 0 "Ayo1" H 4450 1800 50  0001 C CNN
+F 1 "RJ45EthernetBreakout" H 4481 1640 50  0000 L CNN
+F 2 "Launchbox:RJ45EthernetBreakout" H 4450 1800 50  0001 C CNN
+F 3 "" H 4450 1800 50  0001 C CNN
+	1    4450 1750
 	1    0    0    -1  
 $EndComp
+Text GLabel 4550 2200 3    50   Input ~ 0
+25
+Text GLabel 4650 2200 3    50   Input ~ 0
+26
+Text GLabel 4750 2200 3    50   Input ~ 0
+27
+$Comp
+L Device:LED D2
+U 1 1 6218813E
+P 4400 2450
+F 0 "D2" H 4393 2667 50  0000 C CNN
+F 1 "LED" H 4393 2576 50  0000 C CNN
+F 2 "" H 4400 2450 50  0001 C CNN
+F 3 "~" H 4400 2450 50  0001 C CNN
+	1    4400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 622B4FA8
+P 4100 2450
+F 0 "R10" V 4307 2450 50  0000 C CNN
+F 1 "R" V 4216 2450 50  0000 C CNN
+F 2 "" V 4030 2450 50  0001 C CNN
+F 3 "~" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 2450 4850 2450
+Wire Wire Line
+	4850 2200 4850 2450
+Connection ~ 4850 2450
+Text GLabel 4850 2550 3    50   Input ~ 0
+52
+Wire Wire Line
+	4850 2450 4850 2550
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0101
+U 1 1 62499B38
+P 3950 2450
+F 0 "#PWR0101" H 3950 2200 50  0001 C CNN
+F 1 "GND1-power" H 3955 2277 50  0000 C CNN
+F 2 "" H 3950 2450 50  0001 C CNN
+F 3 "" H 3950 2450 50  0001 C CNN
+	1    3950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2200 4950 2350
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0104
+U 1 1 6258BF60
+P 5150 2350
+F 0 "#PWR0104" H 5150 2100 50  0001 C CNN
+F 1 "GND1-power" H 5155 2177 50  0000 C CNN
+F 2 "" H 5150 2350 50  0001 C CNN
+F 3 "" H 5150 2350 50  0001 C CNN
+	1    5150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2350 5150 2350
 $EndSCHEMATC

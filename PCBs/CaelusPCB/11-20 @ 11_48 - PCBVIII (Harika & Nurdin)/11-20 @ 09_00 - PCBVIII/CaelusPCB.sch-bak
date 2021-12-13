@@ -3127,7 +3127,7 @@ F 3 "" H 4600 1200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:RJ45EthernetBreakout Ayo1
+L CaelusPCB-rescue:RJ45EthernetBreakout-CaelusPCB Ayo1
 U 1 1 61C211CD
 P 4450 1750
 F 0 "Ayo1" H 4450 1800 50  0001 C CNN
@@ -3175,7 +3175,7 @@ Text GLabel 4850 2550 3    50   Input ~ 0
 Wire Wire Line
 	4850 2450 4850 2550
 $Comp
-L CaelusPCB:GND1-power #PWR0101
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0101
 U 1 1 62499B38
 P 3950 2450
 F 0 "#PWR0101" H 3950 2200 50  0001 C CNN
@@ -3188,7 +3188,7 @@ $EndComp
 Wire Wire Line
 	4950 2200 4950 2350
 $Comp
-L CaelusPCB:GND1-power #PWR0104
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0104
 U 1 1 6258BF60
 P 5150 2350
 F 0 "#PWR0104" H 5150 2100 50  0001 C CNN

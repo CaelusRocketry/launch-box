@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Launchbox)(type KiCad)(uri "C:/Users/pytho/Documents/TJ work/EC/Caelus/launch-box/Libraries/Launchbox.pretty")(options "")(descr ""))
+  (lib (name NewKeySwitch)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints-master/NewKeySwitch.pretty)(options "")(descr ""))
+)

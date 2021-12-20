@@ -719,9 +719,9 @@ $EndComp
 Text GLabel 2150 4900 1    50   Input ~ 0
 54
 Text GLabel 2050 4900 1    50   Input ~ 0
-53
+48
 Text GLabel 1950 4900 1    50   Input ~ 0
-49
+48
 Text GLabel 1850 4900 1    50   Input ~ 0
 48
 Text GLabel 1750 4900 1    50   Input ~ 0

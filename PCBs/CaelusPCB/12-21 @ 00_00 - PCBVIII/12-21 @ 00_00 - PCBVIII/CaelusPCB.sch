@@ -3201,7 +3201,7 @@ $EndComp
 Wire Wire Line
 	4950 2350 5150 2350
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 61F703F8
 P 13000 1200
 F 0 "J?" H 13130 1246 50  0000 L CNN
@@ -3215,7 +3215,7 @@ F 6 "IPC-7251" H 13000 1200 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 61FB1C98
 P 13000 1750
 F 0 "J?" H 13130 1796 50  0000 L CNN
@@ -3229,7 +3229,7 @@ F 6 "IPC-7251" H 13000 1750 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 61FEC581
 P 13000 2300
 F 0 "J?" H 13130 2346 50  0000 L CNN
@@ -3243,7 +3243,7 @@ F 6 "IPC-7251" H 13000 2300 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 62027342
 P 14050 1200
 F 0 "J?" H 14180 1246 50  0000 L CNN
@@ -3257,7 +3257,7 @@ F 6 "IPC-7251" H 14050 1200 50  0001 L BNN "STANDARD"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 62061E7B
 P 14050 1750
 F 0 "J?" H 14180 1796 50  0000 L CNN
@@ -3271,7 +3271,7 @@ F 6 "IPC-7251" H 14050 1750 50  0001 L BNN "STANDARD"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 6209CA4C
 P 14050 2300
 F 0 "J?" H 14180 2346 50  0000 L CNN
@@ -3285,7 +3285,7 @@ F 6 "IPC-7251" H 14050 2300 50  0001 L BNN "STANDARD"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 620D862D
 P 14900 1700
 F 0 "J?" H 15030 1746 50  0000 L CNN
@@ -3299,7 +3299,7 @@ F 6 "IPC-7251" H 14900 1700 50  0001 L BNN "STANDARD"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 6211333E
 P 14900 2300
 F 0 "J?" H 15030 2346 50  0000 L CNN
@@ -3313,7 +3313,7 @@ F 6 "IPC-7251" H 14900 2300 50  0001 L BNN "STANDARD"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 6219472C
 P 12150 1650
 F 0 "J?" H 12280 1696 50  0000 L CNN
@@ -3327,7 +3327,7 @@ F 6 "IPC-7251" H 12150 1650 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:XT60-M J?
+L CaelusPCB-rescue:XT60-M-CaelusPCB J?
 U 1 1 62194735
 P 12150 2250
 F 0 "J?" H 12280 2296 50  0000 L CNN
@@ -3341,7 +3341,7 @@ F 6 "IPC-7251" H 12150 2250 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 62807594
 P 12700 1650
 F 0 "#PWR?" H 12700 1400 50  0001 C CNN
@@ -3352,7 +3352,7 @@ F 3 "" H 12700 1650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 628463C0
 P 12700 1100
 F 0 "#PWR?" H 12700 850 50  0001 C CNN
@@ -3363,7 +3363,7 @@ F 3 "" H 12700 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 628473C6
 P 12700 2200
 F 0 "#PWR?" H 12700 1950 50  0001 C CNN
@@ -3374,7 +3374,7 @@ F 3 "" H 12700 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 6284B43C
 P 11850 1550
 F 0 "#PWR?" H 11850 1300 50  0001 C CNN
@@ -3385,7 +3385,7 @@ F 3 "" H 11850 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 6288B578
 P 15200 1800
 F 0 "#PWR?" H 15200 1550 50  0001 C CNN
@@ -3396,7 +3396,7 @@ F 3 "" H 15200 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 6288C514
 P 14350 1300
 F 0 "#PWR?" H 14350 1050 50  0001 C CNN
@@ -3407,7 +3407,7 @@ F 3 "" H 14350 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 6288D7DC
 P 14350 1850
 F 0 "#PWR?" H 14350 1600 50  0001 C CNN
@@ -3418,7 +3418,7 @@ F 3 "" H 14350 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 6288E790
 P 14350 2400
 F 0 "#PWR?" H 14350 2150 50  0001 C CNN
@@ -3480,7 +3480,7 @@ F 3 "" H 13600 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 62BF376F
 P 15200 2400
 F 0 "#PWR?" H 15200 2150 50  0001 C CNN
@@ -3494,7 +3494,7 @@ Connection ~ 13600 900
 Wire Wire Line
 	13600 900  14550 900 
 $Comp
-L CaelusPCB:GND1-power #PWR?
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR?
 U 1 1 62C7BC3A
 P 11850 2150
 F 0 "#PWR?" H 11850 1900 50  0001 C CNN

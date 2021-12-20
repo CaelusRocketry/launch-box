@@ -25,56 +25,6 @@ Wire Wire Line
 Connection ~ 9225 1125
 Connection ~ 9225 1625
 $Comp
-L Device:Battery_Cell BT1
-U 1 1 5F7495D2
-P 5480 3270
-F 0 "BT1" H 5230 3420 50  0000 L CNN
-F 1 "Battery_Cell" H 4930 3320 50  0000 L CNN
-F 2 "Launchbox:Lipo_Battery_Connector" V 5480 3330 50  0001 C CNN
-F 3 "~" V 5480 3330 50  0001 C CNN
-	1    5480 3270
-	-1   0    0    1   
-$EndComp
-$Comp
-L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR01
-U 1 1 5F74B95E
-P 5480 3170
-F 0 "#PWR01" H 5480 2920 50  0001 C CNN
-F 1 "GND1" H 5485 2997 50  0000 C CNN
-F 2 "" H 5480 3170 50  0001 C CNN
-F 3 "" H 5480 3170 50  0001 C CNN
-	1    5480 3170
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5480 3470 5030 3470
-$Comp
-L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR012
-U 1 1 5F750D83
-P 4380 3520
-F 0 "#PWR012" H 4380 3370 50  0001 C CNN
-F 1 "+5V" H 4395 3693 50  0000 C CNN
-F 2 "" H 4380 3520 50  0001 C CNN
-F 3 "" H 4380 3520 50  0001 C CNN
-	1    4380 3520
-	-1   0    0    1   
-$EndComp
-$Comp
-L CaelusPCB-rescue:L7805-Regulator_Linear-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U3
-U 1 1 5F74367E
-P 4730 3470
-F 0 "U3" H 4730 3712 50  0000 C CNN
-F 1 "L7805" H 4730 3621 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 4755 3320 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 4730 3420 50  0001 C CNN
-	1    4730 3470
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4430 3470 4380 3470
-Wire Wire Line
-	4380 3470 4380 3490
-$Comp
 L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR027
 U 1 1 5F755105
 P 7175 825
@@ -3069,53 +3019,6 @@ Wire Wire Line
 Wire Wire Line
 	2525 6695 2585 6695
 $Comp
-L Device:LED D1
-U 1 1 614C1F44
-P 4230 3490
-F 0 "D1" H 4223 3235 50  0000 C CNN
-F 1 "LED" H 4223 3326 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4230 3490 50  0001 C CNN
-F 3 "~" H 4230 3490 50  0001 C CNN
-	1    4230 3490
-	1    0    0    -1  
-$EndComp
-Connection ~ 4380 3490
-Wire Wire Line
-	4380 3490 4380 3520
-$Comp
-L Device:R R17
-U 1 1 614C3A07
-P 3930 3490
-F 0 "R17" V 3723 3490 50  0000 C CNN
-F 1 "R" V 3814 3490 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 3860 3490 50  0001 C CNN
-F 3 "~" H 3930 3490 50  0001 C CNN
-	1    3930 3490
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR0102
-U 1 1 614C4A1E
-P 3780 3490
-F 0 "#PWR0102" H 3780 3240 50  0001 C CNN
-F 1 "GND1" H 3785 3317 50  0000 C CNN
-F 2 "" H 3780 3490 50  0001 C CNN
-F 3 "" H 3780 3490 50  0001 C CNN
-	1    3780 3490
-	-1   0    0    1   
-$EndComp
-$Comp
-L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR0103
-U 1 1 611A4319
-P 4730 3170
-F 0 "#PWR0103" H 4730 2920 50  0001 C CNN
-F 1 "GND1" H 4735 2997 50  0000 C CNN
-F 2 "" H 4730 3170 50  0001 C CNN
-F 3 "" H 4730 3170 50  0001 C CNN
-	1    4730 3170
-	-1   0    0    1   
-$EndComp
-$Comp
 L CaelusPCB-rescue:MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U33
 U 1 1 60A4FCB2
 P 4600 1200
@@ -3149,7 +3052,7 @@ U 1 1 6218813E
 P 4400 2450
 F 0 "D2" H 4393 2667 50  0000 C CNN
 F 1 "LED" H 4393 2576 50  0000 C CNN
-F 2 "" H 4400 2450 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4400 2450 50  0001 C CNN
 F 3 "~" H 4400 2450 50  0001 C CNN
 	1    4400 2450
 	1    0    0    -1  
@@ -3160,7 +3063,7 @@ U 1 1 622B4FA8
 P 4100 2450
 F 0 "R10" V 4307 2450 50  0000 C CNN
 F 1 "R" V 4216 2450 50  0000 C CNN
-F 2 "" V 4030 2450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4030 2450 50  0001 C CNN
 F 3 "~" H 4100 2450 50  0001 C CNN
 	1    4100 2450
 	0    -1   -1   0   
@@ -3200,4 +3103,97 @@ F 3 "" H 5150 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4950 2350 5150 2350
+$Comp
+L Launchbox:LD1085V50 U3
+U 1 1 61B89262
+P 4750 3250
+F 0 "U3" H 4745 3475 50  0000 C CNN
+F 1 "LD1085V50" H 4745 3384 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 4750 3250 50  0001 C CNN
+F 3 "" H 4750 3250 50  0001 C CNN
+	1    4750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 61C08055
+P 4150 3450
+F 0 "BT1" H 4268 3546 50  0000 L CNN
+F 1 "Battery_Cell" H 4268 3455 50  0000 L CNN
+F 2 "Launchbox:Lipo_Battery_Connector" V 4150 3510 50  0001 C CNN
+F 3 "~" V 4150 3510 50  0001 C CNN
+	1    4150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0102
+U 1 1 61C0C0F7
+P 4150 3550
+F 0 "#PWR0102" H 4150 3300 50  0001 C CNN
+F 1 "GND1" H 4155 3377 50  0000 C CNN
+F 2 "" H 4150 3550 50  0001 C CNN
+F 3 "" H 4150 3550 50  0001 C CNN
+	1    4150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3250 5010 3250
+Wire Wire Line
+	4150 3250 4480 3250
+Connection ~ 5100 3250
+$Comp
+L power:+5V #PWR0103
+U 1 1 622427A0
+P 5100 3250
+F 0 "#PWR0103" H 5100 3100 50  0001 C CNN
+F 1 "+5V" H 5115 3423 50  0000 C CNN
+F 2 "" H 5100 3250 50  0001 C CNN
+F 3 "" H 5100 3250 50  0001 C CNN
+	1    5100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6224970A
+P 5250 3250
+F 0 "D1" H 5243 2995 50  0000 C CNN
+F 1 "LED" H 5243 3086 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5250 3250 50  0001 C CNN
+F 3 "~" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND1 #PWR0105
+U 1 1 6228F4E3
+P 4750 3580
+F 0 "#PWR0105" H 4750 3330 50  0001 C CNN
+F 1 "GND1" H 4755 3407 50  0000 C CNN
+F 2 "" H 4750 3580 50  0001 C CNN
+F 3 "" H 4750 3580 50  0001 C CNN
+	1    4750 3580
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 622E2514
+P 5550 3250
+F 0 "R17" V 5757 3250 50  0000 C CNN
+F 1 "R" V 5666 3250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 5480 3250 50  0001 C CNN
+F 3 "~" H 5550 3250 50  0001 C CNN
+	1    5550 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND1 #PWR0106
+U 1 1 622E3C7E
+P 5700 3250
+F 0 "#PWR0106" H 5700 3000 50  0001 C CNN
+F 1 "GND1" H 5705 3077 50  0000 C CNN
+F 2 "" H 5700 3250 50  0001 C CNN
+F 3 "" H 5700 3250 50  0001 C CNN
+	1    5700 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

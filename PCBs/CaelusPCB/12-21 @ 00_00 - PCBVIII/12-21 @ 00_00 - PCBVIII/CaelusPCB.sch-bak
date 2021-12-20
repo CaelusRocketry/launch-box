@@ -258,7 +258,7 @@ F 6 "IPC-7251" H 1950 6100 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR0119
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0119
 U 1 1 62CFC6C5
 P 1650 6000
 F 0 "#PWR0119" H 1650 5750 50  0001 C CNN
@@ -269,7 +269,7 @@ F 3 "" H 1650 6000 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR0120
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0120
 U 1 1 628C9DB3
 P 6150 3550
 F 0 "#PWR0120" H 6150 3300 50  0001 C CNN
@@ -494,7 +494,7 @@ F 3 "" H 1700 6700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CaelusPCB:6-Channel-5V-Relays U4
+L CaelusPCB-rescue:6-Channel-5V-Relays-CaelusPCB U4
 U 1 1 61C879F3
 P 1750 5200
 F 0 "U4" H 2928 5326 50  0000 L CNN
@@ -671,7 +671,7 @@ Connection ~ 1550 4650
 Wire Wire Line
 	1300 4650 1550 4650
 $Comp
-L CaelusPCB:GND1-power #PWR0131
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0131
 U 1 1 61FF1F2F
 P 1300 4650
 F 0 "#PWR0131" H 1300 4400 50  0001 C CNN
@@ -695,7 +695,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 4900 1050 4900
 $Comp
-L CaelusPCB:+5V-power #PWR0132
+L CaelusPCB-rescue:+5V-power-CaelusPCB #PWR0132
 U 1 1 61DE6AE0
 P 800 4700
 F 0 "#PWR0132" H 800 4550 50  0001 C CNN
@@ -706,7 +706,7 @@ F 3 "" H 800 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:6-Channel-5V-Relays U2
+L CaelusPCB-rescue:6-Channel-5V-Relays-CaelusPCB U2
 U 1 1 61C852A6
 P 1750 4250
 F 0 "U2" H 2928 4330 50  0000 L CNN
@@ -2447,7 +2447,7 @@ F 3 "" H 7250 3750 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L CaelusPCB:GND1-power #PWR0134
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0134
 U 1 1 628C8DD2
 P 7000 3550
 F 0 "#PWR0134" H 7000 3300 50  0001 C CNN

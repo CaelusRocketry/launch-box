@@ -1,4 +1,4 @@
-update=12/21/2021 12:37:00 AM
+update=12/21/2021 2:50:34 AM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Mock_CaelusPCB.net
+LastNetListRead=CaelusPCBFRFRBESTIE.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -73,7 +73,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0

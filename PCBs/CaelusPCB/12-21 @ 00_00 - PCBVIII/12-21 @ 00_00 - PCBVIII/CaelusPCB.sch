@@ -89,25 +89,25 @@ Text GLabel 1650 6200 0    50   Input ~ 0
 62
 Text GLabel 2750 5500 3    50   Input ~ 0
 71
-Text GLabel 2200 5500 3    50   Input ~ 0
+Text GLabel 2400 5500 3    50   Input ~ 0
 70
-Text GLabel 1850 5500 3    50   Input ~ 0
+Text GLabel 2050 5500 3    50   Input ~ 0
 69
-Text GLabel 1500 5500 3    50   Input ~ 0
+Text GLabel 1700 5500 3    50   Input ~ 0
 68
-Text GLabel 1150 5500 3    50   Input ~ 0
+Text GLabel 1350 5500 3    50   Input ~ 0
 67
-Text GLabel 800  5500 3    50   Input ~ 0
+Text GLabel 1000 5500 3    50   Input ~ 0
 66
 Text GLabel 2750 3950 1    50   Input ~ 0
 65
-Text GLabel 2200 3950 1    50   Input ~ 0
+Text GLabel 2400 3950 1    50   Input ~ 0
 64
-Text GLabel 1850 3950 1    50   Input ~ 0
+Text GLabel 2050 3950 1    50   Input ~ 0
 63
-Text GLabel 1500 3950 1    50   Input ~ 0
+Text GLabel 1700 3950 1    50   Input ~ 0
 62
-Text GLabel 1150 3950 1    50   Input ~ 0
+Text GLabel 1350 3950 1    50   Input ~ 0
 81
 $Comp
 L power:+24V #PWR0107
@@ -3417,6 +3417,6 @@ F 3 "" H 1750 4825 50  0001 C CNN
 	1    1750 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 800  3950 1    50   Input ~ 0
+Text GLabel 1000 3950 1    50   Input ~ 0
 80
 $EndSCHEMATC

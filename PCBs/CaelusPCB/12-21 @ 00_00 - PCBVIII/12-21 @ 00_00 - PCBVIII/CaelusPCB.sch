@@ -32,9 +32,9 @@ Text GLabel 1700 6900 0    50   Input ~ 0
 Text GLabel 2550 6200 0    50   Input ~ 0
 63
 Text GLabel 10350 5900 0    50   Input ~ 0
-61
+81
 Text GLabel 9500 5900 0    50   Input ~ 0
-60
+80
 $Comp
 L CaelusPCB-rescue:XT60-M-CaelusPCB J15
 U 1 1 62F55CF2
@@ -108,9 +108,7 @@ Text GLabel 1850 3950 1    50   Input ~ 0
 Text GLabel 1500 3950 1    50   Input ~ 0
 62
 Text GLabel 1150 3950 1    50   Input ~ 0
-61
-Text GLabel 800  3950 1    50   Input ~ 0
-60
+81
 $Comp
 L power:+24V #PWR0107
 U 1 1 62F0E7D5
@@ -703,17 +701,6 @@ F 1 "+5V-power" H 815 4873 50  0000 C CNN
 F 2 "" H 800 4700 50  0001 C CNN
 F 3 "" H 800 4700 50  0001 C CNN
 	1    800  4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L CaelusPCB-rescue:6-Channel-5V-Relays-CaelusPCB U2
-U 1 1 61C852A6
-P 1750 4250
-F 0 "U2" H 2928 4330 50  0000 L CNN
-F 1 "6-Channel-5V-Relays" H 2928 4285 50  0001 L CNN
-F 2 "Launchbox:6x_relay_module" H 1750 4825 50  0001 C CNN
-F 3 "" H 1750 4825 50  0001 C CNN
-	1    1750 4250
 	1    0    0    -1  
 $EndComp
 Text GLabel 2150 4900 1    50   Input ~ 0
@@ -3419,4 +3406,17 @@ F 3 "" H 8150 4950 50  0001 C CNN
 	1    8150 4950
 	1    0    0    -1  
 $EndComp
+$Comp
+L CaelusPCB-rescue:6-Channel-5V-Relays-CaelusPCB U2
+U 1 1 61C852A6
+P 1750 4250
+F 0 "U2" H 2928 4330 50  0000 L CNN
+F 1 "6-Channel-5V-Relays" H 2928 4285 50  0001 L CNN
+F 2 "Launchbox:6x_relay_module" H 1750 4825 50  0001 C CNN
+F 3 "" H 1750 4825 50  0001 C CNN
+	1    1750 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 800  3950 1    50   Input ~ 0
+80
 $EndSCHEMATC

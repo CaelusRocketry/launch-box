@@ -1,6 +1,4 @@
 (sym_lib_table
-  (lib (name CaelusPCB)(type Legacy)(uri "C:/Users/Kritagya Khadka/Documents/GitHub/launch-box/Libraries/CaelusPCB.lib")(options "")(descr ""))
-  (lib (name Launchbox)(type Legacy)(uri "C:/Users/Kritagya Khadka/Documents/GitHub/launch-box/Libraries/Launchbox.lib")(options "")(descr ""))
-  (lib (name CaelusPCB-cache)(type Legacy)(uri "C:/Users/Kritagya Khadka/Documents/GitHub/launch-box/PCBs/CaelusPCB/12-21 @ 00_00 - PCBVIII/12-21 @ 00_00 - PCBVIII/CaelusPCB-cache.lib")(options "")(descr ""))
-  (lib (name CaelusPCB-rescue)(type Legacy)(uri "C:/Users/Kritagya Khadka/Documents/GitHub/launch-box/PCBs/CaelusPCB/12-21 @ 00_00 - PCBVIII/12-21 @ 00_00 - PCBVIII/CaelusPCB-rescue.lib")(options "")(descr ""))
+  (lib (name CaelusPCB-rescue)(type Legacy)(uri "C:/Users/ericw/ProjectCaelus/launch-box/PCBs/CaelusPCB/11-20 @ 11_48 - PCBVIII (Harika & Nurdin)/11-20 @ 09_00 - PCBVIII/CaelusPCB-rescue.lib")(options "")(descr ""))
+  (lib (name CaelusPCB-cache)(type Legacy)(uri ${KIPRJMOD}/CaelusPCB-cache.lib)(options "")(descr ""))
 )

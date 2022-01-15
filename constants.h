@@ -22,8 +22,8 @@ Nitrous Oxide Main Propellant Valve
 #define NO_FILL_SPECIAL true
 #define NO_FILL_IS_NC true
 #define NO_VENT_HIGH 2 //switch 2
-#define NO_VENT_SPECIAL false // only false
-#define NO_VENT_IS_NC false // only false
+#define NO_VENT_SPECIAL true // only false
+#define NO_VENT_IS_NC true // only false
 #define NO_MPV_HIGH 4 //switch 3
 #define NO_MPV_SPECIAL true
 #define NO_MPV_IS_NC true
@@ -69,16 +69,16 @@ Nitrous Oxide Main Propellant Valve
 // Nitrous valves
 #define NO_FILL_OUT 18
 #define NO_DRAIN_OUT 23
-#define NO_VENT_OUT 20
-#define NO_MPV_OUT 21
-#define es1_OUT 16
-#define es2_OUT 17
-#define es3_OUT 19
+#define NO_VENT_OUT 17
+#define NO_MPV_OUT 16
+#define es1_OUT 21
+#define es2_OUT 20
+#define es3_OUT 13
 #define es4_OUT 13
 // Ethanol valves
 #define NITROGEN_FILL_OUT 15
 #define ETHANOL_DRAIN_OUT 22
 #define ETHANOL_VENT_OUT 14
-#define ETHANOL_MPV_OUT 19 // 23
+#define ETHANOL_MPV_OUT 13// 23
 // extra
 #define IGNITER_OUT 17

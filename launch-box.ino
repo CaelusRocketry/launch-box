@@ -62,8 +62,8 @@ boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANO
 boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC, es1_IS_NC, es2_IS_NC, es3_IS_NC, es4_IS_NC};
 
 // -1 indicates that there is no pulse pin for the specified valve
-int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1, -1, -1, -1, -1};
-//int pulse_pins[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+//int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1, -1, -1, -1, -1};
+int pulse_pins[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 
 void setup() {
   for (int i = 0; i < NUM_VALVES; i++) {

@@ -1,0 +1,3420 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 11736 8299
+encoding utf-8
+Sheet 1 1
+Title "Test Stand PCB v3.0"
+Date "2021-12-19"
+Rev ""
+Comp "Project Caelus"
+Comment1 "Author: Eric + Avionics Gang"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 10950 5050 2    50   Input ~ 0
+71
+Text GLabel 10100 5050 2    50   Input ~ 0
+70
+Text GLabel 10950 4500 2    50   Input ~ 0
+69
+Text GLabel 10100 4500 2    50   Input ~ 0
+68
+Text GLabel 10950 3950 2    50   Input ~ 0
+67
+Text GLabel 10100 3950 2    50   Input ~ 0
+66
+Text GLabel 2550 6900 0    50   Input ~ 0
+65
+Text GLabel 1700 6900 0    50   Input ~ 0
+64
+Text GLabel 2550 6200 0    50   Input ~ 0
+63
+Text GLabel 10350 5900 0    50   Input ~ 0
+81
+Text GLabel 9500 5900 0    50   Input ~ 0
+80
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J15
+U 1 1 62F55CF2
+P 10650 4050
+F 0 "J15" H 10780 4096 50  0000 L CNN
+F 1 "XT60-M" H 10780 4005 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 10650 4050 50  0001 L BNN
+F 3 "" H 10650 4050 50  0001 L BNN
+F 4 "AMASS" H 10650 4050 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 10650 4050 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 10650 4050 50  0001 L BNN "STANDARD"
+	1    10650 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0105
+U 1 1 62F54DD5
+P 10950 4150
+F 0 "#PWR0105" H 10950 3900 50  0001 C CNN
+F 1 "GND1-power" H 10955 3977 50  0000 C CNN
+F 2 "" H 10950 4150 50  0001 C CNN
+F 3 "" H 10950 4150 50  0001 C CNN
+	1    10950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J14
+U 1 1 62F22F6D
+P 9800 5800
+F 0 "J14" H 9930 5846 50  0000 L CNN
+F 1 "XT60-M" H 9930 5755 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 9800 5800 50  0001 L BNN
+F 3 "" H 9800 5800 50  0001 L BNN
+F 4 "AMASS" H 9800 5800 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 9800 5800 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 9800 5800 50  0001 L BNN "STANDARD"
+	1    9800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0106
+U 1 1 62F2206C
+P 9500 5700
+F 0 "#PWR0106" H 9500 5450 50  0001 C CNN
+F 1 "GND1-power" H 9505 5527 50  0000 C CNN
+F 2 "" H 9500 5700 50  0001 C CNN
+F 3 "" H 9500 5700 50  0001 C CNN
+	1    9500 5700
+	-1   0    0    1   
+$EndComp
+Text GLabel 1650 6200 0    50   Input ~ 0
+62
+Text GLabel 2750 5500 3    50   Input ~ 0
+71
+Text GLabel 2400 5500 3    50   Input ~ 0
+70
+Text GLabel 2050 5500 3    50   Input ~ 0
+69
+Text GLabel 1700 5500 3    50   Input ~ 0
+68
+Text GLabel 1350 5500 3    50   Input ~ 0
+67
+Text GLabel 1000 5500 3    50   Input ~ 0
+66
+Text GLabel 2750 3950 1    50   Input ~ 0
+65
+Text GLabel 2400 3950 1    50   Input ~ 0
+64
+Text GLabel 2050 3950 1    50   Input ~ 0
+63
+Text GLabel 1700 3950 1    50   Input ~ 0
+62
+Text GLabel 1350 3950 1    50   Input ~ 0
+81
+$Comp
+L power:+24V #PWR0107
+U 1 1 62F0E7D5
+P 2650 3950
+F 0 "#PWR0107" H 2650 3800 50  0001 C CNN
+F 1 "+24V" H 2665 4123 50  0000 C CNN
+F 2 "" H 2650 3950 50  0001 C CNN
+F 3 "" H 2650 3950 50  0001 C CNN
+	1    2650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0108
+U 1 1 62EA7786
+P 2650 5500
+F 0 "#PWR0108" H 2650 5350 50  0001 C CNN
+F 1 "+24V" H 2665 5673 50  0000 C CNN
+F 2 "" H 2650 5500 50  0001 C CNN
+F 3 "" H 2650 5500 50  0001 C CNN
+	1    2650 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0109
+U 1 1 62DA6066
+P 2300 5500
+F 0 "#PWR0109" H 2300 5350 50  0001 C CNN
+F 1 "+12V" H 2315 5673 50  0000 C CNN
+F 2 "" H 2300 5500 50  0001 C CNN
+F 3 "" H 2300 5500 50  0001 C CNN
+	1    2300 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0110
+U 1 1 62DA4C42
+P 1950 5500
+F 0 "#PWR0110" H 1950 5350 50  0001 C CNN
+F 1 "+12V" H 1965 5673 50  0000 C CNN
+F 2 "" H 1950 5500 50  0001 C CNN
+F 3 "" H 1950 5500 50  0001 C CNN
+	1    1950 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0111
+U 1 1 62DA38F9
+P 1600 5500
+F 0 "#PWR0111" H 1600 5350 50  0001 C CNN
+F 1 "+12V" H 1615 5673 50  0000 C CNN
+F 2 "" H 1600 5500 50  0001 C CNN
+F 3 "" H 1600 5500 50  0001 C CNN
+	1    1600 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0112
+U 1 1 62DA2356
+P 1250 5500
+F 0 "#PWR0112" H 1250 5350 50  0001 C CNN
+F 1 "+12V" H 1265 5673 50  0000 C CNN
+F 2 "" H 1250 5500 50  0001 C CNN
+F 3 "" H 1250 5500 50  0001 C CNN
+	1    1250 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0113
+U 1 1 62D6B4A2
+P 900 5500
+F 0 "#PWR0113" H 900 5350 50  0001 C CNN
+F 1 "+12V" H 915 5673 50  0000 C CNN
+F 2 "" H 900 5500 50  0001 C CNN
+F 3 "" H 900 5500 50  0001 C CNN
+	1    900  5500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0114
+U 1 1 62D6544A
+P 2300 3950
+F 0 "#PWR0114" H 2300 3800 50  0001 C CNN
+F 1 "+12V" H 2315 4123 50  0000 C CNN
+F 2 "" H 2300 3950 50  0001 C CNN
+F 3 "" H 2300 3950 50  0001 C CNN
+	1    2300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0115
+U 1 1 62D6448A
+P 1950 3950
+F 0 "#PWR0115" H 1950 3800 50  0001 C CNN
+F 1 "+12V" H 1965 4123 50  0000 C CNN
+F 2 "" H 1950 3950 50  0001 C CNN
+F 3 "" H 1950 3950 50  0001 C CNN
+	1    1950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0116
+U 1 1 62D634AA
+P 1600 3950
+F 0 "#PWR0116" H 1600 3800 50  0001 C CNN
+F 1 "+12V" H 1615 4123 50  0000 C CNN
+F 2 "" H 1600 3950 50  0001 C CNN
+F 3 "" H 1600 3950 50  0001 C CNN
+	1    1600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0117
+U 1 1 62D6250A
+P 1250 3950
+F 0 "#PWR0117" H 1250 3800 50  0001 C CNN
+F 1 "+12V" H 1265 4123 50  0000 C CNN
+F 2 "" H 1250 3950 50  0001 C CNN
+F 3 "" H 1250 3950 50  0001 C CNN
+	1    1250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0118
+U 1 1 62D623A6
+P 900 3950
+F 0 "#PWR0118" H 900 3800 50  0001 C CNN
+F 1 "+12V" H 915 4123 50  0000 C CNN
+F 2 "" H 900 3950 50  0001 C CNN
+F 3 "" H 900 3950 50  0001 C CNN
+	1    900  3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J4
+U 1 1 6219472C
+P 1950 6100
+F 0 "J4" H 2080 6146 50  0000 L CNN
+F 1 "XT60-M" H 2080 6055 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 1950 6100 50  0001 L BNN
+F 3 "" H 1950 6100 50  0001 L BNN
+F 4 "AMASS" H 1950 6100 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 1950 6100 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 1950 6100 50  0001 L BNN "STANDARD"
+	1    1950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0119
+U 1 1 62CFC6C5
+P 1650 6000
+F 0 "#PWR0119" H 1650 5750 50  0001 C CNN
+F 1 "GND1-power" H 1655 5827 50  0000 C CNN
+F 2 "" H 1650 6000 50  0001 C CNN
+F 3 "" H 1650 6000 50  0001 C CNN
+	1    1650 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0120
+U 1 1 628C9DB3
+P 6150 3550
+F 0 "#PWR0120" H 6150 3300 50  0001 C CNN
+F 1 "GND1-power" H 6155 3377 50  0000 C CNN
+F 2 "" H 6150 3550 50  0001 C CNN
+F 3 "" H 6150 3550 50  0001 C CNN
+	1    6150 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:+24V #PWR0121
+U 1 1 628C7CEE
+P 5900 3750
+F 0 "#PWR0121" H 5900 3600 50  0001 C CNN
+F 1 "+24V" H 5915 3923 50  0000 C CNN
+F 2 "" H 5900 3750 50  0001 C CNN
+F 3 "" H 5900 3750 50  0001 C CNN
+	1    5900 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J6
+U 1 1 61F703F8
+P 10650 5800
+F 0 "J6" H 10780 5846 50  0000 L CNN
+F 1 "XT60-M" H 10780 5755 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 10650 5800 50  0001 L BNN
+F 3 "" H 10650 5800 50  0001 L BNN
+F 4 "AMASS" H 10650 5800 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 10650 5800 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 10650 5800 50  0001 L BNN "STANDARD"
+	1    10650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J7
+U 1 1 61FB1C98
+P 2850 6100
+F 0 "J7" H 2980 6146 50  0000 L CNN
+F 1 "XT60-M" H 2980 6055 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 2850 6100 50  0001 L BNN
+F 3 "" H 2850 6100 50  0001 L BNN
+F 4 "AMASS" H 2850 6100 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 2850 6100 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 2850 6100 50  0001 L BNN "STANDARD"
+	1    2850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J8
+U 1 1 61FEC581
+P 2850 6800
+F 0 "J8" H 2980 6846 50  0000 L CNN
+F 1 "XT60-M" H 2980 6755 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 2850 6800 50  0001 L BNN
+F 3 "" H 2850 6800 50  0001 L BNN
+F 4 "AMASS" H 2850 6800 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 2850 6800 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 2850 6800 50  0001 L BNN "STANDARD"
+	1    2850 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J9
+U 1 1 62027342
+P 9800 4050
+F 0 "J9" H 9930 4096 50  0000 L CNN
+F 1 "XT60-M" H 9930 4005 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 9800 4050 50  0001 L BNN
+F 3 "" H 9800 4050 50  0001 L BNN
+F 4 "AMASS" H 9800 4050 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 9800 4050 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 9800 4050 50  0001 L BNN "STANDARD"
+	1    9800 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J10
+U 1 1 62061E7B
+P 9800 4600
+F 0 "J10" H 9930 4646 50  0000 L CNN
+F 1 "XT60-M" H 9930 4555 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 9800 4600 50  0001 L BNN
+F 3 "" H 9800 4600 50  0001 L BNN
+F 4 "AMASS" H 9800 4600 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 9800 4600 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 9800 4600 50  0001 L BNN "STANDARD"
+	1    9800 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J11
+U 1 1 6209CA4C
+P 9800 5150
+F 0 "J11" H 9930 5196 50  0000 L CNN
+F 1 "XT60-M" H 9930 5105 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 9800 5150 50  0001 L BNN
+F 3 "" H 9800 5150 50  0001 L BNN
+F 4 "AMASS" H 9800 5150 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 9800 5150 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 9800 5150 50  0001 L BNN "STANDARD"
+	1    9800 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J12
+U 1 1 620D862D
+P 10650 4600
+F 0 "J12" H 10780 4646 50  0000 L CNN
+F 1 "XT60-M" H 10780 4555 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 10650 4600 50  0001 L BNN
+F 3 "" H 10650 4600 50  0001 L BNN
+F 4 "AMASS" H 10650 4600 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 10650 4600 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 10650 4600 50  0001 L BNN "STANDARD"
+	1    10650 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J13
+U 1 1 6211333E
+P 10650 5150
+F 0 "J13" H 10780 5196 50  0000 L CNN
+F 1 "XT60-M" H 10780 5105 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 10650 5150 50  0001 L BNN
+F 3 "" H 10650 5150 50  0001 L BNN
+F 4 "AMASS" H 10650 5150 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 10650 5150 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 10650 5150 50  0001 L BNN "STANDARD"
+	1    10650 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:XT60-M-CaelusPCB J5
+U 1 1 62194735
+P 2000 6800
+F 0 "J5" H 2130 6846 50  0000 L CNN
+F 1 "XT60-M" H 2130 6755 50  0000 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 2000 6800 50  0001 L BNN
+F 3 "" H 2000 6800 50  0001 L BNN
+F 4 "AMASS" H 2000 6800 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 2000 6800 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 2000 6800 50  0001 L BNN "STANDARD"
+	1    2000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0122
+U 1 1 62807594
+P 2550 6000
+F 0 "#PWR0122" H 2550 5750 50  0001 C CNN
+F 1 "GND1-power" H 2555 5827 50  0000 C CNN
+F 2 "" H 2550 6000 50  0001 C CNN
+F 3 "" H 2550 6000 50  0001 C CNN
+	1    2550 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0123
+U 1 1 628463C0
+P 10350 5700
+F 0 "#PWR0123" H 10350 5450 50  0001 C CNN
+F 1 "GND1-power" H 10355 5527 50  0000 C CNN
+F 2 "" H 10350 5700 50  0001 C CNN
+F 3 "" H 10350 5700 50  0001 C CNN
+	1    10350 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0124
+U 1 1 628473C6
+P 2550 6700
+F 0 "#PWR0124" H 2550 6450 50  0001 C CNN
+F 1 "GND1-power" H 2555 6527 50  0000 C CNN
+F 2 "" H 2550 6700 50  0001 C CNN
+F 3 "" H 2550 6700 50  0001 C CNN
+	1    2550 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0125
+U 1 1 6288C514
+P 10100 4150
+F 0 "#PWR0125" H 10100 3900 50  0001 C CNN
+F 1 "GND1-power" H 10105 3977 50  0000 C CNN
+F 2 "" H 10100 4150 50  0001 C CNN
+F 3 "" H 10100 4150 50  0001 C CNN
+	1    10100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0126
+U 1 1 6288D7DC
+P 10100 4700
+F 0 "#PWR0126" H 10100 4450 50  0001 C CNN
+F 1 "GND1-power" H 10105 4527 50  0000 C CNN
+F 2 "" H 10100 4700 50  0001 C CNN
+F 3 "" H 10100 4700 50  0001 C CNN
+	1    10100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0127
+U 1 1 6288E790
+P 10100 5250
+F 0 "#PWR0127" H 10100 5000 50  0001 C CNN
+F 1 "GND1-power" H 10105 5077 50  0000 C CNN
+F 2 "" H 10100 5250 50  0001 C CNN
+F 3 "" H 10100 5250 50  0001 C CNN
+	1    10100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0128
+U 1 1 62C7BC3A
+P 1700 6700
+F 0 "#PWR0128" H 1700 6450 50  0001 C CNN
+F 1 "GND1-power" H 1705 6527 50  0000 C CNN
+F 2 "" H 1700 6700 50  0001 C CNN
+F 3 "" H 1700 6700 50  0001 C CNN
+	1    1700 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:6-Channel-5V-Relays-CaelusPCB U4
+U 1 1 61C879F3
+P 1750 5200
+F 0 "U4" H 2928 5326 50  0000 L CNN
+F 1 "6-Channel-5V-Relays" H 2928 5235 50  0001 L CNN
+F 2 "Launchbox:6x_relay_module" H 1750 5775 50  0001 C CNN
+F 3 "" H 1750 5775 50  0001 C CNN
+	1    1750 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0129
+U 1 1 6288B578
+P 10950 4700
+F 0 "#PWR0129" H 10950 4450 50  0001 C CNN
+F 1 "GND1-power" H 10955 4527 50  0000 C CNN
+F 2 "" H 10950 4700 50  0001 C CNN
+F 3 "" H 10950 4700 50  0001 C CNN
+	1    10950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0130
+U 1 1 62BF376F
+P 10950 5250
+F 0 "#PWR0130" H 10950 5000 50  0001 C CNN
+F 1 "GND1-power" H 10955 5077 50  0000 C CNN
+F 2 "" H 10950 5250 50  0001 C CNN
+F 3 "" H 10950 5250 50  0001 C CNN
+	1    10950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:Launchbox_HT12D-Launchbox-cache-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U50
+U 1 1 6071692C
+P 5900 6900
+F 0 "U50" H 6100 7350 50  0000 C CNN
+F 1 "Launchbox_HT12D" H 6150 6350 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 5900 6900 50  0001 C CNN
+F 3 "" H 5900 6900 50  0001 C CNN
+	1    5900 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 6650 6750 6750
+$Comp
+L Device:R_US R3
+U 1 1 60B6E9C5
+P 6600 6650
+F 0 "R3" H 6668 6696 50  0000 L CNN
+F 1 "R_US" H 6668 6605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 6640 6640 50  0001 C CNN
+F 3 "~" H 6600 6650 50  0001 C CNN
+	1    6600 6650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6450 7250 2    50   Input ~ 0
+31
+Text GLabel 6450 7150 2    50   Input ~ 0
+30
+Text GLabel 6450 7050 2    50   Input ~ 0
+29
+Text GLabel 6450 6950 2    50   Input ~ 0
+28
+Text GLabel 6450 6850 2    50   Input ~ 0
+25
+Wire Wire Line
+	6750 6750 6450 6750
+$Comp
+L CaelusPCB-rescue:Launchbox_HT12D-Launchbox-cache-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U34
+U 1 1 606DFF4C
+P 4750 6900
+F 0 "U34" H 4950 7350 50  0000 C CNN
+F 1 "Launchbox_HT12D" H 4950 6350 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 4750 6900 50  0001 C CNN
+F 3 "" H 4750 6900 50  0001 C CNN
+	1    4750 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR053
+U 1 1 606DFF52
+P 4550 7400
+F 0 "#PWR053" H 4550 7150 50  0001 C CNN
+F 1 "GND1" H 4555 7227 50  0000 C CNN
+F 2 "" H 4550 7400 50  0001 C CNN
+F 3 "" H 4550 7400 50  0001 C CNN
+	1    4550 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR064
+U 1 1 60716932
+P 5700 7400
+F 0 "#PWR064" H 5700 7150 50  0001 C CNN
+F 1 "GND1" H 5705 7227 50  0000 C CNN
+F 2 "" H 5700 7400 50  0001 C CNN
+F 3 "" H 5700 7400 50  0001 C CNN
+	1    5700 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 7400 4550 7400
+Wire Wire Line
+	6000 7400 5700 7400
+Wire Wire Line
+	4450 6650 4450 6750
+$Comp
+L Device:R_US R2
+U 1 1 60B339B4
+P 5450 6650
+F 0 "R2" H 5518 6696 50  0000 L CNN
+F 1 "R_US" H 5518 6605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 5490 6640 50  0001 C CNN
+F 3 "~" H 5450 6650 50  0001 C CNN
+	1    5450 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 6650 5600 6750
+Wire Wire Line
+	5600 6750 5300 6750
+Text GLabel 5300 6850 2    50   Input ~ 0
+26
+Text GLabel 5300 6950 2    50   Input ~ 0
+32
+Text GLabel 5300 7050 2    50   Input ~ 0
+33
+Text GLabel 5300 7150 2    50   Input ~ 0
+34
+Text GLabel 5300 7250 2    50   Input ~ 0
+35
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR058
+U 1 1 6086D063
+P 4850 6400
+F 0 "#PWR058" H 4850 6250 50  0001 C CNN
+F 1 "+5V" H 4950 6450 50  0000 C CNN
+F 2 "" H 4850 6400 50  0001 C CNN
+F 3 "" H 4850 6400 50  0001 C CNN
+	1    4850 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR083
+U 1 1 604D5BCF
+P 675 7415
+F 0 "#PWR083" H 675 7165 50  0001 C CNN
+F 1 "GND1" H 680 7242 50  0000 C CNN
+F 2 "" H 675 7415 50  0001 C CNN
+F 3 "" H 675 7415 50  0001 C CNN
+	1    675  7415
+	1    0    0    -1  
+$EndComp
+Text GLabel 675  6515 0    50   Input ~ 0
+3.3
+Text GLabel 675  6715 0    50   Input ~ 0
+60
+Text GLabel 675  6615 0    50   Input ~ 0
+61
+$Comp
+L CaelusPCB-rescue:XBee_Breakout-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U56
+U 1 1 60DA7FDB
+P 1025 6965
+F 0 "U56" H 1025 7640 50  0000 C CNN
+F 1 "XBee_Breakout" H 1025 7549 50  0000 C CNN
+F 2 "Launchbox:Xbee_Breakout" H 875 7115 50  0001 C CNN
+F 3 "" H 875 7115 50  0001 C CNN
+	1    1025 6965
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4650 1550 4900
+Connection ~ 1550 4650
+Wire Wire Line
+	1300 4650 1550 4650
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0131
+U 1 1 61FF1F2F
+P 1300 4650
+F 0 "#PWR0131" H 1300 4400 50  0001 C CNN
+F 1 "GND1-power" H 1305 4477 50  0000 C CNN
+F 2 "" H 1300 4650 50  0001 C CNN
+F 3 "" H 1300 4650 50  0001 C CNN
+	1    1300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4550 1550 4650
+Wire Wire Line
+	1050 4900 800  4900
+Connection ~ 1050 4900
+Wire Wire Line
+	1050 4550 1050 4900
+Wire Wire Line
+	1450 4550 1050 4550
+Wire Wire Line
+	800  4900 800  4700
+Wire Wire Line
+	1450 4900 1050 4900
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB #PWR0132
+U 1 1 61DE6AE0
+P 800 4700
+F 0 "#PWR0132" H 800 4550 50  0001 C CNN
+F 1 "+5V-power" H 815 4873 50  0000 C CNN
+F 2 "" H 800 4700 50  0001 C CNN
+F 3 "" H 800 4700 50  0001 C CNN
+	1    800  4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 4900 1    50   Input ~ 0
+54
+Text GLabel 2050 4900 1    50   Input ~ 0
+48
+Text GLabel 1950 4900 1    50   Input ~ 0
+48
+Text GLabel 1850 4900 1    50   Input ~ 0
+48
+Text GLabel 1750 4900 1    50   Input ~ 0
+47
+Text GLabel 1650 4900 1    50   Input ~ 0
+46
+Text GLabel 2150 4550 3    50   Input ~ 0
+45
+Text GLabel 2050 4550 3    50   Input ~ 0
+44
+Text GLabel 1950 4550 3    50   Input ~ 0
+43
+Text GLabel 1850 4550 3    50   Input ~ 0
+42
+Text GLabel 1750 4550 3    50   Input ~ 0
+41
+Text GLabel 1650 4550 3    50   Input ~ 0
+40
+Wire Wire Line
+	4950 2200 5150 2200
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0104
+U 1 1 6258BF60
+P 5150 2200
+F 0 "#PWR0104" H 5150 1950 50  0001 C CNN
+F 1 "GND1-power" H 5155 2027 50  0000 C CNN
+F 2 "" H 5150 2200 50  0001 C CNN
+F 3 "" H 5150 2200 50  0001 C CNN
+	1    5150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2050 4950 2200
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0101
+U 1 1 62499B38
+P 3950 2300
+F 0 "#PWR0101" H 3950 2050 50  0001 C CNN
+F 1 "GND1-power" H 3955 2127 50  0000 C CNN
+F 2 "" H 3950 2300 50  0001 C CNN
+F 3 "" H 3950 2300 50  0001 C CNN
+	1    3950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2300 4850 2400
+Text GLabel 4850 2400 3    50   Input ~ 0
+52
+Connection ~ 4850 2300
+Wire Wire Line
+	4850 2050 4850 2300
+Wire Wire Line
+	4550 2300 4850 2300
+$Comp
+L Device:R R10
+U 1 1 622B4FA8
+P 4100 2300
+F 0 "R10" V 4307 2300 50  0000 C CNN
+F 1 "R" V 4216 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4030 2300 50  0001 C CNN
+F 3 "~" H 4100 2300 50  0001 C CNN
+	1    4100 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6218813E
+P 4400 2300
+F 0 "D2" H 4393 2517 50  0000 C CNN
+F 1 "LED" H 4393 2426 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4400 2300 50  0001 C CNN
+F 3 "~" H 4400 2300 50  0001 C CNN
+	1    4400 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 2050 3    50   Input ~ 0
+27
+Text GLabel 4650 2050 3    50   Input ~ 0
+26
+Text GLabel 4550 2050 3    50   Input ~ 0
+25
+$Comp
+L CaelusPCB-rescue:RJ45EthernetBreakout-CaelusPCB Ayo1
+U 1 1 61C211CD
+P 4450 1600
+F 0 "Ayo1" H 4450 1650 50  0001 C CNN
+F 1 "RJ45EthernetBreakout" H 4481 1490 50  0000 L CNN
+F 2 "Launchbox:RJ45EthernetBreakout" H 4450 1650 50  0001 C CNN
+F 3 "" H 4450 1650 50  0001 C CNN
+	1    4450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U33
+U 1 1 60A4FCB2
+P 4600 1200
+F 0 "U33" H 4650 1350 50  0000 R CNN
+F 1 "MAX31856" H 4800 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31856" H 4600 1200 50  0001 C CNN
+F 3 "" H 4600 1200 50  0001 C CNN
+	1    4600 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9875 3475 9855 3475
+Wire Wire Line
+	9875 3425 9875 3475
+Wire Wire Line
+	9855 3375 10075 3375
+Wire Wire Line
+	9225 3105 9855 3105
+Wire Wire Line
+	9855 3105 9855 3275
+Wire Wire Line
+	10075 2875 9855 2875
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J26
+U 1 1 624E98D8
+P 9455 2875
+F 0 "J26" H 9415 2975 50  0000 L CNN
+F 1 "440055-3" V 9615 2675 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 9305 3085 50  0001 L BNN
+F 3 "" H 9455 2875 50  0001 L BNN
+	1    9455 2875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9855 2975 9875 2975
+Wire Wire Line
+	9225 2595 9855 2595
+Wire Wire Line
+	9855 2775 9855 2595
+Wire Wire Line
+	9855 2475 9875 2475
+Wire Wire Line
+	10075 2375 9855 2375
+Wire Wire Line
+	9225 2100 9855 2100
+Wire Wire Line
+	9855 2100 9855 2275
+Wire Wire Line
+	9855 2025 9875 2025
+Wire Wire Line
+	9855 1975 9855 2025
+Wire Wire Line
+	10075 1875 9855 1875
+Wire Wire Line
+	9225 1625 9855 1625
+Wire Wire Line
+	9855 1625 9855 1775
+Wire Wire Line
+	9855 1525 9875 1525
+Wire Wire Line
+	9855 1475 9855 1525
+Wire Wire Line
+	9855 1375 10075 1375
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR043
+U 1 1 5F75CFF7
+P 10075 1375
+F 0 "#PWR043" H 10075 1225 50  0001 C CNN
+F 1 "+5V" H 10075 1525 50  0000 C CNN
+F 2 "" H 10075 1375 50  0001 C CNN
+F 3 "" H 10075 1375 50  0001 C CNN
+	1    10075 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9225 1125 9855 1125
+Wire Wire Line
+	9855 1125 9855 1275
+Wire Wire Line
+	9855 1075 9875 1075
+Wire Wire Line
+	9855 975  9855 1075
+Wire Wire Line
+	9855 875  10075 875 
+Wire Wire Line
+	9855 575  11125 575 
+Connection ~ 9855 575 
+Wire Wire Line
+	9855 775  9855 575 
+Wire Wire Line
+	9225 575  9225 1125
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J22
+U 1 1 624ED7DA
+P 9455 875
+F 0 "J22" H 9415 975 50  0000 L CNN
+F 1 "440055-3" V 9615 675 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 9305 1085 50  0001 L BNN
+F 3 "" H 9455 875 50  0001 L BNN
+	1    9455 875 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J23
+U 1 1 624EC7E1
+P 9455 1375
+F 0 "J23" H 9415 1475 50  0000 L CNN
+F 1 "440055-3" V 9615 1175 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 9305 1585 50  0001 L BNN
+F 3 "" H 9455 1375 50  0001 L BNN
+	1    9455 1375
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J24
+U 1 1 624EBE0F
+P 9455 1875
+F 0 "J24" H 9415 1975 50  0000 L CNN
+F 1 "440055-3" V 9615 1675 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 9305 2085 50  0001 L BNN
+F 3 "" H 9455 1875 50  0001 L BNN
+	1    9455 1875
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J25
+U 1 1 624EADFD
+P 9455 2375
+F 0 "J25" H 9415 2475 50  0000 L CNN
+F 1 "440055-3" V 9615 2175 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 9305 2585 50  0001 L BNN
+F 3 "" H 9455 2375 50  0001 L BNN
+	1    9455 2375
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J27
+U 1 1 624E800A
+P 9455 3375
+F 0 "J27" H 9415 3475 50  0000 L CNN
+F 1 "440055-3" V 9615 3175 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 9305 3585 50  0001 L BNN
+F 3 "" H 9455 3375 50  0001 L BNN
+	1    9455 3375
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J21
+U 1 1 624E79AF
+P 8995 3375
+F 0 "J21" H 8955 3475 50  0000 L CNN
+F 1 "440055-3" V 9155 3175 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 8845 3585 50  0001 L BNN
+F 3 "" H 8995 3375 50  0001 L BNN
+	1    8995 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J20
+U 1 1 624E2B85
+P 8995 2875
+F 0 "J20" H 8955 2975 50  0000 L CNN
+F 1 "440055-3" V 9155 2675 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 8845 3085 50  0001 L BNN
+F 3 "" H 8995 2875 50  0001 L BNN
+	1    8995 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J19
+U 1 1 624E24A2
+P 8995 2375
+F 0 "J19" H 8955 2475 50  0000 L CNN
+F 1 "440055-3" V 9155 2175 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 8845 2585 50  0001 L BNN
+F 3 "" H 8995 2375 50  0001 L BNN
+	1    8995 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J18
+U 1 1 624E1C97
+P 8995 1875
+F 0 "J18" H 8955 1975 50  0000 L CNN
+F 1 "440055-3" V 9155 1675 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 8845 2085 50  0001 L BNN
+F 3 "" H 8995 1875 50  0001 L BNN
+	1    8995 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J17
+U 1 1 624E1695
+P 8995 1375
+F 0 "J17" H 8955 1475 50  0000 L CNN
+F 1 "440055-3" V 9155 1175 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 8845 1585 50  0001 L BNN
+F 3 "" H 8995 1375 50  0001 L BNN
+	1    8995 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J16
+U 1 1 6184CC72
+P 8995 875
+F 0 "J16" H 8955 975 50  0000 L CNN
+F 1 "440055-3" V 9155 675 50  0000 L CNN
+F 2 "Launchbox:Crimp_Header" H 8845 1085 50  0001 L BNN
+F 3 "" H 8995 875 50  0001 L BNN
+	1    8995 875 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7375 2825 7375 3635
+Wire Wire Line
+	10225 3425 10225 3635
+Wire Wire Line
+	7375 3635 10225 3635
+Wire Wire Line
+	8375 875  8595 875 
+Wire Wire Line
+	8595 1775 8225 1775
+Wire Wire Line
+	8375 1875 8595 1875
+Wire Wire Line
+	8595 2100 9225 2100
+Wire Wire Line
+	8595 2100 8595 1975
+Wire Wire Line
+	8595 2225 8595 2275
+Wire Wire Line
+	8225 2225 8595 2225
+Wire Wire Line
+	8595 2375 8375 2375
+Wire Wire Line
+	8595 2595 9225 2595
+Wire Wire Line
+	8595 2595 8595 2475
+Wire Wire Line
+	8595 3105 9225 3105
+Wire Wire Line
+	8595 3105 8595 2975
+Wire Wire Line
+	8375 2875 8595 2875
+Wire Wire Line
+	8595 2725 8595 2775
+Wire Wire Line
+	8375 2725 8595 2725
+Wire Wire Line
+	8595 3605 9225 3605
+Wire Wire Line
+	8595 3605 8595 3475
+Wire Wire Line
+	8375 3375 8595 3375
+Wire Wire Line
+	8595 3175 8595 3275
+Wire Wire Line
+	8225 3175 8595 3175
+Wire Wire Line
+	9225 3105 9225 3605
+Connection ~ 9225 3105
+Wire Wire Line
+	9225 2595 9225 3105
+Wire Wire Line
+	10225 2975 10225 3135
+Wire Wire Line
+	7525 2675 7525 3135
+Wire Wire Line
+	7525 3135 10225 3135
+Wire Wire Line
+	7375 1155 7375 1325
+Wire Wire Line
+	10225 1155 10225 1075
+Wire Wire Line
+	7375 1155 10225 1155
+Wire Wire Line
+	10225 1525 10225 1640
+Wire Wire Line
+	7475 1525 7475 1640
+Wire Wire Line
+	7475 1640 10225 1640
+Wire Wire Line
+	10225 2475 10225 2615
+Wire Wire Line
+	7275 1925 7275 2615
+Wire Wire Line
+	10225 2615 7275 2615
+Wire Wire Line
+	9225 2100 9225 2595
+Connection ~ 9225 2595
+Connection ~ 9225 2100
+Wire Wire Line
+	9225 1625 9225 2100
+Wire Wire Line
+	8595 1625 8595 1475
+Wire Wire Line
+	9225 1625 8595 1625
+Wire Wire Line
+	8375 1375 8595 1375
+Wire Wire Line
+	8225 1275 8595 1275
+Wire Wire Line
+	8595 775  8275 775 
+Wire Wire Line
+	8595 1125 8595 975 
+Wire Wire Line
+	9225 1125 8595 1125
+Wire Wire Line
+	3420 2540 3420 2870
+Wire Wire Line
+	3320 2540 3320 2870
+Wire Wire Line
+	3220 2870 3220 2540
+Wire Wire Line
+	3120 2540 3120 2870
+Wire Wire Line
+	3020 2870 3020 2540
+Wire Wire Line
+	2430 2510 2430 2870
+Wire Wire Line
+	2330 2510 2330 2870
+Wire Wire Line
+	2230 2870 2230 2510
+Wire Wire Line
+	2130 2510 2130 2870
+Wire Wire Line
+	2030 2870 2030 2510
+Wire Wire Line
+	940  2510 940  2870
+Wire Wire Line
+	1340 2870 1340 2510
+Wire Wire Line
+	1240 2510 1240 2870
+Wire Wire Line
+	1140 2870 1140 2510
+Wire Wire Line
+	1040 2510 1040 2870
+$Comp
+L CaelusPCB-rescue:440055-5-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J1
+U 1 1 60E4C59F
+P 1140 3270
+F 0 "J1" V 987 3600 50  0000 L CNN
+F 1 "440055-5" V 1130 3070 50  0000 L CNN
+F 2 "Launchbox:TE_1735446-5" H 990 3590 50  0001 L BNN
+F 3 "" H 1140 3270 50  0001 L BNN
+	1    1140 3270
+	0    1    1    0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:LoadCellAmp-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U25
+U 1 1 606163D6
+P 1090 2360
+F 0 "U25" V 615 2335 50  0000 C CNN
+F 1 "LoadCellAmp" V 706 2335 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 1090 2360 50  0001 C CNN
+F 3 "" H 1090 2360 50  0001 C CNN
+	1    1090 2360
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:LoadCellAmp-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U36
+U 1 1 6061718D
+P 2180 2360
+F 0 "U36" V 1705 2335 50  0000 C CNN
+F 1 "LoadCellAmp" V 1796 2335 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 2180 2360 50  0001 C CNN
+F 3 "" H 2180 2360 50  0001 C CNN
+	1    2180 2360
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-5-CaelusPCB-CaelusPCB-rescue-CaelusPCB-rescue J3
+U 1 1 60E4F85F
+P 3220 3270
+F 0 "J3" V 3067 3600 50  0000 L CNN
+F 1 "440055-5" V 3210 3070 50  0000 L CNN
+F 2 "Launchbox:TE_1735446-5" H 3070 3590 50  0001 L BNN
+F 3 "" H 3220 3270 50  0001 L BNN
+	1    3220 3270
+	0    1    1    0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:440055-5-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J2
+U 1 1 60E4E497
+P 2230 3270
+F 0 "J2" V 2077 3600 50  0000 L CNN
+F 1 "440055-5" V 2220 3070 50  0000 L CNN
+F 2 "Launchbox:TE_1735446-5" H 2080 3590 50  0001 L BNN
+F 3 "" H 2230 3270 50  0001 L BNN
+	1    2230 3270
+	0    1    1    0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR028
+U 1 1 603FFD67
+P 1390 1760
+F 0 "#PWR028" H 1390 1610 50  0001 C CNN
+F 1 "+5V" H 1405 1933 50  0000 C CNN
+F 2 "" H 1390 1760 50  0001 C CNN
+F 3 "" H 1390 1760 50  0001 C CNN
+	1    1390 1760
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1390 1760 1340 1760
+Wire Wire Line
+	1240 1760 1240 2160
+Wire Wire Line
+	1340 2160 1340 1760
+Connection ~ 1340 1760
+Wire Wire Line
+	1340 1760 1240 1760
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR029
+U 1 1 604FC4F9
+P 940 1760
+F 0 "#PWR029" H 940 1510 50  0001 C CNN
+F 1 "GND1" H 945 1587 50  0000 C CNN
+F 2 "" H 940 1760 50  0001 C CNN
+F 3 "" H 940 1760 50  0001 C CNN
+	1    940  1760
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	940  2160 940  1760
+Text GLabel 1140 1760 1    50   Input ~ 0
+16
+Text GLabel 1040 1760 1    50   Input ~ 0
+17
+Wire Wire Line
+	1140 1760 1140 2160
+Wire Wire Line
+	1040 1760 1040 2160
+Wire Wire Line
+	2130 1810 2130 2160
+Wire Wire Line
+	2230 1810 2230 2160
+Text GLabel 2130 1810 1    50   Input ~ 0
+19
+Text GLabel 2230 1810 1    50   Input ~ 0
+18
+Wire Wire Line
+	2030 2160 2030 1810
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR039
+U 1 1 604FCF1D
+P 2030 1810
+F 0 "#PWR039" H 2030 1560 50  0001 C CNN
+F 1 "GND1" H 2035 1637 50  0000 C CNN
+F 2 "" H 2030 1810 50  0001 C CNN
+F 3 "" H 2030 1810 50  0001 C CNN
+	1    2030 1810
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2430 1810 2330 1810
+Connection ~ 2430 1810
+Wire Wire Line
+	2430 2160 2430 1810
+Wire Wire Line
+	2330 1810 2330 2160
+Wire Wire Line
+	2480 1810 2430 1810
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR038
+U 1 1 60452BC3
+P 2480 1810
+F 0 "#PWR038" H 2480 1660 50  0001 C CNN
+F 1 "+5V" H 2495 1983 50  0000 C CNN
+F 2 "" H 2480 1810 50  0001 C CNN
+F 3 "" H 2480 1810 50  0001 C CNN
+	1    2480 1810
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6475 2325 6025 2325
+Text GLabel 6025 2325 0    50   Input ~ 0
+3.3
+Text GLabel 6025 1825 0    50   Input ~ 0
+60
+Text GLabel 6025 1725 0    50   Input ~ 0
+61
+Wire Wire Line
+	7075 2225 6875 2225
+Text GLabel 7075 2225 2    50   Input ~ 0
+8
+Wire Wire Line
+	7125 2625 6875 2625
+Text GLabel 7125 2625 2    50   Input ~ 0
+7
+Wire Wire Line
+	6025 2425 6475 2425
+Text GLabel 6025 2425 0    50   Input ~ 0
+57
+Wire Wire Line
+	11125 3425 11125 4025
+Connection ~ 11125 3425
+Wire Wire Line
+	10575 3425 11125 3425
+Wire Wire Line
+	10225 3425 10275 3425
+Connection ~ 10225 3425
+Wire Wire Line
+	10175 3425 10225 3425
+$Comp
+L Device:R_US R31
+U 1 1 61064452
+P 10425 3425
+F 0 "R31" V 10525 3375 50  0000 L CNN
+F 1 "R_US" V 10475 3175 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10465 3415 50  0001 C CNN
+F 3 "~" H 10425 3425 50  0001 C CNN
+	1    10425 3425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R24
+U 1 1 6106444C
+P 10025 3425
+F 0 "R24" V 10125 3375 50  0000 L CNN
+F 1 "R_US" V 10075 3175 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10065 3415 50  0001 C CNN
+F 3 "~" H 10025 3425 50  0001 C CNN
+	1    10025 3425
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11125 2975 11125 3425
+Connection ~ 11125 2975
+Wire Wire Line
+	10575 2975 11125 2975
+Wire Wire Line
+	10225 2975 10275 2975
+Connection ~ 10225 2975
+Wire Wire Line
+	10175 2975 10225 2975
+$Comp
+L Device:R_US R30
+U 1 1 60F0AFBC
+P 10425 2975
+F 0 "R30" V 10525 2925 50  0000 L CNN
+F 1 "R_US" V 10475 2725 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10465 2965 50  0001 C CNN
+F 3 "~" H 10425 2975 50  0001 C CNN
+	1    10425 2975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R23
+U 1 1 60F0AFB6
+P 10025 2975
+F 0 "R23" V 10125 2925 50  0000 L CNN
+F 1 "R_US" V 10075 2725 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10065 2965 50  0001 C CNN
+F 3 "~" H 10025 2975 50  0001 C CNN
+	1    10025 2975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11125 2475 11125 2975
+Connection ~ 11125 2475
+Wire Wire Line
+	10575 2475 11125 2475
+Wire Wire Line
+	10225 2475 10275 2475
+Connection ~ 10225 2475
+Wire Wire Line
+	10175 2475 10225 2475
+$Comp
+L Device:R_US R29
+U 1 1 60DB7D3C
+P 10425 2475
+F 0 "R29" V 10525 2425 50  0000 L CNN
+F 1 "R_US" V 10475 2225 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10465 2465 50  0001 C CNN
+F 3 "~" H 10425 2475 50  0001 C CNN
+	1    10425 2475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R22
+U 1 1 60DB7D36
+P 10025 2475
+F 0 "R22" V 10125 2425 50  0000 L CNN
+F 1 "R_US" V 10075 2225 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10065 2465 50  0001 C CNN
+F 3 "~" H 10025 2475 50  0001 C CNN
+	1    10025 2475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11125 2025 11125 2475
+Connection ~ 11125 2025
+Wire Wire Line
+	10575 2025 11125 2025
+Wire Wire Line
+	11125 1525 11125 2025
+Connection ~ 11125 1525
+Wire Wire Line
+	10575 1525 11125 1525
+Wire Wire Line
+	7375 2125 10225 2125
+Wire Wire Line
+	10225 2025 10275 2025
+Connection ~ 10225 2025
+Wire Wire Line
+	10225 2125 10225 2025
+Wire Wire Line
+	10175 2025 10225 2025
+$Comp
+L Device:R_US R28
+U 1 1 60C15162
+P 10425 2025
+F 0 "R28" V 10525 1975 50  0000 L CNN
+F 1 "R_US" V 10475 1775 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10465 2015 50  0001 C CNN
+F 3 "~" H 10425 2025 50  0001 C CNN
+	1    10425 2025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R21
+U 1 1 60C1515C
+P 10025 2025
+F 0 "R21" V 10125 1975 50  0000 L CNN
+F 1 "R_US" V 10075 1775 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10065 2015 50  0001 C CNN
+F 3 "~" H 10025 2025 50  0001 C CNN
+	1    10025 2025
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10225 1525 10275 1525
+Connection ~ 10225 1525
+Wire Wire Line
+	10175 1525 10225 1525
+$Comp
+L Device:R_US R27
+U 1 1 60B1C28C
+P 10425 1525
+F 0 "R27" V 10525 1475 50  0000 L CNN
+F 1 "R_US" V 10475 1275 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10465 1515 50  0001 C CNN
+F 3 "~" H 10425 1525 50  0001 C CNN
+	1    10425 1525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R20
+U 1 1 60B1C286
+P 10025 1525
+F 0 "R20" V 10125 1475 50  0000 L CNN
+F 1 "R_US" V 10075 1275 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10065 1515 50  0001 C CNN
+F 3 "~" H 10025 1525 50  0001 C CNN
+	1    10025 1525
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10225 1075 10275 1075
+Connection ~ 10225 1075
+Wire Wire Line
+	10175 1075 10225 1075
+Wire Wire Line
+	11125 1075 11125 1525
+Connection ~ 11125 1075
+Wire Wire Line
+	10575 1075 11125 1075
+Wire Wire Line
+	11125 575  11125 1075
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR096
+U 1 1 60983079
+P 11125 4025
+F 0 "#PWR096" H 11125 3775 50  0001 C CNN
+F 1 "GND1" H 11130 3852 50  0000 C CNN
+F 2 "" H 11125 4025 50  0001 C CNN
+F 3 "" H 11125 4025 50  0001 C CNN
+	1    11125 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R26
+U 1 1 609829D2
+P 10425 1075
+F 0 "R26" V 10525 1025 50  0000 L CNN
+F 1 "R_US" V 10475 825 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10465 1065 50  0001 C CNN
+F 3 "~" H 10425 1075 50  0001 C CNN
+	1    10425 1075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R19
+U 1 1 60980623
+P 10025 1075
+F 0 "R19" V 10125 1025 50  0000 L CNN
+F 1 "R_US" V 10075 825 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 10065 1065 50  0001 C CNN
+F 3 "~" H 10025 1075 50  0001 C CNN
+	1    10025 1075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR093
+U 1 1 6079231E
+P 7575 3175
+F 0 "#PWR093" H 7575 2925 50  0001 C CNN
+F 1 "GND1" H 7675 3025 50  0000 C CNN
+F 2 "" H 7575 3175 50  0001 C CNN
+F 3 "" H 7575 3175 50  0001 C CNN
+	1    7575 3175
+	1    0    0    -1  
+$EndComp
+Connection ~ 7925 3175
+Wire Wire Line
+	7425 2725 7425 3325
+Wire Wire Line
+	7925 3325 7925 3175
+Wire Wire Line
+	7425 3325 7925 3325
+Wire Wire Line
+	7875 3175 7925 3175
+$Comp
+L Device:R_US R8
+U 1 1 606A2136
+P 7725 3175
+F 0 "R8" V 7825 3125 50  0000 L CNN
+F 1 "R_US" V 7775 2925 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7765 3165 50  0001 C CNN
+F 3 "~" H 7725 3175 50  0001 C CNN
+	1    7725 3175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R14
+U 1 1 606A064D
+P 8075 3175
+F 0 "R14" V 8175 3125 50  0000 L CNN
+F 1 "R_US" V 8125 2925 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8115 3165 50  0001 C CNN
+F 3 "~" H 8075 3175 50  0001 C CNN
+	1    8075 3175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR094
+U 1 1 6069E1AA
+P 7675 2725
+F 0 "#PWR094" H 7675 2475 50  0001 C CNN
+F 1 "GND1" H 7775 2575 50  0000 C CNN
+F 2 "" H 7675 2725 50  0001 C CNN
+F 3 "" H 7675 2725 50  0001 C CNN
+	1    7675 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 2625 7225 2625
+Wire Wire Line
+	8025 2725 8075 2725
+Connection ~ 8025 2725
+Wire Wire Line
+	8025 2725 8025 2625
+Wire Wire Line
+	7975 2725 8025 2725
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR034
+U 1 1 5F763CF5
+P 8375 2875
+F 0 "#PWR034" H 8375 2725 50  0001 C CNN
+F 1 "+5V" H 8475 2925 50  0000 C CNN
+F 2 "" H 8375 2875 50  0001 C CNN
+F 3 "" H 8375 2875 50  0001 C CNN
+	1    8375 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R16
+U 1 1 605AB9AF
+P 8225 2725
+F 0 "R16" V 8325 2675 50  0000 L CNN
+F 1 "R_US" V 8275 2475 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8265 2715 50  0001 C CNN
+F 3 "~" H 8225 2725 50  0001 C CNN
+	1    8225 2725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 605AA6AF
+P 7825 2725
+F 0 "R9" V 7925 2675 50  0000 L CNN
+F 1 "R_US" V 7875 2475 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7865 2715 50  0001 C CNN
+F 3 "~" H 7825 2725 50  0001 C CNN
+	1    7825 2725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7875 2225 7825 2225
+Connection ~ 7875 2225
+Wire Wire Line
+	7325 1825 7325 2325
+Wire Wire Line
+	7875 2325 7875 2225
+Wire Wire Line
+	7325 2325 7875 2325
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR090
+U 1 1 6055AB73
+P 7525 2225
+F 0 "#PWR090" H 7525 1975 50  0001 C CNN
+F 1 "GND1" H 7625 2075 50  0000 C CNN
+F 2 "" H 7525 2225 50  0001 C CNN
+F 3 "" H 7525 2225 50  0001 C CNN
+	1    7525 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 2225 7875 2225
+$Comp
+L Device:R_US R5
+U 1 1 6050BBCD
+P 7675 2225
+F 0 "R5" V 7775 2175 50  0000 L CNN
+F 1 "R_US" V 7725 1975 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7715 2215 50  0001 C CNN
+F 3 "~" H 7675 2225 50  0001 C CNN
+	1    7675 2225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R13
+U 1 1 604BB928
+P 8075 2225
+F 0 "R13" V 8175 2175 50  0000 L CNN
+F 1 "R_US" V 8125 1975 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8115 2215 50  0001 C CNN
+F 3 "~" H 8075 2225 50  0001 C CNN
+	1    8075 2225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR049
+U 1 1 604BB0D3
+P 7525 1775
+F 0 "#PWR049" H 7525 1525 50  0001 C CNN
+F 1 "GND1" H 7625 1625 50  0000 C CNN
+F 2 "" H 7525 1775 50  0001 C CNN
+F 3 "" H 7525 1775 50  0001 C CNN
+	1    7525 1775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 1675 7425 1675
+Wire Wire Line
+	7875 1775 7925 1775
+Connection ~ 7875 1775
+Wire Wire Line
+	7875 1775 7875 1675
+Wire Wire Line
+	7825 1775 7875 1775
+$Comp
+L Device:R_US R4
+U 1 1 603CDD1A
+P 7675 1775
+F 0 "R4" V 7775 1725 50  0000 L CNN
+F 1 "R_US" V 7725 1525 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7715 1765 50  0001 C CNN
+F 3 "~" H 7675 1775 50  0001 C CNN
+	1    7675 1775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R12
+U 1 1 603CCDDF
+P 8075 1775
+F 0 "R12" V 8175 1725 50  0000 L CNN
+F 1 "R_US" V 8125 1525 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8115 1765 50  0001 C CNN
+F 3 "~" H 8075 1775 50  0001 C CNN
+	1    8075 1775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6875 1425 7925 1425
+Connection ~ 7925 1275
+Wire Wire Line
+	7925 1275 7925 1425
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR092
+U 1 1 6037D119
+P 7575 1275
+F 0 "#PWR092" H 7575 1025 50  0001 C CNN
+F 1 "GND1" H 7425 1225 50  0000 C CNN
+F 2 "" H 7575 1275 50  0001 C CNN
+F 3 "" H 7575 1275 50  0001 C CNN
+	1    7575 1275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 1275 7875 1275
+$Comp
+L Device:R_US R7
+U 1 1 602E0ACD
+P 7725 1275
+F 0 "R7" V 7825 1225 50  0000 L CNN
+F 1 "R_US" V 7775 1025 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7765 1265 50  0001 C CNN
+F 3 "~" H 7725 1275 50  0001 C CNN
+	1    7725 1275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R11
+U 1 1 602DEAF2
+P 8075 1275
+F 0 "R11" V 8175 1225 50  0000 L CNN
+F 1 "R_US" V 8125 1025 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8115 1265 50  0001 C CNN
+F 3 "~" H 8075 1275 50  0001 C CNN
+	1    8075 1275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR091
+U 1 1 602D68DF
+P 7575 775
+F 0 "#PWR091" H 7575 525 50  0001 C CNN
+F 1 "GND1" H 7425 725 50  0000 C CNN
+F 2 "" H 7575 775 50  0001 C CNN
+F 3 "" H 7575 775 50  0001 C CNN
+	1    7575 775 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7325 875  7325 1225
+Wire Wire Line
+	7925 775  7875 775 
+Connection ~ 7925 775 
+Wire Wire Line
+	7925 875  7325 875 
+Wire Wire Line
+	7925 775  7925 875 
+Wire Wire Line
+	7975 775  7925 775 
+$Comp
+L Device:R_US R6
+U 1 1 601EC529
+P 7725 775
+F 0 "R6" V 7825 725 50  0000 L CNN
+F 1 "R_US" V 7775 525 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7765 765 50  0001 C CNN
+F 3 "~" H 7725 775 50  0001 C CNN
+	1    7725 775 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R15
+U 1 1 601E636A
+P 8125 775
+F 0 "R15" V 8225 725 50  0000 L CNN
+F 1 "R_US" V 8175 525 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8165 765 50  0001 C CNN
+F 3 "~" H 8125 775 50  0001 C CNN
+	1    8125 775 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7175 2925 6875 2925
+Text GLabel 7175 2925 2    50   Input ~ 0
+55
+Wire Wire Line
+	7175 3025 6875 3025
+Text GLabel 7175 3025 2    50   Input ~ 0
+58
+Wire Wire Line
+	7175 2675 7175 2125
+Wire Wire Line
+	7175 2675 7525 2675
+Wire Wire Line
+	950  800  950  1200
+Text GLabel 950  800  1    50   Input ~ 0
+51
+Wire Wire Line
+	7175 3125 6875 3125
+Text GLabel 7175 3125 2    50   Input ~ 0
+51
+Wire Wire Line
+	1050 800  1050 1200
+Text GLabel 1050 800  1    50   Input ~ 0
+13
+Wire Wire Line
+	1150 800  1150 1200
+Text GLabel 1150 800  1    50   Input ~ 0
+14
+Wire Wire Line
+	1250 800  1250 1200
+Text GLabel 1250 800  1    50   Input ~ 0
+1
+Wire Wire Line
+	1550 850  1550 1200
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR010
+U 1 1 60EA81B1
+P 1550 850
+F 0 "#PWR010" H 1550 700 50  0001 C CNN
+F 1 "+5V" H 1565 1023 50  0000 C CNN
+F 2 "" H 1550 850 50  0001 C CNN
+F 3 "" H 1550 850 50  0001 C CNN
+	1    1550 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 600 
+Wire Wire Line
+	1350 600  1350 1200
+Wire Wire Line
+	2500 600  1350 600 
+$Comp
+L CaelusPCB-rescue:MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U1
+U 1 1 60E52A85
+P 1150 1200
+F 0 "U1" H 1200 1350 50  0000 R CNN
+F 1 "MAX31856" H 1350 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31856" H 1150 1200 50  0001 C CNN
+F 3 "" H 1150 1200 50  0001 C CNN
+	1    1150 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 800  2100 1200
+Text GLabel 2100 800  1    50   Input ~ 0
+50
+Wire Wire Line
+	7175 3225 6875 3225
+Text GLabel 7175 3225 2    50   Input ~ 0
+50
+Wire Wire Line
+	3250 800  3250 1200
+Text GLabel 3250 800  1    50   Input ~ 0
+15
+Wire Wire Line
+	6025 1225 6475 1225
+Text GLabel 6025 1225 0    50   Input ~ 0
+15
+Wire Wire Line
+	2300 800  2300 1200
+Wire Wire Line
+	2200 800  2200 1200
+Text GLabel 2300 800  1    50   Input ~ 0
+14
+Text GLabel 2200 800  1    50   Input ~ 0
+13
+Wire Wire Line
+	3450 800  3450 1200
+Wire Wire Line
+	3350 800  3350 1200
+Text GLabel 3450 800  1    50   Input ~ 0
+14
+Text GLabel 3350 800  1    50   Input ~ 0
+13
+Wire Wire Line
+	4600 800  4600 1200
+Text GLabel 4600 800  1    50   Input ~ 0
+14
+Wire Wire Line
+	4500 800  4500 1200
+Text GLabel 4500 800  1    50   Input ~ 0
+13
+Wire Wire Line
+	6025 1125 6475 1125
+Wire Wire Line
+	6025 1025 6475 1025
+Text GLabel 6025 1125 0    50   Input ~ 0
+14
+Text GLabel 6025 1025 0    50   Input ~ 0
+13
+Wire Wire Line
+	4400 800  4400 1200
+Text GLabel 4400 800  1    50   Input ~ 0
+2
+Wire Wire Line
+	2400 800  2400 1200
+Wire Wire Line
+	3550 800  3550 1200
+Wire Wire Line
+	4700 800  4700 1200
+Text GLabel 2400 800  1    50   Input ~ 0
+1
+Text GLabel 3550 800  1    50   Input ~ 0
+1
+Text GLabel 4700 800  1    50   Input ~ 0
+1
+Wire Wire Line
+	6025 3225 6475 3225
+Wire Wire Line
+	6025 3125 6475 3125
+Text GLabel 6025 3125 0    50   Input ~ 0
+2
+Text GLabel 6025 3225 0    50   Input ~ 0
+1
+Text GLabel 6025 2525 0    50   Input ~ 0
+16
+Text GLabel 6025 2625 0    50   Input ~ 0
+17
+Wire Wire Line
+	6475 2525 6025 2525
+Wire Wire Line
+	6475 2625 6025 2625
+Wire Wire Line
+	3650 600  4800 600 
+Connection ~ 3650 600 
+Wire Wire Line
+	3650 1200 3650 600 
+Wire Wire Line
+	4800 600  5350 600 
+Connection ~ 4800 600 
+Wire Wire Line
+	4800 1200 4800 600 
+Wire Wire Line
+	5350 600  5350 1250
+Wire Wire Line
+	2500 600  3650 600 
+Wire Wire Line
+	2500 1200 2500 600 
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR062
+U 1 1 60AD4B13
+P 5350 1250
+F 0 "#PWR062" H 5350 1000 50  0001 C CNN
+F 1 "GND1" H 5355 1077 50  0000 C CNN
+F 2 "" H 5350 1250 50  0001 C CNN
+F 3 "" H 5350 1250 50  0001 C CNN
+	1    5350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 850  2700 1200
+Wire Wire Line
+	3850 850  3850 1200
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR016
+U 1 1 60A7463F
+P 2700 850
+F 0 "#PWR016" H 2700 700 50  0001 C CNN
+F 1 "+5V" H 2715 1023 50  0000 C CNN
+F 2 "" H 2700 850 50  0001 C CNN
+F 3 "" H 2700 850 50  0001 C CNN
+	1    2700 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR036
+U 1 1 60A73CE8
+P 3850 850
+F 0 "#PWR036" H 3850 700 50  0001 C CNN
+F 1 "+5V" H 3865 1023 50  0000 C CNN
+F 2 "" H 3850 850 50  0001 C CNN
+F 3 "" H 3850 850 50  0001 C CNN
+	1    3850 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 850  5000 1200
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR057
+U 1 1 60A54CD0
+P 5000 850
+F 0 "#PWR057" H 5000 700 50  0001 C CNN
+F 1 "+5V" H 5015 1023 50  0000 C CNN
+F 2 "" H 5000 850 50  0001 C CNN
+F 3 "" H 5000 850 50  0001 C CNN
+	1    5000 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U15
+U 1 1 60A53269
+P 2300 1200
+F 0 "U15" H 2350 1350 50  0000 R CNN
+F 1 "MAX31856" H 2500 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31856" H 2300 1200 50  0001 C CNN
+F 3 "" H 2300 1200 50  0001 C CNN
+	1    2300 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U18
+U 1 1 60A52729
+P 3450 1200
+F 0 "U18" H 3500 1350 50  0000 R CNN
+F 1 "MAX31856" H 3650 1450 50  0000 R CNN
+F 2 "Launchbox:MAX31856" H 3450 1200 50  0001 C CNN
+F 3 "" H 3450 1200 50  0001 C CNN
+	1    3450 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CaelusPCB-rescue:Teensy3.6-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U23
+U 1 1 605CAA36
+P 6675 2225
+F 0 "U23" V 5153 2225 50  0000 C CNN
+F 1 "Teensy3.6" V 5244 2225 50  0000 C CNN
+F 2 "Launchbox:Teensy 3.6" H 6675 2625 50  0001 C CNN
+F 3 "" H 6675 2625 50  0001 C CNN
+	1    6675 2225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6875 925  7175 925 
+Wire Wire Line
+	7325 1225 6875 1225
+Wire Wire Line
+	7375 1325 6875 1325
+Wire Wire Line
+	7475 1525 6875 1525
+Wire Wire Line
+	7425 1625 6875 1625
+Wire Wire Line
+	7375 1725 6875 1725
+Wire Wire Line
+	7325 1825 6875 1825
+Wire Wire Line
+	7275 1925 6875 1925
+Wire Wire Line
+	7225 2025 6875 2025
+Wire Wire Line
+	7175 2125 6875 2125
+Wire Wire Line
+	7425 2725 6875 2725
+Wire Wire Line
+	7375 2825 6875 2825
+$Comp
+L CaelusPCB-rescue:LoadCellAmp-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U46
+U 1 1 60617D86
+P 3170 2390
+F 0 "U46" V 2695 2365 50  0000 C CNN
+F 1 "LoadCellAmp" V 2786 2365 50  0000 C CNN
+F 2 "Launchbox:LoadCellAmp" H 3170 2390 50  0001 C CNN
+F 3 "" H 3170 2390 50  0001 C CNN
+	1    3170 2390
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3120 1840 3120 2190
+Wire Wire Line
+	3220 1840 3220 2190
+Text GLabel 3120 1840 1    50   Input ~ 0
+21
+Text GLabel 3220 1840 1    50   Input ~ 0
+20
+Wire Wire Line
+	6025 3025 6475 3025
+Wire Wire Line
+	6025 2925 6475 2925
+Wire Wire Line
+	6025 2825 6475 2825
+Wire Wire Line
+	6025 2725 6475 2725
+Text GLabel 6025 2725 0    50   Input ~ 0
+18
+Wire Wire Line
+	3020 2190 3020 1840
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR041
+U 1 1 604FD6D2
+P 3020 1840
+F 0 "#PWR041" H 3020 1590 50  0001 C CNN
+F 1 "GND1" H 3025 1667 50  0000 C CNN
+F 2 "" H 3020 1840 50  0001 C CNN
+F 3 "" H 3020 1840 50  0001 C CNN
+	1    3020 1840
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3420 1840 3320 1840
+Connection ~ 3420 1840
+Wire Wire Line
+	3420 2190 3420 1840
+Wire Wire Line
+	3320 1840 3320 2190
+Wire Wire Line
+	3470 1840 3420 1840
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR040
+U 1 1 604A6B06
+P 3470 1840
+F 0 "#PWR040" H 3470 1690 50  0001 C CNN
+F 1 "+5V" H 3485 2013 50  0000 C CNN
+F 2 "" H 3470 1840 50  0001 C CNN
+F 3 "" H 3470 1840 50  0001 C CNN
+	1    3470 1840
+	0    1    1    0   
+$EndComp
+Text Notes 1600 3700 0    50   ~ 0
+Relays
+Wire Wire Line
+	6025 1325 6475 1325
+Wire Wire Line
+	6475 1425 6025 1425
+Wire Wire Line
+	6025 1525 6475 1525
+Wire Wire Line
+	6475 1625 6025 1625
+Wire Wire Line
+	6025 1725 6475 1725
+Wire Wire Line
+	6475 1825 6025 1825
+Wire Wire Line
+	6025 1925 6475 1925
+Wire Wire Line
+	6475 2025 6025 2025
+Wire Wire Line
+	6025 2125 6475 2125
+Wire Wire Line
+	6475 2225 6025 2225
+Text GLabel 6025 2225 0    50   Input ~ 0
+12
+Text GLabel 6025 2125 0    50   Input ~ 0
+11
+Text GLabel 6025 2025 0    50   Input ~ 0
+10
+Text GLabel 6025 1925 0    50   Input ~ 0
+9
+Text GLabel 6025 1625 0    50   Input ~ 0
+6
+Text GLabel 6025 1525 0    50   Input ~ 0
+5
+Text GLabel 6025 1425 0    50   Input ~ 0
+4
+Text GLabel 6025 1325 0    50   Input ~ 0
+3
+Text Notes 8850 550  0    50   ~ 0
+Pressure Transducers
+Wire Wire Line
+	7225 2625 7225 2025
+Wire Wire Line
+	7375 2125 7375 1725
+Wire Wire Line
+	7425 1675 7425 1625
+Wire Wire Line
+	9225 1125 9225 1625
+Wire Wire Line
+	7175 925  7175 825 
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR047
+U 1 1 5F7664A6
+P 10075 3375
+F 0 "#PWR047" H 10075 3225 50  0001 C CNN
+F 1 "+5V" H 10075 3525 50  0000 C CNN
+F 2 "" H 10075 3375 50  0001 C CNN
+F 3 "" H 10075 3375 50  0001 C CNN
+	1    10075 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR046
+U 1 1 5F765D3D
+P 10075 2875
+F 0 "#PWR046" H 10075 2725 50  0001 C CNN
+F 1 "+5V" H 10075 3025 50  0000 C CNN
+F 2 "" H 10075 2875 50  0001 C CNN
+F 3 "" H 10075 2875 50  0001 C CNN
+	1    10075 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR045
+U 1 1 5F7657E2
+P 10075 2375
+F 0 "#PWR045" H 10075 2225 50  0001 C CNN
+F 1 "+5V" H 10075 2525 50  0000 C CNN
+F 2 "" H 10075 2375 50  0001 C CNN
+F 3 "" H 10075 2375 50  0001 C CNN
+	1    10075 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR044
+U 1 1 5F765054
+P 10075 1875
+F 0 "#PWR044" H 10075 1725 50  0001 C CNN
+F 1 "+5V" H 10090 2048 50  0000 C CNN
+F 2 "" H 10075 1875 50  0001 C CNN
+F 3 "" H 10075 1875 50  0001 C CNN
+	1    10075 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR035
+U 1 1 5F764179
+P 8375 3375
+F 0 "#PWR035" H 8375 3225 50  0001 C CNN
+F 1 "+5V" H 8475 3425 50  0000 C CNN
+F 2 "" H 8375 3375 50  0001 C CNN
+F 3 "" H 8375 3375 50  0001 C CNN
+	1    8375 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR033
+U 1 1 5F7637B9
+P 8375 2375
+F 0 "#PWR033" H 8375 2225 50  0001 C CNN
+F 1 "+5V" H 8475 2425 50  0000 C CNN
+F 2 "" H 8375 2375 50  0001 C CNN
+F 3 "" H 8375 2375 50  0001 C CNN
+	1    8375 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR032
+U 1 1 5F763137
+P 8375 1875
+F 0 "#PWR032" H 8375 1725 50  0001 C CNN
+F 1 "+5V" H 8475 1925 50  0000 C CNN
+F 2 "" H 8375 1875 50  0001 C CNN
+F 3 "" H 8375 1875 50  0001 C CNN
+	1    8375 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR031
+U 1 1 5F762B1F
+P 8375 1375
+F 0 "#PWR031" H 8375 1225 50  0001 C CNN
+F 1 "+5V" H 8475 1425 50  0000 C CNN
+F 2 "" H 8375 1375 50  0001 C CNN
+F 3 "" H 8375 1375 50  0001 C CNN
+	1    8375 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR042
+U 1 1 5F757A15
+P 10075 875
+F 0 "#PWR042" H 10075 725 50  0001 C CNN
+F 1 "+5V" H 10075 1025 50  0000 C CNN
+F 2 "" H 10075 875 50  0001 C CNN
+F 3 "" H 10075 875 50  0001 C CNN
+	1    10075 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR030
+U 1 1 5F7562B6
+P 8375 875
+F 0 "#PWR030" H 8375 725 50  0001 C CNN
+F 1 "+5V" H 8475 925 50  0000 C CNN
+F 2 "" H 8375 875 50  0001 C CNN
+F 3 "" H 8375 875 50  0001 C CNN
+	1    8375 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR027
+U 1 1 5F755105
+P 7175 825
+F 0 "#PWR027" H 7175 675 50  0001 C CNN
+F 1 "+5V" H 7190 998 50  0000 C CNN
+F 2 "" H 7175 825 50  0001 C CNN
+F 3 "" H 7175 825 50  0001 C CNN
+	1    7175 825 
+	1    0    0    -1  
+$EndComp
+Connection ~ 9225 1625
+Connection ~ 9225 1125
+Wire Wire Line
+	9225 575  9855 575 
+Connection ~ 9225 575 
+Wire Wire Line
+	6375 575  9225 575 
+Wire Wire Line
+	6375 925  6375 575 
+Wire Wire Line
+	6475 925  6375 925 
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR068
+U 1 1 608701EC
+P 6000 6400
+F 0 "#PWR068" H 6000 6250 50  0001 C CNN
+F 1 "+5V" H 6100 6450 50  0000 C CNN
+F 2 "" H 6000 6400 50  0001 C CNN
+F 3 "" H 6000 6400 50  0001 C CNN
+	1    6000 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6025 2825 0    50   Input ~ 0
+19
+Text GLabel 6025 2925 0    50   Input ~ 0
+20
+Text Notes 4220 2945 0    50   ~ 0
+Battery + 5V Regulator
+$Comp
+L CaelusPCB-cache:CaelusPCB-rescue_XT60-M-CaelusPCB J29
+U 1 1 623B1DA7
+P 6450 3650
+F 0 "J29" V 6343 3880 50  0000 L CNN
+F 1 "CaelusPCB-rescue_XT60-M-CaelusPCB" H 6580 3605 50  0001 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 6450 3650 50  0001 L BNN
+F 3 "" H 6450 3650 50  0001 L BNN
+F 4 "AMASS" H 6450 3650 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 6450 3650 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 6450 3650 50  0001 L BNN "STANDARD"
+	1    6450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-cache:CaelusPCB-rescue_XT60-M-CaelusPCB J28
+U 1 1 623B20F9
+P 6700 3650
+F 0 "J28" V 6593 3880 50  0000 L CNN
+F 1 "CaelusPCB-rescue_XT60-M-CaelusPCB" H 6830 3605 50  0001 L CNN
+F 2 "Launchbox:AMASS_XT60-M" H 6700 3650 50  0001 L BNN
+F 3 "" H 6700 3650 50  0001 L BNN
+F 4 "AMASS" H 6700 3650 50  0001 L BNN "MANUFACTURER"
+F 5 "1.2" H 6700 3650 50  0001 L BNN "PARTREV"
+F 6 "IPC-7251" H 6700 3650 50  0001 L BNN "STANDARD"
+	1    6700 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0133
+U 1 1 628C6C85
+P 7250 3750
+F 0 "#PWR0133" H 7250 3600 50  0001 C CNN
+F 1 "+12V" H 7265 3923 50  0000 C CNN
+F 2 "" H 7250 3750 50  0001 C CNN
+F 3 "" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	0    1    -1   0   
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB #PWR0134
+U 1 1 628C8DD2
+P 7000 3550
+F 0 "#PWR0134" H 7000 3300 50  0001 C CNN
+F 1 "GND1-power" H 7005 3377 50  0000 C CNN
+F 2 "" H 7000 3550 50  0001 C CNN
+F 3 "" H 7000 3550 50  0001 C CNN
+	1    7000 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 3750 6150 3750
+Wire Wire Line
+	7250 3750 7000 3750
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR037
+U 1 1 6086C59C
+P 3700 6400
+F 0 "#PWR037" H 3700 6250 50  0001 C CNN
+F 1 "+5V" H 3800 6450 50  0000 C CNN
+F 2 "" H 3700 6400 50  0001 C CNN
+F 3 "" H 3700 6400 50  0001 C CNN
+	1    3700 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 7250 2    50   Input ~ 0
+39
+Text GLabel 4150 7150 2    50   Input ~ 0
+38
+Text GLabel 4150 7050 2    50   Input ~ 0
+37
+Text GLabel 4150 6950 2    50   Input ~ 0
+36
+Text GLabel 4150 6850 2    50   Input ~ 0
+27
+Wire Wire Line
+	3700 7400 3400 7400
+$Comp
+L Device:R_US R1
+U 1 1 6095AF9E
+P 4300 6650
+F 0 "R1" H 4368 6696 50  0000 L CNN
+F 1 "R_US" H 4368 6605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4340 6640 50  0001 C CNN
+F 3 "~" H 4300 6650 50  0001 C CNN
+	1    4300 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 6750 4150 6750
+$Comp
+L CaelusPCB-rescue:Launchbox_HT12D-Launchbox-cache-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U19
+U 1 1 60426FD3
+P 3600 6900
+F 0 "U19" H 3800 7350 50  0000 C CNN
+F 1 "Launchbox_HT12D" H 3850 6350 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 3600 6900 50  0001 C CNN
+F 3 "" H 3600 6900 50  0001 C CNN
+	1    3600 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR023
+U 1 1 6042C8D4
+P 3400 7400
+F 0 "#PWR023" H 3400 7150 50  0001 C CNN
+F 1 "GND1" H 3405 7227 50  0000 C CNN
+F 2 "" H 3400 7400 50  0001 C CNN
+F 3 "" H 3400 7400 50  0001 C CNN
+	1    3400 7400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 6100
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U20
+U 1 1 6025E4DA
+P 3950 4150
+F 0 "U20" H 3950 4200 50  0000 C CNN
+F 1 "SPDT_IC" H 3950 4100 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3950 4150 50  0001 C CNN
+F 3 "" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR050
+U 1 1 6060C4C0
+P 4600 4350
+F 0 "#PWR050" H 4600 4200 50  0001 C CNN
+F 1 "+5V" H 4615 4523 50  0000 C CNN
+F 2 "" H 4600 4350 50  0001 C CNN
+F 3 "" H 4600 4350 50  0001 C CNN
+	1    4600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4350 4600 4350
+Wire Wire Line
+	3400 4350 3750 4350
+Wire Wire Line
+	4300 4050 4300 4450
+Wire Wire Line
+	3650 4450 4300 4450
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U44
+U 1 1 607D96B7
+P 5350 4150
+F 0 "U44" H 5350 4200 50  0000 C CNN
+F 1 "SPDT_IC" H 5350 4100 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5350 4150 50  0001 C CNN
+F 3 "" H 5350 4150 50  0001 C CNN
+	1    5350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR065
+U 1 1 607D96BF
+P 6000 4350
+F 0 "#PWR065" H 6000 4200 50  0001 C CNN
+F 1 "+5V" H 6015 4523 50  0000 C CNN
+F 2 "" H 6000 4350 50  0001 C CNN
+F 3 "" H 6000 4350 50  0001 C CNN
+	1    6000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4350 6000 4350
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR054
+U 1 1 607D96C6
+P 4800 4350
+F 0 "#PWR054" H 4800 4200 50  0001 C CNN
+F 1 "+5V" H 4815 4523 50  0000 C CNN
+F 2 "" H 4800 4350 50  0001 C CNN
+F 3 "" H 4800 4350 50  0001 C CNN
+	1    4800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4350 5150 4350
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR059
+U 1 1 607D96CD
+P 5050 4450
+F 0 "#PWR059" H 5050 4200 50  0001 C CNN
+F 1 "GND1" H 5055 4277 50  0000 C CNN
+F 2 "" H 5050 4450 50  0001 C CNN
+F 3 "" H 5050 4450 50  0001 C CNN
+	1    5050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4050 5700 4450
+Wire Wire Line
+	5050 4250 5050 4450
+Wire Wire Line
+	5050 4450 5700 4450
+Connection ~ 5050 4450
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U51
+U 1 1 6080FCB4
+P 6750 4150
+F 0 "U51" H 6750 4200 50  0000 C CNN
+F 1 "SPDT_IC" H 6750 4100 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6750 4150 50  0001 C CNN
+F 3 "" H 6750 4150 50  0001 C CNN
+	1    6750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR076
+U 1 1 6080FCBC
+P 7400 4350
+F 0 "#PWR076" H 7400 4200 50  0001 C CNN
+F 1 "+5V" H 7415 4523 50  0000 C CNN
+F 2 "" H 7400 4350 50  0001 C CNN
+F 3 "" H 7400 4350 50  0001 C CNN
+	1    7400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4350 7400 4350
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR069
+U 1 1 6080FCC3
+P 6200 4350
+F 0 "#PWR069" H 6200 4200 50  0001 C CNN
+F 1 "+5V" H 6215 4523 50  0000 C CNN
+F 2 "" H 6200 4350 50  0001 C CNN
+F 3 "" H 6200 4350 50  0001 C CNN
+	1    6200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4350 6550 4350
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR072
+U 1 1 6080FCCA
+P 6450 4450
+F 0 "#PWR072" H 6450 4200 50  0001 C CNN
+F 1 "GND1" H 6455 4277 50  0000 C CNN
+F 2 "" H 6450 4450 50  0001 C CNN
+F 3 "" H 6450 4450 50  0001 C CNN
+	1    6450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4050 7100 4450
+Wire Wire Line
+	6450 4250 6450 4450
+Wire Wire Line
+	6450 4450 7100 4450
+Connection ~ 6450 4450
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U58
+U 1 1 60E9EEEE
+P 8150 4150
+F 0 "U58" H 8150 4200 50  0000 C CNN
+F 1 "SPDT_IC" H 8150 4100 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 8150 4150 50  0001 C CNN
+F 3 "" H 8150 4150 50  0001 C CNN
+	1    8150 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8600 4250 2    50   Input ~ 0
+52
+Wire Wire Line
+	8350 4250 8600 4250
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR089
+U 1 1 60E9EEF6
+P 8800 4350
+F 0 "#PWR089" H 8800 4200 50  0001 C CNN
+F 1 "+5V" H 8815 4523 50  0000 C CNN
+F 2 "" H 8800 4350 50  0001 C CNN
+F 3 "" H 8800 4350 50  0001 C CNN
+	1    8800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4350 8800 4350
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR086
+U 1 1 60E9EEFD
+P 7600 4350
+F 0 "#PWR086" H 7600 4200 50  0001 C CNN
+F 1 "+5V" H 7615 4523 50  0000 C CNN
+F 2 "" H 7600 4350 50  0001 C CNN
+F 3 "" H 7600 4350 50  0001 C CNN
+	1    7600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4350 7950 4350
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR087
+U 1 1 60E9EF04
+P 7850 4450
+F 0 "#PWR087" H 7850 4200 50  0001 C CNN
+F 1 "GND1" H 7855 4277 50  0000 C CNN
+F 2 "" H 7850 4450 50  0001 C CNN
+F 3 "" H 7850 4450 50  0001 C CNN
+	1    7850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4250 7850 4250
+Wire Wire Line
+	8350 4050 8500 4050
+Wire Wire Line
+	8500 4050 8500 4450
+Wire Wire Line
+	7850 4250 7850 4450
+Wire Wire Line
+	7850 4450 8500 4450
+Connection ~ 7850 4450
+Text GLabel 7700 3950 0    50   Input ~ 0
+47
+Wire Wire Line
+	7700 3950 7950 3950
+Text GLabel 7700 4050 0    50   Input ~ 0
+10
+Wire Wire Line
+	7700 4050 7950 4050
+Text GLabel 8650 3950 2    50   Input ~ 0
+35
+Wire Wire Line
+	8650 3950 8350 3950
+Connection ~ 3650 4450
+Text GLabel 7250 3950 2    50   Input ~ 0
+30
+Wire Wire Line
+	7250 3950 6950 3950
+Wire Wire Line
+	6300 4050 6550 4050
+Text GLabel 6300 4050 0    50   Input ~ 0
+5
+Wire Wire Line
+	6300 3950 6550 3950
+Text GLabel 6300 3950 0    50   Input ~ 0
+42
+Wire Wire Line
+	6950 4050 7100 4050
+Wire Wire Line
+	6550 4250 6450 4250
+Wire Wire Line
+	6950 4250 7200 4250
+Text GLabel 7200 4250 2    50   Input ~ 0
+52
+Wire Wire Line
+	5850 3950 5550 3950
+Text GLabel 5850 3950 2    50   Input ~ 0
+29
+Wire Wire Line
+	4900 4050 5150 4050
+Text GLabel 4900 4050 0    50   Input ~ 0
+4
+Wire Wire Line
+	4900 3950 5150 3950
+Text GLabel 4900 3950 0    50   Input ~ 0
+41
+Wire Wire Line
+	5550 4050 5700 4050
+Wire Wire Line
+	5150 4250 5050 4250
+Wire Wire Line
+	5550 4250 5800 4250
+Text GLabel 5800 4250 2    50   Input ~ 0
+52
+Wire Wire Line
+	4450 3950 4150 3950
+Text GLabel 4450 3950 2    50   Input ~ 0
+28
+Wire Wire Line
+	3500 4050 3750 4050
+Text GLabel 3500 4050 0    50   Input ~ 0
+3
+Wire Wire Line
+	3500 3950 3750 3950
+Text GLabel 3500 3950 0    50   Input ~ 0
+40
+Wire Wire Line
+	3650 4250 3650 4450
+Wire Wire Line
+	4150 4050 4300 4050
+Wire Wire Line
+	3750 4250 3650 4250
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR024
+U 1 1 60665AB8
+P 3650 4450
+F 0 "#PWR024" H 3650 4200 50  0001 C CNN
+F 1 "GND1" H 3655 4277 50  0000 C CNN
+F 2 "" H 3650 4450 50  0001 C CNN
+F 3 "" H 3650 4450 50  0001 C CNN
+	1    3650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR019
+U 1 1 60638F2B
+P 3400 4350
+F 0 "#PWR019" H 3400 4200 50  0001 C CNN
+F 1 "+5V" H 3415 4523 50  0000 C CNN
+F 2 "" H 3400 4350 50  0001 C CNN
+F 3 "" H 3400 4350 50  0001 C CNN
+	1    3400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4250 4400 4250
+Text GLabel 4400 4250 2    50   Input ~ 0
+52
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U21
+U 1 1 60D4DB8B
+P 3950 4950
+F 0 "U21" H 3950 5000 50  0000 C CNN
+F 1 "SPDT_IC" H 3950 4900 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3950 4950 50  0001 C CNN
+F 3 "" H 3950 4950 50  0001 C CNN
+	1    3950 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 5050 2    50   Input ~ 0
+52
+Wire Wire Line
+	4150 5050 4400 5050
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR051
+U 1 1 60D4DB93
+P 4600 5150
+F 0 "#PWR051" H 4600 5000 50  0001 C CNN
+F 1 "+5V" H 4615 5323 50  0000 C CNN
+F 2 "" H 4600 5150 50  0001 C CNN
+F 3 "" H 4600 5150 50  0001 C CNN
+	1    4600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5150 4600 5150
+Wire Wire Line
+	3400 5150 3750 5150
+Wire Wire Line
+	3750 5050 3650 5050
+Wire Wire Line
+	4150 4850 4300 4850
+Wire Wire Line
+	4300 4850 4300 5250
+Wire Wire Line
+	3650 5250 4300 5250
+Wire Wire Line
+	3500 4750 3750 4750
+Wire Wire Line
+	3500 4850 3750 4850
+Text GLabel 4450 4750 2    50   Input ~ 0
+31
+Wire Wire Line
+	4450 4750 4150 4750
+Text GLabel 4900 4750 0    50   Input ~ 0
+44
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U22
+U 1 1 60E347DD
+P 3950 5800
+F 0 "U22" H 3950 5850 50  0000 C CNN
+F 1 "SPDT_IC" H 3950 5750 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3950 5800 50  0001 C CNN
+F 3 "" H 3950 5800 50  0001 C CNN
+	1    3950 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 5900 2    50   Input ~ 0
+52
+Wire Wire Line
+	4150 5900 4400 5900
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR052
+U 1 1 60E347E5
+P 4600 6000
+F 0 "#PWR052" H 4600 5850 50  0001 C CNN
+F 1 "+5V" H 4615 6173 50  0000 C CNN
+F 2 "" H 4600 6000 50  0001 C CNN
+F 3 "" H 4600 6000 50  0001 C CNN
+	1    4600 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6000 4600 6000
+Wire Wire Line
+	3400 6000 3750 6000
+Wire Wire Line
+	3750 5900 3650 5900
+Wire Wire Line
+	4150 5700 4300 5700
+Wire Wire Line
+	4300 5700 4300 6100
+Wire Wire Line
+	3650 6100 4300 6100
+Wire Wire Line
+	3500 5600 3750 5600
+Wire Wire Line
+	3500 5700 3750 5700
+Text GLabel 4450 5600 2    50   Input ~ 0
+36
+Wire Wire Line
+	4450 5600 4150 5600
+Text GLabel 4900 5600 0    50   Input ~ 0
+49
+Text GLabel 4900 5700 0    50   Input ~ 0
+12
+Connection ~ 3650 5250
+Text GLabel 3500 5700 0    50   Input ~ 0
+11
+Text GLabel 3500 5600 0    50   Input ~ 0
+48
+Wire Wire Line
+	3650 5900 3650 6100
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR026
+U 1 1 60E347F3
+P 3650 6100
+F 0 "#PWR026" H 3650 5850 50  0001 C CNN
+F 1 "GND1" H 3655 5927 50  0000 C CNN
+F 2 "" H 3650 6100 50  0001 C CNN
+F 3 "" H 3650 6100 50  0001 C CNN
+	1    3650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR021
+U 1 1 60E347EC
+P 3400 6000
+F 0 "#PWR021" H 3400 5850 50  0001 C CNN
+F 1 "+5V" H 3415 6173 50  0000 C CNN
+F 2 "" H 3400 6000 50  0001 C CNN
+F 3 "" H 3400 6000 50  0001 C CNN
+	1    3400 6000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 4850 0    50   Input ~ 0
+6
+Text GLabel 3500 4750 0    50   Input ~ 0
+43
+Wire Wire Line
+	3650 5050 3650 5250
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR025
+U 1 1 60D4DBA1
+P 3650 5250
+F 0 "#PWR025" H 3650 5000 50  0001 C CNN
+F 1 "GND1" H 3655 5077 50  0000 C CNN
+F 2 "" H 3650 5250 50  0001 C CNN
+F 3 "" H 3650 5250 50  0001 C CNN
+	1    3650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR020
+U 1 1 60D4DB9A
+P 3400 5150
+F 0 "#PWR020" H 3400 5000 50  0001 C CNN
+F 1 "+5V" H 3415 5323 50  0000 C CNN
+F 2 "" H 3400 5150 50  0001 C CNN
+F 3 "" H 3400 5150 50  0001 C CNN
+	1    3400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U48
+U 1 1 60D4DBB3
+P 5350 4950
+F 0 "U48" H 5350 5000 50  0000 C CNN
+F 1 "SPDT_IC" H 5350 4900 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5350 4950 50  0001 C CNN
+F 3 "" H 5350 4950 50  0001 C CNN
+	1    5350 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 5050 2    50   Input ~ 0
+52
+Wire Wire Line
+	5550 5050 5800 5050
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR066
+U 1 1 60D4DBBB
+P 6000 5150
+F 0 "#PWR066" H 6000 5000 50  0001 C CNN
+F 1 "+5V" H 6015 5323 50  0000 C CNN
+F 2 "" H 6000 5150 50  0001 C CNN
+F 3 "" H 6000 5150 50  0001 C CNN
+	1    6000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5150 6000 5150
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR055
+U 1 1 60D4DBC2
+P 4800 5150
+F 0 "#PWR055" H 4800 5000 50  0001 C CNN
+F 1 "+5V" H 4815 5323 50  0000 C CNN
+F 2 "" H 4800 5150 50  0001 C CNN
+F 3 "" H 4800 5150 50  0001 C CNN
+	1    4800 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5150 5150 5150
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR060
+U 1 1 60D4DBC9
+P 5050 5250
+F 0 "#PWR060" H 5050 5000 50  0001 C CNN
+F 1 "GND1" H 5055 5077 50  0000 C CNN
+F 2 "" H 5050 5250 50  0001 C CNN
+F 3 "" H 5050 5250 50  0001 C CNN
+	1    5050 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5050 5050 5050
+Wire Wire Line
+	5550 4850 5700 4850
+Wire Wire Line
+	5700 4850 5700 5250
+Wire Wire Line
+	5050 5050 5050 5250
+Wire Wire Line
+	5050 5250 5700 5250
+Connection ~ 5050 5250
+Wire Wire Line
+	4900 4750 5150 4750
+Text GLabel 4900 4850 0    50   Input ~ 0
+7
+Wire Wire Line
+	4900 4850 5150 4850
+Text GLabel 5850 4750 2    50   Input ~ 0
+32
+Wire Wire Line
+	5850 4750 5550 4750
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U49
+U 1 1 60E34805
+P 5350 5800
+F 0 "U49" H 5350 5850 50  0000 C CNN
+F 1 "SPDT_IC" H 5350 5750 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5350 5800 50  0001 C CNN
+F 3 "" H 5350 5800 50  0001 C CNN
+	1    5350 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 5900 2    50   Input ~ 0
+52
+Wire Wire Line
+	5550 5900 5800 5900
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR067
+U 1 1 60E3480D
+P 6000 6000
+F 0 "#PWR067" H 6000 5850 50  0001 C CNN
+F 1 "+5V" H 6015 6173 50  0000 C CNN
+F 2 "" H 6000 6000 50  0001 C CNN
+F 3 "" H 6000 6000 50  0001 C CNN
+	1    6000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 6000 6000 6000
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR056
+U 1 1 60E34814
+P 4800 6000
+F 0 "#PWR056" H 4800 5850 50  0001 C CNN
+F 1 "+5V" H 4815 6173 50  0000 C CNN
+F 2 "" H 4800 6000 50  0001 C CNN
+F 3 "" H 4800 6000 50  0001 C CNN
+	1    4800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 6000 5150 6000
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR061
+U 1 1 60E3481B
+P 5050 6100
+F 0 "#PWR061" H 5050 5850 50  0001 C CNN
+F 1 "GND1" H 5055 5927 50  0000 C CNN
+F 2 "" H 5050 6100 50  0001 C CNN
+F 3 "" H 5050 6100 50  0001 C CNN
+	1    5050 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5900 5050 5900
+Wire Wire Line
+	5550 5700 5700 5700
+Wire Wire Line
+	5700 5700 5700 6100
+Wire Wire Line
+	5050 5900 5050 6100
+Wire Wire Line
+	5050 6100 5700 6100
+Connection ~ 5050 6100
+Wire Wire Line
+	4900 5600 5150 5600
+Wire Wire Line
+	4900 5700 5150 5700
+Text GLabel 5850 5600 2    50   Input ~ 0
+37
+Wire Wire Line
+	5850 5600 5550 5600
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U52
+U 1 1 60D4DBDB
+P 6750 4950
+F 0 "U52" H 6750 5000 50  0000 C CNN
+F 1 "SPDT_IC" H 6750 4900 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6750 4950 50  0001 C CNN
+F 3 "" H 6750 4950 50  0001 C CNN
+	1    6750 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 5050 2    50   Input ~ 0
+52
+Wire Wire Line
+	6950 5050 7200 5050
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR077
+U 1 1 60D4DBE3
+P 7400 5150
+F 0 "#PWR077" H 7400 5000 50  0001 C CNN
+F 1 "+5V" H 7415 5323 50  0000 C CNN
+F 2 "" H 7400 5150 50  0001 C CNN
+F 3 "" H 7400 5150 50  0001 C CNN
+	1    7400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5150 7400 5150
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR070
+U 1 1 60D4DBEA
+P 6200 5150
+F 0 "#PWR070" H 6200 5000 50  0001 C CNN
+F 1 "+5V" H 6215 5323 50  0000 C CNN
+F 2 "" H 6200 5150 50  0001 C CNN
+F 3 "" H 6200 5150 50  0001 C CNN
+	1    6200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5150 6550 5150
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR073
+U 1 1 60D4DBF1
+P 6450 5250
+F 0 "#PWR073" H 6450 5000 50  0001 C CNN
+F 1 "GND1" H 6455 5077 50  0000 C CNN
+F 2 "" H 6450 5250 50  0001 C CNN
+F 3 "" H 6450 5250 50  0001 C CNN
+	1    6450 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5050 6450 5050
+Wire Wire Line
+	6950 4850 7100 4850
+Wire Wire Line
+	7100 4850 7100 5250
+Wire Wire Line
+	6450 5050 6450 5250
+Wire Wire Line
+	6450 5250 7100 5250
+Connection ~ 6450 5250
+Text GLabel 6300 4750 0    50   Input ~ 0
+45
+Wire Wire Line
+	6300 4750 6550 4750
+Text GLabel 6300 4850 0    50   Input ~ 0
+8
+Wire Wire Line
+	6300 4850 6550 4850
+Wire Wire Line
+	7250 4750 6950 4750
+Text GLabel 7250 4750 2    50   Input ~ 0
+33
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U53
+U 1 1 60E3482D
+P 6750 5800
+F 0 "U53" H 6750 5850 50  0000 C CNN
+F 1 "SPDT_IC" H 6750 5750 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6750 5800 50  0001 C CNN
+F 3 "" H 6750 5800 50  0001 C CNN
+	1    6750 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 5900 2    50   Input ~ 0
+52
+Wire Wire Line
+	6950 5900 7200 5900
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR078
+U 1 1 60E34835
+P 7400 6000
+F 0 "#PWR078" H 7400 5850 50  0001 C CNN
+F 1 "+5V" H 7415 6173 50  0000 C CNN
+F 2 "" H 7400 6000 50  0001 C CNN
+F 3 "" H 7400 6000 50  0001 C CNN
+	1    7400 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 6000 7400 6000
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR071
+U 1 1 60E3483C
+P 6200 6000
+F 0 "#PWR071" H 6200 5850 50  0001 C CNN
+F 1 "+5V" H 6215 6173 50  0000 C CNN
+F 2 "" H 6200 6000 50  0001 C CNN
+F 3 "" H 6200 6000 50  0001 C CNN
+	1    6200 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 6000 6550 6000
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR074
+U 1 1 60E34843
+P 6450 6100
+F 0 "#PWR074" H 6450 5850 50  0001 C CNN
+F 1 "GND1" H 6455 5927 50  0000 C CNN
+F 2 "" H 6450 6100 50  0001 C CNN
+F 3 "" H 6450 6100 50  0001 C CNN
+	1    6450 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5900 6450 5900
+Wire Wire Line
+	6950 5700 7100 5700
+Wire Wire Line
+	7100 5700 7100 6100
+Wire Wire Line
+	6450 5900 6450 6100
+Wire Wire Line
+	6450 6100 7100 6100
+Connection ~ 6450 6100
+Text GLabel 6300 5600 0    50   Input ~ 0
+53
+Wire Wire Line
+	6300 5600 6550 5600
+Text GLabel 6300 5700 0    50   Input ~ 0
+57
+Wire Wire Line
+	6300 5700 6550 5700
+Wire Wire Line
+	7250 5600 6950 5600
+Text GLabel 7250 5600 2    50   Input ~ 0
+38
+Text GLabel 7700 4750 0    50   Input ~ 0
+46
+Text GLabel 7700 5600 0    50   Input ~ 0
+54
+Text GLabel 7700 5700 0    50   Input ~ 0
+58
+Text GLabel 8650 5600 2    50   Input ~ 0
+39
+Wire Wire Line
+	8650 5600 8350 5600
+Wire Wire Line
+	7700 5700 7950 5700
+Wire Wire Line
+	7700 5600 7950 5600
+Connection ~ 7850 6100
+Wire Wire Line
+	7850 6100 8500 6100
+Wire Wire Line
+	7850 5900 7850 6100
+Wire Wire Line
+	8500 5700 8500 6100
+Wire Wire Line
+	8350 5700 8500 5700
+Wire Wire Line
+	7950 5900 7850 5900
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR082
+U 1 1 60E9EF2C
+P 7850 6100
+F 0 "#PWR082" H 7850 5850 50  0001 C CNN
+F 1 "GND1" H 7855 5927 50  0000 C CNN
+F 2 "" H 7850 6100 50  0001 C CNN
+F 3 "" H 7850 6100 50  0001 C CNN
+	1    7850 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 6000 7950 6000
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR080
+U 1 1 60E9EF25
+P 7600 6000
+F 0 "#PWR080" H 7600 5850 50  0001 C CNN
+F 1 "+5V" H 7615 6173 50  0000 C CNN
+F 2 "" H 7600 6000 50  0001 C CNN
+F 3 "" H 7600 6000 50  0001 C CNN
+	1    7600 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 6000 8800 6000
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR085
+U 1 1 60E9EF1E
+P 8800 6000
+F 0 "#PWR085" H 8800 5850 50  0001 C CNN
+F 1 "+5V" H 8815 6173 50  0000 C CNN
+F 2 "" H 8800 6000 50  0001 C CNN
+F 3 "" H 8800 6000 50  0001 C CNN
+	1    8800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5900 8600 5900
+Text GLabel 8600 5900 2    50   Input ~ 0
+52
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U55
+U 1 1 60E9EF16
+P 8150 5800
+F 0 "U55" H 8150 5850 50  0000 C CNN
+F 1 "SPDT_IC" H 8150 5750 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 8150 5800 50  0001 C CNN
+F 3 "" H 8150 5800 50  0001 C CNN
+	1    8150 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4750 8350 4750
+Text GLabel 8650 4750 2    50   Input ~ 0
+34
+Wire Wire Line
+	7700 4850 7950 4850
+Text GLabel 7700 4850 0    50   Input ~ 0
+9
+Wire Wire Line
+	7700 4750 7950 4750
+Connection ~ 7850 5250
+Wire Wire Line
+	7850 5250 8500 5250
+Wire Wire Line
+	7850 5050 7850 5250
+Wire Wire Line
+	8500 4850 8500 5250
+Wire Wire Line
+	8350 4850 8500 4850
+Wire Wire Line
+	7950 5050 7850 5050
+$Comp
+L CaelusPCB-rescue:GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR081
+U 1 1 60E9EEDC
+P 7850 5250
+F 0 "#PWR081" H 7850 5000 50  0001 C CNN
+F 1 "GND1" H 7855 5077 50  0000 C CNN
+F 2 "" H 7850 5250 50  0001 C CNN
+F 3 "" H 7850 5250 50  0001 C CNN
+	1    7850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5150 7950 5150
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR079
+U 1 1 60E9EED5
+P 7600 5150
+F 0 "#PWR079" H 7600 5000 50  0001 C CNN
+F 1 "+5V" H 7615 5323 50  0000 C CNN
+F 2 "" H 7600 5150 50  0001 C CNN
+F 3 "" H 7600 5150 50  0001 C CNN
+	1    7600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5150 8800 5150
+$Comp
+L CaelusPCB-rescue:+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR084
+U 1 1 60E9EECE
+P 8800 5150
+F 0 "#PWR084" H 8800 5000 50  0001 C CNN
+F 1 "+5V" H 8815 5323 50  0000 C CNN
+F 2 "" H 8800 5150 50  0001 C CNN
+F 3 "" H 8800 5150 50  0001 C CNN
+	1    8800 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5050 8600 5050
+Text GLabel 8600 5050 2    50   Input ~ 0
+52
+$Comp
+L CaelusPCB-rescue:SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U54
+U 1 1 60E9EEC6
+P 8150 4950
+F 0 "U54" H 8150 5000 50  0000 C CNN
+F 1 "SPDT_IC" H 8150 4900 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 8150 4950 50  0001 C CNN
+F 3 "" H 8150 4950 50  0001 C CNN
+	1    8150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB-rescue:6-Channel-5V-Relays-CaelusPCB U2
+U 1 1 61C852A6
+P 1750 4250
+F 0 "U2" H 2928 4330 50  0000 L CNN
+F 1 "6-Channel-5V-Relays" H 2928 4285 50  0001 L CNN
+F 2 "Launchbox:6x_relay_module" H 1750 4825 50  0001 C CNN
+F 3 "" H 1750 4825 50  0001 C CNN
+	1    1750 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 3950 1    50   Input ~ 0
+80
+Text GLabel 6025 3025 0    50   Input ~ 0
+21
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 6207BC8A
+P 5300 3050
+F 0 "BT1" H 5182 3054 50  0000 R CNN
+F 1 "Battery_Cell" H 5182 3145 50  0000 R CNN
+F 2 "Launchbox:XT60H-M12" V 5300 3110 50  0001 C CNN
+F 3 "~" V 5300 3110 50  0001 C CNN
+	1    5300 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 3250 5300 3250
+Wire Wire Line
+	4600 3550 4600 3600
+$Comp
+L Device:LED D1
+U 1 1 62532CD0
+P 4450 3600
+F 0 "D1" H 4443 3817 50  0000 C CNN
+F 1 "LED" H 4443 3726 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4450 3600 50  0001 C CNN
+F 3 "~" H 4450 3600 50  0001 C CNN
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB:LD1085V50-Regulator_Linear U3
+U 1 1 61E5ACA8
+P 4750 3250
+F 0 "U3" H 4750 3492 50  0000 C CNN
+F 1 "LD1085V50" H 4750 3401 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 4805 3090 50  0001 L CIN
+F 3 "" H 4750 3200 50  0001 C CNN
+	1    4750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 625D428E
+P 4150 3600
+F 0 "R17" V 3943 3600 50  0000 C CNN
+F 1 "R" V 4034 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4080 3600 50  0001 C CNN
+F 3 "~" H 4150 3600 50  0001 C CNN
+	1    4150 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0136
+U 1 1 625D71BD
+P 4600 3600
+F 0 "#PWR0136" H 4600 3450 50  0001 C CNN
+F 1 "+5V" H 4615 3773 50  0000 C CNN
+F 2 "" H 4600 3600 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	-1   0    0    1   
+$EndComp
+Connection ~ 4600 3600
+Wire Wire Line
+	4600 3550 4750 3550
+$Comp
+L CaelusPCB:GND1-power #PWR0103
+U 1 1 628EE5F9
+P 4450 3250
+F 0 "#PWR0103" H 4450 3000 50  0001 C CNN
+F 1 "GND1-power" V 4455 3123 50  0000 R CNN
+F 2 "" H 4450 3250 50  0001 C CNN
+F 3 "" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L CaelusPCB:GND1-power #PWR0135
+U 1 1 628EED40
+P 4000 3600
+F 0 "#PWR0135" H 4000 3350 50  0001 C CNN
+F 1 "GND1-power" V 4005 3473 50  0000 R CNN
+F 2 "" H 4000 3600 50  0001 C CNN
+F 3 "" H 4000 3600 50  0001 C CNN
+	1    4000 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L CaelusPCB:GND1-power #PWR0102
+U 1 1 629D5F35
+P 5300 2950
+F 0 "#PWR0102" H 5300 2700 50  0001 C CNN
+F 1 "GND1-power" H 5305 2777 50  0000 C CNN
+F 2 "" H 5300 2950 50  0001 C CNN
+F 3 "" H 5300 2950 50  0001 C CNN
+	1    5300 2950
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

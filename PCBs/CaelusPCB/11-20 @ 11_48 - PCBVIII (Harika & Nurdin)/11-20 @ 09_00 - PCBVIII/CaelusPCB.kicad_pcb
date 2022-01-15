@@ -3,11 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 32)
-<<<<<<< Updated upstream
-    (tracks 869)
-=======
     (tracks 880)
->>>>>>> Stashed changes
     (zones 0)
     (modules 85)
     (nets 171)

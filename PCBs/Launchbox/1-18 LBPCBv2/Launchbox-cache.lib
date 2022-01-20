@@ -1,6 +1,65 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# CaelusPCB_LD1085V50-Regulator_Linear
+#
+DEF CaelusPCB_LD1085V50-Regulator_Linear U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "CaelusPCB_LD1085V50-Regulator_Linear" 0 125 50 H V L CNN
+F2 "" 55 -160 50 H I L CIN
+F3 "" 0 -50 50 H I C CNN
+$FPLIST
+ TO?252*
+ TO?263*
+ TO?220*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X GND 1 -300 0 100 R 50 50 1 1 W
+X OUT 2 0 -300 100 U 50 50 1 1 w
+X IN 3 300 0 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB_RJ45EthernetBreakout
+#
+DEF CaelusPCB_RJ45EthernetBreakout Ayo 0 40 Y Y 1 F N
+F0 "Ayo" 0 50 50 H I C CNN
+F1 "CaelusPCB_RJ45EthernetBreakout" 450 -100 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+P 5 0 1 0 0 0 900 0 900 -350 0 -350 0 0 N
+X 1 1 800 -450 100 U 50 50 1 1 O
+X 2 2 700 -450 100 U 50 50 1 1 O
+X 3 3 600 -450 100 U 50 50 1 1 O
+X 4 4 500 -450 100 U 50 50 1 1 O
+X 5 5 400 -450 100 U 50 50 1 1 O
+X 6 6 300 -450 100 U 50 50 1 1 O
+X 7 7 200 -450 100 U 50 50 1 1 O
+X 8 8 100 -450 100 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Device_Battery_Cell
+#
+DEF Device_Battery_Cell BT 0 0 N N 1 F N
+F0 "BT" 100 100 50 H V L CNN
+F1 "Device_Battery_Cell" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -90 70 90 60 0 1 0 F
+S -62 47 58 27 0 1 0 F
+P 2 0 1 0 0 30 0 0 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 20 135 60 135 N
+P 2 0 1 10 40 155 40 115 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -100 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_LED
 #
 DEF Device_LED D 0 40 N N 1 F N
@@ -42,25 +101,6 @@ P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
 P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Launchbox-rescue_Battery_Cell-Device
-#
-DEF Launchbox-rescue_Battery_Cell-Device BT 0 0 N N 1 F N
-F0 "BT" 100 100 50 H V L CNN
-F1 "Launchbox-rescue_Battery_Cell-Device" 100 0 50 H V L CNN
-F2 "" 0 60 50 V I C CNN
-F3 "" 0 60 50 V I C CNN
-DRAW
-S -90 70 90 60 0 1 0 F
-S -62 47 58 27 0 1 0 F
-P 2 0 1 0 0 30 0 0 N
-P 2 0 1 0 0 70 0 100 N
-P 2 0 1 10 20 135 60 135 N
-P 2 0 1 10 40 155 40 115 N
-X + 1 0 200 100 D 50 50 1 1 P
-X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -107,26 +147,6 @@ X VSS 9 100 -500 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Launchbox-rescue_L7805-Regulator_Linear
-#
-DEF Launchbox-rescue_L7805-Regulator_Linear U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "Launchbox-rescue_L7805-Regulator_Linear" 0 125 50 H V L CNN
-F2 "" 25 -150 50 H I L CIN
-F3 "" 0 -50 50 H I C CNN
-$FPLIST
- TO?252*
- TO?263*
- TO?220*
-$ENDFPLIST
-DRAW
-S -200 75 200 -200 0 1 10 f
-X IN 1 -300 0 100 R 50 50 1 1 W
-X GND 2 0 -300 100 U 50 50 1 1 W
-X OUT 3 300 0 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
 # Launchbox-rescue_SW_Push-Switch
 #
 DEF Launchbox-rescue_SW_Push-Switch SW 0 40 N N 1 F N
@@ -160,21 +180,6 @@ P 2 0 0 0 -60 5 70 40 N
 X 1 1 200 100 100 L 50 50 1 1 P
 X 2 2 -200 0 100 R 50 50 1 1 P
 X 3 3 200 -100 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Launchbox-rescue_SerialScrewTerminals-Launchbox
-#
-DEF Launchbox-rescue_SerialScrewTerminals-Launchbox U 0 40 Y Y 1 F N
-F0 "U" 0 350 50 H V C CNN
-F1 "Launchbox-rescue_SerialScrewTerminals-Launchbox" 0 -400 50 H V C CNN
-F2 "" -50 0 50 H I C CNN
-F3 "" -50 0 50 H I C CNN
-DRAW
-S -150 0 150 200 0 1 0 N
-X ~ 1 -100 0 100 D 50 50 1 1 I
-X ~ 2 0 0 100 D 50 50 1 1 I
-X ~ 3 100 0 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -238,11 +243,24 @@ X ~ 9 -300 -200 100 D 47 47 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Launchbox-rescue_VCC-power
+# power_GND
 #
-DEF Launchbox-rescue_VCC-power #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Launchbox-rescue_VCC-power" 0 150 50 H V C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

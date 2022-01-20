@@ -11,7 +11,7 @@ Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "Author: Ankit Khandelwal"
+Comment4 "Author: Ankit Khandelwal + Avionics Team"
 $EndDescr
 $Comp
 L Launchbox-rescue:SW_SPDT_MSM-Switch SW1
@@ -488,7 +488,7 @@ Wire Wire Line
 Wire Wire Line
 	6830 5650 6830 4850
 $Comp
-L Launchbox:Teensy3.6 U1
+L Launchbox-rescue:Teensy3.6-Launchbox U1
 U 1 1 5F6324D3
 P 5680 4200
 F 0 "U1" H 4530 4150 50  0000 R CNN
@@ -594,30 +594,6 @@ F 3 "" H 7030 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Launchbox:SerialScrewTerminals U8
-U 1 1 60190F41
-P 10030 4700
-F 0 "U8" V 9705 4749 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 9796 4749 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 9980 4700 50  0001 C CNN
-F 3 "" H 9980 4700 50  0001 C CNN
-	1    10030 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox-rescue:GND-power #PWR014
-U 1 1 60191917
-P 9880 4600
-F 0 "#PWR014" H 9880 4350 50  0001 C CNN
-F 1 "GND" H 9885 4427 50  0000 C CNN
-F 2 "" H 9880 4600 50  0001 C CNN
-F 3 "" H 9880 4600 50  0001 C CNN
-	1    9880 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9880 4600 10030 4600
-$Comp
 L Launchbox-rescue:VCC-power #PWR010
 U 1 1 60199B0B
 P 8930 4650
@@ -638,7 +614,7 @@ Wire Wire Line
 Wire Wire Line
 	6180 5650 6180 4750
 $Comp
-L Launchbox:HT12E U3
+L Launchbox-rescue:HT12E-Launchbox U3
 U 1 1 60317FE6
 P 7530 3050
 F 0 "U3" V 7230 2850 50  0000 L CNN
@@ -653,7 +629,7 @@ Wire Wire Line
 Wire Wire Line
 	8030 3150 8030 3100
 $Comp
-L Launchbox:HT12E U6
+L Launchbox-rescue:HT12E-Launchbox U6
 U 1 1 6039DE46
 P 9780 3050
 F 0 "U6" V 9480 2850 50  0000 L CNN
@@ -696,11 +672,11 @@ Wire Wire Line
 Wire Wire Line
 	7880 3600 7880 4350
 Wire Wire Line
-	7880 4350 10030 4350
+	7880 4350 9900 4350
 Wire Wire Line
 	8980 3600 8980 4250
 Wire Wire Line
-	8980 4250 10030 4250
+	8980 4250 9850 4250
 Wire Wire Line
 	6680 4400 6680 4550
 Wire Wire Line
@@ -791,19 +767,6 @@ Wire Wire Line
 	7880 5400 5780 5400
 Wire Wire Line
 	5780 5400 5780 4400
-$Comp
-L Launchbox:SerialScrewTerminals U7
-U 1 1 60171D48
-P 10030 4250
-F 0 "U7" V 9705 4299 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 9796 4299 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 9980 4250 50  0001 C CNN
-F 3 "" H 9980 4250 50  0001 C CNN
-	1    10030 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10030 4150 9880 4150
 Wire Wire Line
 	6980 4750 8130 4750
 Wire Wire Line
@@ -864,10 +827,6 @@ Wire Wire Line
 	7780 3600 7780 3650
 Wire Wire Line
 	7780 3650 7830 3650
-Wire Wire Line
-	9880 4150 9880 4050
-Wire Wire Line
-	9880 4050 10130 4050
 Wire Wire Line
 	10130 3600 10130 4050
 $Comp
@@ -944,10 +903,6 @@ Wire Wire Line
 Connection ~ 8130 4750
 Wire Wire Line
 	8130 4750 8180 4750
-Wire Wire Line
-	9830 4900 9830 4700
-Wire Wire Line
-	9830 4700 10030 4700
 $Comp
 L Launchbox-rescue:SW_Push-Switch SW18
 U 1 1 60343190
@@ -988,7 +943,7 @@ $EndComp
 Wire Wire Line
 	10330 5250 10330 5100
 Wire Wire Line
-	10330 4900 9830 4900
+	10330 4900 10100 4900
 Connection ~ 10330 5250
 $Comp
 L Device:LED D1
@@ -1043,7 +998,7 @@ Text GLabel 10280 3100 1    50   Input ~ 0
 Text GLabel 6630 4750 0    50   Input ~ 0
 3.3V
 $Comp
-L Launchbox:HT12E U5
+L Launchbox-rescue:HT12E-Launchbox U5
 U 1 1 6039C81C
 P 8630 3050
 F 0 "U5" V 8330 2900 50  0000 L CNN
@@ -1064,4 +1019,40 @@ F 3 "~" H 7130 6100 50  0001 C CNN
 	1    7130 5900
 	1    0    0    -1  
 $EndComp
+$Comp
+L CaelusPCB:RJ45EthernetBreakout Ayo1
+U 1 1 61EAD458
+P 10650 3950
+F 0 "Ayo1" H 10650 4000 50  0001 C CNN
+F 1 "RJ45EthernetBreakout" V 11100 3978 50  0000 L CNN
+F 2 "Launchbox:RJ45EthernetBreakout" H 10650 4000 50  0001 C CNN
+F 3 "" H 10650 4000 50  0001 C CNN
+	1    10650 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61EDC65B
+P 10200 4350
+F 0 "#PWR0101" H 10200 4100 50  0001 C CNN
+F 1 "GND" V 10205 4222 50  0000 R CNN
+F 2 "" H 10200 4350 50  0001 C CNN
+F 3 "" H 10200 4350 50  0001 C CNN
+	1    10200 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 4450 10100 4450
+Wire Wire Line
+	10130 4050 10200 4050
+Wire Wire Line
+	10200 4150 9850 4150
+Wire Wire Line
+	9850 4150 9850 4250
+Wire Wire Line
+	10200 4250 9900 4250
+Wire Wire Line
+	9900 4250 9900 4350
+Wire Wire Line
+	10100 4450 10100 4900
 $EndSCHEMATC

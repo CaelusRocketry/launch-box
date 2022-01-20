@@ -11,7 +11,7 @@ Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "Author: Ankit Khandelwal"
+Comment4 "Author: Ankit Khandelwal + Avionics Team"
 $EndDescr
 $Comp
 L Launchbox-rescue:SW_SPDT_MSM-Switch SW1
@@ -506,28 +506,6 @@ Wire Wire Line
 	7380 4950 5480 4950
 Wire Wire Line
 	5480 4950 5480 4400
-$Comp
-L Launchbox-rescue:Battery_Cell-Device BT1
-U 1 1 5F6591D9
-P 8930 5200
-F 0 "BT1" H 9048 5296 50  0000 L CNN
-F 1 "Battery_Cell" H 9048 5205 50  0000 L CNN
-F 2 "Launchbox:Lipo_Battery_Connector" V 8930 5260 50  0001 C CNN
-F 3 "~" V 8930 5260 50  0001 C CNN
-	1    8930 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Launchbox-rescue:GND-power #PWR03
-U 1 1 5F65AABE
-P 8930 5300
-F 0 "#PWR03" H 8930 5050 50  0001 C CNN
-F 1 "GND" H 8935 5127 50  0000 C CNN
-F 2 "" H 8930 5300 50  0001 C CNN
-F 3 "" H 8930 5300 50  0001 C CNN
-	1    8930 5300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6980 4750 6980 4400
 Wire Wire Line
@@ -537,34 +515,6 @@ Wire Wire Line
 Connection ~ 6630 5250
 Wire Wire Line
 	6630 5250 6930 5250
-$Comp
-L Launchbox-rescue:L7805-Regulator_Linear U2
-U 1 1 5F667F69
-P 8480 4750
-F 0 "U2" H 8480 4899 50  0000 C CNN
-F 1 "L7805" H 8480 4990 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown" H 8505 4600 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8480 4700 50  0001 C CNN
-	1    8480 4750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8930 4750 8780 4750
-$Comp
-L Launchbox-rescue:GND-power #PWR04
-U 1 1 5F6739D8
-P 9480 4750
-F 0 "#PWR04" H 9480 4500 50  0001 C CNN
-F 1 "GND" H 9485 4577 50  0000 C CNN
-F 2 "" H 9480 4750 50  0001 C CNN
-F 3 "" H 9480 4750 50  0001 C CNN
-	1    9480 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8480 4450 9480 4450
-Wire Wire Line
-	9480 4450 9480 4750
 $Comp
 L Launchbox-rescue:GND-power #PWR02
 U 1 1 5F679FA6
@@ -593,46 +543,6 @@ F 3 "" H 7030 3200 50  0001 C CNN
 	1    7030 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Launchbox-rescue:SerialScrewTerminals-Launchbox U8
-U 1 1 60190F41
-P 10030 4700
-F 0 "U8" V 9705 4749 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 9796 4749 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 9980 4700 50  0001 C CNN
-F 3 "" H 9980 4700 50  0001 C CNN
-	1    10030 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L Launchbox-rescue:GND-power #PWR014
-U 1 1 60191917
-P 9880 4600
-F 0 "#PWR014" H 9880 4350 50  0001 C CNN
-F 1 "GND" H 9885 4427 50  0000 C CNN
-F 2 "" H 9880 4600 50  0001 C CNN
-F 3 "" H 9880 4600 50  0001 C CNN
-	1    9880 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9880 4600 10030 4600
-$Comp
-L Launchbox-rescue:VCC-power #PWR010
-U 1 1 60199B0B
-P 8930 4650
-F 0 "#PWR010" H 8930 4500 50  0001 C CNN
-F 1 "VCC" H 8945 4823 50  0000 C CNN
-F 2 "" H 8930 4650 50  0001 C CNN
-F 3 "" H 8930 4650 50  0001 C CNN
-	1    8930 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8930 4650 8930 4750
-Connection ~ 8930 4750
-Wire Wire Line
-	8930 4750 8930 5000
 Wire Wire Line
 	5280 4850 6830 4850
 Wire Wire Line
@@ -696,11 +606,11 @@ Wire Wire Line
 Wire Wire Line
 	7880 3600 7880 4350
 Wire Wire Line
-	7880 4350 10030 4350
+	7880 4350 9900 4350
 Wire Wire Line
 	8980 3600 8980 4250
 Wire Wire Line
-	8980 4250 10030 4250
+	8980 4250 9850 4250
 Wire Wire Line
 	6680 4400 6680 4550
 Wire Wire Line
@@ -791,21 +701,6 @@ Wire Wire Line
 	7880 5400 5780 5400
 Wire Wire Line
 	5780 5400 5780 4400
-$Comp
-L Launchbox-rescue:SerialScrewTerminals-Launchbox U7
-U 1 1 60171D48
-P 10030 4250
-F 0 "U7" V 9705 4299 50  0000 C CNN
-F 1 "SerialScrewTerminals" V 9796 4299 50  0000 C CNN
-F 2 "Launchbox:ScrewTerminals" H 9980 4250 50  0001 C CNN
-F 3 "" H 9980 4250 50  0001 C CNN
-	1    10030 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10030 4150 9880 4150
-Wire Wire Line
-	6980 4750 8130 4750
 Wire Wire Line
 	5680 5250 5680 5650
 Wire Wire Line
@@ -864,10 +759,6 @@ Wire Wire Line
 	7780 3600 7780 3650
 Wire Wire Line
 	7780 3650 7830 3650
-Wire Wire Line
-	9880 4150 9880 4050
-Wire Wire Line
-	9880 4050 10130 4050
 Wire Wire Line
 	10130 3600 10130 4050
 $Comp
@@ -932,8 +823,6 @@ Connection ~ 7580 3800
 Wire Wire Line
 	8130 4750 8130 5450
 Wire Wire Line
-	8130 5450 8730 5450
-Wire Wire Line
 	8730 5450 8730 5600
 Wire Wire Line
 	8730 5600 9680 5600
@@ -941,13 +830,6 @@ Wire Wire Line
 	9680 5600 9680 5250
 Wire Wire Line
 	9680 5250 9830 5250
-Connection ~ 8130 4750
-Wire Wire Line
-	8130 4750 8180 4750
-Wire Wire Line
-	9830 4900 9830 4700
-Wire Wire Line
-	9830 4700 10030 4700
 $Comp
 L Launchbox-rescue:SW_Push-Switch SW18
 U 1 1 60343190
@@ -988,7 +870,7 @@ $EndComp
 Wire Wire Line
 	10330 5250 10330 5100
 Wire Wire Line
-	10330 4900 9830 4900
+	10330 4900 10100 4900
 Connection ~ 10330 5250
 $Comp
 L Device:LED D1
@@ -1062,6 +944,113 @@ F 1 "SW_Push" H 7130 6094 50  0000 C CNN
 F 2 "Launchbox:Pushbutton" H 7130 6100 50  0001 C CNN
 F 3 "~" H 7130 6100 50  0001 C CNN
 	1    7130 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CaelusPCB:RJ45EthernetBreakout Ayo1
+U 1 1 61EAD458
+P 10650 3950
+F 0 "Ayo1" H 10650 4000 50  0001 C CNN
+F 1 "RJ45EthernetBreakout" V 11100 3978 50  0000 L CNN
+F 2 "Launchbox:RJ45EthernetBreakout" H 10650 4000 50  0001 C CNN
+F 3 "" H 10650 4000 50  0001 C CNN
+	1    10650 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61EDC65B
+P 10200 4350
+F 0 "#PWR0101" H 10200 4100 50  0001 C CNN
+F 1 "GND" V 10205 4222 50  0000 R CNN
+F 2 "" H 10200 4350 50  0001 C CNN
+F 3 "" H 10200 4350 50  0001 C CNN
+	1    10200 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 4450 10100 4450
+Wire Wire Line
+	10130 4050 10200 4050
+Wire Wire Line
+	10200 4150 9850 4150
+Wire Wire Line
+	9850 4150 9850 4250
+Wire Wire Line
+	10200 4250 9900 4250
+Wire Wire Line
+	9900 4250 9900 4350
+Wire Wire Line
+	10100 4450 10100 4900
+$Comp
+L CaelusPCB:LD1085V50-Regulator_Linear U2
+U 1 1 6200CEEC
+P 8550 4850
+F 0 "U2" H 8550 5092 50  0000 C CNN
+F 1 "LD1085V50-Regulator_Linear" H 8550 5001 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown" H 8605 4690 50  0001 L CIN
+F 3 "" H 8550 4800 50  0001 C CNN
+	1    8550 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6980 4750 8130 4750
+Wire Wire Line
+	8550 5150 8550 5450
+Wire Wire Line
+	8730 5450 8550 5450
+Connection ~ 8550 5450
+Wire Wire Line
+	8550 5450 8130 5450
+Wire Wire Line
+	8850 4850 8950 4850
+$Comp
+L power:GND #PWR0102
+U 1 1 6214B24F
+P 8250 4850
+F 0 "#PWR0102" H 8250 4600 50  0001 C CNN
+F 1 "GND" V 8255 4722 50  0000 R CNN
+F 2 "" H 8250 4850 50  0001 C CNN
+F 3 "" H 8250 4850 50  0001 C CNN
+	1    8250 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 6214BC19
+P 8950 4650
+F 0 "#PWR0103" H 8950 4500 50  0001 C CNN
+F 1 "VCC" H 8965 4823 50  0000 C CNN
+F 2 "" H 8950 4650 50  0001 C CNN
+F 3 "" H 8950 4650 50  0001 C CNN
+	1    8950 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4650 8950 4850
+Connection ~ 8950 4850
+Wire Wire Line
+	8950 4850 8950 5100
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 62189EB2
+P 8950 5300
+F 0 "BT1" H 9068 5396 50  0000 L CNN
+F 1 "Battery_Cell" H 9068 5305 50  0000 L CNN
+F 2 "Launchbox:Lipo_Battery_Connector" V 8950 5360 50  0001 C CNN
+F 3 "~" V 8950 5360 50  0001 C CNN
+	1    8950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6218AAFE
+P 8950 5400
+F 0 "#PWR0104" H 8950 5150 50  0001 C CNN
+F 1 "GND" H 8955 5227 50  0000 C CNN
+F 2 "" H 8950 5400 50  0001 C CNN
+F 3 "" H 8950 5400 50  0001 C CNN
+	1    8950 5400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

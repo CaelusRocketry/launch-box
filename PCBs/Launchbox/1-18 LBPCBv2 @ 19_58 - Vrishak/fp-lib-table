@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Launchbox)(type KiCad)(uri C:/Users/pytho/Documents/GitHub/Caelus/launch-box/Libraries/Launchbox.pretty)(options "")(descr ""))
+)

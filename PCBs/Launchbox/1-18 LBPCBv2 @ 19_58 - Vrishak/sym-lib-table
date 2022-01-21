@@ -1,6 +1,0 @@
-(sym_lib_table
-  (lib (name Launchbox-cache)(type Legacy)(uri ${KIPRJMOD}/Launchbox-cache.lib)(options "")(descr ""))
-  (lib (name Launchbox-rescue)(type Legacy)(uri ${KIPRJMOD}/Launchbox-rescue.lib)(options "")(descr ""))
-  (lib (name CaelusPCB)(type Legacy)(uri C:/Users/pytho/Documents/GitHub/Caelus/launch-box/Libraries/CaelusPCB.lib)(options "")(descr ""))
-  (lib (name Launchbox)(type Legacy)(uri C:/Users/pytho/Documents/GitHub/Caelus/launch-box/Libraries/Launchbox.lib)(options "")(descr ""))
-)

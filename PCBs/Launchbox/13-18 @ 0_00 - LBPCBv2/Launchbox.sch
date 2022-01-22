@@ -830,17 +830,6 @@ Wire Wire Line
 	9680 5600 9680 5250
 Wire Wire Line
 	9680 5250 9830 5250
-$Comp
-L Launchbox-rescue:SW_Push-Switch SW18
-U 1 1 60343190
-P 10030 5250
-F 0 "SW18" H 10030 5535 50  0000 C CNN
-F 1 "SW_Push" H 10030 5444 50  0000 C CNN
-F 2 "Launchbox:Pushbutton" H 10030 5450 50  0001 C CNN
-F 3 "~" H 10030 5450 50  0001 C CNN
-	1    10030 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10330 5250 10330 5400
 Wire Wire Line
@@ -947,7 +936,7 @@ F 3 "~" H 7130 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CaelusPCB:RJ45EthernetBreakout Ayo1
+L Launchbox-rescue:RJ45EthernetBreakout-CaelusPCB Ayo1
 U 1 1 61EAD458
 P 10650 3950
 F 0 "Ayo1" H 10650 4000 50  0001 C CNN
@@ -983,7 +972,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 4450 10100 4900
 $Comp
-L CaelusPCB:LD1085V50-Regulator_Linear U2
+L Launchbox-rescue:LD1085V50-Regulator_Linear-CaelusPCB U2
 U 1 1 6200CEEC
 P 8550 4850
 F 0 "U2" H 8550 5092 50  0000 C CNN
@@ -1029,17 +1018,6 @@ $EndComp
 Wire Wire Line
 	8950 4850 8950 5100
 $Comp
-L Launchbox:XT60-MH J1
-U 1 1 61EAEE52
-P 9250 5200
-F 0 "J1" H 9142 4835 50  0000 C CNN
-F 1 "XT60-MH" H 9142 4926 50  0000 C CNN
-F 2 "Launchbox:AMASS_XT60-M" H 9200 5450 50  0001 C CNN
-F 3 "" H 9200 5450 50  0001 C CNN
-	1    9250 5200
-	1    0    0    1   
-$EndComp
-$Comp
 L power:VCC #PWR0103
 U 1 1 61EB1961
 P 8950 4650
@@ -1053,4 +1031,26 @@ $EndComp
 Wire Wire Line
 	8950 4850 8950 4650
 Connection ~ 8950 4850
+$Comp
+L Launchbox:KeySwitchKO106 KS1
+U 1 1 61F40700
+P 10030 5250
+F 0 "KS1" H 10030 5515 50  0000 C CNN
+F 1 "KeySwitchKO106" H 10030 5424 50  0000 C CNN
+F 2 "Launchbox:KeySwitchKO106" H 10030 5450 50  0001 C CNN
+F 3 "" H 10030 5450 50  0001 C CNN
+	1    10030 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Launchbox:XT60-MH J1
+U 1 1 61F506EB
+P 9250 5200
+F 0 "J1" H 9142 4835 50  0000 C CNN
+F 1 "XT60-MH" H 9142 4926 50  0000 C CNN
+F 2 "Launchbox:AMASS_XT60-M" H 9200 5450 50  0001 C CNN
+F 3 "" H 9200 5450 50  0001 C CNN
+	1    9250 5200
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name CaelusPCB)(type Legacy)(uri C:/Users/hakun/Documents/GitHub/launch-box/Libraries/CaelusPCB.lib)(options "")(descr ""))
-  (lib (name Launchbox)(type Legacy)(uri C:/Users/hakun/Documents/GitHub/launch-box/Libraries/Launchbox.lib)(options "")(descr ""))
+  (lib (name "CaelusPCB")(type "Legacy")(uri "/home/krishnan/Coding/TJHSST/ProjectCaelus/launch-box/Libraries/CaelusPCB.lib")(options "")(descr ""))
+  (lib (name "Launchbox")(type "Legacy")(uri "/home/krishnan/Coding/TJHSST/ProjectCaelus/launch-box/Libraries/Launchbox.lib")(options "")(descr ""))
 )

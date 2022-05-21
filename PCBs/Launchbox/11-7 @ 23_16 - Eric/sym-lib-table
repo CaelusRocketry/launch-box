@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name Launchbox-rescue)(type Legacy)(uri ${KIPRJMOD}/Launchbox-rescue.lib)(options "")(descr ""))
-  (lib (name Launchbox-cache)(type Legacy)(uri ${KIPRJMOD}/Launchbox-cache.lib)(options "")(descr ""))
-)

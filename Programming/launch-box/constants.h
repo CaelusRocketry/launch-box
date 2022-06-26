@@ -24,22 +24,22 @@ Nitrous Oxide Main Propellant Valve
 #define NO_VENT_HIGH 2 //switch 2
 #define NO_VENT_SPECIAL true // only false
 #define NO_VENT_IS_NC true // only false
-#define NO_MPV_HIGH 4 //switch 3
+#define NO_MPV_HIGH 6 //switch 4
 #define NO_MPV_SPECIAL true
 #define NO_MPV_IS_NC true
-#define NO_DRAIN_HIGH 6 //switch 4
+#define NO_DRAIN_HIGH 4 //switch 3
 #define NO_DRAIN_SPECIAL true
 #define NO_DRAIN_IS_NC true
-//#define es1_HIGH 35 //switch 12
-//#define es1_SPECIAL true
-//#define es1_IS_NC true
+#define es1_HIGH 35 //switch 12
+#define es1_SPECIAL true
+#define es1_IS_NC true
 //#define es2_HIGH 8 //switch 5
 //#define es2_SPECIAL true
 //#define es2_IS_NC true
 //#define es3_HIGH 10//switch 6
 //#define es3_SPECIAL true
 //#define es3_IS_NC true
-//#define es4_HIGH 12//switch 7 NOTE: LOW STATE IS PIN 24
+#define es4_HIGH 12//switch 7 NOTE: LOW STATE IS PIN 24
 //#define es4_SPECIAL true
 //#define es4_IS_NC true
 // Ethanol valves
@@ -68,16 +68,16 @@ Nitrous Oxide Main Propellant Valve
 
 // Nitrous valves
 #define NO_FILL_OUT 18
-#define NO_DRAIN_OUT 23
+#define NO_DRAIN_OUT 16
 #define NO_VENT_OUT 17
-#define NO_MPV_OUT 16
-//#define es1_OUT 21
+#define NO_MPV_OUT 23
+#define es1_OUT 21
 //#define es2_OUT 20
 //#define es3_OUT 13
 //#define es4_OUT 13
 // Ethanol valves
 #define NITROGEN_FILL_OUT 15
-#define ETHANOL_DRAIN_OUT 22
+#define ETHANOL_DRAIN_OUT 19
 #define ETHANOL_VENT_OUT 14
 #define ETHANOL_MPV_OUT 13// 23
 // extra

@@ -26,6 +26,7 @@ enum pin_state {
 };
 
 // Pin counts
+
 const int NUM_VALVES = 8;
 const int NUM_BUTTONS = 5;
 
@@ -55,11 +56,11 @@ unsigned long special_close_timings[NUM_VALVES];
 
 // all valves take up two pins, and each vent_pin value stores the first of these pins
 // so, it goes 2, 4, 6, 8, 10, 12, etc
-int vent_pins[] = {NITROGEN_FILL_HIGH, ETHANOL_VENT_HIGH, ETHANOL_MPV_HIGH, ETHANOL_DRAIN_HIGH, NO_FILL_HIGH, NO_DRAIN_HIGH, NO_VENT_HIGH, NO_MPV_HIGH};
-int output_pins[] = {NITROGEN_FILL_OUT, ETHANOL_VENT_OUT, ETHANOL_MPV_OUT, ETHANOL_DRAIN_OUT, NO_FILL_OUT, NO_DRAIN_OUT, NO_VENT_OUT, NO_MPV_OUT};
+int vent_pins[] = {NITROGEN_FILL_HIGH, ETHANOL_VENT_HIGH, ETHANOL_MPV_HIGH, ETHANOL_DRAIN_HIGH, NO_FILL_HIGH, NO_DRAIN_HIGH, NO_VENT_HIGH, NO_MPV_HIGH, es1_HIGH};
+int output_pins[] = {NITROGEN_FILL_OUT, ETHANOL_VENT_OUT, ETHANOL_MPV_OUT, ETHANOL_DRAIN_OUT, NO_FILL_OUT, NO_DRAIN_OUT, NO_VENT_OUT, NO_MPV_OUT, es1_OUT};
 
-boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANOL_VENT_SPECIAL, ETHANOL_MPV_SPECIAL, NO_FILL_SPECIAL, NO_DRAIN_SPECIAL, NO_VENT_SPECIAL, NO_MPV_SPECIAL};
-boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC};
+boolean special_valves[] = {NITROGEN_FILL_SPECIAL, ETHANOL_DRAIN_SPECIAL, ETHANOL_VENT_SPECIAL, ETHANOL_MPV_SPECIAL, NO_FILL_SPECIAL, NO_DRAIN_SPECIAL, NO_VENT_SPECIAL, NO_MPV_SPECIAL, es1_SPECIAL};
+boolean nc_valves[] = {NITROGEN_FILL_IS_NC, ETHANOL_DRAIN_IS_NC, ETHANOL_VENT_IS_NC, ETHANOL_MPV_IS_NC, NO_FILL_IS_NC, NO_DRAIN_IS_NC, NO_VENT_IS_NC, NO_MPV_IS_NC, es1_IS_NC};
 
 // -1 indicates that there is no pulse pin for the specified valve
 //int pulse_pins[] = {-1, -1, ETHANOL_VENT_PULSE, -1, -1, -1, NO_VENT_PULSE, -1, -1, -1, -1, -1};
@@ -88,6 +89,8 @@ void setup() {
 }
 
 void loop() {
+  
+  
   for (int i = 0; i < NUM_VALVES; i++) {
 
     // CHECKME: currently we're running this segment of code to check states on pulse pins as well as normal pins
@@ -97,9 +100,10 @@ void loop() {
     pin_state current_state = checkToggleSwitch(pin); // check if its open, close, or DO_NOTHING
 
     if (current_state != states[i]) { // if the switch is flicked and the command has changed since last iteration
-      //          Serial.println(vent_pins[i]);
-      //          Serial.println(output_pins[i]);
-      //          Serial.println(i);
+      Serial.println("Stupid");
+      Serial.println(vent_pins[i]);
+      Serial.println(output_pins[i]);
+      Serial.println(i);
       states[i] = current_state; // update the state list with the current state
       if (states[i] == OPEN_VENT && isSpecial(i)) { // only NC valves are special, so we only have to check for OPEN_VENT
         special_open_timings[i] = millis() + SPECIAL_OPEN_TIME;
@@ -117,22 +121,22 @@ void loop() {
       }
     }
 
-      boolean autoseq_activated = buttonRead(AUTOSEQ_PIN);
-      if (autoseq_activated) {
-        autosequence();
-      }
+    boolean autoseq_activated = buttonRead(AUTOSEQ_PIN);
+    if (autoseq_activated) {
+      autosequence();
+    }
 
-      if (isPulsing(i)) {
-        handlePulse(i);
-      }
+    if (isPulsing(i)) {
+      handlePulse(i);
+    }
 
-      else {
+    else {
 
-        handleVent(i);
-        handleSpecial(i);
-      }
+      handleVent(i);
+      handleSpecial(i);
     }
   }
+}
 void handleVent(int index) {
   int pin = output_pins[index];
   int open_signal = HIGH;
@@ -149,12 +153,16 @@ void handleVent(int index) {
 
       // special timings are handled in handleSpecial(), we only have to see if the timing value has been reset or not here
       if (special_open_timings[index] != 0) { // if the value hasn't been reset and we're still supposed to be open
+        Serial.println("Open Signal:");
+        Serial.println(pin);
         digitalWrite(pin, open_signal);
       }
 
       else {
         // if the value == 0 -> it's been reset and it's time to relieve the solenoid
         // the special_close_timing has already been set by handleSpecial() in the previous iteration
+        Serial.println("Close Signal:");
+        Serial.println(pin);
         digitalWrite(pin, close_signal);
       }
     }
@@ -267,12 +275,14 @@ int buttonRead(int pin) {
 */
 
 pin_state checkToggleSwitch(int switch_HIGH) {
-  int switch_LOW = switch_HIGH+1;
-  if(switch_HIGH==12){
+  int switch_LOW = switch_HIGH + 1;
+  if (switch_HIGH == 12) {
     switch_LOW = 24;
   }
   if (digitalRead(switch_HIGH) == LOW) {
     // return OPExddzN_VENT;
+    //    Serial.println("Closing vent: ");
+    //    Serial.println(switch_HIGH);
     return CLOSE_VENT;
   }
   else if (digitalRead(switch_LOW) == LOW) {

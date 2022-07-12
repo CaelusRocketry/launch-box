@@ -1,7 +1,0 @@
-(sym_lib_table
-  (lib (name Launchbox)(type Legacy)(uri "C:/Users/ericw/ProjectCaelus/launch-box/PCBs/CaelusPCB/Launchbox (2021_01_03 20_38_15 UTC).lib")(options "")(descr ""))
-  (lib (name Launchbox_Symbols)(type Legacy)(uri "${KIPRJMOD}/Launchbox (2021_01_03 20_38_15 UTC).lib")(options "")(descr "")(disabled))
-  (lib (name Launchbox-cache)(type Legacy)(uri C:/Users/ericw/ProjectCaelus/launch-box/PCBs/CaelusPCB/Launchbox-cache.lib)(options "")(descr ""))
-  (lib (name CaelusPCB-rescue)(type Legacy)(uri C:/Users/ericw/ProjectCaelus/launch-box/PCBs/CaelusPCB/CaelusPCB-rescue.lib)(options "")(descr "")(disabled))
-  (lib (name CaelusPCB-cache)(type Legacy)(uri ${KIPRJMOD}/CaelusPCB-cache.lib)(options "")(descr ""))
-)

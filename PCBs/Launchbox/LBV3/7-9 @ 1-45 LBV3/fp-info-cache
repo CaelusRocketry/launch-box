@@ -1,4 +1,4 @@
-20277573297855459
+20279230614119773
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57770,6 +57770,13 @@ Teensy_3.6
 0
 48
 48
+Launchbox
+UpdatedLD1085V50
+<b>TO-220</b><p>grid 2.54 mm, horinzontal
+
+0
+3
+3
 Launchbox
 XT60H-M12
 

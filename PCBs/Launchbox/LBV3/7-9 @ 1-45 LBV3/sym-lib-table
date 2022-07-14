@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "Launchbox")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Libraries/Launchbox.kicad_sym")(options "")(descr ""))
+  (lib (name "Launchbox-rescue")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Stable/Launchbox/Launchbox-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "Launchbox-cache")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Stable/Launchbox/Launchbox-cache.kicad_sym")(options "")(descr ""))
+)

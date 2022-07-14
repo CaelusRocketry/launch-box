@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name Launchbox)(type Legacy)(uri "C:/Users/pytho/Documents/TJ work/EC/Caelus/launch-box/Libraries/Launchbox.lib")(options "")(descr ""))
-  (lib (name Launchbox-rescue)(type Legacy)(uri "C:/Users/pytho/Documents/TJ work/EC/Caelus/launch-box/LB_stable/Launchbox/Launchbox-rescue.lib")(options "")(descr ""))
-  (lib (name Launchbox-cache)(type Legacy)(uri "C:/Users/pytho/Documents/TJ work/EC/Caelus/launch-box/LB_stable/Launchbox/Launchbox-cache.lib")(options "")(descr ""))
+  (lib (name "Launchbox")(type "Legacy")(uri "C:/Users/anish/Documents/GitHub/launch-box/Libraries/Launchbox.lib")(options "")(descr "")(disabled))
+  (lib (name "Launchbox-rescue")(type "Legacy")(uri "C:/Users/anish/Documents/GitHub/launch-box/Stable/Launchbox/Launchbox-rescue.lib")(options "")(descr "")(disabled))
+  (lib (name "Launchbox-cache")(type "Legacy")(uri "C:/Users/anish/Documents/GitHub/launch-box/Stable/Launchbox/Launchbox-cache.lib")(options "")(descr "")(disabled))
 )

@@ -15,7 +15,7 @@
 #include "constants.h"
 
 #define PULSE_TIME 500
-#define SPECIAL_OPEN_TIME 4000
+#define SPECIAL_OPEN_TIME 5000
 #define SPECIAL_CLOSE_TIME 1000
 
 // default is 2

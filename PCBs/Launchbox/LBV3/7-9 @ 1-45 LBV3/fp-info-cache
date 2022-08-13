@@ -1,4 +1,4 @@
-20279230614119773
+20280891008957959
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57728,6 +57728,13 @@ RJ45EthernetBreakout
 0
 8
 8
+Launchbox
+RaspberryPiZero
+Raspberry Pi board model B+, full outline with position of big connectors &amp; drill holes
+
+0
+40
+40
 Launchbox
 Relay_Breakout_Board
 

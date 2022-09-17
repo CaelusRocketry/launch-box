@@ -1,4 +1,4 @@
-
+a
 /*
   toggle - on/off/on switch
   pulse - you push it and it opens, waits .05s, and closes
@@ -89,7 +89,20 @@ void setup() {
 }
 
 void loop() {
+  //*****************************
+  aborted = !digitalRead(ABORT_PIN);
+  if (aborted)
+  {
+      for (int i = 0; i < NUM_VALVES; i++) {
+        auto valve = output_pins[i];
+        bool state = 0; //closed
+        if (valve == ETHANOL_VENT_OUT || valve == NO_VENT_OUT)
+          state = 1;
+        digitalWrite(valve,state);
+      }
+  }
   
+  //*****************************
   
   for (int i = 0; i < NUM_VALVES; i++) {
 

@@ -3,6 +3,9 @@ View this project on [CADLAB.io](https://cadlab.io/project/25442).
 # Launch Box
 Source code for our rocket's launch box.
 
+# Pre-refactor
+https://github.com/ProjectCaelus/launch-box/tree/2eb651392b1af030fa2c863ca12c2973148bd2ff
+
 # Making Changes
 Post-production version of PCBs: those currently in use are in launch-box\_stable folders. You shouldn't be editing these files, only copying them or using them as reference
 Libraries now stores all our libraries

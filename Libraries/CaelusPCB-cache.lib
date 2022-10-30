@@ -1,0 +1,520 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# CaelusPCB-cache_CaelusPCB-rescue_XT60-M-CaelusPCB
+#
+DEF CaelusPCB-cache_CaelusPCB-rescue_XT60-M-CaelusPCB J 0 40 Y Y 1 L N
+F0 "J" -100 225 50 H V L BNN
+F1 "CaelusPCB-cache_CaelusPCB-rescue_XT60-M-CaelusPCB" -110 -250 50 H V L BNN
+F2 "AMASS_XT60-M" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "AMASS" 0 0 50 H I L BNN "MANUFACTURER"
+F5 "1.2" 0 0 50 H I L BNN "PARTREV"
+F6 "IPC-7251" 0 0 50 H I L BNN "STANDARD"
+DRAW
+S -100 -200 100 200 0 0 10 f
+X - 1 -300 100 200 R 40 40 0 0 P
+X + 2 -300 -100 200 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_+5V-power-CaelusPCB
+#
+DEF CaelusPCB-rescue_+5V-power-CaelusPCB #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "CaelusPCB-rescue_+5V-power-CaelusPCB" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "CaelusPCB-rescue_+5V-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J 0 40 Y Y 1 L N
+F0 "J" -220 200 50 H V L BNN
+F1 "CaelusPCB-rescue_440055-3-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue" 30 -200 50 V V L BNN
+F2 "3_Header" -150 210 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S -200 -200 200 200 0 0 10 f
+X 1 1 -400 100 200 R 40 40 0 0 P
+X 2 2 -400 0 200 R 40 40 0 0 P
+X 3 3 -400 -100 200 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_440055-5-CaelusPCB-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_440055-5-CaelusPCB-CaelusPCB-rescue-CaelusPCB-rescue J 0 40 Y Y 1 L N
+F0 "J" -220 300 50 H V L BNN
+F1 "CaelusPCB-rescue_440055-5-CaelusPCB-CaelusPCB-rescue-CaelusPCB-rescue" 40 -200 50 V V L BNN
+F2 "5_Header" -150 320 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S -200 -300 200 300 0 0 10 f
+X 1 1 -400 200 200 R 40 40 0 0 P
+X 2 2 -400 100 200 R 40 40 0 0 P
+X 3 3 -400 0 200 R 40 40 0 0 P
+X 4 4 -400 -100 200 R 40 40 0 0 P
+X 5 5 -400 -200 200 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_440055-5-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_440055-5-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue J 0 40 Y Y 1 L N
+F0 "J" -220 300 50 H V L BNN
+F1 "CaelusPCB-rescue_440055-5-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue" 40 -200 50 V V L BNN
+F2 "5_Header" -150 320 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S -200 -300 200 300 0 0 10 f
+X 1 1 -400 200 200 R 40 40 0 0 P
+X 2 2 -400 100 200 R 40 40 0 0 P
+X 3 3 -400 0 200 R 40 40 0 0 P
+X 4 4 -400 -100 200 R 40 40 0 0 P
+X 5 5 -400 -200 200 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_6-Channel-5V-Relays-CaelusPCB
+#
+DEF CaelusPCB-rescue_6-Channel-5V-Relays-CaelusPCB U 0 40 Y Y 1 F N
+F0 "U" 0 575 50 H V C CNN
+F1 "CaelusPCB-rescue_6-Channel-5V-Relays-CaelusPCB" 50 650 50 H V C CNN
+F2 "" 0 575 50 H I C CNN
+F3 "" 0 575 50 H I C CNN
+DRAW
+S -1000 450 -1000 450 0 1 0 N
+S 50 275 50 275 0 1 0 N
+S 50 275 50 275 0 1 0 N
+P 2 0 1 0 -1000 475 -1000 475 N
+P 5 0 1 0 -1100 200 1150 200 1150 -200 -1100 -200 -1100 200 N
+X +5v 1 -300 -300 100 U 50 50 1 1 I
+X COM 10 -850 300 100 D 50 50 1 1 O
+X NO1 11 -750 300 100 D 50 50 1 1 O
+X NC2 12 -600 300 100 D 50 50 1 1 O
+X COM 13 -500 300 100 D 50 50 1 1 O
+X NO2 14 -400 300 100 D 50 50 1 1 O
+X NC3 15 -250 300 100 D 50 50 1 1 O
+X COM 16 -150 300 100 D 50 50 1 1 O
+X NO3 17 -50 300 100 D 50 50 1 1 O
+X NC4 18 100 300 100 D 50 50 1 1 O
+X COM 19 200 300 100 D 50 50 1 1 O
+X GND 2 -200 -300 100 U 50 50 1 1 I
+X NO4 20 300 300 100 D 50 50 1 1 O
+X NC5 21 450 300 100 D 50 50 1 1 O
+X COM 22 550 300 100 D 50 50 1 1 O
+X NO5 23 650 300 100 D 50 50 1 1 O
+X NC6 24 800 300 100 D 50 50 1 1 O
+X COM 25 900 300 100 D 50 50 1 1 O
+X NO6 26 1000 300 100 D 50 50 1 1 O
+X 1 3 -100 -300 100 U 50 50 1 1 I
+X 2 4 0 -300 100 U 50 50 1 1 I
+X 3 5 100 -300 100 U 50 50 1 1 I
+X 4 6 200 -300 100 U 50 50 1 1 I
+X 5 7 300 -300 100 U 50 50 1 1 I
+X 6 8 400 -300 100 U 50 50 1 1 I
+X NC1 9 -950 300 100 D 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_GND1-power-CaelusPCB
+#
+DEF CaelusPCB-rescue_GND1-power-CaelusPCB #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "CaelusPCB-rescue_GND1-power-CaelusPCB" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND1 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "CaelusPCB-rescue_GND1-power-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND1 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_L7805-Regulator_Linear-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_L7805-Regulator_Linear-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "CaelusPCB-rescue_L7805-Regulator_Linear-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" 0 125 50 H V L CNN
+F2 "" 55 -160 50 H I L CIN
+F3 "" 0 -50 50 H I C CNN
+$FPLIST
+ TO?252*
+ TO?263*
+ TO?220*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X IN 1 -300 0 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_Launchbox_HT12D-Launchbox-cache-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_Launchbox_HT12D-Launchbox-cache-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U 0 40 Y Y 1 F N
+F0 "U" -50 450 50 H V C CNN
+F1 "CaelusPCB-rescue_Launchbox_HT12D-Launchbox-cache-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" 350 -450 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 400 450 -400 0 1 0 N
+X A0 1 -200 350 100 R 50 50 1 1 I
+X AD8 10 550 -350 100 L 50 50 1 1 I
+X AD9 11 550 -250 100 L 50 50 1 1 I
+X AD10 12 550 -150 100 L 50 50 1 1 I
+X AD11 13 550 -50 100 L 50 50 1 1 I
+X DIN 14 550 50 100 L 50 50 1 1 I
+X OSC2 15 550 150 100 L 50 50 1 1 I
+X OSC1 16 550 250 100 L 50 50 1 1 I
+X VT 17 550 350 100 L 50 50 1 1 I
+X VDD 18 100 500 100 D 50 50 1 1 I
+X A1 2 -200 250 100 R 50 50 1 1 I
+X A2 3 -200 150 100 R 50 50 1 1 I
+X A3 4 -200 50 100 R 50 50 1 1 I
+X A4 5 -200 -50 100 R 50 50 1 1 I
+X A5 6 -200 -150 100 R 50 50 1 1 I
+X A6 7 -200 -250 100 R 50 50 1 1 I
+X A7 8 -200 -350 100 R 50 50 1 1 I
+X VSS 9 100 -500 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_LoadCellAmp-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_LoadCellAmp-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 600 50 H V C CNN
+F1 "CaelusPCB-rescue_LoadCellAmp-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" 0 -600 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 150 200 -200 0 1 0 N
+X RED 1 -250 150 100 U 50 50 1 1 I
+X VDD 10 -250 -200 100 D 50 50 1 1 I
+X BLK 2 -150 150 100 U 50 50 1 1 I
+X WHT 3 -50 150 100 U 50 50 1 1 I
+X GRN 4 50 150 100 U 50 50 1 1 I
+X YLW 5 150 150 100 U 50 50 1 1 I
+X GND 6 150 -200 100 D 50 50 1 1 I
+X CLK 7 50 -200 100 D 50 50 1 1 I
+X DAT 8 -50 -200 100 D 50 50 1 1 I
+X VCC 9 -150 -200 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U 0 40 Y Y 1 F N
+F0 "U" 300 250 50 H V C CNN
+F1 "CaelusPCB-rescue_MAX31856-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" -300 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -550 0 550 350 0 1 0 N
+X VIN 1 -400 0 100 D 50 50 1 1 I
+X 3VO 2 -300 0 100 D 50 50 1 1 I
+X GND 3 -200 0 100 D 50 50 1 1 I
+X SCK 4 -100 0 100 D 50 50 1 1 I
+X SDO 5 0 0 100 D 50 50 1 1 I
+X SDI 6 100 0 100 D 50 50 1 1 I
+X CS 7 200 0 100 D 50 50 1 1 I
+X FLT 8 300 0 100 D 50 50 1 1 I
+X DRDY 9 400 0 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_RJ45EthernetBreakout-CaelusPCB
+#
+DEF CaelusPCB-rescue_RJ45EthernetBreakout-CaelusPCB Ayo 0 40 Y Y 1 F N
+F0 "Ayo" 0 50 50 H I C CNN
+F1 "CaelusPCB-rescue_RJ45EthernetBreakout-CaelusPCB" 450 -100 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+P 5 0 1 0 0 0 900 0 900 -350 0 -350 0 0 N
+X 1 1 800 -450 100 U 50 50 1 1 O
+X 2 2 700 -450 100 U 50 50 1 1 O
+X 3 3 600 -450 100 U 50 50 1 1 O
+X 4 4 500 -450 100 U 50 50 1 1 O
+X 5 5 400 -450 100 U 50 50 1 1 O
+X 6 6 300 -450 100 U 50 50 1 1 O
+X 7 7 200 -450 100 U 50 50 1 1 O
+X 8 8 100 -450 100 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 50 50 H V C CNN
+F1 "CaelusPCB-rescue_SPDT_IC-Launchbox-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" 0 -50 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 250 200 -250 0 1 0 N
+X D 1 -200 200 100 L 50 50 1 1 I
+X S1 2 -200 100 100 L 50 50 1 1 I
+X GND 3 -200 -100 100 L 50 50 1 1 I
+X V+ 4 -200 -200 100 L 50 50 1 1 I
+X VL 5 200 -200 100 R 50 50 1 1 I
+X IN 6 200 -100 100 R 50 50 1 1 I
+X V- 7 200 100 100 R 50 50 1 1 I
+X S2 8 200 200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_Teensy3.6-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_Teensy3.6-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 -850 50 H V C CNN
+F1 "CaelusPCB-rescue_Teensy3.6-Launchbox_Symbols-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" 0 850 50 H V C CNN
+F2 "" 0 400 50 H I C CNN
+F3 "" 0 400 50 H I C CNN
+DRAW
+S -1350 200 1050 -200 0 1 0 N
+X ~ 0 -1200 -200 100 D 47 47 1 1 I
+X ~ 1 -1100 -200 100 D 47 47 1 1 I
+X ~ 10 -200 -200 100 D 47 47 1 1 I
+X ~ 11 -100 -200 100 D 47 47 1 1 I
+X ~ 12 0 -200 100 D 47 47 1 1 I
+X ~ 13 0 200 100 U 47 47 1 1 I
+X A0 14 -100 200 100 U 47 47 1 1 I
+X A1 15 -200 200 100 U 47 47 1 1 I
+X A2 16 -300 200 100 U 47 47 1 1 I
+X A3 17 -400 200 100 U 47 47 1 1 I
+X A4 18 -500 200 100 U 47 47 1 1 I
+X A5 19 -600 200 100 U 47 47 1 1 I
+X ~ 2 -1000 -200 100 D 47 47 1 1 I
+X A6 20 -700 200 100 U 47 47 1 1 I
+X A7 21 -800 200 100 U 47 47 1 1 I
+X A8 22 -900 200 100 U 47 47 1 1 I
+X A9 23 -1000 200 100 U 47 47 1 1 I
+X ~ 24 200 -200 100 D 47 47 1 1 I
+X ~ 25 300 -200 100 D 47 47 1 1 I
+X ~ 26 400 -200 100 D 47 47 1 1 I
+X ~ 27 500 -200 100 D 47 47 1 1 I
+X ~ 28 600 -200 100 D 47 47 1 1 I
+X ~ 29 700 -200 100 D 47 47 1 1 I
+X ~ 3 -900 -200 100 D 47 47 1 1 I
+X ~ 30 800 -200 100 D 47 47 1 1 I
+X A12 31 900 -200 100 D 47 47 1 1 I
+X A13 32 1000 -200 100 D 47 47 1 1 I
+X A14 33 1000 200 100 U 47 47 1 1 I
+X A15 34 900 200 100 U 47 47 1 1 I
+X A16 35 800 200 100 U 47 47 1 1 I
+X A17 36 700 200 100 U 47 47 1 1 I
+X A18 37 600 200 100 U 47 47 1 1 I
+X A19 38 500 200 100 U 47 47 1 1 I
+X A20 39 400 200 100 U 47 47 1 1 I
+X ~ 4 -800 -200 100 D 47 47 1 1 I
+X VIN 40 -1300 200 100 U 47 47 1 1 I
+X AGND 41 -1200 200 100 U 47 47 1 1 I
+X 3.3V 42 -1100 200 100 U 47 47 1 1 I
+X GND 43 100 200 100 U 47 47 1 1 I
+X DAC1 44 200 200 100 U 47 47 1 1 I
+X DAC0 45 300 200 100 U 47 47 1 1 I
+X GND 46 -1300 -200 100 D 47 47 1 1 I
+X 3.3V 47 100 -200 100 D 47 47 1 1 I
+X ~ 5 -700 -200 100 D 47 47 1 1 I
+X ~ 6 -600 -200 100 D 47 47 1 1 I
+X ~ 7 -500 -200 100 D 47 47 1 1 I
+X ~ 8 -400 -200 100 D 47 47 1 1 I
+X ~ 9 -300 -200 100 D 47 47 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_XBee_Breakout-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue
+#
+DEF CaelusPCB-rescue_XBee_Breakout-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue U 0 40 Y Y 1 F N
+F0 "U" -200 550 50 H V C CNN
+F1 "CaelusPCB-rescue_XBee_Breakout-CaelusPCB-rescue-CaelusPCB-rescue-CaelusPCB-rescue" 0 -550 50 H V C CNN
+F2 "" -150 150 50 H I C CNN
+F3 "" -150 150 50 H I C CNN
+DRAW
+S -250 500 250 -500 0 1 0 N
+X VCC 1 -350 450 100 R 50 50 1 1 I
+X GND 10 -350 -450 100 R 50 50 1 1 I
+X AD0 11 350 450 100 L 50 50 1 1 I
+X AD1 12 350 350 100 L 50 50 1 1 I
+X AD2 13 350 250 100 L 50 50 1 1 I
+X AD3 14 350 150 100 L 50 50 1 1 I
+X RTS 15 350 50 100 L 50 50 1 1 I
+X AD5 16 350 -50 100 L 50 50 1 1 I
+X VREF 17 350 -150 100 L 50 50 1 1 I
+X ON 18 350 -250 100 L 50 50 1 1 I
+X CTS 19 350 -350 100 L 50 50 1 1 I
+X DOUT 2 -350 350 100 R 50 50 1 1 I
+X AD4 20 350 -450 100 L 50 50 1 1 I
+X DIN 3 -350 250 100 R 50 50 1 1 I
+X DO8 4 -350 150 100 R 50 50 1 1 I
+X RST 5 -350 50 100 R 50 50 1 1 I
+X PWM0 6 -350 -50 100 R 50 50 1 1 I
+X PWM1 7 -350 -150 100 R 50 50 1 1 I
+X RSV 8 -350 -250 100 R 50 50 1 1 I
+X DTR 9 -350 -350 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CaelusPCB-rescue_XT60-M-CaelusPCB
+#
+DEF CaelusPCB-rescue_XT60-M-CaelusPCB J 0 40 Y Y 1 L N
+F0 "J" -100 225 50 H V L BNN
+F1 "CaelusPCB-rescue_XT60-M-CaelusPCB" -110 -250 50 H V L BNN
+F2 "AMASS_XT60-M" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "AMASS" 0 0 50 H I L BNN "MANUFACTURER"
+F5 "1.2" 0 0 50 H I L BNN "PARTREV"
+F6 "IPC-7251" 0 0 50 H I L BNN "STANDARD"
+DRAW
+S -100 -200 100 200 0 0 10 f
+X - 1 -300 100 200 R 40 40 0 0 P
+X + 2 -300 -100 200 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# Device_Battery_Cell
+#
+DEF Device_Battery_Cell BT 0 0 N N 1 F N
+F0 "BT" 100 100 50 H V L CNN
+F1 "Device_Battery_Cell" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -90 70 90 60 0 1 0 F
+S -62 47 58 27 0 1 0 F
+P 2 0 1 0 0 30 0 0 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 20 135 60 135 N
+P 2 0 1 10 40 155 40 115 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -100 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_US
+#
+DEF Device_R_US R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "Device_R_US" -100 0 50 V V C CNN
+F2 "" 40 -10 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+12V
+#
+DEF power_+12V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+24V
+#
+DEF power_+24V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+24V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +24V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

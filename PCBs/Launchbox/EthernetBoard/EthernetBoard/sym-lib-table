@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name CaelusPCB)(type Legacy)(uri C:/Users/quinc/Documents/Caelus/launch-box/Libraries/CaelusPCB.lib)(options "")(descr ""))
+  (lib (name CaelusPCB-cache)(type Legacy)(uri C:/Users/quinc/Documents/Caelus/launch-box/Libraries/CaelusPCB-cache.lib)(options "")(descr ""))
+  (lib (name CaelusPCB-rescue)(type Legacy)(uri C:/Users/quinc/Documents/Caelus/launch-box/Libraries/CaelusPCB-rescue.lib)(options "")(descr ""))
+  (lib (name Launchbox)(type Legacy)(uri C:/Users/quinc/Documents/Caelus/launch-box/Libraries/Launchbox.lib)(options "")(descr ""))
+)

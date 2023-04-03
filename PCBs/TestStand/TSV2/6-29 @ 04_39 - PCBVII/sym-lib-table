@@ -1,6 +1,6 @@
 (sym_lib_table
   (lib (name "CaelusPCB")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Libraries/CaelusPCB.kicad_sym")(options "")(descr ""))
-  (lib (name "CaelusPCB-cache")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Libraries/CaelusPCB-cache.kicad_sym")(options "")(descr ""))
-  (lib (name "CaelusPCB-rescue")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Libraries/CaelusPCB-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "CaelusPCB-cache")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Libraries/CaelusPCB-rescue.kicad_sym")(options "")(descr ""))
   (lib (name "Launchbox")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Libraries/Launchbox.kicad_sym")(options "")(descr ""))
+  (lib (name "CaelusPCB-rescue")(type "KiCad")(uri "C:/Users/anish/Documents/GitHub/launch-box/Libraries/CaelusPCB-rescue.kicad_sym")(options "")(descr ""))
 )
